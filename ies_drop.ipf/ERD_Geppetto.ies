@@ -1,0 +1,7 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,36,38,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,214,0,0,0,0,0,0,0,"","Item","Item","misc_0055",""
+3,195,0,0,0,0,0,0,0,"","Item","Item","misc_Geppetto2",""
+4,60,0,0,0,0,0,0,0,"","Item","Item","misc_goldbar",""
+5,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_Geppetto",""
+6,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_Geppetto",""

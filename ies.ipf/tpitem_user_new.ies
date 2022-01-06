@@ -1,0 +1,2 @@
+ClassID,Price,JobGrade,Itemdate,AccountLimitCount,ClassName,Category,SubCategory,ItemClassName,Job,SellStartTime,SellEndTime,WarningMsg
+1,49,0,181213,1,"ClassName1","TP_Premium","TP_Useable","PremiumToken_New_Return","","","","NO"

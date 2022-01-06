@@ -1,0 +1,8 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,37,39,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,1000,0,0,0,0,0,0,0,"","Item","Item","misc_0153",""
+3,134,0,0,0,0,0,0,0,"","Item","Item","R_BOW01_107",""
+4,15,0,0,0,0,0,0,0,"","Item","Item","misc_goldbar",""
+5,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_Chupaluka_pink",""
+6,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_Chupaluka_pink",""
+7,2,0,0,0,0,0,0,0,"","Item","Item","Gem_Dievdirbys_CarveVakarine",""

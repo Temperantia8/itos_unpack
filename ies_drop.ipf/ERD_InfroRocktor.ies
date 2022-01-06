@@ -1,0 +1,8 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,2,2,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,1000,0,0,0,0,0,0,0,"","Item","Item","misc_0005",""
+3,100,0,0,0,0,0,0,0,"","Item","Item","misc_infroRocktor2",""
+4,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_InfroRocktor",""
+5,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_InfroRocktor",""
+6,3,0,0,0,0,0,0,0,"","Item","Item","Hat_628102",""
+7,4,0,0,0,0,0,0,0,"","Item","Item","GEM_Priest_TurnUndead",""

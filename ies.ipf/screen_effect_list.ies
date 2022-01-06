@@ -1,0 +1,4 @@
+ClassID,EffectSize,ClassName,EffectName,SoundName
+0,200,"Hold","I_screen_danger_chain",""
+1,200,"Petrify","I_screen_danger_stone2",""
+2,200,"Freeze","I_screen_danger_frozen3",""

@@ -1,0 +1,7 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,4,5,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,250,0,0,0,0,0,0,0,"","Item","Item","food_001",""
+3,60,0,0,0,0,0,0,0,"","Item","Item","BOW01_112",""
+4,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_Whip_vine_Ra",""
+5,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_Whip_vine_Ra",""
+6,2,0,0,0,0,0,0,0,"","Item","Item","Gem_Wizard_EarthQuake",""

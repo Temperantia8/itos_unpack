@@ -1,0 +1,4 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,ItemCount,Zone,Type,GroupName,ItemClassName,ItemProperty,PCEtcPropertyAdd,GiveType,AdmissionItemIndun,WeeklyEnteredIndun
+1,9960,0,0,0,0,0,0,0,1,"","Item","Item","misc_ore27","","InDunRewardCountType_802","INVENTORY","Casual_Raid_boss_Skiaclipse","Casual_Raid_boss_Skiaclipse"
+2,20,0,0,0,0,0,0,0,1,"","Item","Item","helmet_baniclips","","InDunRewardCountType_802","INVENTORY","Casual_Raid_boss_Skiaclipse","Casual_Raid_boss_Skiaclipse"
+3,20,0,0,0,0,0,0,0,1,"","Item","Item","costume_Com_216","","InDunRewardCountType_802","INVENTORY","Casual_Raid_boss_Skiaclipse","Casual_Raid_boss_Skiaclipse"

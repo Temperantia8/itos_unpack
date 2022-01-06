@@ -1,0 +1,10 @@
+ClassID,StartHour_1,StartHour_2,EnteranceDurationSecond,BattleDurationSecond,ClassName,Desc
+1,12,22,300,500,"KOR",""
+2,12,22,300,500,"GLOBAL_JP",""
+3,12,22,300,500,"TAIWAN",""
+4,12,22,300,500,"1001","GLOBAL 인 경우, 월드 Index(ClassName으로 가져온다)"
+5,6,16,300,500,"1003","GLOBAL 인 경우, 월드 Index(ClassName으로 가져온다)"
+6,9,23,300,500,"1004","GLOBAL 인 경우, 월드 Index(ClassName으로 가져온다)"
+7,10,20,300,500,"1005","GLOBAL 인 경우, 월드 Index(ClassName으로 가져온다)"
+8,12,22,300,500,"1101","GLOBAL 인 경우, 월드 Index(ClassName으로 가져온다).qa 서버용 데이터."
+9,12,22,300,500,"1201","GLOBAL 인 경우, 월드 Index(ClassName으로 가져온다).qa 서버용 데이터."

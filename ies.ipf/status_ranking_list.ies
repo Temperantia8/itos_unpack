@@ -1,0 +1,2 @@
+ClassID,ClassName,Unit,Func,key,Desc
+1,"pc_gear_score","PC","GET_PLAYER_GEAR_SCORE","status_ranking:pc_gear_score","착용 아이템 점수"

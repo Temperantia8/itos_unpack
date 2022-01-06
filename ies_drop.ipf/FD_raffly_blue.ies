@@ -1,0 +1,7 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,54,57,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,129,0,0,0,0,0,0,0,"","Item","Item","misc_gemExpStone_randomQuest2_TA",""
+3,46,0,0,0,0,0,0,0,"","Item","Item","R_SPR02_106",""
+4,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_FD_raffly_blue",""
+5,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_FD_raffly_blue",""
+6,2,0,0,0,0,0,0,0,"","Item","Item","Gem_Rodelero_ShieldBash",""

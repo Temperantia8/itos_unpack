@@ -1,0 +1,10 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,DropGroup,ItemProperty
+90001,133,0,0,0,0,0,0,0,"","Item","Item","","DropGroup_Armor_170_FreeDungeon",""
+90002,66,0,0,0,0,0,0,0,"","Item","Item","","DropGroup_Weapon_170_FreeDungeon",""
+90003,10,0,0,0,0,0,0,0,"","Item","Item","R_HAND03_106","",""
+90004,10,0,0,0,0,0,0,0,"","Item","Item","R_LEG03_107","",""
+90005,500,0,0,0,0,0,0,0,"","Item","Item","","DropGroup_FreeDungeon",""
+90006,41,0,0,0,0,0,0,0,"","Item","Item","misc_gemExpStone_randomQuest1_TA","",""
+90007,20,0,0,0,0,0,0,0,"","Item","Item","","DropGroup_CardBook",""
+90008,2,0,0,0,0,0,0,0,"","Item","Item","Moru_Gold","",""
+90009,2,0,0,0,0,0,0,0,"","Item","Item","Gem_Gacha_gold_coin","",""

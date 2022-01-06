@@ -1,0 +1,5 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,28,0,0,0,0,0,0,0,"","Item","Item","LEG01_103",""
+2,20,0,0,0,0,0,0,0,"","Item","Item","HAND01_104",""
+3,28,0,0,0,0,0,0,0,"","Item","Item","SHD01_102",""
+4,20,0,0,0,0,0,0,0,"","Item","Item","STF01_104",""

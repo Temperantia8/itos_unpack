@@ -1,0 +1,2 @@
+ClassID,ConsumeItemCount,RewardItemCount,AbleMap,CouponStringArg,Desc,ClassName,ConsumeItem,RewardItemList
+1,1,6,"c_request_1","coupon_c_request_1","페디미안 주점 추첨","1","misc_ore22/700;","Piece_BorutaSeal/1/0;Gacha_MasterCard/1/0;Gacha_SKLGEM_2/1/0;Ancient_CardBook_Choice/1/0;R_Dungeon_Key01_EP13/1/0;CONTENTS_TOTAL_10_POINT_COUPON/1/0;"

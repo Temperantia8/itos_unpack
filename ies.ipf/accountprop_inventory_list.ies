@@ -1,0 +1,7 @@
+ClassID,ClassName,Category,Icon,StringCoin,IsNowSeason,InvIcon
+1,"MISC_PVP_MINE2","coin","icon_item_pvpmine_2","YES","NO",""
+2,"CONTENTS_TOTAL_POINT","POINT","icon_item_silver_gacha_ticket","NO","NO",""
+3,"Mileage_SilverGacha","POINT","icon_item_demon_point","NO","NO",""
+4,"REPUTATION_COIN_EP13","coin","icon_item_Reputation_coin_01","NO","NO",""
+6,"GabijaCertificate","coin","icon_item_season_coin_gabia","YES","YES","inventory_coin_gabia_pic"
+7,"TeamBattleCoin","coin","icon_item_pvpmine_2_gold","YES","YES",""

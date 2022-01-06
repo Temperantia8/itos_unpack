@@ -1,0 +1,2 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,ItemCount,Zone,Type,GroupName,ItemClassName,ItemProperty,PCEtcPropertyAdd,GiveType,AdmissionItemIndun,WeeklyEnteredIndun
+1,9960,0,0,0,0,0,0,0,1,"","Item","Item","Gacha_MothRaid_piece","","InDunRewardCountType_10002","INVENTORY","Casual_Unique_Raid_boss_Moringponia","Casual_Unique_Raid_boss_Moringponia"

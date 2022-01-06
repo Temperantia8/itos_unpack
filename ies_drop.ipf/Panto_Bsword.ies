@@ -1,0 +1,6 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,44,46,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,0,7040,7360,0,0,0,0,0,"","Money_Hi","Money","Moneybag1",""
+3,2000,0,0,0,0,0,0,0,"","Item","Item","misc_seedmia",""
+4,65,0,0,0,0,0,0,0,"","Item","Item","food_009",""
+5,1500,0,0,0,0,0,0,0,"","Item","Item","misc_ore02",""

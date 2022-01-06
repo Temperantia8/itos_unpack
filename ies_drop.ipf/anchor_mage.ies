@@ -1,0 +1,10 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,122,128,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,135,0,0,0,0,0,0,0,"","Item","Item","SWD01_132",""
+3,135,0,0,0,0,0,0,0,"","Item","Item","TSP01_105",""
+4,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_anchor_mage",""
+5,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_anchor_mage",""
+6,10,0,0,0,0,0,0,0,"","Item","Item","SWD03_111",""
+7,10,0,0,0,0,0,0,0,"","Item","Item","TSW03_112",""
+8,10,0,0,0,0,0,0,0,"","Item","Item","SPR03_107",""
+9,10,0,0,0,0,0,0,0,"","Item","Item","TSP03_107",""

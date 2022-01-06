@@ -1,0 +1,5 @@
+ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max,Zone,Type,GroupName,ItemClassName,ItemProperty
+1,8000,417,439,0,0,0,0,0,"","Money_Mid","Money","Moneybag1",""
+2,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_Spion_bow_red",""
+3,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_Spion_bow_red",""
+4,47,0,0,0,0,0,0,0,"","Item","Item","CAN01_106",""
