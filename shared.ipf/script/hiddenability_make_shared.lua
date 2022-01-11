@@ -79,7 +79,7 @@ function RUN_PARSE_HIDDEN_ABILITY_ITEM()
   end
 
   local idx = 2040001
-  for idx = 2040001, 2040596 do
+  for idx = 2040001, 2040603 do
       local cls = GetClassByType('Item', idx)
       if cls ~= nil then
           local job = TryGetProp(cls, 'AbilityIdspace', 'None')

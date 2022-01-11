@@ -7,9 +7,9 @@ end
 
 -- 시안 젬 - 통치자의 검
 function get_tooltip_SOVEREIGN_SWORD_arg1(pc)
-	local rate = 3000
+	local rate = 1200
 	if IsPVPField(pc) == 1 then
-		rate = 1000
+		rate = 400
 	end
     return rate, 'RELIC_SKILLFACTOR', 1, 'Percent'
 end
@@ -24,9 +24,9 @@ end
 
 -- 시안 젬 - 수확의 낫
 function get_tooltip_HARVEST_SCYTHE_arg1(pc)
-	local rate = 3000
+	local rate = 1200
 	if IsPVPField(pc) == 1 then
-		rate = 1000
+		rate = 400
 	end
     return rate, 'RELIC_SKILLFACTOR', 1, 'Percent'
 end
@@ -41,26 +41,26 @@ end
 
 -- 시안 젬 - 거인의 마검
 function get_tooltip_GIANT_EVILSWORD_arg1(pc)
-	local rate = 3000
+	local rate = 1200
 	if IsPVPField(pc) == 1 then
-		rate = 1000
+		rate = 400
 	end
     return rate, 'RELIC_SKILLFACTOR', 1, 'Percent'
 end
 
 function get_tooltip_GIANT_EVILSWORD_arg2(pc)
-	local rate = 400
+	local rate = 160
 	if IsPVPField(pc) == 1 then
-		rate = 200
+		rate = 80
 	end
     return rate, 'ADD_ATK_SKILLFACTOR', 1, 'Percent'
 end
 
 -- 시안 젬 - 혜성의 팔찌
 function get_tooltip_OLDTREE_BRACELET_arg1(pc)
-	local rate = 2500
+	local rate = 1000
 	if IsPVPField(pc) == 1 then
-		rate = 750
+		rate = 300
 	end
     return rate, 'RELIC_SKILLFACTOR', 1, 'Percent'
 end
@@ -80,9 +80,9 @@ end
 
 -- 시안 젬 - 징조의 날붙이
 function get_tooltip_OMEN_EDGEWISE_arg1(pc)
-	local rate = 3000
+	local rate = 1200
 	if IsPVPField(pc) == 1 then
-		rate = 1000
+		rate = 400
 	end
     return rate, 'RELIC_SKILLFACTOR', 1, 'Percent'
 end
@@ -355,7 +355,7 @@ function get_tooltip_Magic_Melee_Atk_GEM_GODDESS_arg1()
     return 664, 'Magic_Melee_Atk', 1, 'ValueUp'
 end
 
--- 블랙 젬 - 활 대미지
+-- 블랙 젬 - 화살 대미지
 function get_tooltip_Arrow_Atk_GEM_LEGEND_arg1()
     return 510, 'Arrow_Atk', 1, 'ValueUp'
 end

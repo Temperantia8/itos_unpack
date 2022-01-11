@@ -367,6 +367,7 @@
 	<Code Code="ALERT_REPORT_AutoRestart" Team="tos_team" Category="HEALTH" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="서버가 자동으로 재시작됨"/>
 	<Code Code="ERROR_NULLPTR_REFCOUNT_ZERO" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="참조 수가 0인 이미 지워진 객체입니다."/>
 	<Code Code="INFO_ADVENTURE_BOOK" Team="PROGRAM" Category="INFO" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="모험일지 관련 정보"/>
+	<Code Code="INFO_ACHIEVE" Team="PROGRAM" Category="INFO" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="업적 관련 정보"/>
 	<Code Code="ERROR_FAIL_DLL_LOAD" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="DLL 을 로드하지 못했습니다."/>
 	<Code Code="STEAM_CHARGE_BACK_ERROR" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="스팀 차지백 에러"/>
 	<Code Code="INFO_FISH_RUBBING" Team="PROGRAM" Category="LOGIC" SubCategory="FISHING" Logger="root" Enabled="NO" CallStack="NO" Desc="탁본 정보 로그"/>
@@ -524,6 +525,7 @@
 	<Code Code="ALERT_REPORT_AutoChannelAdd" Team="tos_team" Category="HEALTH" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="자동 채널 추가 비정상"/>
 	<Code Code="ALERT_REPORT_AutoChannelDelete" Team="tos_team" Category="HEALTH" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="자동 채널 제거 비정상"/>
 	<Code Code="ERROR_ADVENTURE_BOOK_LOG" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="모험일지 관련 에러"/>
+	<Code Code="ERROR_ACHIEVE_LOG" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="업적 관련 에러"/>
 	<Code Code="ERROR_REPLAY" Team="PROGRAM" Category="ERROR" Logger="root" Enabled="YES" CallStack="NO" Desc="리플레이 관련 에러"/>
 	<Code Code="FATAL_REDIS_INSERT_FAIL" Team="PROGRAM" Category="REDIS" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="Redis Insert 작업이 실패하였습니다."/>
 	<Code Code="FATAL_REDIS_PENDING_QUEUE_FULL" Team="PROGRAM" Category="REDIS" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="Redis Pending Queue가 가득 찼습니다."/>
@@ -671,4 +673,6 @@
 	<Code Code="WARNING_GUILD_COMMUNITY" Team="PROGRAM" Category="GUILD" SubCategory="GUILD_COMMUNITY" Logger="root" Enabled="YES" CallStack="NO" Desc="길드 커뮤니티 경고"/>
 	<Code Code="INFO_GUILD_COMMUNITY" Team="PROGRAM" Category="GUILD" SubCategory="GUILD_COMMUNITY" Logger="root" Enabled="NO" CallStack="NO" Desc="길드 커뮤니티 정보"/>
 	<Code Code="WARNING_PVP_CHAT_USING" Team="PROGRAM" Category="CRITICAL" SubCategory="" Logger="root" Enabled="YES" CallStack="YES" Desc="PVP 채팅 에드온 조작 유저"/>
+	<Code Code="ERROR_NEXON_CEM_NO_SERVICE_ID" Team="tos_team" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="NEXON_CEM_ACCESS_KEY 및 NEXON_CEM_SECRET_KEY 환경변수가 지정되지 않았습니다"/>
+	<Code Code="ERROR_NEXON_CEM_NO_APIKEY" Team="tos_team" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="NEXON_CEM_ACCESS_KEY 및 NEXON_CEM_SECRET_KEY 환경변수가 지정되지 않았습니다"/>
 </imcErrorCode>

@@ -1,5 +1,5 @@
 function EVENT_STAMP_IS_VALID_WEEK(week)
-	local startTime = imcTime.GetSysTime(2021,12,01,6)
+	local startTime = imcTime.GetSysTime(2021,12,23,6)
 	local week_startTime = imcTime.AddSec(startTime,(week-1)*7*24*60*60)
 
 	local currentDate = nil

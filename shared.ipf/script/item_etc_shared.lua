@@ -19,6 +19,11 @@ function GET_LIMITATION_TO_BUY(tpItemID)
         return 'WEEKLY', weeklyCount
     end
 
+    local customCount = TryGetProp(tpItemObj, 'AccountLimitCustomCount', 0)    
+    if customCount > 0 then
+        return 'CUSTOM', customCount
+    end
+
     return 'NO', 0;
 end
 
@@ -36,7 +41,7 @@ function GET_LIMITATION_TO_BUY_WITH_SHOPTYPE(tpItemID, shopType)
     if tpItemObj == nil then
         return 'NO', 0;
     end
-
+    
     local accountLimitCount = TryGetProp(tpItemObj, 'AccountLimitCount');
     if accountLimitCount ~= nil and accountLimitCount > 0 then
         return 'ACCOUNT', accountLimitCount;
@@ -50,6 +55,11 @@ function GET_LIMITATION_TO_BUY_WITH_SHOPTYPE(tpItemID, shopType)
     local weeklyCount = TryGetProp(tpItemObj, 'AccountLimitWeeklyCount', 0)
     if weeklyCount > 0 then
         return 'WEEKLY', weeklyCount
+    end
+
+    local customCount = TryGetProp(tpItemObj, 'AccountLimitCustomCount', 0)    
+    if customCount > 0 then
+        return 'CUSTOM', customCount
     end
 
     return 'NO', 0;

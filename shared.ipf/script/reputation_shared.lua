@@ -190,3 +190,7 @@ function SCR_REPUTAION_WEEKQUEST_POSSIBLECHECK(self, QuestName, SysMsg)
     end
 
 end
+
+function GET_REPUTATION_ITEM_SELL_PRICE(product)
+    return math.floor(TryGetProp(product, "Price", 0) * 0.9)
+end

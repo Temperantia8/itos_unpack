@@ -86,7 +86,7 @@ shared_item_ark.get_require_count_for_exp_up = function(goal_lv, max_lv, is_char
     
     if is_character_belong == true then
         space_name = 'item_ark_material_belong'
-end
+    end
 
     local list, cnt = GetClassList(space_name)
     if list == nil or cnt < 1 then
@@ -464,7 +464,7 @@ end
 
 -- 세번째 옵션 낙뢰 계수는 5레벨당 x씩 오른다. 총 10회, 5250 + (10 * 1050) = 15750%
 function get_tooltip_Ark_thunderbolt_arg3()
-    return 3, 'ARK_THUNDERBOLT_ATTACK', 5, 1260, 6300
+    return 3, 'ARK_THUNDERBOLT_ATTACK', 5, 504, 2520
 end
 
 function get_Ark_thunderbolt_option_active_lv()
@@ -484,30 +484,12 @@ end
 
 -- 세번째 옵션 폭풍 계수는 5레벨당 x씩 오른다. 총 16회, 2400 + (10 * 490) = 7300%
 function get_tooltip_Ark_storm_arg3()
-    -- return 3, 'ARK_STORM_ATTACK', 5, 490, 2400
-    return 3, 'ARK_STORM_ATTACK', 5, 980, 4800
+    return 3, 'ARK_STORM_ATTACK', 5, 392, 1920
 end
 
 function get_Ark_storm_option_active_lv()
     return 3
 end
-
-----------------------------------------------------------------------------------------------
---------------- 아크(pc방) - 폭풍 -----------------
-function get_tooltip_Ark_pc_storm_arg1()
-    return 1, 'STR_INT_BM', 1, 20
-end
-
--- 두번째 옵션 폭풍 발동은 3레벨당 x씩 확률적으로 발생한다. (정수로 해야 함)
-function get_tooltip_Ark_pc_storm_arg2()
-    return 3, 'ARK_STORM_RATIO', 3, 2, 10
-end
-
--- 세번째 옵션 폭풍 계수는 5레벨당 x씩 오른다. 
-function get_tooltip_Ark_pc_storm_arg3()
-    return 3, 'ARK_STORM_ATTACK', 5, 175, 840
-end
-
 
 -------------- 아크 - 분산 ----------------
 -- 첫번째 옵션 체력은 1레벨당 20씩 오른다.
@@ -594,6 +576,22 @@ function get_Ark_healingwave_option_active_lv()
     return 3
 end
 
+-------------------------------------------------------------------------------------------
+--------------- 아크(pc방) - 폭풍 -----------------
+function get_tooltip_Ark_pc_storm_arg1()
+    return 1, 'STR_INT_BM', 1, 20
+end
+
+-- 두번째 옵션 폭풍 발동은 3레벨당 x씩 확률적으로 발생한다. (정수로 해야 함)
+function get_tooltip_Ark_pc_storm_arg2()
+    return 3, 'ARK_STORM_RATIO', 3, 1, 4
+end
+
+-- 세번째 옵션 폭풍 계수는 5레벨당 x씩 오른다. 
+function get_tooltip_Ark_pc_storm_arg3()
+    return 3, 'ARK_STORM_ATTACK', 5, 392, 1920
+end
+
 
 ------------------------------ 이벤트 아크 7종 툴팁 ----------------------------
 
@@ -624,7 +622,7 @@ function get_tooltip_Event_Ark_thunderbolt_arg2()
 end
 
 function get_tooltip_Event_Ark_thunderbolt_arg3()
-    return 3, 'ARK_THUNDERBOLT_ATTACK', 5, 1260, 6300
+    return 3, 'ARK_THUNDERBOLT_ATTACK', 5, 504, 2520
 end
 
 function get_Ark_thunderbolt_option_active_lv()
@@ -641,7 +639,7 @@ function get_tooltip_Event_Ark_storm_arg2()
 end
 
 function get_tooltip_Event_Ark_storm_arg3()
-    return 3, 'ARK_STORM_ATTACK', 5, 980, 4800
+    return 3, 'ARK_STORM_ATTACK', 5, 392, 1920
 end
 
 function get_Ark_storm_option_active_lv()

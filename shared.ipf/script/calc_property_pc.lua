@@ -3716,7 +3716,7 @@ function SCR_GET_ADD_Damage_ATK(pc)
 
         local atk = math.max(patk, matk)
 
-        byabil = math.floor(atk * 0.15 * GetExProp(pc, "IS_ADDDAMAGE_ABIL"))
+        byabil = math.floor(atk * 0.1 * GetExProp(pc, "IS_ADDDAMAGE_ABIL"))
     end
 
     local value = byItem + byBuff + add_value + byabil;    

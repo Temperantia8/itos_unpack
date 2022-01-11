@@ -557,6 +557,16 @@ function SCR_RELIC_GEM_REINFORCE_COUPON()
         'Relic_gem_upgrade_token',
         'Event_Reinforce_100000coupon',
         'Event_Reinforce_100000coupon_Event',
+        'Relic_Reinforce_100000coupon',
+    }
+    return list
+end
+
+function SCR_RELIC_REINFORCE_COUPON()
+    local list = {
+        'Event_Reinforce_100000coupon',
+        'Event_Reinforce_100000coupon_Event',
+        'Relic_Reinforce_100000coupon',
     }
     return list
 end

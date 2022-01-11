@@ -29,6 +29,8 @@
 	<Class Code="209" Desc="Create Group Chat"/>
 	<Class Code="210" Desc="Delete Group Chat"/>
 	<Class Code="211" Desc="Register Notice"/>
+	<Class Code="212" Desc="Delete Group Chat Message"/>
+	<Class Code="213" Desc="Ban User from Chatting"/>
 	<Class Code="301" Desc="Declare/End War"/>
 	<Class Code="302" Desc="Set/Remove Neutral Status"/>
 	<Class Code="303" Desc="See Ongoing Wars"/>

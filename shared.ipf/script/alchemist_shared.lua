@@ -287,3 +287,44 @@ function IS_ENABLE_GIVE_HIDDEN_PROP_ITEM(item)
 
 	return true;
 end
+
+function IS_VALID_BRIQUETTING_HAIR_ACC_TARGET_ITEM(targetItem)	
+	if targetItem == nil then
+		return false;
+	end
+
+	if tonumber(targetItem.LifeTime) > 0 then
+		return false;
+	end
+	
+	if TryGetProp(targetItem, 'ClassType') ~= 'Hat' then
+        return false;
+    end
+	
+	if TryGetProp(targetItem, 'BriquetingAble') ~= 'Yes' or TryGetProp(targetItem, 'LifeTime', 1) ~= 0 then
+        return false;
+    end
+
+	local enableEqpType = {'HAT', 'HAT_T', 'HAT_L'};
+	local targetItemEqpType = TryGetProp(targetItem, 'EqpType', 'None');
+	if targetItemEqpType ~= 'None' then
+		for i = 1, #enableEqpType do
+			if enableEqpType[i] == targetItemEqpType then
+				return true;
+			end
+		end	
+	end
+	return false;
+end
+
+function IS_VALID_LOOK_MATERIAL_ITEM_HARI_ACC(lookMaterial)
+	if lookMaterial == nil then
+		return false;
+	end
+	
+	if lookMaterial.StringArg ~= 'HairAcc_Core' then
+		return false;
+	end
+
+	return true
+end

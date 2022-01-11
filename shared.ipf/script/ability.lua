@@ -1080,11 +1080,13 @@ function SCR_ABIL_DOPPELSOELDNER24_ACTIVE(self, ability)
     local addsta = 5
     self.MaxSta_BM = self.MaxSta_BM - addsta;
     SetExProp(ability, 'ADD_STA', addsta);
+    SetExProp(ability, 'ADD_CRITICAL', 3);
 end
 
 function SCR_ABIL_DOPPELSOELDNER24_INACTIVE(self, ability)
     local addsta = GetExProp(ability, 'ADD_STA');
     self.MaxSta_BM = self.MaxSta_BM + addsta;
+    SetExProp(ability, 'ADD_CRITICAL', 0);
 end
 
 function SCR_ABIL_MUSKETEER30_ACTIVE(self, ability)
@@ -1698,26 +1700,25 @@ function SCR_ABIL_Matross14_INACTIVE(self, ability)
 end
 
 function SCR_ABIL_Ranger38_ACTIVE(self, ability)
-    local skill = GetSkill(self, "Ranger_BounceShot");
+    local skill = GetSkill(self, "Ranger_BlazingArrow")
     if skill ~= nil then
-        local attribute = TryGetProp(skill, "Attribute");
+        local attribute = TryGetProp(skill, "Attribute")
 
-        skill.Attribute = "ICE";
+        skill.Attribute = "ICE"
 
         SetExProp_Str(self, "Ranger38_Attribute", attribute)
-        AddBuff(self, self, "BounceShot_Hidden_Buff");
     end
+
 end
 
 function SCR_ABIL_Ranger38_INACTIVE(self, ability)
-    local skill = GetSkill(self, "Ranger_BounceShot");
+    local skill = GetSkill(self, "Ranger_BlazingArrow")
     if skill ~= nil then
-        local attribute = GetExProp_Str(self, "Ranger38_Attribute");
+        local attribute = GetExProp_Str(self, "Ranger38_Attribute")
 
-        skill.Attribute = attribute;
-        
-        RemoveBuff(self, "BounceShot_Hidden_Buff");
+        skill.Attribute = attribute
     end
+
 end
 function SCR_ABIL_Fletcher34_ACTIVE(self, ability)
     local skill = GetSkill(self, "Fletcher_Singijeon");
@@ -2271,8 +2272,8 @@ function SCR_ABIL_Monk34_ACTIVE(self, ability)
         SetExProp(ability, "Monk34_ShootTime", shootTime)
         SetExProp(ability, "Monk34_CancelTime", cancelTime)
 
-        skill.ShootTime = 2000
-        skill.CancelTime = 2000
+        skill.ShootTime = 1000
+        skill.CancelTime = 550
 
         InvalidateSkill(self, skill.ClassName);
         SendSkillProperty(self, skill);
@@ -2627,6 +2628,14 @@ function SCR_ABIL_Mergen24_INACTIVE(self, ability)
     end
 end
 
+function SCR_ABIL_Mergen26_ACTIVE(self, ability)
+  SetExProp(self, "Ability_Mergen26", 1)
+end
+
+function SCR_ABIL_Mergen26_INACTIVE(self, ability)
+    SetExProp(self, "Ability_Mergen26", 0)
+end
+
 function SCR_ABIL_Hunter21_ACTIVE(self, ability)
     local skill = GetSkill(self, "Hunter_Coursing");
     if skill ~= nil then
@@ -2793,19 +2802,6 @@ function SCR_ABIL_Thaumaturge23_INACTIVE(self, ability)
     end
 end
 
-function SCR_ABIL_Ranger47_ACTIVE(self, ability)
-    local skill = GetSkill(self, "Ranger_SteadyAim");
-    if skill ~= nil then
-        RemoveBuff(self, "SteadyAim_Buff");
-    end
-end
-
-function SCR_ABIL_Ranger47_INACTIVE(self, ability)
-    local skill = GetSkill(self, "Ranger_SteadyAim");
-    if skill ~= nil then
-        RemoveBuff(self, "SteadyAim_Buff");
-    end
-end
 
 function SCR_ABIL_Templar11_ACTIVE(self, ability)
     local skill = GetSkill(self, "Templer_BuildForge");
@@ -3339,9 +3335,18 @@ function SCR_ABIL_ENMASCARADO_INACTIVE(self, ability)
     RemoveBuff(self, "Enmascarado_Buff");
 end
 
+function SCR_ABIL_Sadhu35_ACTIVE(self, ability)
+    RemoveBuff(self, "OOBE_Soulmaster_Buff");
+    RemoveBuff(self, "OOBE_Soulmaster_Sadhu35_Buff");
+end
+
+function SCR_ABIL_Sadhu35_INACTIVE(self, ability)
+    RemoveBuff(self, "OOBE_Soulmaster_Buff");
+    RemoveBuff(self, "OOBE_Soulmaster_Sadhu35_Buff");
+end
+
 function SCR_ABIL_SHIELDSTRIKE_ACTIVE(self, ability)
     SetExProp(self, "IS_SHIELDSTRIKE_ABIL", 1);
-    RemoveBuff(self, "HardShield_Buff");
 end
 
 function SCR_ABIL_SHIELDSTRIKE_INACTIVE(self, ability)
@@ -3385,4 +3390,60 @@ function SCR_ABIL_Luchador12_INACTIVE(self, ability)
         InvalidateSkill(self, skill.ClassName);
         SendSkillProperty(self, skill);
     end
+end
+
+function SCR_ABIL_Miko10_ACTIVE(self, ability)
+
+end
+
+function SCR_ABIL_Miko10_INACTIVE(self, ability)    
+    local bufflist = {'Honor_Buff', 'Wish_Buff', 'Safety_Buff', 'Healthy_Buff', 'Money_Buff', 'Omikuji_Durability_Buff', 'ITEM_VIBORA_Ema_Buff'}
+    for i = 1, #bufflist do
+        RemoveBuff(self, bufflist[i]);
+    end
+end
+
+function SCR_ABIL_Ranger48_ACTIVE(self, ability)
+    self.MaxSta_BM = self.MaxSta_BM + 20
+    SetExProp(self, "ABIL_Ranger48", 1)
+end
+
+function SCR_ABIL_Ranger48_INACTIVE(self, ability)
+    self.MaxSta_BM = self.MaxSta_BM - 20
+    SetExProp(self, "ABIL_Ranger48", 0)
+end
+
+function SCR_ABIL_Hwarang1_ACTIVE(self, ability)
+    local rate = TryGetProp(ability, "Level", 1) * 0.04
+    self.HR_RATE_BM = self.HR_RATE_BM + rate
+    SetExProp(ability, 'SCR_ABIL_Hwarang1', rate)
+end
+
+function SCR_ABIL_Hwarang1_INACTIVE(self, ability)
+    local rate = GetExProp(ability, 'SCR_ABIL_Hwarang1')
+    self.HR_RATE_BM = self.HR_RATE_BM - rate
+end
+
+function SCR_ABIL_Enchanter3_ACTIVE(self, ability)
+    AddBuff(self, self, "EnchantLightning_Buff");
+end
+
+function SCR_ABIL_Enchanter3_INACTIVE(self, ability)
+    RemoveBuff(self, "EnchantLightning_Buff");
+end
+
+function SCR_ABIL_Archer39_ACTIVE(self, ability)
+    RemoveBuff(self, "Concentration_Buff");
+end
+
+function SCR_ABIL_Archer39_INACTIVE(self, ability)
+    RemoveBuff(self, "Concentration_Buff");
+end
+
+function SCR_ABIL_Doppelsoeldner37_ACTIVE(self, ability)
+    RemoveBuff(self, "DeedsOfValor");
+end
+
+function SCR_ABIL_Doppelsoeldner37_INACTIVE(self, ability)
+    RemoveBuff(self, "DeedsOfValor");
 end

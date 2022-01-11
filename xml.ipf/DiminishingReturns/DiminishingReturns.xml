@@ -108,6 +108,7 @@
 			<Class Name="Lv99_blind" BuffID="9052" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="Caracole_Silence_Debuff" BuffID="1080" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="VIBORA_Sawblade_Shield_Slow_Debuff" BuffID="2398" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
+			<Class Name="Panic_Debuff" BuffID="2225" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 		</Category>
 	</Category>
 	<!-- ############################################################################################################################################################### -->

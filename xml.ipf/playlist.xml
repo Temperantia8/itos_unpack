@@ -1,5 +1,5 @@
 <!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by sevin (IMCGAMES) -->
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (IMCGames Co., Ltd) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <PlayList>
 	<BGM PlayListName="Login_Barrack" Volume="90" FileName1="tos_Kevin_TOS_Carol_2017.mp3" FileName2="tos_Tree_of_Savior_Piano.mp3" FileName3="tos_SFA_Openup_Po10.mp3"/>
 	<BGM PlayListName="NoMusic" Volume="90" FileName1="tos_mute_1minute.mp3"/>
@@ -124,6 +124,8 @@
 	<BGM PlayListName="master_Psychokino" Volume="130" FileName1="tos_SFA_Psychokino_Rondo_Miserabile(short).mp3"/>
 	<BGM PlayListName="master_Arquebusier" Volume="130" FileName1="tos_Initium_Arquebusier_Lyudmila(short).mp3"/>
 	<BGM PlayListName="master_Luchador" Volume="130" FileName1="tos_SFA_Polka_of_Wilderness.mp3"/>
+	<BGM PlayListName="master_Sadhu_re" Volume="130" FileName1="tos_Initium_Aoba_inst.mp3"/>
+	<BGM PlayListName="master_Hwarang" Volume="130" FileName1="tos_SFA_Rest_in_Peace.mp3"/>
 	<BGM PlayListName="NPC_CHRISTMASTREE01" Volume="120" FileName1="Orgel_No_Matter_Christmas.mp3"/>
 	<BGM PlayListName="NPC_CHRISTMASTREE02" Volume="120" FileName1="Orgel_Dont_Cry.mp3"/>
 	<BGM PlayListName="raid_velcoffer" Volume="120" FileName1="tos_Drogo_Uno_Impetu.mp3" FileName2="tos_Drogo_Velvet_Penetration.mp3" FileName3="tos_Gaudium_Wrong_Theory.mp3"/>

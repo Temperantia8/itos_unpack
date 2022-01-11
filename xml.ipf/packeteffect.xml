@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by asd (IMCGames Co., Ltd) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <packeteffects>
     <Category ID="163">
         <Effect Name="F_archer_bodkinpoint_hit_explosion#Dummy001"/>
@@ -429,7 +429,115 @@
         <Effect Name="F_spread_in030_air"/>
         <Effect Name="F_spread_in030_ice4"/>
         <Effect Name="F_explosion98_rize_4"/>
+        <Effect Name="F_hit009_ice"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_1"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_2"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_3"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_4"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_5"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_6"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_7"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_8"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_9"/>
+        <Effect Name="Cryomancer_IceBolt_Effect_Pad_10"/>
+        <Effect Name="I_force003_ice"/>
+        <Effect Name="I_wizard_compulsionlink_force_pink"/>
+        <Effect Name="Keraunos_OverLoad_Pad"/>
+        <Effect Name="Keraunos_LightningSpear_Pad"/>
+        <Effect Name="F_wizard_refrigerwaves_shot_ground1"/>
+        <Effect Name="I_wizard_OverReinforce_shot_ground"/>
+        <Effect Name="I_scout_cutlink_shot_rize2Blue"/>
+        <Effect Name="F_archer_Matross_CrouchingStrike_rize"/>
+        <Effect Name="F_rize001_green_blue"/>
+        <Effect Name="F_rize017"/>
+        <Effect Name="F_rize019"/>
+        <Effect Name="F_rize021"/>
+        <Effect Name="F_warrior_punish_cast_rize"/>
+        <Effect Name="F_rize015_1"/>
+        <Effect Name="E_rize001"/>
+        <Effect Name="Keraunos_Electrode_Effect_Pad"/>
         <Effect Name="master_Luchador"/>
+        <Effect Name="I_force095_trail_slash6"/>
+        <Effect Name="E_warrior_f_BubbleStick"/>
+        <Effect Name="E_warrior_Embowel_shot"/>
+        <Effect Name="E_soul"/>
+        <Effect Name="E_PC_wateringcan"/>
+        <Effect Name="E_PC_snowflower"/>
+        <Effect Name="E_cleric_rada_ground"/>
+        <Effect Name="F_cleric_rada_ground_red"/>
+        <Effect Name="E_cleric_rada_ground_red"/>
+        <Effect Name="E_cleric_resurrection_ground_red"/>
+        <Effect Name="F_cleric_patati_explosion"/>
+        <Effect Name="skl_eff_yuchae_start_2"/>
+        <Effect Name="skl_eff_yuchae_end_2"/>
+        <Effect Name="MYTHIC_STARTOWER_MINI_AUTO_SOLO"/>
+        <Effect Name="MYTHIC_CASTLE_MINI_AUTO_SOLO"/>
+        <Effect Name="MYTHIC_FIRETOWER_MINI_AUTO_SOLO"/>
+        <Effect Name="ep14_castleraid_1_pad1"/>
+        <Effect Name="ep14_castleraid_1_pad2"/>
+        <Effect Name="I_dash014_blue_short2_thin"/>
+        <Effect Name="I_dash021_twirl_3"/>
+        <Effect Name="I_force015_violet#Dummy_L_HAND"/>
+        <Effect Name="I_wizard_necromancer_force#Bip01 HeadNub"/>
+        <Effect Name="F_wizard_necromancer_finish"/>
+        <Effect Name="I_force095_trail_slash3"/>
+        <Effect Name="I_arrow009_3"/>
+        <Effect Name="I_force095_trail_slash4_blue_loop"/>
+        <Effect Name="F_sys_target_sector##0.2"/>
+        <Effect Name="F_sys_target_boss1_orange##0.2"/>
+        <Effect Name="F_sys_target_boss1_orange##0.2"/>
+        <Effect Name="I_orkan_antler_burstup_mash"/>
+        <Effect Name="F_cleric_HandKnife_cast_light"/>
+        <Effect Name="F_sys_target_boss1##1.5"/>
+        <Effect Name="F_sys_target_boss1##1.5"/>
+        <Effect Name="F_sys_target_boss##5"/>
+        <Effect Name="EP14_1_FCASTLE1_MQ_7_MGAME"/>
+        <Effect Name="I_swordtrail017_white2"/>
+        <Effect Name="I_swordtrail033_blue"/>
+        <Effect Name="EP14_1_FCASTLE2_MQ_1_MGAME"/>
+        <Effect Name="master_Sadhu_re"/>
+        <Effect Name="I_question_arrow_mash_ride"/>
+        <Effect Name="EP14_1_FCASTLE2_MQ_7_MGAME"/>
+        <Effect Name="I_arrow009_spiral"/>
+        <Effect Name="I_arrow008#Dummy_R_HAND"/>
+        <Effect Name="I_arrow008#Dummy_R_HAND"/>
+        <Effect Name="I_arrow008#Bip01 R Finger11"/>
+        <Effect Name="I_arrow008#Bip01 R Finger11"/>
+        <Effect Name="I_smoke001_dark##0.5"/>
+        <Effect Name="I_smoke001_dark##0.2"/>
+        <Effect Name="I_smoke001_dark##0.2"/>
+        <Effect Name="EP14_1_FCASTLE3_MQ_5_MGAME"/>
+        <Effect Name="I_arrow008##0.4"/>
+        <Effect Name="I_arrow008##0.2"/>
+        <Effect Name="F_spread_in053_dark"/>
+        <Effect Name="F_explosion140_dark"/>
+        <Effect Name="EP14_1_FCASTLE4_MQ_1_MGAME"/>
+        <Effect Name="ATK3"/>
+        <Effect Name="EP14_1_FCASTLE4_MQ_5_MGAME"/>
+        <Effect Name="skl_eff_forecast_shot"/>
+        <Effect Name="skl_eff_explosion"/>
+        <Effect Name="RUNE_RAID"/>
+        <Effect Name="public_Throw"/>
+        <Effect Name="F_ground088_smoke"/>
+        <Effect Name="EARRING_RAID"/>
+        <Effect Name="F_smoke017_violet_loop##3"/>
+        <Effect Name="F_smoke017_violet_loop##300"/>
+        <Effect Name="Goddess_Raid_Delmore_Extreme"/>
+        <Effect Name="Goddess_Raid_Delmore_Solo"/>
+        <Effect Name="Goddess_Raid_Delmore_Party"/>
+        <Effect Name="Goddess_Raid_Delmore_Auto"/>
+        <Effect Name="I_force018_trail_rize_red_800"/>
+        <Effect Name="F_sys_target_boss##0.2"/>
+        <Effect Name="I_force110_ice"/>
+        <Effect Name="I_force110_ice#Dummy001"/>
+        <Effect Name="I_force110_ice#None"/>
+        <Effect Name="I_force110_ice#Dummy_root"/>
+        <Effect Name="I_force029_red#Dummy_root"/>
+        <Effect Name="I_force018_trail_earth_long_stone2#Bone_catapult04"/>
+        <Effect Name="DelmoreCastleGate_SKL7_Pad1"/>
+        <Effect Name="F_fire044_7"/>
+		<Effect Name="E_Crouchigstrike"/>
+		<Effect Name="F_ground079_smoke4"/>
     </Category>
     <Category ID="132">
         <Effect Name="I_arrow005_mash2_red#Dummy_back_arrow04"/>
@@ -536,6 +644,21 @@
         <Effect Name="F_ground160_poison"/>
         <Effect Name="Archer_JincanGu_Vibora"/>
         <Effect Name="I_archer_wugu2_force_mash"/>
+        <Effect Name="F_pattern025_loop"/>
+        <Effect Name="I_wave002_mesh"/>
+        <Effect Name="Sadhu_Anila_Effect_Pad"/>
+        <Effect Name="I_wave002_mesh_red"/>
+        <Effect Name="Keraunos_MagneticField_Pad"/>
+        <Effect Name="Sadhu_Anila_Vibora_Effect_Pad"/>
+        <Effect Name="VIBORA_ArousalCharm_Fire_Pad"/>
+        <Effect Name="Daoshi_CreepingDeath_vibora"/>
+        <Effect Name="F_wizard_maze_cast_ground"/>
+        <Effect Name="F_ground177_blue"/>
+        <Effect Name="F_buff_basic010_mint"/>
+        <Effect Name="F_burstup047_mint"/>
+        <Effect Name="F_explosion086_mint"/>
+        <Effect Name="F_spread_in014_circle_mint"/>
+        <Effect Name="F_spread_out026_mint"/>
     </Category>
     <Category ID="70">
         <Effect Name="EVENT_2001_NEWYEAR_INIT_PAD"/>
@@ -1302,6 +1425,7 @@
         <Effect Name="t_pvp_2"/>
         <Effect Name="TeamBattleLeague5vs5"/>
         <Effect Name="battlefield5vs5"/>
+        <Effect Name="master_Hwarang"/>
     </Category>
     <Category ID="144">
         <Effect Name="F_pc_CardBook_ground_dark"/>
@@ -1696,6 +1820,41 @@
         <Effect Name="I_skillrange_donut50"/>
         <Effect Name="I_skillrange_donut50##0.5"/>
         <Effect Name="I_spin006##0.7"/>
+        <Effect Name="skl_PyeonJeon_cast"/>
+        <Effect Name="skl_PyeonJeon_move"/>
+        <Effect Name="Hwarang_DoNotRetreat"/>
+        <Effect Name="Hwarang_DoNotRetreat_Arts"/>
+        <Effect Name="I_archer_somersaults_arrow"/>
+        <Effect Name="E_archer_somersaults"/>
+        <Effect Name="I_arrow_onlytrail#Dummy_Force"/>
+        <Effect Name="F_hit003_light_dark_blue_pyeonjeon_charge_1"/>
+        <Effect Name="F_hit003_light_dark_blue_pyeonjeon_charge_2"/>
+        <Effect Name="skl_eff_pyeonjeon_cast"/>
+        <Effect Name="skl_eff_pyeonjeon_shot"/>
+        <Effect Name="skl_eff_whitehornbow_shot"/>
+        <Effect Name="skl_eff_whitehornbow_cast"/>
+        <Effect Name="skl_eff_blackhornbow_shot"/>
+        <Effect Name="skl_eff_blackhornbow_cast"/>
+        <Effect Name="skl_eff_brotherhood_shot"/>
+        <Effect Name="skl_eff_donotretreat_shot"/>
+        <Effect Name="skl_eff_donotretreat_arts_shot"/>
+        <Effect Name="voice_archer_f_pyeonjeon_cast"/>
+        <Effect Name="voice_archer_m_pyeonjeon_cast"/>
+        <Effect Name="voice_archer_f_pyeonjeon_shot"/>
+        <Effect Name="voice_archer_m_pyeonjeon_shot"/>
+        <Effect Name="voice_archer_f_blackhornbow_shot"/>
+        <Effect Name="voice_archer_m_blackhornbow_shot"/>
+        <Effect Name="voice_archer_f_whitehornbow_shot"/>
+        <Effect Name="voice_archer_m_whitehornbow_shot"/>
+        <Effect Name="voice_archer_f_brotherhood_shot"/>
+        <Effect Name="voice_archer_m_brotherhood_shot"/>
+        <Effect Name="voice_archer_f_donotretreat_shot"/>
+        <Effect Name="voice_archer_m_donotretreat_shot"/>
+        <Effect Name="voice_archer_f_arrowdancing_shot"/>
+        <Effect Name="voice_archer_m_arrowdancing_shot"/>
+		<Effect Name="F_ground221_light_loop_violet_blue"/>
+		<Effect Name="E_archer_Flareshot_arrow2"/>
+		<Effect Name="E_archer_Flareshot_arrow2#Dummy_Force"/>
     </Category>
     <Category ID="214">
         <Effect Name="warrior_f_rap_skl_Muleta_loop"/>
@@ -1945,6 +2104,7 @@
         <Effect Name="KEPA_EVENT"/>
     </Category>
     <Category ID="179">
+        <Effect Name="F_light175_red"/>
         <Effect Name="I_force023_fire#Bip01 L Hand"/>
         <Effect Name="I_force023_fire#Bip01 R Hand"/>
         <Effect Name="boss_firewall_highlevel"/>
@@ -2051,6 +2211,7 @@
         <Effect Name="F_rize020"/>
         <Effect Name="F_hit001_light_dark"/>
         <Effect Name="F_hit009_rize_red"/>
+        <Effect Name="F_hit009_rize_red2"/>
         <Effect Name="F_hit009_rize_red#Bip001 R Finger21"/>
         <Effect Name="F_hit009_rize_red#Bip001 L Hand"/>
         <Effect Name="None##0.8"/>
@@ -2864,6 +3025,7 @@
         <Effect Name="SKL_BAZOOCA_ATK"/>
         <Effect Name="SKL_ARMOR_MAINTAIN_HAMMERING"/>
         <Effect Name="SKL_ASSISTATTACK_DAGGER"/>
+        <Effect Name="Keraunos_MagneticField_Keraunos8_Pad"/>
     </Category>
     <Category ID="197">
         <Effect Name="F_burstup030_fire1"/>
@@ -3261,14 +3423,27 @@
         <Effect Name="F_ground131_dark_green"/>
         <Effect Name="F_explosion062_liquid"/>
         <Effect Name="F_explosion062_liquid_green"/>
+        <Effect Name="battlefield5vs5"/>
         <Effect Name="SKL_LUCHADOR_MARTINETE"/>
         <Effect Name="Luchador_Golpear"/>
+        <Effect Name="shootpad_PyeonJeon"/>
         <Effect Name="skl_Chocar_mask_off"/>
         <Effect Name="skl_Chop1"/>
         <Effect Name="skl_Chop2"/>
         <Effect Name="skl_Martinete"/>
         <Effect Name="skl_Ceremonia"/>
+        <Effect Name="skl_DragonFall_cast"/>
         <Effect Name="SKL_LUCHADOR_GOLPEAR_ABIL_LOOP"/>
+        <Effect Name="skl_PyeonJeon_loop"/>
+        <Effect Name="I_force017_trail2_dark#Bip001 R Finger2Nub"/>
+        <Effect Name="I_dash021_twirl_2#Bip001 R Finger2Nub"/>
+        <Effect Name="I_dash021_twirl_3#Bip001 R Finger2Nub"/>
+        <Effect Name="I_dash021_twirl_4#Bip001 R Finger2Nub"/>
+        <Effect Name="I_Sadhu_Tanoti_Chain001"/>
+        <Effect Name="F_spread_out026_blue2"/>
+        <Effect Name="F_spread_out026_mint"/>
+        <Effect Name="E_cleric_tanoti001"/>
+        <Effect Name="F_explosion138_red"/>
     </Category>
     <Category ID="197">
         <Effect Name="F_burstup030_fire1"/>
@@ -3412,8 +3587,8 @@
         <Effect Name="hit_twinklestar"/>
         <Effect Name="skl_eff_stormdust_loop"/>
         <Effect Name="skl_eff_elementalist_elementalessence_cast"/>
-    <Effect Name="voice_luchador_m_golpear_huracan"/>
-    <Effect Name="MYTHIC_STARTOWER_MINI_AUTO_SOLO"/>
+        <Effect Name="voice_luchador_m_golpear_huracan"/>
+        <Effect Name="MYTHIC_STARTOWER_MINI_AUTO_SOLO"/>
         <Effect Name="MYTHIC_CASTLE_MINI_AUTO_SOLO"/>
         <Effect Name="MYTHIC_FIRETOWER_MINI_AUTO_SOLO"/>
     </Category>
@@ -3555,6 +3730,7 @@
         <Effect Name="voice_wiz_f_stan_shot"/>
         <Effect Name="Matador_CorridaFinale_Hidden"/>
         <Effect Name="Sage_DimensionCompression_Abil"/>
+        <Effect Name="F_pc_item_ep13cybersoldier01_pistol_light_red"/>
         <Effect Name="F_drop_leaf004_red"/>
         <Effect Name="F_hit009_rize_blue3"/>
         <Effect Name="F_ground009_3"/>
@@ -3815,6 +3991,7 @@
         <Effect Name="F_spread_out004_dark2"/>
         <Effect Name="MAPLE_25_2_SQ_90_MINI"/>
         <Effect Name="I_smoke013_dark5_green"/>
+        <Effect Name="F_hit003_light_dark_blue1"/>
         <Effect Name="F_hit003_light_dark_blue"/>
         <Effect Name="event_sit_idle"/>
         <Effect Name="I_light017_red"/>
@@ -4420,6 +4597,31 @@
         <Effect Name="Oracle_Foretell_Magic"/>
         <Effect Name="Inquisitor_BreakingWheel"/>
         <Effect Name="Oracle_Foretell"/>
+        <Effect Name="Fletcher_CatenaChainArrow_PAD"/>
+        <Effect Name="F_hit003_light_violet"/>
+        <Effect Name="I_force018_trail_chain#Dummy_Force"/>
+        <Effect Name="I_arrow018_mash#Dummy_arrow"/>
+        <Effect Name="I_arrow018_mash#Dummy_q_Force"/>
+        <Effect Name="F_archer_shot_light_red#Dummy_arrow_effect"/>
+        <Effect Name="F_archer_shot_light_red"/>
+        <Effect Name="F_archer_shot_light_red3"/>
+        <Effect Name="I_arrow009_red#Dummy_arrow_effect"/>
+        <Effect Name="I_arrow009_yellow#Dummy_arrow"/>
+        <Effect Name="archer_cross_arrow_finish_hit"/>
+        <Effect Name="F_archer_shot_light_yellow#Dummy_arrow"/>
+        <Effect Name="F_archer_FlareShot_shot_fire4"/>
+        <Effect Name="E_archer_Flareshot_arrow_violet#Dummy_arrow"/>
+        <Effect Name="I_arrow009_yellow#Dummy_q_Force"/>
+        <Effect Name="F_archer_shot_light_yellow#Dummy_q_Force"/>
+        <Effect Name="E_archer_Flareshot_arrow_violet#Dummy_q_Force"/>
+        <Effect Name="I_arrow009_red#Dummy_arrow"/>
+        <Effect Name="I_arrow009_red#Dummy_q_Force"/>
+        <Effect Name="SKILL_SINGIJEON"/>
+        <Effect Name="I_archer_dividedarrow_force_fire#Dummy_arrow"/>
+        <Effect Name="I_archer_dividedarrow_force_fire#Dummy_q_Force"/>
+        <Effect Name="F_archer_shot_light_orange"/>
+        <Effect Name="I_arrow003_blue#Dummy_arrow"/>
+        <Effect Name="I_arrow003_blue#Dummy_q_Force"/>
     </Category>
     <Category ID="59">
         <Effect Name="F_hit_star"/>
@@ -4631,6 +4833,9 @@
         <Effect Name="battlefield5vs5"/>
         <Effect Name="300"/>
         <Effect Name="skl_OOBE_loop"/>
+        <Effect Name="MYTHIC_FIRETOWER_MINI_AUTO_SOLO"/>
+        <Effect Name="MYTHIC_CASTLE_MINI_AUTO_SOLO"/>
+        <Effect Name="MYTHIC_STARTOWER_MINI_AUTO_SOLO"/>
     </Category>
     <Category ID="60">
         <Effect Name="SETPOS"/>
@@ -6744,14 +6949,10 @@
         <Effect Name="I_complete_kruvina_dead"/>
         <Effect Name="I_hit003_red"/>
         <Effect Name="I_buff_002_red1"/>
-        <Effect Name="skl_eff_jukebox_loop"/>
-        <Effect Name="skl_eff_toy_bubble_pipe"/>
-        <Effect Name="skl_eff_mon_water_jump"/>
-        <Effect Name="ridepet_nautilussnail_born"/>
-        <Effect Name="ridepet_heliogriffin_born"/>
-        <Effect Name="ridepet_ashlion_born"/>
-        <Effect Name="ridepet_kogibird_born"/>
-        <Effect Name="ridepet_polarreindeer_born"/>
+        <Effect Name="Goddess_Raid_Delmore_Solo"/>
+        <Effect Name="Goddess_Raid_Delmore_Party"/>
+        <Effect Name="Goddess_Raid_Delmore_Extreme"/>
+        <Effect Name="Goddess_Raid_Delmore_Auto"/>
     </Category>
     <Category ID="28">
         <Effect Name="F_explosion006_green#Dummy_skl2_shot"/>
@@ -7355,6 +7556,7 @@
         <Effect Name="Mergen_ArrowRain2"/>
         <Effect Name="I_archer_ArrowRain_hit2_mash"/>
         <Effect Name="I_archer_FocusFire_arrow_trail"/>
+        <Effect Name="I_archer_FocusFire_arrow_trailonly"/>
         <Effect Name="I_archer_ArrowRain_trail"/>
         <Effect Name="I_archer_ArrowRain_hit3_mash"/>
         <Effect Name="I_cleric_DarkSight_force"/>
@@ -7831,6 +8033,7 @@
         <Effect Name="Guild_RAID_BORUTOS_KAPAS_1"/>
         <Effect Name="F_hit024_green_poison"/>
         <Effect Name="F_archer_snipe_hit"/>
+        <Effect Name="F_cleric_TwistOfFate_hit"/>
         <Effect Name="boss_Moringponia_follow"/>
         <Effect Name="I_boruta_skl2_force#Dummy_effect_wepon"/>
         <Effect Name="LEGEND_RAID_MORINGPONIA"/>
@@ -7959,6 +8162,9 @@
         <Effect Name="F_smoke021_green2"/>
         <Effect Name="skl12_spear"/>
         <Effect Name="I_stone005_explosion_mash_force_dark_loop##0.3"/>
+        <Effect Name="Sadhu_Prakriti_Pad"/>
+        <Effect Name="Sadhu_Moksha_Pad"/>
+        <Effect Name="F_smoke125"/>
     </Category>
     <Category ID="27">
         <Effect Name="SAPPER_TRAP_Sapper_BroomTrap"/>
@@ -8629,6 +8835,8 @@
         <Effect Name="LEGEND_RAID_MORINGPONIA_HARD"/>
         <Effect Name="Disnai_Svirti_PAD_ENEMY"/>
         <Effect Name="Disnai_Svirti_PAD_PARTY"/>
+        <Effect Name="RUNE_RAID"/>
+        <Effect Name="EARRING_RAID"/>
     </Category>
     <Category ID="177">
         <Effect Name="KATYN10_SECTOR2_OWL01_MINI"/>
@@ -10299,6 +10507,22 @@
         <Effect Name="Lose"/>
         <Effect Name="Win"/>
         <Effect Name="Draw"/>
+        <Effect Name="F_burstup059_blue"/>
+        <Effect Name="F_spin046_blue"/>
+        <Effect Name="hitme_box_open_effect"/>
+        <Effect Name="skl_fgt_spearlunge"/>
+        <Effect Name="WIDE_AREA_RAID"/>
+        <Effect Name="RUNE_RAID"/>
+        <Effect Name="EARRING_RAID"/>
+        <Effect Name="Goddess_Raid_Delmore_Solo"/>
+        <Effect Name="Goddess_Raid_Delmore_Auto"/>
+        <Effect Name="Goddess_Raid_Delmore_Party"/>
+        <Effect Name="Goddess_Raid_Delmore_Extreme"/>
+        <Effect Name="DelmoreCastleGate_Manager"/>
+        <Effect Name="RevivalPaulius_Manager"/>
+        <Effect Name="Phase_Manager"/>
+        <Effect Name="DelmoreCastleGate"/>
+        <Effect Name="RevivalPaulius"/>
     </Category>
     <Category ID="19">
         <Effect Name="I_fallen_statue_atk002_mash"/>
@@ -25353,9 +25577,20 @@
         <Effect Name="weekly_boss_quipmage_forcePad"/>
         <Effect Name="F_explosion125_mint"/>
         <Effect Name="I_force019_blue#Dummy_effect_wepon"/>
-        <Effect Name="I_force019_blue#Dummy_effect_wepon"/>
+        <Effect Name="F_hit009_rize_red2_attach"/>
         <Effect Name="I_wizard_Prominence_force_fire2#Dummy_effect_wepon"/>
         <Effect Name="I_force018_trail_fire#Dummy_effect_wepon"/>
-        <Effect Name="I_force018_trail_fire#Dummy_effect_wepon"/>
+        <Effect Name="I_light020_red"/>
+        <Effect Name="I_force015_violet#Bip01 L Finger2"/>
+        <Effect Name="F_pattern024_loop_Red"/>
+        <Effect Name="F_pattern024_eye_loop_Red"/>
+        <Effect Name="F_spread_out017_circle_red"/>
+        <Effect Name="SJUMP"/>
+        <Effect Name="Goddess_Raid_Delmore_Party"/>
+        <Effect Name="Goddess_Raid_Delmore_Extreme"/>
+        <Effect Name="Goddess_Raid_Delmore_Solo"/>
+        <Effect Name="Goddess_Raid_Delmore_Auto"/>
+        <Effect Name="I_laser010_violet#Dummy_bead_black"/>
+        <Effect Name="I_laser010_violet#Dummy_bead_black"/>
     </Category>
 </packeteffects>

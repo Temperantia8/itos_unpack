@@ -1868,41 +1868,41 @@
 		</Layer>
 	</ItemList>
 	<ItemList ItemClassName="wing_summer_wave">
-		<Layer effect="F_bubble007_mint2_1" TargetNode="wing_Dummy003" scale="0.3" offset="0;0">
+		<Layer effect="F_bubble007_mint2_1" TargetNode="wing_Dummy003" scale="0.6" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
-					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
 					<Sound SoundName="None" SoundVolume="1"/>
 				</Property>
 			</Creation>
 		</Layer>
-		<Layer effect="F_bubble007_mint2_1" TargetNode="wing_Dummy004" scale="0.3" offset="0;0">
+		<Layer effect="F_bubble007_mint2_1" TargetNode="wing_Dummy004" scale="0.6" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
-					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
 					<Sound SoundName="None" SoundVolume="1"/>
 				</Property>
 			</Creation>
 		</Layer>
-		<Layer effect="F_bubble007_mint3" TargetNode="wing_Dummy001" scale="0.3" offset="0;0">
+		<Layer effect="F_bubble007_mint3" TargetNode="wing_Dummy001" scale="0.75" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
-					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
 					<Sound SoundName="None" SoundVolume="1"/>
 				</Property>
 			</Creation>
 		</Layer>
-		<Layer effect="F_bubble007_mint3" TargetNode="wing_Dummy002" scale="0.3" offset="0;0">
+		<Layer effect="F_bubble007_mint3" TargetNode="wing_Dummy002" scale="0.75" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
-					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
 					<Sound SoundName="None" SoundVolume="1"/>
 				</Property>
 			</Creation>
 		</Layer>
 	</ItemList>
 	<ItemList ItemClassName="wing_ep12honoredrose01">
-		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_r001" scale="1.0" offset="0;0">
+		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_r001" scale="1.35" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
@@ -1910,7 +1910,7 @@
 				</Property>
 			</Creation>
 		</Layer>
-		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_r002" scale="0.6" offset="0;0">
+		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_r002" scale="0.95" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
@@ -1918,7 +1918,7 @@
 				</Property>
 			</Creation>
 		</Layer>
-		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_l001" scale="1.0" offset="0;0">
+		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_l001" scale="1.35" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
@@ -1926,7 +1926,7 @@
 				</Property>
 			</Creation>
 		</Layer>
-		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_l002" scale="0.6" offset="0;0">
+		<Layer effect="F_light015_violet_loop3" TargetNode="Dummy_l002" scale="0.95" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>

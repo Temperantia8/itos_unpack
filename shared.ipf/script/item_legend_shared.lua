@@ -206,6 +206,7 @@ function GET_OPTION_EQUIP_NEED_SILVER_COUNT(item)
     return item.UseLv * 30000;
 end
 
+-- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function OVERRIDE_INHERITANCE_PROPERTY(item)
     if item == nil or (item.InheritanceItemName == 'None' and item.InheritanceRandomItemName == 'None') then
         return;
@@ -220,6 +221,13 @@ function OVERRIDE_INHERITANCE_PROPERTY(item)
         end
     end
 
+    local except_list = { MSTA = true }
+
+    local growth_rate = 1
+    if IS_GROWTH_ITEM(item) == true then
+        growth_rate = GET_ITEM_GROWTH_RATE(item)
+    end
+
     local basicTooltipPropList = StringSplit(item.BasicTooltipProp, ';');
     local basicTooltipPropTable = {};
     for i = 1, #basicTooltipPropList do
@@ -230,7 +238,16 @@ function OVERRIDE_INHERITANCE_PROPERTY(item)
     for i = 1, #commonPropList do
         local propName = commonPropList[i];
         if basicTooltipPropTable[propName] == nil then
-            item[propName] = item[propName] + inheritanceItem[propName];
+            local inheritValue = inheritanceItem[propName];
+            if except_list[propName] ~= true and growth_rate > 0 and growth_rate < 1 then
+                local growth_value = math.floor(inheritValue * growth_rate);
+                if inheritValue > 0 and growth_value <= 0 then
+                    -- 해당 값이 존재하면 성장 비율 계산의 최소치 보정을 해준다
+                    growth_value = 1;
+                end
+                inheritValue = growth_value;
+            end
+            item[propName] = item[propName] + inheritValue;
         end
     end
 end

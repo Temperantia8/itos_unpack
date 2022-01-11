@@ -96,4 +96,40 @@
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="Hwarang_DoNotRetreat_Buff">
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SCR_SKILL_USE_Hwarang_DoNotRetreat_Arts" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="Hwarang_DoNotRetreat_Arts_Buff">
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SCR_SKILL_USE_Hwarang_DoNotRetreat_Arts" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GroovingMuzzle_UseStack_Buff">
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SCR_Musketeer_GroovingMuzzle_CONSUME_STACK" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="HideShot_Buff">
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SCR_CHECK_TigerHunter_HideShot" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 </SpcItemList>

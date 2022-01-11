@@ -20,9 +20,9 @@ function IS_ENCHANT_ITEM(item)
 	   or item.ClassName == "Event_Enchantchip_3" or item.ClassName == "Event_Enchantchip_4" or item.ClassName == "Premium_Enchantchip14_NoStack"
 	   or item.ClassName == "Event_Enchantchip_5" or item.ClassName == "Event_Enchantchip_6" or item.ClassName == "Event_Enchantchip_7"
 	   or item.ClassName == "Event_Enchantchip_200" or item.ClassName == "Event_Enchantchip_201" or item.ClassName == "Event_Enchantchip_8" 
-	   or item.ClassName == "Event_Enchantchip_202" or item.ClassName == "Event_Enchantchip_9" or item.ClassName == "Event_Enchantchip_10" or item.ClassName == "Event_Enchantchip_11" or item.ClassName == "Event_Enchantchip_13"
-	   or item.ClassName == "Event_Enchantchip_16" or item.ClassName == "Event_Enchantchip_17" or item.ClassName == "Event_Enchantchip_18" or item.ClassName == "Event_Enchantchip_205" or item.ClassName == "Event_Enchantchip_25" or item.ClassName == "Event_Enchantchip_206" or item.ClassName == "Event_Enchantchip_33"
-	   or item.ClassName == "Premium_Enchantchip_NoTrade" then
+           or item.ClassName == "Event_Enchantchip_202" or item.ClassName == "Event_Enchantchip_9" or item.ClassName == "Event_Enchantchip_10" or item.ClassName == "Event_Enchantchip_11" or item.ClassName == "Event_Enchantchip_13"
+           or item.ClassName == "Event_Enchantchip_16" or item.ClassName == "Event_Enchantchip_17" or item.ClassName == "Event_Enchantchip_18" or item.ClassName == "Event_Enchantchip_205" or item.ClassName == "Event_Enchantchip_25" or item.ClassName == "Event_Enchantchip_206" or item.ClassName == "Event_Enchantchip_33"
+           or item.ClassName == "Event_Enchantchip_39" or item.ClassName == "Premium_Enchantchip_NoTrade" then
 		return 1;
 	end
 

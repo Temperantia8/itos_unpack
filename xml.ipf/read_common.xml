@@ -355,4 +355,10 @@
 	<ReadXml Name="screen_effect_list"/>
 	<ReadXml Name="relic_gem_table"/>
 	<ReadXml Name="contents_alert_table"/>
+	<ReadXml Name="tpitemCustomResetTime"/>
+	<ReadXml Name="achieve_info"/>
+	<ReadXml Name="xp_achieve"/>
+	<ReadXml Name="achieve_exchange_event"/>
+	<ReadXml Name="achieve_exchange_event_item"/>
+	<ReadXml Name="achieve_level_reward"/>
 </Category>

@@ -216,6 +216,60 @@ function GET_RANDOM_OPTION_VALUE_VER2(item, option_name)
         return min, max
     end
 end
+
+function GET_RANDOM_OPTION_VALUE_BY_LEVEL(item, lv, option_name)
+    local equipGroup = TryGetProp(item, 'EquipGroup', 'None');
+
+    if equipGroup == 'Weapon' or equipGroup == 'THWeapon' or equipGroup == 'SubWeapon' then
+        equipGroup = 'Weapon'
+    elseif equipGroup == 'SHIRT' or equipGroup == 'PANTS' or equipGroup == 'BOOTS' or equipGroup == 'GLOVES' then
+        equipGroup = 'SHIRT'
+    end
+
+    if g_random_option_range_table[lv] == nil then
+        return nil, nil
+    elseif g_random_option_range_table[lv][option_name] == nil then
+        return nil, nil
+    elseif g_random_option_range_table[lv][option_name][equipGroup] == nil then
+        return nil, nil
+    else
+        local item_grade = TryGetProp(item, 'ItemGrade', 1)
+        local grade_ratio = get_item_grade_ratio(item_grade)  -- 아이템 등급에 따른 min 비율
+        local max = g_random_option_range_table[lv][option_name][equipGroup][2]
+        local min = math.ceil(max * grade_ratio)
+        return min, max
+    end
+end
+
+icor_clsType_list = {}
+icor_clsType_list['Shirt'] = 'TOP04_157'
+icor_clsType_list['Pants'] = 'LEG04_157'
+icor_clsType_list['Boots'] = 'FOOT04_157'
+icor_clsType_list['Gloves'] = 'HAND04_159'
+icor_clsType_list['Sword'] = 'SWD04_125'
+icor_clsType_list['THSword'] = 'TSW04_125'
+icor_clsType_list['Staff'] = 'STF04_126'
+icor_clsType_list['THBow'] = 'TBW04_125'
+icor_clsType_list['Bow'] = 'BOW04_125'
+icor_clsType_list['Mace'] = 'MAC04_128'
+icor_clsType_list['THMace'] = 'TMAC04_117'
+icor_clsType_list['Shield'] = 'SHD04_121'
+icor_clsType_list['Spear'] = 'SPR04_126'
+icor_clsType_list['THSpear'] = 'TSP04_127'
+icor_clsType_list['Dagger'] = 'DAG04_122'
+icor_clsType_list['THStaff'] = 'TSF04_128'
+icor_clsType_list['Pistol'] = 'PST04_121'
+icor_clsType_list['Rapier'] = 'RAP04_123'
+icor_clsType_list['Cannon'] = 'CAN04_117'
+icor_clsType_list['Musket'] = 'MUS04_117'
+icor_clsType_list['Trinket'] = 'TRK04_104'
+
+function GET_RANDOM_OPTION_NAME_BY_CLSTYPE(item)
+    local itemClsType = TryGetProp(item, 'ClassType', 'None')
+    return icor_clsType_list[itemClsType]
+end
+
+
 ------------ end of 랜덤 옵션 관련 ---------------------------------------------------------
 -------------------------------------------------------------------------------------------
 
@@ -3101,10 +3155,7 @@ function JOB_NAKMUAY_PRE_CHECK(pc, jobCount)
 end
 
 function JOB_LUCHADOR_PRE_CHECK(pc, jobCount)
-    if jobCount == nil then
-        jobCount = GetTotalJobCount(pc);
-    end
-    if jobCount >= 2 then
+
         local aObj
         if IsServerSection() == 0 then
             aObj = GetMyAccountObj();
@@ -3118,9 +3169,27 @@ function JOB_LUCHADOR_PRE_CHECK(pc, jobCount)
                 return 'YES'
             end
         end
-    end
 
     return 'NO'
+end
+
+function JOB_HWARANG_PRE_CHECK(pc, jobCount)
+
+    -- local aObj
+    -- if IsServerSection() == 0 then
+    --     aObj = GetMyAccountObj();
+    -- else
+    --     aObj = GetAccountObj(pc);
+    -- end
+    
+    -- if aObj ~= nil then
+    --     local value = TryGetProp(aObj, 'UnlockQuest_Char3_22', 0)
+    --     if value == 1 or IS_KOR_TEST_SERVER() == true then
+    --         return 'YES'
+    --     end
+    -- end
+
+    return 'YES'
 end
 
 
@@ -3691,4 +3760,54 @@ function UQ_GET_JOB_SETTING_JOB(JobClassName) -- job_unlockquest.xml에서 cls�
     if resultJob == nil then
         return nil;
     end
+end
+
+_collection_item_list = nil;
+_collection_list_by_item = nil
+function make_collection_item_list()
+	if _collection_item_list == nil then
+        _collection_item_list = {};
+        _collection_list_by_item = {}
+	end
+
+	local list, cnt = GetClassList("Collection");
+	for i = 0, cnt - 1 do
+		local cls = GetClassByIndexFromList(list, i);
+		if cls ~= nil then
+			if TryGetProp(cls, "Journal", "FALSE") == "TRUE" then
+				for j = 1, 9 do
+					local prop_name = "ItemName_"..tostring(j);
+					local name = TryGetProp(cls, prop_name, "None");
+					local collection_name = TryGetProp(cls, 'Name', 'None')
+					if name ~= "None" then
+						_collection_item_list[name] = 1;
+						if _collection_list_by_item[name] == nil then
+							_collection_list_by_item[name] = {}
+						end
+
+						_collection_list_by_item[name][collection_name] = 1
+					end
+				end
+			end
+		end
+	end
+end
+
+make_collection_item_list()
+
+function is_collection_item(class_name)
+	if _collection_item_list == nil then
+		make_collection_item_list();
+	end
+
+	if _collection_item_list[class_name] == nil then return false;
+	else return true; end
+end
+
+function get_collection_name_by_item(item_name)
+    if _collection_item_list == nil then
+		make_collection_item_list();
+    end
+    
+    return _collection_list_by_item[item_name]
 end

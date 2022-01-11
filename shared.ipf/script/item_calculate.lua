@@ -1,5 +1,7 @@
 -- item_calculate.lua
 
+g_itemLvList = { 1, 15, 40, 75, 120, 170, 220, 270, 315, 350, 380, 400, 430, 440 };
+
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function GET_COMMON_PROP_LIST()
     return {
@@ -115,21 +117,71 @@ function GET_COMMON_PROP_LIST()
 end
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
+function IS_GROWTH_ITEM(item)
+    if item == nil then
+        return false
+    end
+
+    local itemstring = TryGetProp(item, 'StringArg','None')
+    if itemstring == 'Growth_Item' or itemstring == 'Growth_Item_Rare' or itemstring == 'Growth_Item_Unique' or itemstring == 'Growth_Item_Legend' then
+        return true
+    end
+
+    return false
+end
+
+-- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
+function GET_ITEM_GROWTH_RATE(item)
+    local growth_lv = CALC_GROWTH_ITEM_LEVEL(item)
+    return growth_lv / g_itemLvList[#g_itemLvList]
+end
+
+-- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function INIT_WEAPON_PROP(item, class)
+    local except_list = { MINATK = true, MAXATK = true, MATK = true, MSTA = true } -- 공격력은 별도의 성장 비율 계산을 하고 있으므로 제외
+    local growth_rate = 1
+    if IS_GROWTH_ITEM(item) == true then
+        growth_rate = GET_ITEM_GROWTH_RATE(item)
+    end
+
     local commonPropList = GET_COMMON_PROP_LIST();
     for i = 1, #commonPropList do
         local propName = commonPropList[i];     
-        item[propName] = class[propName];
+        local propValue = class[propName];
+        if except_list[propName] ~= true and growth_rate > 0 and growth_rate < 1 then
+            local growth_value = math.floor(propValue * growth_rate);
+            if propValue > 0 and growth_value <= 0 then
+                -- 해당 값이 존재하면 성장 비율 계산의 최소치 보정을 해준다
+                growth_value = 1;
+            end
+            propValue = growth_value;
+        end
+        item[propName] = propValue;
     end
     OVERRIDE_INHERITANCE_PROPERTY(item);
 end
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function INIT_ARMOR_PROP(item, class)
+    local except_list = { DEF = true, MDEF = true, MSTA = true }; -- 방어력은 별도의 성장 비율 계산을 하고 있으므로 제외
+    local growth_rate = 1;
+    if IS_GROWTH_ITEM(item) == true then
+        growth_rate = GET_ITEM_GROWTH_RATE(item);
+    end
+
     local commonPropList = GET_COMMON_PROP_LIST();
     for i = 1, #commonPropList do
         local propName = commonPropList[i];
-        item[propName] = class[propName];
+        local propValue = class[propName];
+        if except_list[propName] ~= true and growth_rate > 0 and growth_rate < 1 then
+            local growth_value = math.floor(propValue * growth_rate);
+            if propValue > 0 and growth_value <= 0 then
+                -- 해당 값이 존재하면 성장 비율 계산의 최소치 보정을 해준다
+                growth_value = 1;
+            end
+            propValue = growth_value;
+        end
+        item[propName] = propValue;
     end
     OVERRIDE_INHERITANCE_PROPERTY(item);
 end
@@ -170,8 +222,7 @@ function GET_REINFORCE_ADD_VALUE_ATK(item, ignoreReinf, reinfBonusValue, basicTo
         lv = pcBangItemLevel;
     end
     
-    local itemstring = TryGetProp(item, 'StringArg','None')
-    if itemstring == 'Growth_Item' or itemstring == 'Growth_Item_Rare' or itemstring == 'Growth_Item_Unique' or itemstring == 'Growth_Item_Legend' then
+    if IS_GROWTH_ITEM(item) == true then
         local grothItem = CALC_GROWTH_ITEM_LEVEL(item);
         if grothItem ~= nil then
             lv = grothItem;
@@ -307,8 +358,7 @@ function GET_REINFORCE_ADD_VALUE(prop, item, ignoreReinf, reinfBonusValue)
         lv = pcBangItemLevel;
     end
     
-    local itemstring = TryGetProp(item, 'StringArg','None')
-    if itemstring == 'Growth_Item' or itemstring == 'Growth_Item_Rare' or itemstring == 'Growth_Item_Unique' or itemstring == 'Growth_Item_Legend' then
+    if IS_GROWTH_ITEM(item) == true then
         local grothItem = CALC_GROWTH_ITEM_LEVEL(item);
         if grothItem ~= nil then
             lv = grothItem;
@@ -393,7 +443,7 @@ function GET_BASIC_ATK(item)
         return 0, 0;
     end
 
-    if itemstring == 'Growth_Item' or itemstring == 'Growth_Item_Rare' or itemstring == 'Growth_Item_Unique' or itemstring == 'Growth_Item_Legend' then
+    if IS_GROWTH_ITEM(item) == true then
         local grothItem = CALC_GROWTH_ITEM_LEVEL(item);
         if grothItem ~= nil then
             lv = grothItem;
@@ -423,6 +473,7 @@ function GET_BASIC_ATK(item)
     if classType == nil then
         return 0, 0;
     end
+    
     
     
     local itemGradeClass = GetClassList('item_grade')
@@ -531,9 +582,7 @@ function GET_BASIC_MATK(item)
         lv = pcBangItemLevel;
     end
     
-    local itemstring = TryGetProp(item, 'StringArg')
-
-    if itemstring == 'Growth_Item' or itemstring == 'Growth_Item_Rare' or itemstring == 'Growth_Item_Unique' or itemstring == 'Growth_Item_Legend' then
+    if IS_GROWTH_ITEM(item) == true then
         local grothItem = CALC_GROWTH_ITEM_LEVEL(item);
         if grothItem ~= nil then
             lv = grothItem;
@@ -749,7 +798,7 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
         return;
     end
 
-    if itemstring == 'Growth_Item' or itemstring == 'Growth_Item_Rare' or itemstring == 'Growth_Item_Unique' or itemstring == 'Growth_Item_Legend' then
+    if IS_GROWTH_ITEM(item) == true then
         local grothItem = CALC_GROWTH_ITEM_LEVEL(item);
         if grothItem ~= nil then
             lv = grothItem;
@@ -915,6 +964,13 @@ function SCR_REFRESH_ACC(item, enchantUpdate, ignoreReinfAndTranscend, reinfBonu
     
     local buffarg = 0;
     
+    if IS_GROWTH_ITEM(item) == true then
+        local grothItem = CALC_GROWTH_ITEM_LEVEL(item);
+        if grothItem ~= nil then
+            lv = grothItem;
+        end
+    end
+    
     local grade = TryGetProp(item,"ItemGrade");
     if grade == nil then
         return 0;
@@ -1057,6 +1113,11 @@ end
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function APPLY_RANDOM_OPTION(item)
+    local growth_rate = 1
+    if IS_GROWTH_ITEM(item) == true then
+        growth_rate = GET_ITEM_GROWTH_RATE(item)
+    end
+
     for i = 1, 6 do
         local propName = "RandomOption_"..i;
         local propValue = "RandomOptionValue_"..i;
@@ -1064,7 +1125,12 @@ function APPLY_RANDOM_OPTION(item)
         if getProp ~= nil and item[propValue] ~= 0 and item[propName] ~= "None" then
             local prop = item[propName];
             local propData = item[prop]
-            item[prop] = propData + item[propValue];
+            local addValue = math.floor(item[propValue] * growth_rate);
+            if addValue <= 0 then
+                -- RandomOption_i 가 None이 아니라는 것은 랜덤옵션이 존재한다는 뜻이므로 무조건 성장 비율에 대한 최소치 보정을 해준다
+                addValue = 1
+            end
+            item[prop] = propData + addValue
         end
     end
 end
@@ -2181,7 +2247,6 @@ end
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function CALC_GROWTH_ITEM_LEVEL(item)
-
     if item == nil then
         return 1;
     end
@@ -2192,14 +2257,13 @@ function CALC_GROWTH_ITEM_LEVEL(item)
     end
     
     local pcLv = TryGetProp(pc, 'Lv', 1);
-    local itemLvList = { 1, 15, 40, 75, 120, 170, 220, 270, 315, 350, 380, 400, 430};
-    local value = itemLvList[#itemLvList];
-    for i = 2, #itemLvList do
-        if pcLv < itemLvList[i] then
-            value = itemLvList[i - 1];
+    local value = g_itemLvList[#g_itemLvList];
+    for i = 2, #g_itemLvList do
+        if pcLv < g_itemLvList[i] then
+            value = g_itemLvList[i - 1];
             break;
-        elseif pcLv >= itemLvList[i] then
-            value = itemLvList[i]
+        elseif pcLv >= g_itemLvList[i] then
+            value = g_itemLvList[i]
         end
     end
     local growthItem = GetClass('item_growth', TryGetProp(item, 'ClassName', "None"));
@@ -2210,7 +2274,6 @@ function CALC_GROWTH_ITEM_LEVEL(item)
     end
     
     return value;
-    
 end
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.

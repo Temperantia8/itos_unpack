@@ -201,7 +201,7 @@ function SCR_Get_MON_MHP(self)
     end
     
     statTypeRate = statTypeRate / 100;
-    value = value * statTypeRate;
+    value = value * (statTypeRate * 0.25);
     
     local raceTypeRate = SCR_RACE_TYPE_RATE(self, "MHP");
     value = value * raceTypeRate;

@@ -251,7 +251,7 @@ function GET_ACC_UPGRADE_GROUP_PROPERTY_LIST(group)
 end
 
 function GET_REGISTER_MATERIAL(category, item_name, lv)
-    if g_cabinet_required_item_list[category] == nil then        
+    if g_cabinet_required_item_list[category] == nil then       
         return nil
     end
 
@@ -283,6 +283,7 @@ function GET_CABINET_ITEM_NAME(cls, acc)
     end
 end
 
+-- 다음 레벨 표시용
 function GET_UPGRADE_CABINET_ITEM_NAME(cls, lv)
     if cls == nil then
         return 'None'
@@ -301,6 +302,35 @@ function GET_UPGRADE_CABINET_ITEM_NAME(cls, lv)
     end
 end
 
+function GET_ORIGINAL_VIBORA_NAME(name)
+    local cls = GetClass('Item', name)
+    if cls == nil then return name end
+    if TryGetProp(cls, 'StringArg', 'None') ~= 'Vibora' 
+    and TryGetProp(cls, 'StringArg', 'None') ~= 'goddess' 
+    and TryGetProp(cls, 'StringArg', 'None') ~= 'evil' then
+        return name
+    end
+
+    local lv = TryGetProp(cls, 'NumberArg1', 0)
+    if lv < 2 then return name end
+
+    local token = StringSplit(name, '_')
+    local suffix = token[#token]    
+    if suffix == 'Lv' .. lv then
+        local n = ''
+        for i = 1, #token - 1 do
+            if i == #token - 1 then
+                n = n .. token[i]
+            else
+                n = n .. token[i] .. '_'
+            end            
+        end
+
+        return n
+    end
+
+    return name
+end
 
 
 function GET_CABINET_ACC_ITEM_NAME(cls, acc)

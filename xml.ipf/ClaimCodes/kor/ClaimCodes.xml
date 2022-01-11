@@ -29,6 +29,8 @@
 	<Class Code="209" Desc="채팅방 생성"/>
 	<Class Code="210" Desc="채팅방 삭제"/>
 	<Class Code="211" Desc="채팅방 공지 등록"/>
+	<Class Code="212" Desc="채팅방 메시지 삭제"/>
+	<Class Code="213" Desc="유저 채팅 금지시키기"/>
 	<Class Code="301" Desc="전쟁 선포/해제"/>
 	<Class Code="302" Desc="길드 전쟁 중립 설정/해제"/>
 	<Class Code="303" Desc="전쟁 중인 상대 길드 목록 보기"/>

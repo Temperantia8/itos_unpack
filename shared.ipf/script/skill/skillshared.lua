@@ -370,3 +370,20 @@ end
 function SCR_GET_OBLATION_PRICE(shopClassName, mapClassName, buffClassName, abilList)
 	return 1;
 end
+
+function igbore_skill_list_check(sklName, list)
+	for i = 1, #list do
+		if sklName == list[i] then
+			return 0;
+		end
+	end
+	return 1;
+end
+
+function ignore_skill_hit_check(target)
+	if IsBuffApplied(target, 'InfernalShadow_Debuff') == "YES" then
+		return 1;
+	end
+
+	return 0;
+end
