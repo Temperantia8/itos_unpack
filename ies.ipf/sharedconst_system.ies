@@ -314,7 +314,7 @@ ClassID,Value,Value2,ClassName,Desc,UseInScript
 310003,0,0,"PVP_TEAMBATTLE_ITEM_TRANSCEND","팀 배틀리그 가상 아이템 초월","YES"
 310004,100,0,"PVP_TEAMBATTLE_ITEM_REINFORCERATIO","팀 배틀리그 가상 아이템 강화 비율","YES"
 310005,0,0,"USE_DELAYED_POSITION","지연시간 대비 지연 위치 계산 적용(1/0)","YES"
-310006,0.100000,0,"PVP_ADD_DAMAGE_RATE","아트갈 반사 대미지의 추가 대미지 레이트","YES"
+310006,0.040000,0,"PVP_ADD_DAMAGE_RATE","아트갈 반사 대미지의 추가 대미지 레이트","YES"
 310007,0,0,"PVP_TEAMBATTLE_ITEM_ACCESSORY_REINFORCE","팀 배틀리그 가상 악세사리 아이템 강화","YES"
 310008,460,0,"PVP_TEAMBATTLE_CAM_DIST","팀 배틀리그 카메라 거리 값","YES"
 320000,0,0,"RVR_OPEN","RvR 열꺼면 1 아니면 0","NO"

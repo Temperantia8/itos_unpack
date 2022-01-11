@@ -1,6 +1,5 @@
 ClassID,UnlockArgNum,MaxLevel,Price1,Time1,Price2,Time2,Price3,Time3,Price4,Time4,Price5,Time5,Price6,Time6,Price7,Time7,Price8,Time8,Price9,Time9,Price10,Time10,ClassName,UnlockScr,UnlockArgStr,UnlockDesc,ScrCalcPrice
 1,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"RuneCaster1","UNLOCK_BASE_LEVEL","","캐릭터 1레벨 이상","ABIL_ABOVE_NORMAL_PRICE"
-2,45,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"RuneCaster19","UNLOCK_ABIL_JOB_LEVEL","Char2_17","룬캐스터 클래스 45레벨 달성","ABIL_REINFORCE_PRICE"
 101,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"RuneCaster3","UNLOCK_ABIL_SKILL","RuneCaster_Hagalaz","파괴의 룬 1레벨 이상","ABIL_REINFORCE_PRICE"
 201,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"RuneCaster20","UNLOCK_ABIL_SKILL","RuneCaster_Ehwaz","인력의 룬 1레벨 이상","ABIL_REINFORCE_PRICE"
 401,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"RuneCaster5","UNLOCK_ABIL_SKILL","RuneCaster_Tiwaz","정의의 룬 1레벨 이상","ABIL_REINFORCE_PRICE"

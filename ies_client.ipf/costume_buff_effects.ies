@@ -42,3 +42,4 @@ ClassID,ClassName,Name,ShowEffect,EffectName
 4682,"EP13STEM_EFFECT","행성계의 중심","NO","EP13STEM_EFFECT_2106"
 4686,"ITEM_EFFECT_EP13TCANCE","해변의 불꽃놀이","NO","E_effect_ep13tcance"
 4694,"ITEM_EFFECT_EP13RETRO","화려한 조명의 미러볼","NO",""
+4704,"ITEM_EFFECT_ZANAS","자나스 이펙트","NO","E_effect_zanas"

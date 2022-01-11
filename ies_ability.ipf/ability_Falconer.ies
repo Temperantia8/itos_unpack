@@ -5,7 +5,6 @@ ClassID,UnlockArgNum,MaxLevel,Price1,Time1,Price2,Time2,Price3,Time3,Price4,Time
 4,200,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer15","UNLOCK_BASE_LEVEL","","캐릭터 200레벨 이상","ABIL_ABOVE_NORMAL_PRICE"
 101,300,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer11","UNLOCK_BASE_LEVEL","","캐릭터 300레벨 이상","ABIL_COMMON_PRICE_300LV"
 201,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer6","UNLOCK_ABIL_SKILL","Falconer_Pheasant","멍텅구 1레벨 이상","ABIL_REINFORCE_PRICE"
-202,300,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer17","UNLOCK_BASE_LEVEL","","캐릭터 300레벨 이상","ABIL_COMMON_PRICE_300LV"
 301,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer8","UNLOCK_ABIL_SKILL","Falconer_BlisteringThrash","음속타 1레벨 이상","ABIL_REINFORCE_PRICE"
 302,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer10","UNLOCK_ABIL_SKILL","Falconer_BlisteringThrash","음속타 5레벨 이상","ABIL_ABOVE_NORMAL_PRICE"
 401,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Falconer22","UNLOCK_ABIL_SKILL","Falconer_Tomahawk","토마호크 1레벨 이상","ABIL_REINFORCE_PRICE"

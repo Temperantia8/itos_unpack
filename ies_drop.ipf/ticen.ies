@@ -4,4 +4,3 @@ ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max
 3,134,0,0,0,0,0,0,0,"","Item","Item","R_FOOT01_109",""
 4,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_ticen",""
 5,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_ticen",""
-6,2,0,0,0,0,0,0,0,"","Item","Item","Gem_Barbarian_Cleave",""

@@ -3,7 +3,6 @@ ClassID,UnlockArgNum,MaxLevel,Price1,Time1,Price2,Time2,Price3,Time3,Price4,Time
 2,100,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Peltasta5","UNLOCK_BASE_LEVEL","","캐릭터 100레벨 이상","ABIL_COMMON_PRICE_100LV"
 3,200,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Peltasta10","UNLOCK_BASE_LEVEL","","캐릭터 200레벨 이상","ABIL_COMMON_PRICE_200LV"
 4,300,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Peltasta31","UNLOCK_BASE_LEVEL","","캐릭터 300레벨 이상","ABIL_COMMON_PRICE_300LV"
-5,300,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"ShieldStrike","UNLOCK_BASE_LEVEL","","캐릭터 300레벨 이상","ABIL_COMMON_PRICE_300LV"
 101,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Peltasta27","UNLOCK_ABIL_SKILL","Peltasta_Langort","랑고르트 1레벨 이상","ABIL_REINFORCE_PRICE"
 102,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Impact","UNLOCK_ABIL_SKILL","Peltasta_RimBlow","림 블로 5레벨 이상","ABIL_ABOVE_NORMAL_PRICE"
 201,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Peltasta11","UNLOCK_ABIL_SKILL","Peltasta_RimBlow","림 블로 1레벨 이상","ABIL_REINFORCE_PRICE"

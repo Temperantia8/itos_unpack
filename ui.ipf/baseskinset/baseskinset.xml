@@ -4802,6 +4802,50 @@
 			<img name="bottomcore" imgrect="935 512 10 10"/>
 			<img name="bottomright" imgrect="946 512 10 10"/>
 		</skin>
+		<skin name="achievement_exchange_event_bg" texture="\skin\achievement_ui.tga">
+			<img name="topleft" imgrect="0 93 20 20"/>
+			<img name="topcore" imgrect="21 93 20 20"/>
+			<img name="topright" imgrect="42 93 20 20"/>
+			<img name="bodyleft" imgrect="0 114 20 20"/>
+			<img name="bodycore" imgrect="21 114 20 20"/>
+			<img name="bodyright" imgrect="42 114 20 20"/>
+			<img name="bottomleft" imgrect="0 135 20 20"/>
+			<img name="bottomcore" imgrect="21 135 20 20"/>
+			<img name="bottomright" imgrect="42 135 20 20"/>
+		</skin>
+		<skin name="achievement_exchange_event_bg_shadow" texture="\skin\achievement_ui.tga">
+			<img name="topleft" imgrect="0 156 20 20"/>
+			<img name="topcore" imgrect="21 156 20 20"/>
+			<img name="topright" imgrect="42 156 20 20"/>
+			<img name="bodyleft" imgrect="0 177 20 20"/>
+			<img name="bodycore" imgrect="21 177 20 20"/>
+			<img name="bodyright" imgrect="42 177 20 20"/>
+			<img name="bottomleft" imgrect="0 198 20 20"/>
+			<img name="bottomcore" imgrect="21 198 20 20"/>
+			<img name="bottomright" imgrect="42 198 20 20"/>
+		</skin>
+		<skin name="achievement_exchange_event_slot" texture="\skin\achievement_ui.tga">
+			<img name="topleft" imgrect="63 93 20 20"/>
+			<img name="topcore" imgrect="84 93 20 20"/>
+			<img name="topright" imgrect="105 93 20 20"/>
+			<img name="bodyleft" imgrect="63 114 20 20"/>
+			<img name="bodycore" imgrect="84 114 20 20"/>
+			<img name="bodyright" imgrect="105 114 20 20"/>
+			<img name="bottomleft" imgrect="63 135 20 20"/>
+			<img name="bottomcore" imgrect="84 135 20 20"/>
+			<img name="bottomright" imgrect="105 135 20 20"/>
+		</skin>
+		<skin name="achievement_exchange_nametag" texture="\skin\achievement_ui.tga">
+			<img name="topleft" imgrect="816 0 5 5"/>
+			<img name="topcore" imgrect="822 0 5 5"/>
+			<img name="topright" imgrect="828 0 5 5"/>
+			<img name="bodyleft" imgrect="816 6 5 5"/>
+			<img name="bodycore" imgrect="822 6 5 5"/>
+			<img name="bodyright" imgrect="828 6 5 5"/>
+			<img name="bottomleft" imgrect="816 12 5 5"/>
+			<img name="bottomcore" imgrect="822 12 5 5"/>
+			<img name="bottomright" imgrect="828 12 5 5"/>
+		</skin>
 	</skinlist>
 	<skinlist category="testje2_buttons">
 		<skin name="test_brown_btn" texture="\skin\housing.tga">
@@ -5956,6 +6000,10 @@
 			<img name="on" imgrect="912 581 54 22"/>
 			<img name="off" imgrect="967 581 54 22"/>
 		</skin>
+		<skin name="checkbox_fav" texture="\skin\achievement_ui.tga">
+			<img name="on" imgrect="442 58 24 24"/>
+			<img name="off" imgrect="417 58 24 24"/>
+		</skin>
 	</skinlist>
 	<skinlist category="slots">
 		<skin name="invenslot2" texture="\skin\pip_test.tga">
@@ -6658,20 +6706,28 @@
 			<img name="barright" imgrect="143 827 3 14"/>
 		</skin>
 		<skin name="gauge_produce_yellow" texture="\skin\mainframe_A.tga">
-			<img name="bgleft" imgrect="382 116 1 14"/>
-			<img name="bgmiddle" imgrect="383 116 258 14"/>
-			<img name="bgright" imgrect="641 116 1 14"/>
-			<img name="barleft" imgrect="382 131 1 14"/>
-			<img name="barmiddle" imgrect="383 131 258 14"/>
-			<img name="barright" imgrect="641 131 1 14"/>
+			<img name="bgleft" imgrect="383 116 2 14"/>
+			<img name="bgmiddle" imgrect="385 116 254 14"/>
+			<img name="bgright" imgrect="639 116 2 14"/>
+			<img name="barleft" imgrect="383 131 2 14"/>
+			<img name="barmiddle" imgrect="385 131 254 14"/>
+			<img name="barright" imgrect="639 131 2 14"/>
+		</skin>
+		<skin name="gauge_produce_gold" texture="\skin\mainframe_A.tga">
+			<img name="bgleft" imgrect="383 116 2 14"/>
+			<img name="bgmiddle" imgrect="385 116 254 14"/>
+			<img name="bgright" imgrect="639 116 2 14"/>
+			<img name="barleft" imgrect="383 71 2 14"/>
+			<img name="barmiddle" imgrect="385 71 254 14"/>
+			<img name="barright" imgrect="639 71 2 14"/>
 		</skin>
 		<skin name="gauge_produce_blue" texture="\skin\mainframe_A.tga">
-			<img name="bgleft" imgrect="382 116 1 14"/>
-			<img name="bgmiddle" imgrect="383 116 258 14"/>
-			<img name="bgright" imgrect="641 116 1 14"/>
-			<img name="barleft" imgrect="382 101 1 14"/>
-			<img name="barmiddle" imgrect="383 101 258 14"/>
-			<img name="barright" imgrect="641 101 1 14"/>
+			<img name="bgleft" imgrect="383 116 2 14"/>
+			<img name="bgmiddle" imgrect="385 116 254 14"/>
+			<img name="bgright" imgrect="639 116 2 14"/>
+			<img name="barleft" imgrect="383 101 2 14"/>
+			<img name="barmiddle" imgrect="385 101 254 14"/>
+			<img name="barright" imgrect="639 101 2 14"/>
 		</skin>
 		<skin name="gauge_barrack_guild" texture="\skin\pip_test_item.tga">
 			<img name="bgleft" imgrect="715 549 5 20"/>
@@ -7280,6 +7336,30 @@
 			<img name="barmiddle" imgrect="37 1025 606 40"/>
 			<img name="barright" imgrect="643 1025 37 40"/>
 		</skin>
+		<skin name="achievement_whole" texture="\skin\achievement_ui.tga">
+			<img name="bgleft" imgrect="1 0 5 12"/>
+			<img name="bgmiddle" imgrect="6 0 352 12"/>
+			<img name="bgright" imgrect="358 0 5 12"/>
+			<img name="barleft" imgrect="1 13 5 12"/>
+			<img name="barmiddle" imgrect="6 13 352 12"/>
+			<img name="barright" imgrect="358 13 5 12"/>
+		</skin>
+		<skin name="achievement_part_of" texture="\skin\achievement_ui.tga">
+			<img name="bgleft" imgrect="1 26 3 15"/>
+			<img name="bgmiddle" imgrect="4 26 361 15"/>
+			<img name="bgright" imgrect="365 26 3 15"/>
+			<img name="barleft" imgrect="1 42 3 15"/>
+			<img name="barmiddle" imgrect="4 42 361 15"/>
+			<img name="barright" imgrect="365 42 3 15"/>
+		</skin>
+		<skin name="achievement_part_of02" texture="\skin\achievement_ui.tga">
+			<img name="bgleft" imgrect="1 286 3 15"/>
+			<img name="bgmiddle" imgrect="4 286 377 15"/>
+			<img name="bgright" imgrect="381 286 3 15"/>
+			<img name="barleft" imgrect="1 302 3 15"/>
+			<img name="barmiddle" imgrect="4 302 377 15"/>
+			<img name="barright" imgrect="381 302 3 15"/>
+		</skin>
 		<skin name="christmas_mission_gauge" texture="\skin\christmas_stamp_tour.tga">
 			<img name="bgleft" imgrect="621 650 2 14"/>
 			<img name="bgmiddle" imgrect="623 650 404 14"/>
@@ -7319,11 +7399,11 @@
 			<img name="bottom" imgrect="982 229 24 1"/>
 		</skin>
 		<skin name="labelline_def" texture="\skin\mainframe_A.tga">
-			<img name="left" imgrect="0 857 3 14"/>
-			<img name="middle" imgrect="3 857 10 14"/>
-			<img name="right" imgrect="143 857 3 14"/>
-			<img name="top" imgrect="0 812 3 14"/>
-			<img name="bottom" imgrect="3 812 10 14"/>
+			<img name="left" imgrect="858 975 20 8"/>
+			<img name="middle" imgrect="879 975 120 8"/>
+			<img name="right" imgrect="1000 975 20 8"/>
+			<img name="top" imgrect="858 983 20 1"/>
+			<img name="bottom" imgrect="1000 983 20 1"/>
 		</skin>
 	</skinlist>
 	<skinlist category="droplists">
@@ -8291,6 +8371,7 @@
 		<image name="Collar_give_me_gold" file="\skin\Collar_skin.tga" imgrect="62 93 30 30" CMM_Caption="고고학 이벤트_모자 3종"/>
 		<image name="Collar_give_me_silver" file="\skin\Collar_skin.tga" imgrect="93 93 30 30"/>
 		<image name="Collar_give_me_bronze" file="\skin\Collar_skin.tga" imgrect="124 93 30 30"/>
+		<image name="Collar_Event_Kokuma_skin" file="\skin\Collar_skin.tga" imgrect="155 93 30 30" CMM_Caption="고구마 칭호"/>
 	</imagelist>
 	<imagelist category="testse_image">
 		<image name="indun_soulcrystal_bg" file="\skin\indun_skin.tga" imgrect="614 552 84 86" CMM_Caption="소울크리스탈 횟수제한 UI"/>
@@ -8986,11 +9067,28 @@
 		<image name="Chat_Balloon_chuseok_direction" file="\skin\say_balloon.tga" imgrect="1 837 82 75" CMM_Caption="추석 옥토끼 말풍선 꼬리"/>
 		<image name="Chat_Balloon_chuseok_deco1" file="\skin\say_balloon.tga" imgrect="179 1073 93 75" CMM_Caption="추석 옥토끼 데코01"/>
 		<image name="Chat_Balloon_chuseok_deco2" file="\skin\say_balloon.tga" imgrect="273 1073 20 19" CMM_Caption="추석 옥토끼 데코02"/>
+		<image name="achievement_whole_L" file="\skin\achievement_ui.tga" imgrect="0 0 4 12" CMM_Caption="업적 게이지01_좌"/>
+		<image name="achievement_whole_R" file="\skin\achievement_ui.tga" imgrect="360 0 4 12" CMM_Caption="업적 게이지01_우"/>
+		<image name="achievement_part_of_L" file="\skin\achievement_ui.tga" imgrect="0 26 1 15" CMM_Caption="업적 게이지02_좌"/>
+		<image name="achievement_part_of_R" file="\skin\achievement_ui.tga" imgrect="368 26 1 15" CMM_Caption="업적 게이지02_우"/>
+		<image name="achievement_part_of02_L" file="\skin\achievement_ui.tga" imgrect="0 286 1 15" CMM_Caption="업적 게이지03_좌"/>
+		<image name="achievement_part_of02_R" file="\skin\achievement_ui.tga" imgrect="384 286 1 15" CMM_Caption="업적 게이지03_우"/>
+		<image name="test_com_namebg02" file="\skin\achievement_ui.tga" imgrect="370 0 445 40" CMM_Caption="컴패니언 네임 색배리"/>
+		<image name="sold_out_mark" file="\skin\achievement_ui.tga" imgrect="0 219 72 66" CMM_Caption="솔드아웃 마크"/>
+		<image name="gaviya_coin" file="\skin\achievement_ui.tga" imgrect="327 58 29 25" CMM_Caption="가비야 코인"/>
+		<image name="pvpmine_coin" file="\skin\achievement_ui.tga" imgrect="357 58 29 25" CMM_Caption="용병단 증표"/>
+		<image name="silver_gacha_ticket" file="\skin\achievement_ui.tga" imgrect="387 58 29 25" CMM_Caption="실버 가챠 티켓"/>
+		<image name="achievement_time_attack01" file="\skin\achievement_ui.tga" imgrect="126 93 24 24" CMM_Caption="타임 어택01"/>
+		<image name="achievement_time_attack02" file="\skin\achievement_ui.tga" imgrect="126 118 24 24" CMM_Caption="타임 어택02"/>
+		<image name="achievement_stage_bg" file="\skin\achievement_ui.tga" imgrect="277 194 96 91" CMM_Caption="업적 스테이지 bg"/>
+		<image name="category_arrow" file="\skin\achievement_ui.tga" imgrect="126 143 13 12" CMM_Caption="카테고리 마크"/>
+		<image name="achievement_goal_list" file="\skin\achievement_ui.tga" imgrect="151 93 14 20" CMM_Caption="업적 목표 리스트 마크"/>
 		<image name="christmas_notebook_bg" file="\skin\christmas_stamp_tour.tga" imgrect="0 0 620 782" CMM_Caption="크리스마스 스탬프 투어_bg"/>
 		<image name="christmas_mission_list" file="\skin\christmas_stamp_tour.tga" imgrect="621 0 464 206" CMM_Caption="크리스마스 스탬프 투어_미션 목록bg"/>
 		<image name="christmas_mission_list_select" file="\skin\christmas_stamp_tour.tga" imgrect="621 207 464 206" CMM_Caption="크리스마스 스탬프 투어_활성화"/>
 		<image name="christmas_mission_list_shadow" file="\skin\christmas_stamp_tour.tga" imgrect="621 414 464 206" CMM_Caption="크리스마스 스탬프 투어_비활성화"/>
 		<image name="christmas_mission_list_stamp" file="\skin\christmas_stamp_tour.tga" imgrect="1086 0 159 154" CMM_Caption="크리스마스 스탬프 투어_도장"/>
+		<image name="receive_complete_eng" file="\skin\attendance_sheet_skin.tga" imgrect="232 872 69 84" CMM_Caption="수령완료 마크_영문버전"/>
 	</imagelist>
 	<imagelist category="yiseul_image">
 		<image name="AbillityReset_skin" file="\skin\paid_skin_title.tga" imgrect="0 330 316 165" CMM_Caption="특성 초기화"/>
@@ -9673,6 +9771,102 @@
 		<image name="GuildColony_MemberCheck_btn" file="\skin\PVP_skin.tga" imgrect="1013 737 67 63" CMM_Caption="콜로니전 길드원 배치 현황 버튼"/>
 		<image name="GuildColony_MemberCheck_btn_cursoron" file="\skin\PVP_skin.tga" imgrect="1081 737 67 63"/>
 		<image name="GuildColony_MemberCheck_btn_clicked" file="\skin\PVP_skin.tga" imgrect="1149 737 67 63"/>
+		<image name="achievement_shortcut_btn" file="\skin\achievement_ui.tga" imgrect="0 58 108 34" CMM_Caption="바로가기 버튼"/>
+		<image name="achievement_shortcut_btn_cursoron" file="\skin\achievement_ui.tga" imgrect="109 58 108 34"/>
+		<image name="achievement_shortcut_btn_clicked" file="\skin\achievement_ui.tga" imgrect="218 58 108 34"/>
+		<image name="achievement_arrow_left" file="\skin\achievement_ui.tga" imgrect="73 203 33 82" CMM_Caption="페이지 넘기기_왼"/>
+		<image name="achievement_arrow_left_cursoron" file="\skin\achievement_ui.tga" imgrect="107 203 33 82"/>
+		<image name="achievement_arrow_left_clicked" file="\skin\achievement_ui.tga" imgrect="141 203 33 82"/>
+		<image name="achievement_arrow_right" file="\skin\achievement_ui.tga" imgrect="175 203 33 82" CMM_Caption="페이지 넘기기_오른"/>
+		<image name="achievement_arrow_right_cursoron" file="\skin\achievement_ui.tga" imgrect="209 203 33 82"/>
+		<image name="achievement_arrow_right_clicked" file="\skin\achievement_ui.tga" imgrect="243 203 33 82"/>
+		<image name="achievement_favicon" file="\skin\achievement_ui.tga" imgrect="63 156 37 40" CMM_Caption="즐겨찾기 버튼"/>
+		<image name="achievement_favicon_cursoron" file="\skin\achievement_ui.tga" imgrect="101 156 37 40"/>
+		<image name="achievement_favicon_clicked" file="\skin\achievement_ui.tga" imgrect="139 156 37 40"/>
+		<image name="achievement_favicon_on" file="\skin\achievement_ui.tga" imgrect="139 156 37 40" CMM_Caption="즐겨찾기 버튼 ON"/>
+		<image name="achievement_favicon_on_cursoron" file="\skin\achievement_ui.tga" imgrect="139 156 37 40"/>
+		<image name="achievement_favicon_on_clicked" file="\skin\achievement_ui.tga" imgrect="139 156 37 40"/>
+		<image name="achievement_search" file="\skin\achievement_ui.tga" imgrect="0 318 100 74" CMM_Caption="탭_업적 찾기"/>
+		<image name="achievement_search_cursoron" file="\skin\achievement_ui.tga" imgrect="101 318 100 74"/>
+		<image name="achievement_search_clicked" file="\skin\achievement_ui.tga" imgrect="202 318 100 74"/>
+		<image name="achievement_main_content" file="\skin\achievement_ui.tga" imgrect="0 393 100 74" CMM_Caption="탭_메인 콘텐츠"/>
+		<image name="achievement_main_content_cursoron" file="\skin\achievement_ui.tga" imgrect="101 393 100 74"/>
+		<image name="achievement_main_content_clicked" file="\skin\achievement_ui.tga" imgrect="202 393 100 74"/>
+		<image name="achievement_sub_content" file="\skin\achievement_ui.tga" imgrect="0 468 100 74" CMM_Caption="탭_서브 콘텐츠"/>
+		<image name="achievement_sub_content_cursoron" file="\skin\achievement_ui.tga" imgrect="101 468 100 74"/>
+		<image name="achievement_sub_content_clicked" file="\skin\achievement_ui.tga" imgrect="202 468 100 74"/>
+		<image name="achievement_special" file="\skin\achievement_ui.tga" imgrect="0 543 100 74" CMM_Caption="탭_스페셜"/>
+		<image name="achievement_special_cursoron" file="\skin\achievement_ui.tga" imgrect="101 543 100 74"/>
+		<image name="achievement_special_clicked" file="\skin\achievement_ui.tga" imgrect="202 543 100 74"/>
+		<image name="achievement_event" file="\skin\achievement_ui.tga" imgrect="0 618 100 74" CMM_Caption="탭_이벤트"/>
+		<image name="achievement_event_cursoron" file="\skin\achievement_ui.tga" imgrect="101 618 100 74"/>
+		<image name="achievement_event_clicked" file="\skin\achievement_ui.tga" imgrect="202 618 100 74"/>
+		<image name="achievement_achievement" file="\skin\achievement_ui.tga" imgrect="303 318 74 93" CMM_Caption="탭_업적"/>
+		<image name="achievement_achievement_cursoron" file="\skin\achievement_ui.tga" imgrect="303 412 74 93"/>
+		<image name="achievement_achievement_clicked" file="\skin\achievement_ui.tga" imgrect="303 506 74 93"/>
+		<image name="achievement_adventure_diary" file="\skin\achievement_ui.tga" imgrect="378 318 74 93" CMM_Caption="탭_모험일지"/>
+		<image name="achievement_adventure_diary_cursoron" file="\skin\achievement_ui.tga" imgrect="378 412 74 93"/>
+		<image name="achievement_adventure_diary_clicked" file="\skin\achievement_ui.tga" imgrect="378 506 74 93"/>
+		<image name="achievement_stage_bg_arrow_up" file="\skin\achievement_ui.tga" imgrect="177 156 26 13" CMM_Caption="업적 스테이지_업"/>
+		<image name="achievement_stage_bg_arrow_up_cursoron" file="\skin\achievement_ui.tga" imgrect="177 170 26 13"/>
+		<image name="achievement_stage_bg_arrow_up_clicked" file="\skin\achievement_ui.tga" imgrect="177 184 26 13"/>
+		<image name="achievement_stage_bg_arrow_down" file="\skin\achievement_ui.tga" imgrect="204 156 26 13" CMM_Caption="업적 스테이지_다운"/>
+		<image name="achievement_stage_bg_arrow_down_cursoron" file="\skin\achievement_ui.tga" imgrect="204 170 26 13"/>
+		<image name="achievement_stage_bg_arrow_down_clicked" file="\skin\achievement_ui.tga" imgrect="204 184 26 13"/>
+		<image name="achievement_pvp" file="\skin\achievement_ui.tga" imgrect="0 693 94 114" CMM_Caption="카테고리_pvp"/>
+		<image name="achievement_pvp_cursoron" file="\skin\achievement_ui.tga" imgrect="95 693 94 114"/>
+		<image name="achievement_pvp_clicked" file="\skin\achievement_ui.tga" imgrect="190 693 94 114"/>
+		<image name="achievement_contest" file="\skin\achievement_ui.tga" imgrect="0 808 94 114" CMM_Caption="카테고리_콘테스트"/>
+		<image name="achievement_contest_cursoron" file="\skin\achievement_ui.tga" imgrect="95 808 94 114"/>
+		<image name="achievement_contest_clicked" file="\skin\achievement_ui.tga" imgrect="190 808 94 114"/>
+		<image name="achievement_celebration" file="\skin\achievement_ui.tga" imgrect="0 923 94 114" CMM_Caption="카테고리_셀레브레이션"/>
+		<image name="achievement_celebration_cursoron" file="\skin\achievement_ui.tga" imgrect="95 923 94 114"/>
+		<image name="achievement_celebration_clicked" file="\skin\achievement_ui.tga" imgrect="190 923 94 114"/>
+		<image name="achievement_ranking" file="\skin\achievement_ui.tga" imgrect="0 1038 94 114" CMM_Caption="카테고리_랭킹"/>
+		<image name="achievement_ranking_cursoron" file="\skin\achievement_ui.tga" imgrect="95 1038 94 114"/>
+		<image name="achievement_ranking_clicked" file="\skin\achievement_ui.tga" imgrect="190 1038 94 114"/>
+		<image name="achievement_raid" file="\skin\achievement_ui.tga" imgrect="285 693 94 114" CMM_Caption="카테고리_레이드"/>
+		<image name="achievement_raid_cursoron" file="\skin\achievement_ui.tga" imgrect="380 693 94 114"/>
+		<image name="achievement_raid_clicked" file="\skin\achievement_ui.tga" imgrect="475 693 94 114"/>
+		<image name="achievement_hunt" file="\skin\achievement_ui.tga" imgrect="285 808 94 114" CMM_Caption="카테고리_헌트"/>
+		<image name="achievement_hunt_cursoron" file="\skin\achievement_ui.tga" imgrect="380 808 94 114"/>
+		<image name="achievement_hunt_clicked" file="\skin\achievement_ui.tga" imgrect="475 808 94 114"/>
+		<image name="achievement_commerce" file="\skin\achievement_ui.tga" imgrect="285 923 94 114" CMM_Caption="카테고리_커머스"/>
+		<image name="achievement_commerce_cursoron" file="\skin\achievement_ui.tga" imgrect="380 923 94 114"/>
+		<image name="achievement_commerce_clicked" file="\skin\achievement_ui.tga" imgrect="475 923 94 114"/>
+		<image name="achievement_collecting" file="\skin\achievement_ui.tga" imgrect="285 1038 94 114" CMM_Caption="카테고리_콜렉팅"/>
+		<image name="achievement_collecting_cursoron" file="\skin\achievement_ui.tga" imgrect="380 1038 94 114"/>
+		<image name="achievement_collecting_clicked" file="\skin\achievement_ui.tga" imgrect="475 1038 94 114"/>
+		<image name="achievement_arcade" file="\skin\achievement_ui.tga" imgrect="570 693 94 114" CMM_Caption="카테고리_아케이드"/>
+		<image name="achievement_arcade_cursoron" file="\skin\achievement_ui.tga" imgrect="665 693 94 114"/>
+		<image name="achievement_arcade_clicked" file="\skin\achievement_ui.tga" imgrect="760 693 94 114"/>
+		<image name="achievement_end" file="\skin\achievement_ui.tga" imgrect="570 808 94 114" CMM_Caption="카테고리_엔드"/>
+		<image name="achievement_end_cursoron" file="\skin\achievement_ui.tga" imgrect="665 808 94 114"/>
+		<image name="achievement_end_clicked" file="\skin\achievement_ui.tga" imgrect="760 808 94 114"/>
+		<image name="achievement_character" file="\skin\achievement_ui.tga" imgrect="570 923 94 114" CMM_Caption="카테고리_캐릭터"/>
+		<image name="achievement_character_cursoron" file="\skin\achievement_ui.tga" imgrect="665 923 94 114"/>
+		<image name="achievement_character_clicked" file="\skin\achievement_ui.tga" imgrect="760 923 94 114"/>
+		<image name="achievement_quest" file="\skin\achievement_ui.tga" imgrect="570 1038 94 114" CMM_Caption="카테고리_퀘스트"/>
+		<image name="achievement_quest_cursoron" file="\skin\achievement_ui.tga" imgrect="665 1038 94 114"/>
+		<image name="achievement_quest_clicked" file="\skin\achievement_ui.tga" imgrect="760 1038 94 114"/>
+		<image name="achievement_exploration" file="\skin\achievement_ui.tga" imgrect="855 693 94 114" CMM_Caption="카테고리_익스플로레이션"/>
+		<image name="achievement_exploration_cursoron" file="\skin\achievement_ui.tga" imgrect="950 693 94 114"/>
+		<image name="achievement_exploration_clicked" file="\skin\achievement_ui.tga" imgrect="1045 693 94 114"/>
+		<image name="achievement_field" file="\skin\achievement_ui.tga" imgrect="855 808 94 114" CMM_Caption="카테고리_필드"/>
+		<image name="achievement_field_cursoron" file="\skin\achievement_ui.tga" imgrect="950 808 94 114"/>
+		<image name="achievement_field_clicked" file="\skin\achievement_ui.tga" imgrect="1045 808 94 114"/>
+		<image name="achievement_etc" file="\skin\achievement_ui.tga" imgrect="855 923 94 114" CMM_Caption="카테고리_그 외"/>
+		<image name="achievement_etc_cursoron" file="\skin\achievement_ui.tga" imgrect="950 923 94 114"/>
+		<image name="achievement_etc_clicked" file="\skin\achievement_ui.tga" imgrect="1045 923 94 114"/>
+		<image name="achievement_master_clients" file="\skin\achievement_ui.tga" imgrect="855 1038 94 114" CMM_Caption="카테고리_마스터 클라이언트"/>
+		<image name="achievement_master_clients_cursoron" file="\skin\achievement_ui.tga" imgrect="950 1038 94 114"/>
+		<image name="achievement_master_clients_clicked" file="\skin\achievement_ui.tga" imgrect="1045 1038 94 114"/>
+		<image name="achievement_ui_open_btn" file="\skin\achievement_ui.tga" imgrect="467 58 22 22" CMM_Caption="업적 창 열기"/>
+		<image name="achievement_ui_open_btn_cursoron" file="\skin\achievement_ui.tga" imgrect="490 58 22 22"/>
+		<image name="achievement_ui_open_btn_clicked" file="\skin\achievement_ui.tga" imgrect="490 58 22 22"/>
+		<image name="achievement_sub_event" file="\skin\achievement_ui.tga" imgrect="0 1153 94 114" CMM_Caption="카테고리_이벤트"/>
+		<image name="achievement_sub_event_cursoron" file="\skin\achievement_ui.tga" imgrect="95 1153 94 114"/>
+		<image name="achievement_sub_event_clicked" file="\skin\achievement_ui.tga" imgrect="190 1153 94 114"/>
 		<image name="christmas_shortcut_btn" file="\skin\christmas_stamp_tour.tga" imgrect="621 621 102 28" CMM_Caption="크리스마스 바로가기 버튼"/>
 		<image name="christmas_shortcut_btn_cursoron" file="\skin\christmas_stamp_tour.tga" imgrect="724 621 102 28"/>
 		<image name="christmas_shortcut_btn_clicked" file="\skin\christmas_stamp_tour.tga" imgrect="827 621 102 28"/>
@@ -11589,6 +11783,7 @@
 		<image name="icon_item_cheer" file="\icon\social.tga" imgrect="82 730 80 80"/>
 		<image name="icon_gesture_ClockworkDance" file="\icon\social.tga" imgrect="163 730 80 80"/>
 		<image name="icon_gesture_RustleDance" file="\icon\social.tga" imgrect="244 730 80 80"/>
+		<image name="icon_gesture_Luchador" file="\icon\social.tga" imgrect="325 730 80 80"/>
 	</imagelist>
 	<imagelist>
 		<image name="chat_page_arrow_left" file="\skin\mainframe_A.tga" imgrect="766 943 40 40"/>
@@ -11687,6 +11882,7 @@
 		<image name="questmap" file="\icon\questmap.tga" imgrect="0 0 256 256"/>
 		<image name="helpicon_ef" file="\icon\icon_item_Misc_00020_ef.tga" imgrect="0 0 80 80"/>
 		<image name="questicon_ef" file="\icon\icon_item_quest_alarm_scroll_ef.tga" imgrect="0 0 80 80"/>
+		<image name="achieve_ef" file="\icon\icon_achieve_ef.tga" imgrect="0 0 44 44"/>
 		<image name="focus_ui" file="\icon\focus_ui.tga" imgrect="0 0 128 128"/>
 	</imagelist>
 	<imagelist category="status_imgs">
@@ -11814,6 +12010,10 @@
 		<image name="minimap_1_KEYQUEST" file="\icon\minimap_icon3.tga" imgrect="162 1052 84 84"/>
 		<image name="minimap_2_KEYQUEST" file="\icon\minimap_icon3.tga" imgrect="247 1052 84 84"/>
 		<image name="minimap_3_KEYQUEST" file="\icon\minimap_icon3.tga" imgrect="332 1052 84 84"/>
+		<image name="minimap_special" file="\icon\minimap_icon3.tga" imgrect="255 971 80 80"/>
+		<image name="minimap_event_5" file="\icon\minimap_icon3.tga" imgrect="336 971 80 80"/>
+		<image name="minimap_main_achievement" file="\icon\minimap_icon3.tga" imgrect="0 1133 80 80"/>
+		<image name="minimap_sub_achievement" file="\icon\minimap_icon3.tga" imgrect="81 1133 80 80"/>
 	</imagelist>
 	<imagelist category="quest_tags">
 		<image name="quest_tag_1_MAIN" file="\icon\minimap_icon.tga" imgrect="61 31 16 16"/>
@@ -12292,6 +12492,7 @@
 		<image name="Paulius_before" file="\npcimg\Paulius_before.png" imgrect="0 0 800 900" CMM_Caption="파울루스 기본"/>
 		<image name="Paulius_after" file="\npcimg\Paulius_after.png" imgrect="0 0 800 900" CMM_Caption="파울루스 유령"/>
 		<image name="Dlg_port_ElVoladorMascaras" file="\npcimg\ElVoladorMascaras.png" imgrect="0 0 800 900" CMM_Caption="루차도르 마스터"/>
+		<image name="Dlg_port_Saraham" file="\npcimg\Saraham.png" imgrect="0 0 700 950" CMM_Caption="화랑 마스터"/>
 	</imagelist>
 	<imagelist category="Dlg_boss">
 		<image name="balloon_Skiaclipse" file="\skin\monster_Dlg.tga" imgrect="0 0 220 260" CMM_Caption="스키아클립스"/>
@@ -12912,8 +13113,13 @@
 		<image name="icon_TOSHero_Scatter" file="\icon\buff_icon5.tga" imgrect="128 1152 128 128" CMM_Caption="산개"/>
 		<image name="icon_buff_luchador2" file="\icon\buff_icon5.tga" imgrect="384 1152 128 128" CMM_Caption="엔마스카라도: 부세안도 버프"/>
 		<image name="icon_buff_luchador3" file="\icon\buff_icon5.tga" imgrect="512 1152 128 128" CMM_Caption="엔마스카라도: 로단도 버프"/>
+		<image name="icon_Hwarang_Skillcost_Buff" file="\icon\buff_icon5.tga" imgrect="640 1152 128 128" CMM_Caption="기백"/>
+		<image name="icon_Hwarang_Target_Debuff" file="\icon\buff_icon5.tga" imgrect="768 1152 128 128" CMM_Caption="여흔"/>
 		<image name="icon_Event_Buff_Stew" file="\icon\buff_icon5.tga" imgrect="896 1152 128 128" CMM_Caption="할로윈 이벤트 스튜"/>
 		<image name="icon_ridepet_noblepopo_buff" file="\icon\buff_icon5.tga" imgrect="0 1280 128 128" CMM_Caption="노블포포"/>
+		<image name="icon_buff_strafe_dodge" file="\icon\buff_icon5.tga" imgrect="128 1280 128 128" CMM_Caption="스트레이프 회피 버프"/>
+		<image name="icon_Steamed_buns" file="\icon\buff_icon5.tga" imgrect="256 1280 128 128" CMM_Caption="호빵"/>
+		<image name="icon_Grilled_Steamed_buns" file="\icon\buff_icon5.tga" imgrect="384 1280 128 128" CMM_Caption="구운호빵"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>
@@ -13629,8 +13835,13 @@
 		<image name="plate_achieve_Prank_of_Apolonija" file="\skin\user_title_skin.tga" imgrect="0 889 214 34" CMM_Caption="스팀_성별이 바뀐 npc 보상"/>
 		<image name="plate_achieve_weeklyrank_17" file="\skin\user_title_skin.tga" imgrect="215 889 214 34" CMM_Caption="주간보스_아시오메이지"/>
 		<image name="plate_achieve_Luchador_weekraid" file="\skin\user_title_skin.tga" imgrect="430 889 214 34" CMM_Caption="주보레 루차도르"/>
+		<image name="plate_achieve_hwarang" file="\skin\user_title_skin.tga" imgrect="645 889 214 34" CMM_Caption="화랑 칭호"/>
 		<image name="plate_achieve_relic_gem_first" file="\skin\user_title_skin.tga" imgrect="0 924 214 34" CMM_Caption="성물젬 10강_퍼스트"/>
 		<image name="plate_achieve_relic_gem_clear" file="\skin\user_title_skin.tga" imgrect="215 924 214 34" CMM_Caption="성물젬 10강_일반"/>
+		<image name="plate_achieve_Saduh" file="\skin\user_title_skin.tga" imgrect="430 924 214 34" CMM_Caption="사두 퀘스트 칭호"/>
+		<image name="plate_achieve_weeklyrank_18" file="\skin\user_title_skin.tga" imgrect="645 924 214 34" CMM_Caption="주보레_디에나"/>
+		<image name="plate_achieve_hwarang_weekraid" file="\skin\user_title_skin.tga" imgrect="860 889 214 34" CMM_Caption="주보레_화랑"/>
+		<image name="plate_achieve_contest_Event_4th" file="\skin\user_title_skin.tga" imgrect="1075 926 214 34" CMM_Caption="일본 일러스트 공모전 칭호_4th"/>
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>

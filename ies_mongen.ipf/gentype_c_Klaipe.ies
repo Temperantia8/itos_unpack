@@ -88,4 +88,5 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5288,10121,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER3_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5289,10122,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER4_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5290,10123,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER2_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
+5296,10129,1,40,1,1,1,2,0,0,0,0,0,"Event_2111_npc","[이벤트]{nl}마을 청년","","","","","","","EVENT_2111_WINTER","","","NO","YES","NO","Neutral","","","",""
 10001,50001,1,40,1,60000,1,2,0,0,0,0,0,"Board3_Event","이벤트 알림판","","","","","","","STEAM_TREASURE_EVENT","","","NO","YES","NO","Neutral","","","",""

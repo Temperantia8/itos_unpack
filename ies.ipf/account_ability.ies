@@ -20,7 +20,7 @@ ClassID,Factor,MaxLevel,PointByLevel,RefundPenalty,ClassName,Name,ExpAccountProp
 19,60,100,5,0.200000,"Velnias_Atk","악마형 대상 공격력","AccountAbility_Velnias_Atk_Exp","Velnias_Atk_BM","ability_account_Devil_ATK"
 20,60,100,5,0.200000,"Paramune_Atk","변이형 대상 공격력","AccountAbility_Paramune_Atk_Exp","Paramune_Atk_BM","ability_account_Mutant_ATK"
 21,60,100,5,0.200000,"Klaida_Atk","곤충형 대상 공격력","AccountAbility_Klaida_Atk_Exp","Klaida_Atk_BM","ability_account_Insect_ATK"
-22,60,100,5,0.200000,"Arrow_Atk","활 대미지 증가","AccountAbility_Arrow_Atk_Exp","Arrow_Atk_BM","ability_account_Bow_ATK"
+22,60,100,5,0.200000,"Arrow_Atk","화살 대미지 증가","AccountAbility_Arrow_Atk_Exp","Arrow_Atk_BM","ability_account_Bow_ATK"
 23,60,100,5,0.200000,"Cannon_Atk","캐논 대미지 증가","AccountAbility_Cannon_Atk_Exp","Cannon_Atk_BM","ability_account_Cannon_ATK"
 24,60,100,5,0.200000,"Gun_Atk","총기 대미지 증가","AccountAbility_Gun_Atk_Exp","Gun_Atk_BM","ability_account_Gun_ATK"
 25,60,100,5,0.200000,"Aries_Atk","찌르기 대미지 증가","AccountAbility_Aries_Atk_Exp","Aries_Atk_BM","ability_account_Pierce_ATK"

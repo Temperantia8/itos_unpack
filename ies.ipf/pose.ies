@@ -55,3 +55,4 @@ ClassID,DefaultLearn,NextPoseCount,PoseLevel,RewardCheckCount,ClassName,Name,Fil
 55,0,0,0,1,"CHEER","응원","pc_pose_lean01","icon_item_cheer","Reward","","true","","","","","","CONTENTS_TOTAL_SHOP_POSE_15"
 56,0,0,0,1,"RUSTLEDANCE","살랑살랑","pc_pose_lean01","icon_gesture_RustleDance","Reward","","true","","","","","","CONTENTS_TOTAL_SHOP_POSE_16"
 57,0,0,0,1,"CLOCKWORKDANCE","시계추 댄스","pc_pose_lean01","icon_gesture_ClockworkDance","Reward","","true","","","","","","CONTENTS_TOTAL_SHOP_POSE_17"
+58,0,0,0,1,"LUCHADOR","히어로 등장","pc_pose_lean01","icon_gesture_Luchador","Reward","","true","","","","","","CONTENTS_TOTAL_SHOP_POSE_18"

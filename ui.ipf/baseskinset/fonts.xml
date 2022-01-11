@@ -180,12 +180,14 @@
 		<font name="idiotbrown_14" filename="ORIGINAL" size="14" color="#9d8671" space="0" underline="no" bold="no" dropshadow="no" italic="no" outline="no" outlinecolor="#333333"/>
 		<font name="guild_18_ol" filename="ORIGINAL" size="18" color="#66CCFF" space="0" underline="no" bold="no" dropshadow="no" italic="no" outline="yes" outlinecolor="#333333"/>
 		<font name="limitedsale" filename="ORIGINAL" size="16" color="#ffffff" space="0" underline="no" bold="no" dropshadow="yes" italic="no" outline="yes" outlinecolor="#e10000"/>
+		<font name="limitedsale_14" filename="ORIGINAL" size="14" color="#ffffff" space="0" underline="no" bold="no" dropshadow="yes" italic="no" outline="yes" outlinecolor="#e10000"/>
 		<font name="mygauge" filename="ORIGINAL" size="16" color="#ffffff" space="0" underline="no" bold="yes" dropshadow="yes" italic="no" outline="yes" outlinecolor="#000000"/>
 		<font name="orange_16_b_ol" filename="ORIGINAL" size="16" color="#fe7e00" space="0" underline="no" bold="yes" dropshadow="yes" italic="no" outline="yes" outlinecolor="#333333"/>
 		<font name="orange_18_b_ol_ds" filename="ORIGINAL" size="18" color="#ffd800" space="0" underline="no" bold="yes" dropshadow="yes" italic="no" outline="yes" outlinecolor="#333333"/>
 		<font name="orange_32_b_ol_ds" filename="ORIGINAL" size="32" color="#fe7e00" space="0" underline="no" bold="yes" dropshadow="yes" italic="no" outline="yes" outlinecolor="#333333"/>
 		<font name="mint_18_b_ol" filename="ORIGINAL" size="18" color="#00fec5" space="0" underline="no" bold="yes" dropshadow="yes" italic="no" outline="yes" outlinecolor="#333333"/>
 		<font name="white_18_b_ol_ds" filename="ORIGINAL" size="18" color="#FFFFFF" space="0" underline="no" bold="yes" dropshadow="yes" italic="no" outline="yes" outlinecolor="#333333"/>
+		<font name="blue_16_b" filename="ORIGINAL" size="16" color="#0f7ab0" space="0" underline="no" bold="yes" dropshadow="no" italic="no" outline="no" outlinecolor="#333333"/>
 	</fontlist>
 	<fontlist category="ToolTip Font">
 		<font name="tooltip_font_white_18" filename="ORIGINAL" size="18" color="#FFFFFF" space="0" underline="no" bold="yes" dropshadow="no" italic="no" outline="no" outlinecolor="#333333"/>

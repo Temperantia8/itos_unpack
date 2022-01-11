@@ -3,5 +3,4 @@ ClassID,DropRatio,Money_Min,Money_Max,DPK_Min,DPK_Max,DPK_Expo,EPIK_Min,EPIK_Max
 2,108,0,0,0,0,0,0,0,"","Item","Item","NECK01_137",""
 3,2,0,0,0,0,0,0,0,"","Item","Item","BlueOrb_flask_mage",""
 4,2,0,0,0,0,0,0,0,"","Item","Item","RedOrb_flask_mage",""
-5,2,0,0,0,0,0,0,0,"","Item","Item","Gem_Sadhu_OutofBody",""
 6,30,0,0,0,0,0,0,0,"","Item","Item","STF03_110",""
