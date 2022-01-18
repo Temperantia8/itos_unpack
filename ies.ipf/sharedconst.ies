@@ -89,7 +89,7 @@ ClassID,Value,ClassName,Desc,UseInScript
 276,1,"ANCIENT_MON_EXP_RATE","트켓몬 경험치율","NO"
 277,30,"ANCIENT_CARD_SLOT_MAX","트켓몬 최대 보유 수","YES"
 278,5,"WEEKLY_BOSS_EXIT_TIME","주간보스 포기 대기 시간(초)","YES"
-279,300,"TOKEN_WARP_COOLTIME","토큰이동 대기 시간(초)","YES"
+279,150,"TOKEN_WARP_COOLTIME","토큰이동 대기 시간(초)","YES"
 500,1000000000,"REGISTER_SILVER_LIMIT","등록 금액 제한","YES"
 502,1000000000,"MAX_GUILD_ASSET_DEPOSIT_AMOUNT","길드 자금 입금 최대 금액","YES"
 10001,5,"MAX_FREE_TP","무료로 제공하는 TP 최대 개수","YES"

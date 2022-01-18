@@ -634,6 +634,10 @@
 			<Particle From="F_pc_run_blank_dummy" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
 			<Sound From="walk_left" To="step_soil"/>
 		</Anim>
+		<Anim Name="ARUN_RIDE">
+			<Particle From="F_pc_run_blank_dummy" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
+			<Sound From="walk_left" To="step_soil"/>
+		</Anim>
 		<Anim Name="RUN_RIDE">
 			<Particle From="F_pc_run_blank_dummy" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
 			<Sound From="walk_left" To="step_soil"/>
