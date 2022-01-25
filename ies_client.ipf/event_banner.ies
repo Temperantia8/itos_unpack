@@ -1,9 +1,8 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202201,180000,202201,230000,202202,150000,202202,100000,0,0,"inGame_E1","[Special] Bunny Returns Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2461","","","",""
-999902,202201,110000,202201,160000,202201,250000,202201,200000,0,0,"inGame_E2","Goddess' Blessed Cube","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2457","","","",""
+999901,202201,250000,202201,200000,202202,150000,202202,100000,0,0,"inGame_E1","Leticia's Secret Cube","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2467","","","",""
+999902,202201,180000,202201,230000,202202,150000,202202,100000,0,0,"inGame_E2","[Special] Bunny Returns Package","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2461","","","",""
 999903,202201,110000,202201,160000,202202,80000,202202,30000,0,0,"inGame_E3","Hwarang Package","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2456","","","",""
 999904,202201,110000,202201,160000,202202,80000,202202,30000,0,0,"inGame_E4","Sadhu Package","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2455","","","",""
-999905,202112,280000,202201,20000,202201,250000,202201,200000,0,0,"inGame_E5","2021 Fashion Museum End of Year","inGame_E5","https://treeofsavior.com/page/news/view.php?n=2445","","","",""
 999906,202201,110000,202201,160000,202202,80000,202202,30000,0,0,"inGame_E6","Toasty Roasty Winter Snack","inGame_E6","https://treeofsavior.com/page/news/view.php?n=2454","","","",""
 999907,202201,120000,202201,170000,202202,150000,202202,100000,0,0,"inGame_E7","Demon God's Temptation","inGame_E7","https://treeofsavior.com/page/news/view.php?n=2458","","","",""
 999908,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"

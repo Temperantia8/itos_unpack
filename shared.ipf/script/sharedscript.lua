@@ -3175,21 +3175,21 @@ end
 
 function JOB_HWARANG_PRE_CHECK(pc, jobCount)
 
-    -- local aObj
-    -- if IsServerSection() == 0 then
-    --     aObj = GetMyAccountObj();
-    -- else
-    --     aObj = GetAccountObj(pc);
-    -- end
+    local aObj
+    if IsServerSection() == 0 then
+        aObj = GetMyAccountObj();
+    else
+        aObj = GetAccountObj(pc);
+    end
     
-    -- if aObj ~= nil then
-    --     local value = TryGetProp(aObj, 'UnlockQuest_Char3_22', 0)
-    --     if value == 1 or IS_KOR_TEST_SERVER() == true then
-    --         return 'YES'
-    --     end
-    -- end
+    if aObj ~= nil then
+        local value = TryGetProp(aObj, 'UnlockQuest_Char3_22', 0)
+        if value == 1 or IS_KOR_TEST_SERVER() == true then
+            return 'YES'
+        end
+    end
 
-    return 'YES'
+    return 'NO'
 end
 
 

@@ -490,5 +490,6 @@ ClassID,ClassName,Name,UseDaily,UseWeekly,Country,StartTime,EndTime
 60086,"WeeklyRankClass_87","Cleric","NO","NO","","",""
 60087,"WeeklyRankClass_88","Wizard","NO","NO","","",""
 60088,"WeeklyRankClass_89","Luchador","NO","NO","","",""
+60089,"WeeklyRankClass_90","Hwarang","NO","NO","","",""
 70000,"Achieve_Solo_dungeon_1","베르니케 던전 특정 단계 1회 클리어","NO","NO","","",""
 70001,"Achieve_Solo_dungeon_st80","베르니케 던전 80단계 누적 클리어","NO","NO","","",""
