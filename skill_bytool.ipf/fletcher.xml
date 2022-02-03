@@ -211,12 +211,16 @@ local maxR = sklObj.MaxR
 			<ToolScp Scp="SKL_CHECK_FLETCHER_ARROW_SHOT" Client="BOTH" UseSleep="NO">
 				<Num Num="0"/>
 			</ToolScp>
-		</EnableScripts>
+			</EnableScripts>
 		<MainSkl JumpFlee="NO" MSPDToUsePos="0" ScrLock="None">
 			<HitList>
 				<Frame Angle="0" AniTime="99999" Dist="0" ForceATK="1" HitCount="1" PosType="0" RandDist="0" RandomPerHit="0" RotAngle="0" TermMax="0" TermMin="0" Time="99799" Type="FAN"/>
 			</HitList>
 			<EtcList>
+			    <Scp Scp="SKL_SET_TARGET_CLIENT_TARGETTING" Client="NO" UseSleep="NO" Time="0">
+                    <Num Num="1"/>
+                    <Num Num="240"/>
+                </Scp>
 				<Scp Client="YES" Scp="C_VOICE_SOUND" Time="200" UseSleep="NO">
 					<Str Str="voice_war_atk_medium"/>
 					<Str Str="voice_atk_medium_war_f"/>

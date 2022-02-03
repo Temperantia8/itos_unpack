@@ -3811,3 +3811,24 @@ function get_collection_name_by_item(item_name)
     
     return _collection_list_by_item[item_name]
 end
+
+function IS_DEFAULT_COSTUME_LOCK(JobID)
+    local jobCls = GetClassByType("Job", JobID);
+    local defaultCostume = TryGetProp(jobCls, "DefaultCostume", "None")
+
+    local itemList = session.GetInvItemList();
+    local guidList = itemList:GetGuidList();
+
+    if defaultCostume ~= "None" then
+        for i = 0, guidList:Count() - 1 do
+            local guid = guidList:Get(i);
+            local invItem = itemList:GetItemByGuid(guid);
+            local itemObj = GetIES(invItem:GetObject());
+            if itemObj.ClassName == defaultCostume and invItem.isLockState == true then 
+                return 1;
+            end
+        end
+    end
+
+    return 0;
+end
