@@ -1,9 +1,4 @@
 ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeeklyCount,ClassName,Category,SubCategory,ItemClassName,Job,SellStartTime,SellEndTime,WarningMsg,BonusItemName,BonusOnlySeasonServer,AccountLimitWeeklyCountProperty,ItemSocial,buyOptionFunc
-1,79,0,210506,1,0,0,"ClassName1","TP_Premium","TP_Package","UnlockQuest_OverAchieveClear_Char3_22_Job","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
-2,149,0,210505,1,0,0,"ClassName2","TP_Premium","TP_Package","hwarang_standard_pack","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
-3,549,0,210504,1,0,0,"ClassName3","TP_Premium","TP_Package","hwarang_complete_pack","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
-4,97,0,210503,1,0,0,"ClassName4","TP_Premium","TP_Package","sadhu_standard_pack","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
-5,509,0,210502,1,0,0,"ClassName5","TP_Premium","TP_Package","sadhu_complete_pack","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
 6,313,0,220101,3,0,0,"ClassName6","TP_Premium","TP_Package","GLOBAL_202112package_ContentsA","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
 7,208,0,220102,3,0,0,"ClassName7","TP_Premium","TP_Package","GLOBAL_202112package_ContentsB","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
 8,274,0,220103,3,0,0,"ClassName8","TP_Premium","TP_Package","GLOBAL_202112package_EquipPlus","","2021-11-25 09:00:00","2022-03-23 06:00:00","NO","","NO","","",""
