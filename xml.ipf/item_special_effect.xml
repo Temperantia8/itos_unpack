@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by IMCGames Co., Ltd (IMCGames Co., Ltd) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
 <List>
 	<ItemList ItemClassName="wing_redlight_balloon">
 		<Layer effect="F_light165_red_loop" TargetNode="wing_Dummy_effect" scale="1.1" offset="0;0">
@@ -3189,6 +3189,60 @@
 			</Creation>
 		</Layer>
 		<Layer effect="I_light020_mint_loop2" TargetNode="weapon_Dummy_effect001" scale="1.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP13_Artefact_152">
+		<Layer effect="F_bg_candle007_orange3" TargetNode="wepon_Dummy_effect03" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_bg_candle007_orange3" TargetNode="wepon_Dummy_effect01" scale="1.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_bg_candle007_orange3" TargetNode="wepon_Dummy_effect02" scale="1.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP13_Artefact_151">
+		<Layer effect="F_smoke206_grey" TargetNode="Dummy_trail02" scale="2" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="wing_ep13maid">
+		<Layer effect="F_light194_2_loop" TargetNode="wing_Dummy_effect_R001" scale="2" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_light194_2_loop" TargetNode="wing_Dummy_effect_L001" scale="2" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
