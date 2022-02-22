@@ -6953,6 +6953,9 @@
         <Effect Name="Goddess_Raid_Delmore_Party"/>
         <Effect Name="Goddess_Raid_Delmore_Extreme"/>
         <Effect Name="Goddess_Raid_Delmore_Auto"/>
+	<Effect Name="skl_eff_pet_tiger_born"/>
+        <Effect Name="skl_eff_photowall_golddog_close_boom"/>
+        <Effect Name="skl_eff_pet_tiger_born_boom"/>
     </Category>
     <Category ID="28">
         <Effect Name="F_explosion006_green#Dummy_skl2_shot"/>
