@@ -1,6 +1,5 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202202,220000,202202,170000,202203,220000,202203,170000,0,0,"inGame_E1","[Special] King of the Mountains Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2481","","","",""
-999902,202202,150000,202202,200000,202203,80000,202203,30000,0,0,"inGame_E2","Goddess' Blessed Cube","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2475","","","",""
-999903,202202,150000,202202,200000,202203,150000,202203,100000,0,0,"inGame_E3","Moon Rabbit Makes a Wish Come True","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2474","","","",""
+999901,202202,150000,202202,200000,202203,80000,202203,30000,0,0,"inGame_E1","Goddess' Blessed Cube","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2475","","","",""
+999902,202202,150000,202202,200000,202203,150000,202203,100000,0,0,"inGame_E2","Moon Rabbit Makes a Wish Come True","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2474","","","",""
 999908,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"
 999909,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2424","time_del","","",""

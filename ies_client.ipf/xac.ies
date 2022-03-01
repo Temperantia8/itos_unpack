@@ -26405,7 +26405,6 @@ ClassID,ClassName,Mesh,Path,ArmbandInfo,UseAlpha,IsJiggleBoneHair
 729428,"warrior_m_head3_eye01_blue2","","char_texture\pc\face\face_m_eye01_blue2\","","NO",""
 729429,"warrior_m_head4_eye01_blue2","","char_texture\pc\face\face_m_eye01_blue2\","","NO",""
 729430,"warrior_m_head5_eye01_blue2","","char_texture\pc\face\face_m_eye01_blue2\","","NO",""
-729500,"RidePet_Tiger_twn","char_hi\monster\pet_tiger_set.xac","char_texture\monster\pet_tiger\","","NO",""
 729700,"warrior_m_ep13maid01","char_hi\pc\warrior_m\warrior_m_ep13maid01.xac","char_texture\pc\body\warrior_m_ep13maid01\","S;Dummy_LU_armband","NO",""
 729701,"archer_m_ep13maid01","char_hi\pc\archer_m\archer_m_ep13maid01.xac","char_texture\pc\body\warrior_m_ep13maid01\","S;Dummy_LU_armband","NO",""
 729702,"cleric_m_ep13maid01","char_hi\pc\Cleric_m\cleric_m_ep13maid01.xac","char_texture\pc\body\warrior_m_ep13maid01\","S;Dummy_LU_armband","NO",""
