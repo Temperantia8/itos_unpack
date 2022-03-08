@@ -29,8 +29,6 @@ ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeekl
 121,43,0,210712,0,0,0,"ClassName121","TP_Premium","TP_Useable","EngraveSlotExtension_Ticket_60d","","","","NO","","NO","","",""
 122,58,0,210713,0,0,0,"ClassName122","TP_Premium","TP_Useable","EngraveSlotExtension_Ticket_90d","","","","NO","","NO","","",""
 123,33,0,210617,0,0,0,"ClassName123","TP_Premium","TP_Useable","Exchange_Weapon_Book_460","","","","NO","","NO","","",""
-201,30,0,210102,0,0,0,"ClassName201","TP_Premium","TP_Cube","Gacha_HairAcc_001","","","","YES","","","","",""
-202,300,0,210101,0,0,0,"ClassName202","TP_Premium","TP_Cube","Gacha_HairAcc_010","","","","YES","","","","",""
 301,8,0,210125,0,0,0,"ClassName301","TP_Premium","TP_Consume","Premium_Enchantchip","","","","NO","","NO","","",""
 302,128,0,210124,0,0,0,"ClassName302","TP_Premium","TP_Consume","Premium_Enchantchip_20","","","","NO","","NO","","",""
 303,3,0,210123,0,0,0,"ClassName303","TP_Premium","TP_Consume","Premium_repairPotion","","","","NO","","NO","","",""
