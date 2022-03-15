@@ -9279,3 +9279,75 @@ function SCR_PRE_EP13_F_SIAULIAI_4_MQ_02_ITEM(self, argstring, argnum1, argnum2)
     end
     return 0
 end
+
+--EP14
+
+function SCR_PRE_EP14_1_FCASTLE4_MQ_7_ITEM1(self, argstring, argnum1, argnum2)
+    if GetZoneName(self) == "ep14_1_f_castle_4" then
+        local result1 = SCR_QUEST_CHECK(self, "EP14_1_FCASTLE4_MQ_7")
+        if result1 == 'PROGRESS' then
+            local list, cnt = SelectObjectByFaction(self, 150, 'Neutral')
+            if cnt >= 1 then
+                for i = 1, cnt do
+                    local cls = TryGetProp(list[i], "ClassName")
+                    if cls == "ep14_1_blackman_crystal" then
+                        return GetHandle(list[i])
+                    end
+                end
+            end
+        end
+    end
+    return 0
+end
+
+
+
+
+
+--GuideQuest
+
+function SCR_PRE_EP14_3LINE_TUTO_MQ_7_1_ITEM(self, argstring, argnum1, argnum2)
+
+local tb = {
+'orsha_f_1',
+'orsha_f_2',
+'orsha_f_3',
+'orsha_m_12_2',
+'orsha_m_10_1',
+'orsha_m_12_2'
+
+}
+
+    if GetZoneName(self) == "c_klaipe_castle" then
+        local result1 = SCR_QUEST_CHECK(self, "EP14_3LINE_TUTO_MQ_7_1")
+        local result2 = SCR_QUEST_CHECK(self, "EP14_3LINE_TUTO_MQ_8")
+        if result2 == 'PROGRESS' then
+            local list, cnt = SelectObject(self, 150, 'ALL', 1)
+            if cnt >= 1 then
+                for i = 1, cnt do
+                    local cls = TryGetProp(list[i], "ClassName")
+                    for j = 1, #tb do
+                        if cls == tb[j] then
+                            return GetHandle(list[i])
+                        end
+                    end
+                end
+            end
+        end
+        if result1 == 'PROGRESS' then
+
+            local list, cnt = SelectObjectByFaction(self, 150, 'Neutral')
+
+            if cnt >= 1 then
+                for i = 1, cnt do
+                    local cls = TryGetProp(list[i], "ClassName")
+                    if cls == "npc_owynia_dilben" then
+                        return GetHandle(list[i])
+                    end
+                end
+            end
+        end
+
+    end
+    return 0
+end

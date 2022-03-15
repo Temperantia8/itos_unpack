@@ -22,11 +22,21 @@ function GET_RELICQUEST_MAP_LIST_RESULT(pc, group)
     end
 
     local fieldTB13 = {"ep13_f_siauliai_1", "ep13_f_siauliai_2", "ep13_f_siauliai_3", "ep13_f_siauliai_4", "ep13_f_siauliai_5", "ep13_2_d_prison_1", "ep13_2_d_prison_2", "ep13_2_d_prison_3"}
+    local fieldTB14 = {
+        'ep14_1_f_castle_1',
+        'ep14_1_f_castle_2',
+        'ep14_1_f_castle_3',
+        'ep14_1_f_castle_4',
+        'ep14_1_f_castle_5'}
+
     local indunTypeTB13 = {"MythicDungeon_Auto", "MythicDungeon_Auto_Hard", "Challenge_Auto",
                             "Raid", "UniqueRaid", "FieldBossRaid", "MissionIndun", "DefenceMission"
                         }
 
     if table.find(fieldTB13, NowZone) > 0 then
+        return true;
+    end
+    if table.find(fieldTB14, NowZone) > 0 then
         return true;
     end
     local indunCls = GetClassByStrProp("Indun", "MapName", NowZone);
@@ -38,7 +48,14 @@ function GET_RELICQUEST_MAP_LIST_RESULT(pc, group)
         end
     end
 
-    return false
+    local fieldAuotoList = RELIC_QUEST_GET_AUTO_MODE_LIST()
+    if #fieldAuotoList > 0 then
+        if table.find(fieldAuotoList, NowZone) > 0 then
+            return true;
+        end
+    end
+
+    return false;
 end
 
 

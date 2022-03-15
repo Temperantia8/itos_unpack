@@ -1,7 +1,7 @@
 ClassID,Coordinate_X,Coordinate_Y,Ordinal,ClassName,Name,CityName,Type,ImageName,SubmapImageName,SubmapIconName
 1,-810,-90,1,"city_klapeda","Episode1","클라페다","city","worldmap2_btn_epi_01","worldmap2_submap_01","worldmap2_icon_Sepi_01"
 2,-70,30,5,"city_fedimian","Episode5","페디미안","city","worldmap2_btn_epi_05","worldmap2_submap_05","worldmap2_icon_Sepi_05"
-3,-350,300,19,"city_orsha","Episode13","오르샤","city","worldmap2_btn_epi_13","worldmap2_submap_13","worldmap2_icon_Sepi_13"
+3,-350,300,19,"city_orsha","Episode13~14","오르샤","city","worldmap2_btn_epi_13","worldmap2_submap_13","worldmap2_icon_Sepi_13"
 101,-630,10,2,"EP2","Episode2","","episode","worldmap2_btn_epi_02","worldmap2_submap_02","worldmap2_icon_Sepi_02"
 102,-465,-30,3,"EP3","Episode3","","episode","worldmap2_btn_epi_03","worldmap2_submap_03","worldmap2_icon_Sepi_03"
 103,-280,10,4,"EP4","Episode4","","episode","worldmap2_btn_epi_04","worldmap2_submap_04","worldmap2_icon_Sepi_04"

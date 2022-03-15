@@ -19,10 +19,6 @@
     </Skill>
     <Skill Name="Doppelsoeldner_Zwerchhau">
         <MainSkl ScrLock="None" JumpFlee="NO" MSPDToUsePos="0">
-            <MoveList>
-                <Frame Time="299" Dist="0" Angle="0" Accel="0" Height="0" MoveType="0" Gravity="600" JumpPower="300"/>
-                <Frame Time="300" Dist="15" Angle="0" Accel="10" Height="0" MoveType="0" Gravity="600" JumpPower="300"/>
-            </MoveList>
             <HitList>
                 <Frame Type="FAN" Time="220" HitCount="1" TermMin="0" TermMax="0" PosType="0" Dist="0" RandDist="0" RandomPerHit="0" Angle="0" Width="90" Length="90" SklAngle="0.87266469" AniTime="420" RotAngle="0" ForceATK="0" ScriptIndex="0" ScriptName="" SkillType="0"/>
             </HitList>

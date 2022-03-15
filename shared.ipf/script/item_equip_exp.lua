@@ -178,6 +178,11 @@ function GET_MORE_EVENT_EXP(pc)
 	if  TryGetProp(pc, 'Lv', 0) < 460 then
 	    sumExp = sumExp + IsBuffAppliedEXP(pc, 'premium_seal_2021_buff'); -- 2021 근본 인장 버프--
 	end
+
+	if TryGetProp(pc, 'Lv', 0) >= 450 and TryGetProp(pc, 'Lv', 0) < 460 then
+		sumExp = sumExp + 3
+	end
+
 	return sumExp; 
 end
 

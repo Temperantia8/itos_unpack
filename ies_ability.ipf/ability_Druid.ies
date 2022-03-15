@@ -1,5 +1,4 @@
 ClassID,UnlockArgNum,MaxLevel,Price1,Time1,Price2,Time2,Price3,Time3,Price4,Time4,Price5,Time5,Price6,Time6,Price7,Time7,Price8,Time8,Price9,Time9,Price10,Time10,ClassName,UnlockScr,UnlockArgStr,UnlockDesc,ScrCalcPrice
-3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Druid22","UNLOCK_BASE_LEVEL","","캐릭터 1레벨 이상","ABIL_BASE_PRICE"
 101,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Druid15","UNLOCK_ABIL_SKILL","Druid_Chortasmata","코르타스마타 1레벨 이상","ABIL_REINFORCE_PRICE"
 201,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Druid16","UNLOCK_ABIL_SKILL","Druid_Seedbomb","씨앗폭탄 1레벨 이상","ABIL_REINFORCE_PRICE"
 301,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Druid17","UNLOCK_ABIL_SKILL","Druid_ThornVine","가시덩굴 1레벨 이상","ABIL_REINFORCE_PRICE"

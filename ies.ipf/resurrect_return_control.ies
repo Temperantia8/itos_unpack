@@ -2,6 +2,8 @@ ClassID,SavePoint,SoulCrystal,MainLayer,QuestRestart,ReturnCity,GuildTower,Start
 1,0,0,0,0,0,0,0,"Goddess_Raid_Vasilissa","Raid",""
 2,0,0,0,0,0,0,1,"Goddess_Raid_Vasilissa_Auto","Raid","SCR_GODDESS_RAID_VASILISSA_RESURRECT_START_POINT"
 3,1,0,0,0,0,0,1,"Goddess_Raid_Vasilissa_Solo","Raid",""
+4,0,0,0,0,0,0,1,"Goddess_Raid_Delmore_Auto","Raid","SCR_GODDESS_RAID_DELMORE_RESURRECT_START_POINT"
+5,1,0,0,0,0,0,1,"Goddess_Raid_Delmore_Solo","Raid",""
 101,0,0,0,0,0,0,0,"TOSHero_Straight","TOSHero","TOSHERO_RESURRECT_BUFF"
 102,0,0,0,0,0,0,0,"TOSHero_Wheel","TOSHero","TOSHERO_RESURRECT_BUFF"
 103,0,0,0,0,0,0,0,"TOSHero_Grid","TOSHero","TOSHERO_RESURRECT_BUFF"

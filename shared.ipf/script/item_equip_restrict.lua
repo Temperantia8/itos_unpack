@@ -1428,14 +1428,75 @@ function CHECK_GODDESS_EQUIP(pc)
 	return true;
 end
 
+function CHECK_GODDESS_EQUIP_ADD_SUB_SLOT(pc)
+	local icorable_spot = {	RH = "NoWeapon", LH = "NoWeapon", RH_SUB = "NoWeapon", LH_SUB = "NoWeapon", SHIRT = "NoShirt", PANTS = "NoPants", GLOVES = "NoGloves", BOOTS = "NoBoots" };
+
+	local function _check_equip(pc, item, check)
+		-- no equip
+		if item == nil then return false, "MustEquipWeaponArmorToEnter"; end
+		local class_name = TryGetProp(item, "ClassName", "None");
+		if class_name == check then return false, "MustEquipWeaponArmorToEnter"; end
+		-- item grade
+		local item_grade = TryGetProp(item, "ItemGrade");
+		if item_grade < 6 then return false, "MustGoddessEquipWeaponArmorToEnter";end
+		-- pvp
+		local string_arg = TryGetProp(item, "StringArg", "None");
+		if string_arg == "FreePVP" then return false, "NotAllowFreePvPEquip"; end
+		return true, "None";
+	end
+
+	for spot, check in pairs(icorable_spot) do
+		local item = GetEquipItem(pc, spot);
+		local ret, msg = _check_equip(pc, item, check);
+		if ret == false then			
+			return false, msg;
+		end
+
+		-- two hand check
+		if spot == "RH" then
+			local equip_group = TryGetProp(item, "EquipGroup", "None");
+			if equip_group == "THWeapon" then
+				local sub_spot = "LH";
+				local sub_check = "NoOuter";
+				local sub_item = GetEquipItem(pc, sub_spot);
+				ret, msg = _check_equip(pc, sub_item, sub_check);
+				if ret == false then					
+					return false, msg;
+				end
+			end
+		end
+	end
+	return true;
+end
+
 -- ** gear score / ablity_score 으로 체크 방식 : 콘텐츠 장비 제한 ** --
 function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 	if pc == nil and indun_cls == nil then return false; end
 	local gear_score = GET_PLAYER_GEAR_SCORE(pc);
 	local ablity_score = GET_PLAYER_ABILITY_SCORE(pc);
 
+	local indun_name = TryGetProp(indun_cls, "ClassName", "None")
+	local restrict_gear_score = TryGetProp(indun_cls, "GearScore", 0)
+	local restrict_ability_score = TryGetProp(indun_cls, "AbilityScore", 0)
+
+	-- 기어 스코어 체크
+	if restrict_gear_score > 0 then
+		if gear_score < restrict_gear_score then
+			SendSysMsg(pc, "LowEquipedItemGearScore");
+			return false
+		end
+	end
+
+	-- 특성 달성률 체크
+	if restrict_ability_score > 0 then
+		if tonumber(ablity_score) < restrict_ability_score then
+			SendSysMsg(pc, "LowAblityPointScore");
+			return false
+		end
+	end
+
 	-- team battle leauge
-	if TryGetProp(indun_cls, "ClassName", "None") == "Indun_teamBattle" then
+	if TryGetProp(indun_cls, "ClassName", "None") == "Indun_teamBattle" then		
 		-- 특성 달성률 제한
 		if tonumber(ablity_score) < 80 then
 			SendSysMsg(pc, "LowAblityPointScore");
@@ -1465,119 +1526,34 @@ function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 	local sub_type = TryGetProp(indun_cls, "SubType", "None");
 	
 	if dungeon_type == "Raid" then
-		-- moringponia auto
-		if indun_cls.ClassName == "Legend_Raid_boss_Moringponia_Easy" then
-			if gear_score < 250 then
-				SendSysMsg(pc, "LowEquipedItemGearScore");
-				return false;
-			end
-		end
-
-		-- glacier auto
-		if indun_cls.ClassName == "Legend_Raid_Glacier_Easy" then
-			if gear_score < 250 then
-				SendSysMsg(pc, "LowEquipedItemGearScore");
-				return false;
-			end
-		end
-
-		-- giltine
-		if string.find(indun_cls.ClassName, "Legend_Raid_Giltine") ~= nil then
-			if gear_score < 430 then
-				SendSysMsg(pc, "LowEquipedItemGearScore");
-				return false;
-			end
-		end
-
 		-- vasilissa
-		if string.find(indun_cls.ClassName, "Goddess_Raid_Vasilissa") ~= nil then
-			if indun_cls.ClassName == "Goddess_Raid_Vasilissa" then
-				if gear_score < 490 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
-			elseif indun_cls.ClassName == "Goddess_Raid_Vasilissa_Auto" then
-				if gear_score < 470 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
-				-- 특성 달성률 제한
-				if tonumber(ablity_score) < 100 then
-					SendSysMsg(pc, "LowAblityPointScore");
-					return false;
-				end
-			elseif indun_cls.ClassName == "Goddess_Raid_Vasilissa_Solo" then
-				if gear_score < 420 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
-				-- 특성 달성률 제한
-				if tonumber(ablity_score) < 59.99 then
-					SendSysMsg(pc, "LowAblityPointScore");
-					return false;
-				end
-			end
-
-			-- 가디스 장비 체크
+		if string.find(indun_cls.ClassName, "Goddess_Raid_Vasilissa") ~= nil then			
+			-- 가디스 장비 6부위 체크
 			local ret, msg = CHECK_GODDESS_EQUIP(pc)
 			if ret == false then
 				SendSysMsg(pc, msg)
 				return false;
 			end
 		end
-	else
-		-- mythic
-		if dungeon_type == "MythicDungeon_Auto" or dungeon_type == "MythicDungeon_Auto_Hard" then
-			local mythic_number = GetCurrentMythicSeason();
-			local mythic_schedule_cls = GetClassByType("mythic_dungeon_schedule", mythic_number);
 
-			if mythic_schedule_cls ~= nil then
-				if TryGetProp(mythic_schedule_cls, "MGameName_1") == indun_cls.ClassName then
-					-- normal
-					if gear_score < 410 then
-						SendSysMsg(pc, "LowEquipedItemGearScore");
-						return false;
-					end
-				elseif TryGetProp(mythic_schedule_cls, "MGameName_2") == indun_cls.ClassName then
-					-- hard
-					if gear_score < 430 then
-						SendSysMsg(pc, "LowEquipedItemGearScore");
-						return false;
-					end
-				elseif TryGetProp(mythic_schedule_cls, "MGameName_4") ~= nil and sub_type == "Casual" then
-					-- normal solo
-					if gear_score < 410 then
-						SendSysMsg(pc, "LowEquipedItemGearScore");
-						return false;
-					end
-				end
-			end
-		end
+		-- ** delmore raid : 아직 작업 완료되지 않음.
+		if string.find(indun_cls.ClassName, "Goddess_Raid_Delmore") ~= nil then
+			if indun_cls.ClassName == "Goddess_Raid_Delmore_Party" then -- 파티 하드
+				
+			elseif indun_cls.ClassName == "Goddess_Raid_Delmore_Extreme" then -- 파티 익스트림
 
-		-- challenge solo & auto
-		if dungeon_type == "Challenge_Solo" or dungeon_type == "Challenge_Auto" then
-			if indun_cls.ClassName == "Challenge_Normal_Solo" then -- solo
-				if gear_score < 420 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
-			elseif indun_cls.ClassName == "Challenge_Auto_Normal_Party" then -- auto normal
-				if gear_score < 350 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
-			elseif indun_cls.ClassName == "Challenge_Auto_Hard_Party" then -- auto hard
-				if gear_score < 430 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
-			elseif indun_cls.ClassName == "Challenge_Division_Auto_1" then -- auto division
-				if gear_score < 450 then
-					SendSysMsg(pc, "LowEquipedItemGearScore");
-					return false;
-				end
+			elseif indun_cls.ClassName == "Goddess_Raid_Delmore_Auto" then -- 자동 매칭
+			
+			elseif indun_cls.ClassName == "Goddess_Raid_Delmore_Solo" then -- 1인
 			end
-		end
+			
+			-- 가디스 장비 6부위 체크
+			local ret, msg = CHECK_GODDESS_EQUIP(pc);
+			if ret == false then
+				SendSysMsg(pc, msg);
+				return false;
+			end
+		end		
 	end
 	return true;
 end
@@ -1591,18 +1567,18 @@ function CHECK_GEAR_SCORE_FOR_GUILD_EVENT_BLOCKADE(pc, event_id)
 	end
 
 	-- 점령 길드 체크
-	local is_occupation_guild = false;
-	local class_cnt = GetClassCount("guild_colony");
-    for i = 0, class_cnt - 1 do
-        local index = GetClassByIndex("guild_colony", i);
-        local city_map_name = TryGetProp(index, "TaxApplyCity");
-        if city_map_name ~= nil and city_map_name ~= "None" then
-            local occupation_guild = GetColonyCityLordGuildID(city_map_name);
-            if occupation_guild == guild_id then
-                is_occupation_guild = true;
-            end
-        end
-	end
+	local is_occupation_guild = true;
+	-- local class_cnt = GetClassCount("guild_colony");
+    -- for i = 0, class_cnt - 1 do
+    --     local index = GetClassByIndex("guild_colony", i);
+    --     local city_map_name = TryGetProp(index, "TaxApplyCity");
+    --     if city_map_name ~= nil and city_map_name ~= "None" then
+    --         local occupation_guild = GetColonyCityLordGuildID(city_map_name);
+    --         if occupation_guild == guild_id then
+    --             is_occupation_guild = true;
+    --         end
+    --     end
+	-- end
 	
 	-- 보루타 or 길티네 봉쇄전 장비 체크 : 6부위 가디스 장비 장착 여부 체크.
 	if is_occupation_guild == true then

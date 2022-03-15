@@ -1,5 +1,18 @@
 -- sharedscript.lua
 
+function shuffle(tbl)
+    local ret = {}
+    for k, v in pairs(tbl) do
+        table.insert(ret, v)
+    end
+
+    for i = #ret, 2, -1 do
+      local j = math.random(i)
+      ret[i], ret[j] = ret[j], ret[i]
+    end
+    return ret
+end
+
 ------------ 랜덤 옵션 관련 ----------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 ITEM_POINT_MULTIPLE = 10
@@ -3451,7 +3464,7 @@ end
 function GET_ABILITY_POINT_EXTRACTOR_FEE(type)
     if type == 2 then
         -- 특성 포인트 추출 수수료 퍼센트
-        return 20;
+        return 5;
     end
 
     return 999999999;
@@ -3459,8 +3472,19 @@ end
 
 function GET_ABILITY_POINT_EXTRACTOR_MIN_VALUE(type)
     if type == 2 then
-        -- 특성 포인트 추출 스크롤 교환 최소 개 수 
-        return 10;
+        -- 특성 포인트 추출 스크롤 교환 최소 개 수
+        return 1000;
+    end
+
+    return 0;    
+end
+
+-- 특성 포인트 추출 스크롤 교환 최소 잔여 포인트
+function GET_ABILITY_POINT_EXTRACTOR_MIN_REMAIN_POINT(type)
+    if type == 1 then
+        return 500000
+    elseif type == 2 then
+        return 1050000
     end
 
     return 0;    
@@ -3628,7 +3652,14 @@ end
 function IS_LEFT_SUBFRAME_ACC(item)
     local str = TryGetProp(item, 'StringArg', 'None')
     local ClsName = TryGetProp(item, 'ClassName', 'None')
-    if str == 'Half_Acc_EP12' or str == 'Luciferi' or str == 'Acc_EP12' or (str == 'pvp_Mine' and nil ~= string.find(ClsName, 'PVP_EP12')) then
+    local class_type = TryGetProp(item, 'ClassType', 'None')
+    if class_type == 'Ring' or class_Type == 'Neck' then
+        if TryGetProp(item, 'ItemGrade', 0) >= 6 then
+            return true
+        end
+    end
+
+    if str == 'Half_Acc_EP12' or str == 'Isdavi' or str == 'Acc_EP12' or (str == 'pvp_Mine' and nil ~= string.find(ClsName, 'PVP_EP12')) then
         return true
     else
         return false
@@ -3665,6 +3696,10 @@ function GET_EQUIP_GROUP_NAME(item)
 
     if name == 'Relic' then
         return 'Relic'
+    end
+
+    if name == 'Earring' then
+        return 'Earring'
     end
 
     name = TryGetProp(item, 'DefaultEqpSlot', 'None')
@@ -3810,6 +3845,81 @@ function get_collection_name_by_item(item_name)
     end
     
     return _collection_list_by_item[item_name]
+end
+
+function TUTORIAL_CLEAR_CHECK(pc)
+    local etc = nil
+    if IsServerSection() == 1 then
+        etc = GetETCObject(pc)
+    else
+        etc = GetMyEtcObject()
+    end
+
+    if etc == nil then
+        return false
+    end
+
+    local sObj = GetSessionObject(pc, 'ssn_klapeda')
+    if sObj == nil then
+        return false;
+    end
+
+    local startLog = TryGetProp(sObj, 'QSTARTZONETYPE', "None")
+
+    if startLog ~= "StartLine3" then
+        return true;
+    end
+
+    local clear_check = TryGetProp(etc, 'StartLine3_Clear', 0)
+    if clear_check < 300 then
+        return false
+    end
+
+    return true
+end
+
+-- 기존 시나리오 퀘스트인지 체크
+-- false : 기존 퀘스트
+-- true : 신규 
+function TUTORIAL_QUEST_EXCEPTION(pc, QuestClassID)
+    local quest_ies = GetClass("QuestProgressCheck", QuestClassID)
+    local isStartLine3 = TryGetProp(quest_ies, "QStartZone", "None")
+    if isStartLine3 == "StartLine3" then
+        return true;
+    end
+    
+    return false
+end
+
+
+function TUTORIAL_QUEST_EXCEPTION_BY_TYPE(pc, QuestClassID)
+    local quest_ies = GetClassByType("QuestProgressCheck", tonumber(QuestClassID))
+    local isStartLine3 = TryGetProp(quest_ies, "QStartZone", "None")
+    if isStartLine3 == "StartLine3" then
+        return true;
+    end
+
+    return false
+end
+
+function GET_ITEM_EXPIRE_TIME(item)
+    local expire_datetime = TryGetProp(item, 'ExpireDateTime', 'None')
+    local expire_time = TryGetProp(item, 'ExpireTime', 'None')
+    if expire_datetime ~= 'None' then
+        return expire_datetime
+    elseif expire_time ~= 'None' then
+        return expire_time
+    else
+        return 'None'
+    end
+end
+
+function IS_BOUNTY_BATTLE_BUFF_APPLIED(pc)
+    if IsBuffApplied(pc, 'BountyHunt_Battle_BUFF') == "YES" then
+        return 1;
+    end
+
+    return 0;
 end
 
 function IS_DEFAULT_COSTUME_LOCK(JobID)

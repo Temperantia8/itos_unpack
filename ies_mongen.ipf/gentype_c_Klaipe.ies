@@ -88,5 +88,5 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5288,10121,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER3_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5289,10122,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER4_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5290,10123,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER2_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
-5292,10125,1,40,1,1,1,2,0,0,0,0,0,"event_fullmoon_lapindion2","[이벤트]{nl}소원을 이뤄주는 달토끼","","","","","","","EVENT_2109_MOON_RABBIT_NPC","","","NO","YES","NO","Netual","","","",""
+5297,10130,1,40,1,1,1,2,0,0,0,0,0,"event_2112_npc_kupole","[이벤트] 큐폴 루타","","","","","","","EVENT_2112_6TH","","","NO","YES","NO","Neutral","","","",""
 10001,50001,1,40,1,60000,1,2,0,0,0,0,0,"Board3_Event","이벤트 알림판","","","","","","","STEAM_TREASURE_EVENT","","","NO","YES","NO","Neutral","","","",""

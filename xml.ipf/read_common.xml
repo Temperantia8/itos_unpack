@@ -1,8 +1,13 @@
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+﻿<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <Category>
 	<ReadXml Name="bonescale"/>
 	<ReadXml Name="item_goddess_reinforce"/>
+	<ReadXml Name="item_goddess_reinforce_470"/>
+	<ReadXml Name="pharmacy_material_type"/>	
 	<ReadXml Name="skill_Simony"/>
+	<ReadXml Name="archeology_property"/>
+	<ReadXml Name="archeology_map_list"/>
+	<ReadXml Name="archeology_reward_list"/>
 	<ReadXml Name="buff_ignore"/>
 	<ReadXml Name="buff"/>
 	<ReadXml Name="buff_monster"/>
@@ -14,6 +19,8 @@
 	<ReadXml Name="item"/>
 	<ReadXml Name="item_Equip_EP12"/>
 	<ReadXml Name="item_EP12"/>
+	<ReadXml Name="item_Equip_EP13"/>
+	<ReadXml Name="item_EP13"/>
 	<ReadXml Name="item_colorspray"/>
 	<ReadXml Name="item_Equip"/>
 	<ReadXml Name="item_HiddenAbility"/>
@@ -332,8 +339,8 @@
 	<ReadXml Name="cabinet_ark"/>
 	<ReadXml Name="housingcraft_rewardgroup"/>
 	<ReadXml Name="EliteEquipDrop"/>
-	<ReadXml Name="weekly_boss_class_rank_reward"/>
 	<ReadXml Name="challenge_mode_auto_map"/>
+	<ReadXml Name="weekly_boss_class_rank_reward"/>
 	<ReadXml Name="item_gem_bernice"/>
 	<ReadXml Name="ride_pet"/>
 	<ReadXml Name="Monster_BountyHunt"/>
@@ -348,17 +355,21 @@
 	<ReadXml Name="job_unlockquest"/>
 	<ReadXml Name="itemdecompose_mistake"/>
 	<ReadXml Name="resurrect_return_control"/>
+	<ReadXml Name="screen_effect_list"/>
 	<ReadXml Name="ability_point_score"/>
 	<ReadXml Name="ui_tutorial"/>
-	<ReadXml Name="market_trade_restrict"/>
 	<ReadXml Name="pvp_teambattle_rule"/>
-	<ReadXml Name="screen_effect_list"/>
+	<ReadXml Name="market_trade_restrict"/>
 	<ReadXml Name="relic_gem_table"/>
 	<ReadXml Name="contents_alert_table"/>
-	<ReadXml Name="tpitemCustomResetTime"/>
 	<ReadXml Name="achieve_info"/>
 	<ReadXml Name="xp_achieve"/>
 	<ReadXml Name="achieve_exchange_event"/>
 	<ReadXml Name="achieve_exchange_event_item"/>
+	<ReadXml Name="tpitemCustomResetTime"/>
 	<ReadXml Name="achieve_level_reward"/>
+	<ReadXml Name="monster_earring_raid"/>
+	<ReadXml Name="achieve_guidequest"/>
+	<ReadXml Name="monster_obj_interaction"/>
+	<ReadXml Name="ecs_system"/>
 </Category>

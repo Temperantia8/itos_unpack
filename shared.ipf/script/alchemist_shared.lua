@@ -280,11 +280,18 @@ function IS_ENABLE_GIVE_HIDDEN_PROP_ITEM(item)
 	if item.HiddenProp == "None" then
 		return false;
 	end
+	
+	if TryGetProp(item, 'UseLv', 1) >= 470 and TryGetProp(item, 'ItemGrade', 1) >= 6 then
+		local equip_slot = TryGetProp(item, 'DefaultEqpSlot', 'None')
+		if equip_slot == 'RING' or equip_slot == 'NECK' then
+			return false
+		end
+	end
 
 	if item.ItemLifeTimeOver > 0 then
 		return false;
 	end
-
+	
 	return true;
 end
 

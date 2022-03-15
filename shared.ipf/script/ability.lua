@@ -1762,7 +1762,7 @@ function SCR_ABIL_Chronomancer17_ACTIVE(self, ability)
     SetExProp(self, "BACKMASKING_HIDDEN_ABIL_STATE", 0);
 
     local skill = GetSkill(self, "Chronomancer_BackMasking");
-    if skill ~= nil then
+    if skill ~= nil and IsDummyPC(self) == 0 then             
         UpdateSkillSpendItemBySkillID(self, skill.ClassID);
     end
 end
@@ -3446,4 +3446,115 @@ end
 
 function SCR_ABIL_Doppelsoeldner37_INACTIVE(self, ability)
     RemoveBuff(self, "DeedsOfValor");
+end
+
+function SCR_ABIL_Hakkapeliter9_ACTIVE(self, ability)
+    AddBuff(self, self, "Hakkapeliter9_Buff");
+end
+
+function SCR_ABIL_Hakkapeliter9_INACTIVE(self, ability)
+    RemoveBuff(self, "Hakkapeliter9_Buff")
+end
+
+function SCR_ABIL_Hakkapeliter1_ACTIVE(self, ability)
+    SetExProp(self, "IS_Hakkapeliter1_Abil", 1)
+    SetExProp(self, "IS_Hakkapeliter1_Value", 0)
+    Invalidate(self, "HR")
+    Invalidate(self, "Gun_Atk")
+end
+
+function SCR_ABIL_Hakkapeliter1_INACTIVE(self, ability)
+    SetExProp(self, "IS_Hakkapeliter1_Abil", 0)
+    SetExProp(self, "IS_Hakkapeliter1_Value", 0)
+    Invalidate(self, "HR")
+    Invalidate(self, "Gun_Atk")
+end
+
+function SCR_ABIL_Hakkapeliter8_ACTIVE(self, ability)
+    local instSkill = AddInstSkill(self, 'Hakkapeliter_SaberBlock', 1)
+    ChangeLHandAttack(self, "Hakkapeliter_SaberBlock")
+    
+    InvalidateStates(self)
+end
+
+function SCR_ABIL_Hakkapeliter8_INACTIVE(self, ability)
+    ChangeLHandAttack(self, "None")
+
+    InvalidateStates(self)
+end
+
+function SCR_ABIL_AllCHANGE_Melee_Cleric_ACTIVE(self, ability)
+    RunScript("SCR_ABIL_ALLCHANGE_CLERIC", self)
+end
+
+function SCR_ABIL_AllCHANGE_Melee_Cleric_INACTIVE(self, ability)
+    RunScript("SCR_ABIL_ALLCHANGE_CLERIC", self)
+end
+
+function SCR_ABIL_AllCHANGE_Magic_Cleric_ACTIVE(self, ability)
+    RunScript("SCR_ABIL_ALLCHANGE_CLERIC", self)
+end
+
+function SCR_ABIL_AllCHANGE_Magic_Cleric_INACTIVE(self, ability)
+    RunScript("SCR_ABIL_ALLCHANGE_CLERIC", self)
+end
+
+function SCR_ABIL_ALLCHANGE_CLERIC(self)
+    sleep(1000)
+    if IS_REAL_PC(self) == 'YES' then
+        local job_list = GetJobHistoryString(self)
+        local job_table = SCR_STRING_CUT(job_list, ';')
+        if #job_table < 1 then return end
+
+        local job_name_list = {}
+        for j = 1, #job_table do
+            local jobporpname = "CHANGE_STAT_"..job_table[j]
+            SetExProp(self, jobporpname, 1)
+
+            local job_cls = GetClass('Job', job_table[j])
+            if job_cls ~= nil then
+                table.insert(job_name_list, TryGetProp(job_cls, "JobName", "None"))
+            end
+        end
+        Invalidate(self, "STR");
+        Invalidate(self, "INT");
+        Invalidate(self, "MNA");
+        Invalidate(self, "DEX");
+
+        local sklList, cnt = GetPCSkillList(self);
+        for i = 1, cnt do
+            local skill = sklList[i]
+            local getcls = GetClass("Skill", skill.ClassName)
+            local ClassType = TryGetProp(getcls, "ClassType", "None");
+            local AttackType = TryGetProp(getcls, "AttackType", "None");
+            local Attribute = TryGetProp(getcls, "Attribute", "None");
+            
+            local abilCleric24 = GetAbility(self, "Cleric24") -- 물리
+            local abilCleric36 = GetAbility(self, "Cleric36") -- 마법
+            if abilCleric24 ~= nil and TryGetProp(abilCleric24, "ActiveState", 0) == 1 then
+                ClassType = "Melee";
+                AttackType = "Strike";
+                Attribute = "Melee";
+            elseif abilCleric36 ~= nil and TryGetProp(abilCleric36, "ActiveState", 0) == 1 then
+                ClassType = "Magic";
+                AttackType = "Magic";
+                Attribute = "Holy";
+            end
+
+            local werewolf_skl_list = {
+                "Mon_pcskill_boss_werewolf_Skill_1",
+                "Mon_pcskill_boss_werewolf_Skill_3",
+                "Mon_pcskill_boss_werewolf_Skill_4",
+                "Mon_pcskill_boss_werewolf_Skill_5",
+            }
+            local job_ClassName = TryGetProp(skill, "ClassName", "None")
+            if TryGetProp(skill, "ValueType", "None") == "Attack" then
+                if table.find(job_name_list, TryGetProp(skill, "Job", "None")) ~= nil or table.find(werewolf_skl_list, job_className) ~= nil then
+                    skill.ClassType = ClassType
+                    skill.AttackType = AttackType
+                    skill.Attribute = Attribute
+                end
+            end
+        end
+    end
 end

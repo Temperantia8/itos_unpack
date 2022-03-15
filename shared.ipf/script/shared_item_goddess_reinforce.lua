@@ -35,6 +35,15 @@ function make_parameter_list()
 	parameter_list[460]['MAX_PREMIUM_SUB_REVISION_COUNT'] = 2 -- 프리미엄 강화 보조제 최대 적용 가능 개수
 	parameter_list[460]['PREMIUM_SUB_REVISION_RATIO'] = 0.2  -- 20%, 프리미엄 보조제로 보정되는 비율 , reinforce_premium_percentUp
 	parameter_list[460]['MAX_REINFORCE_POINT'] = 30 -- 최대 30강
+
+	parameter_list[470] = {} -- 470레벨용
+	parameter_list[470]['REINFORCE_FAIL_REVISION_RATIO'] = 0.1 -- 10% , 강화 실패 보정 비율(시도한 최종 강화 확률의 10%)
+	parameter_list[470]['MAX_FAIL_REVISION'] = 70000 -- 70%, 강화 실패로 인한 최대 보정확률(기본 확률 포함)
+	parameter_list[470]['MAX_SUB_REVISION_COUNT'] = 3 -- 강화 보조제 최대 적용 가능 개수
+	parameter_list[470]['SUB_REVISION_RATIO'] = 0.2  -- 20%, 강화 보조제로 보정되는 비율 , reinforce_percentUp
+	parameter_list[470]['MAX_PREMIUM_SUB_REVISION_COUNT'] = 2 -- 프리미엄 강화 보조제 최대 적용 가능 개수
+	parameter_list[470]['PREMIUM_SUB_REVISION_RATIO'] = 0.2  -- 20%, 프리미엄 보조제로 보정되는 비율 , reinforce_premium_percentUp
+	parameter_list[470]['MAX_REINFORCE_POINT'] = 30 -- 최대 30강
 end
 make_parameter_list()
 
@@ -289,11 +298,11 @@ end
 item_goddess_reinforce.is_reinforce_percentUp = function(misc_item, target_lv)
 	local lv = TryGetProp(misc_item, 'NumberArg1', 0)
 	
-	if TryGetProp(misc_item, 'StringArg', 'None') == 'reinforce_premium_percentUp' and lv == target_lv then
+	if TryGetProp(misc_item, 'StringArg', 'None') == 'reinforce_premium_percentUp' then
 		return 'premium'
 	end
 
-	if TryGetProp(misc_item, 'StringArg', 'None') == 'reinforce_percentUp' and lv == target_lv then
+	if TryGetProp(misc_item, 'StringArg', 'None') == 'reinforce_percentUp' and target_lv <= lv then
 		return 'normal'
 	end
 
@@ -401,6 +410,228 @@ function setting_lv460_material(mat_list_by_lv)
 	mat_list_by_lv[460][30][medusaReinforceMisc] = 19
 end
 
+function setting_lv470_material_armor(mat_list_by_lv)
+	local seasonCoin = "GabijaCertificate" -- 여신의 증표(가비야)
+	local medusaReinforceMisc = "misc_vasilisa_NoTrade" -- 정제된 바실리사의 비늘
+
+	-- 여기서 레벨별 재료를 세팅한다.
+
+	local lv = 470
+	mat_list_by_lv[lv]['armor'][1][seasonCoin] = 263
+	mat_list_by_lv[lv]['armor'][1][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['armor'][2][seasonCoin] = 263
+	mat_list_by_lv[lv]['armor'][2][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['armor'][3][seasonCoin] = 263
+	mat_list_by_lv[lv]['armor'][3][medusaReinforceMisc] = 3
+	
+	mat_list_by_lv[lv]['armor'][4][seasonCoin] = 263
+	mat_list_by_lv[lv]['armor'][4][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['armor'][5][seasonCoin] = 450
+	mat_list_by_lv[lv]['armor'][5][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['armor'][6][seasonCoin] = 450
+	mat_list_by_lv[lv]['armor'][6][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['armor'][7][seasonCoin] = 450
+	mat_list_by_lv[lv]['armor'][7][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['armor'][8][seasonCoin] = 450
+	mat_list_by_lv[lv]['armor'][8][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['armor'][9][seasonCoin] = 450
+	mat_list_by_lv[lv]['armor'][9][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['armor'][10][seasonCoin] = 673
+	mat_list_by_lv[lv]['armor'][10][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['armor'][11][seasonCoin] = 673
+	mat_list_by_lv[lv]['armor'][11][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['armor'][12][seasonCoin] = 673
+	mat_list_by_lv[lv]['armor'][12][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['armor'][13][seasonCoin] = 673
+	mat_list_by_lv[lv]['armor'][13][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['armor'][14][seasonCoin] = 673
+	mat_list_by_lv[lv]['armor'][14][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['armor'][15][seasonCoin] = 927
+	mat_list_by_lv[lv]['armor'][15][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['armor'][16][seasonCoin] = 927
+	mat_list_by_lv[lv]['armor'][16][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['armor'][17][seasonCoin] = 1212
+	mat_list_by_lv[lv]['armor'][17][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['armor'][18][seasonCoin] = 1523
+	mat_list_by_lv[lv]['armor'][18][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['armor'][19][seasonCoin] = 1861
+	mat_list_by_lv[lv]['armor'][19][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['armor'][20][seasonCoin] = 2224
+	mat_list_by_lv[lv]['armor'][20][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['armor'][21][seasonCoin] = 2586
+	mat_list_by_lv[lv]['armor'][21][medusaReinforceMisc] = 10
+
+	mat_list_by_lv[lv]['armor'][22][seasonCoin] = 2948
+	mat_list_by_lv[lv]['armor'][22][medusaReinforceMisc] = 11
+
+	mat_list_by_lv[lv]['armor'][23][seasonCoin] = 3311
+	mat_list_by_lv[lv]['armor'][23][medusaReinforceMisc] = 12
+
+	mat_list_by_lv[lv]['armor'][24][seasonCoin] = 3673
+	mat_list_by_lv[lv]['armor'][24][medusaReinforceMisc] = 13
+
+	mat_list_by_lv[lv]['armor'][25][seasonCoin] = 4036
+	mat_list_by_lv[lv]['armor'][25][medusaReinforceMisc] = 14
+
+	mat_list_by_lv[lv]['armor'][26][seasonCoin] = 4398
+	mat_list_by_lv[lv]['armor'][26][medusaReinforceMisc] = 15
+
+	mat_list_by_lv[lv]['armor'][27][seasonCoin] = 4760
+	mat_list_by_lv[lv]['armor'][27][medusaReinforceMisc] = 16
+
+	mat_list_by_lv[lv]['armor'][28][seasonCoin] = 5123
+	mat_list_by_lv[lv]['armor'][28][medusaReinforceMisc] = 17
+
+	mat_list_by_lv[lv]['armor'][29][seasonCoin] = 5485
+	mat_list_by_lv[lv]['armor'][29][medusaReinforceMisc] = 18
+
+	mat_list_by_lv[lv]['armor'][30][seasonCoin] = 5848
+	mat_list_by_lv[lv]['armor'][30][medusaReinforceMisc] = 19
+end
+
+function setting_lv470_material_acc(mat_list_by_lv)
+	local seasonCoin = "GabijaCertificate" -- 주화
+	local medusaReinforceMisc = "misc_RevivalPaulius_NoTrade" -- 레이드 재료
+	local misc_BlessedStone = 'misc_BlessedStone'
+
+	-- 여기서 레벨별 재료를 세팅한다.	
+
+	local lv = 470
+	mat_list_by_lv[lv]['acc'][1][seasonCoin] = 263	
+	mat_list_by_lv[lv]['acc'][1][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['acc'][2][seasonCoin] = 263
+	mat_list_by_lv[lv]['acc'][2][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['acc'][3][seasonCoin] = 263
+	mat_list_by_lv[lv]['acc'][3][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['acc'][4][seasonCoin] = 263
+	mat_list_by_lv[lv]['acc'][4][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['acc'][5][seasonCoin] = 450
+	mat_list_by_lv[lv]['acc'][5][medusaReinforceMisc] = 3
+
+	mat_list_by_lv[lv]['acc'][6][seasonCoin] = 450
+	mat_list_by_lv[lv]['acc'][6][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][6][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['acc'][7][seasonCoin] = 450
+	mat_list_by_lv[lv]['acc'][7][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][7][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['acc'][8][seasonCoin] = 450
+	mat_list_by_lv[lv]['acc'][8][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][8][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['acc'][9][seasonCoin] = 450
+	mat_list_by_lv[lv]['acc'][9][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][9][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['acc'][10][seasonCoin] = 673
+	mat_list_by_lv[lv]['acc'][10][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][10][medusaReinforceMisc] = 5
+
+	mat_list_by_lv[lv]['acc'][11][seasonCoin] = 673
+	mat_list_by_lv[lv]['acc'][11][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][11][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['acc'][12][seasonCoin] = 673
+	mat_list_by_lv[lv]['acc'][12][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][12][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['acc'][13][seasonCoin] = 673
+	mat_list_by_lv[lv]['acc'][13][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][13][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['acc'][14][seasonCoin] = 673
+	mat_list_by_lv[lv]['acc'][14][misc_BlessedStone] = 1
+	mat_list_by_lv[lv]['acc'][14][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['acc'][15][seasonCoin] = 927
+	mat_list_by_lv[lv]['acc'][15][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][15][medusaReinforceMisc] = 7
+
+	mat_list_by_lv[lv]['acc'][16][seasonCoin] = 927
+	mat_list_by_lv[lv]['acc'][16][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][16][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['acc'][17][seasonCoin] = 1212
+	mat_list_by_lv[lv]['acc'][17][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][17][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['acc'][18][seasonCoin] = 1523
+	mat_list_by_lv[lv]['acc'][18][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][18][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['acc'][19][seasonCoin] = 1861
+	mat_list_by_lv[lv]['acc'][19][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][19][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['acc'][20][seasonCoin] = 2224
+	mat_list_by_lv[lv]['acc'][20][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][20][medusaReinforceMisc] = 8
+
+	mat_list_by_lv[lv]['acc'][21][seasonCoin] = 2586
+	mat_list_by_lv[lv]['acc'][21][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][21][medusaReinforceMisc] = 10
+
+	mat_list_by_lv[lv]['acc'][22][seasonCoin] = 2948
+	mat_list_by_lv[lv]['acc'][22][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][22][medusaReinforceMisc] = 11
+
+	mat_list_by_lv[lv]['acc'][23][seasonCoin] = 3311
+	mat_list_by_lv[lv]['acc'][23][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][23][medusaReinforceMisc] = 12
+
+	mat_list_by_lv[lv]['acc'][24][seasonCoin] = 3673
+	mat_list_by_lv[lv]['acc'][24][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][24][medusaReinforceMisc] = 13
+
+	mat_list_by_lv[lv]['acc'][25][seasonCoin] = 4036
+	mat_list_by_lv[lv]['acc'][25][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][25][medusaReinforceMisc] = 14
+
+	mat_list_by_lv[lv]['acc'][26][seasonCoin] = 4398
+	mat_list_by_lv[lv]['acc'][26][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][26][medusaReinforceMisc] = 15
+
+	mat_list_by_lv[lv]['acc'][27][seasonCoin] = 4760
+	mat_list_by_lv[lv]['acc'][27][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][27][medusaReinforceMisc] = 16
+
+	mat_list_by_lv[lv]['acc'][28][seasonCoin] = 5123
+	mat_list_by_lv[lv]['acc'][28][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][28][medusaReinforceMisc] = 17
+
+	mat_list_by_lv[lv]['acc'][29][seasonCoin] = 5485
+	mat_list_by_lv[lv]['acc'][29][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][29][medusaReinforceMisc] = 18
+
+	mat_list_by_lv[lv]['acc'][30][seasonCoin] = 5848
+	mat_list_by_lv[lv]['acc'][30][misc_BlessedStone] = 2
+	mat_list_by_lv[lv]['acc'][30][medusaReinforceMisc] = 19
+end
+
 function make_item_goddess_reinforce_material_list()
 	if item_goddess_reinforce_material_list ~= nil then
 		return
@@ -408,6 +639,7 @@ function make_item_goddess_reinforce_material_list()
 
 	item_goddess_reinforce_material_list = {}
 	item_goddess_reinforce_material_list[460] = {} -- 차후 더 높은 레벨의 아이템이 추가될시에 추가
+	item_goddess_reinforce_material_list[470] = {}
 	
 	local classtype_list = {}
 	table.insert(classtype_list, 'Sword')
@@ -433,7 +665,10 @@ function make_item_goddess_reinforce_material_list()
 	table.insert(classtype_list, 'Boots')
 	table.insert(classtype_list, 'Pants')
 	table.insert(classtype_list, 'Shirt')
+	table.insert(classtype_list, 'Ring')
+	table.insert(classtype_list, 'Neck')
 
+	-- 무기 방어구
 	for lv, v1 in pairs(item_goddess_reinforce_material_list) do
 		for _, class_type in pairs(classtype_list) do
 			item_goddess_reinforce_material_list[lv][class_type] = {}
@@ -444,12 +679,28 @@ function make_item_goddess_reinforce_material_list()
 	end
 
 	local mat_list_by_lv = {}
-	mat_list_by_lv[460] = {}
+	mat_list_by_lv[460] = {}	
 	for i = 1, GET_MAX_REINFORCE_POINT(460) do
 		mat_list_by_lv[460][i] = {}
 	end
 	setting_lv460_material(mat_list_by_lv)
-	-- 이후 레벨이 증가할때 추가		
+
+
+	-- 여기서부터 무기/방어구 - 악세 구분됨
+	mat_list_by_lv[470] = {}
+	for i = 1, GET_MAX_REINFORCE_POINT(470) do		
+		if mat_list_by_lv[470]['armor'] == nil then
+			mat_list_by_lv[470]['armor'] = {}
+			mat_list_by_lv[470]['acc'] = {}			
+		end		
+
+		mat_list_by_lv[470]['armor'][i] = {}
+		mat_list_by_lv[470]['acc'][i] = {}
+	end
+	setting_lv470_material_armor(mat_list_by_lv)
+	setting_lv470_material_acc(mat_list_by_lv)
+
+	-- 이후 레벨이 증가할때 추가
 
 	-- item_goddess_reinforce_material_list[item_UseLv][classtype][goal_reinforce_lv] - {재료이름 : 개수} 반환
 	for class_type, v in pairs(item_goddess_reinforce_material_list[460]) do		
@@ -459,12 +710,24 @@ function make_item_goddess_reinforce_material_list()
 			end
 		end
 	end
+
+	for class_type, v in pairs(item_goddess_reinforce_material_list[470]) do		
+		for lv, dic in pairs(v) do			
+			for i = 1, GET_MAX_REINFORCE_POINT(470) do
+				if class_type ~= 'Ring' and class_type ~= 'Neck' then
+					item_goddess_reinforce_material_list[470][class_type][i] = mat_list_by_lv[470]['armor'][i]
+				else
+					item_goddess_reinforce_material_list[470][class_type][i] = mat_list_by_lv[470]['acc'][i]
+				end
+			end
+		end
+	end
 end
 
 make_item_goddess_reinforce_material_list()
 
 -- 해당 강화로 가는데 필요한 재료 목록을 가져온다(실버, 주화, 다 포함)
-item_goddess_reinforce.get_material_list = function(use_lv, class_type, goal_lv)
+item_goddess_reinforce.get_material_list = function(use_lv, class_type, goal_lv)	
 	if item_goddess_reinforce_material_list[use_lv] == nil then
 		return nil
 	end
@@ -662,13 +925,27 @@ end
 
 -- 460레벨 이상, 가디스 등급만 가능
 item_goddess_transcend.is_able_to_transcend = function(target_item)
-	if target_item ~= nil and TryGetProp(target_item, 'Reinforce_Type', 'None') == 'goddess' and TryGetProp(target_item, 'UseLv', 0) >= 460 and TryGetProp(target_item, 'ItemGrade', 0) == 6 then
+	if target_item ~= nil and TryGetProp(target_item, 'Reinforce_Type', 'None') == 'goddess' and TryGetProp(target_item, 'UseLv', 0) == 460 and TryGetProp(target_item, 'ItemGrade', 0) == 6 then
 		return 'YES'
 	end
 
 	return 'WebService_38'
 end
 -- 초월 끝
+
+-- 460레벨 이상, 가디스 등급만 가능
+item_goddess_transcend.is_able_to_enchant = function(target_item)
+	if TryGetProp(target_item, 'ClassType', 'None') == 'Ring' or TryGetProp(target_item, 'ClassType', 'None') == 'Neck' then
+		return 'WebService_38'	
+	end
+
+	if target_item ~= nil and TryGetProp(target_item, 'Reinforce_Type', 'None') == 'goddess' and TryGetProp(target_item, 'UseLv', 0) >= 460 and TryGetProp(target_item, 'ItemGrade', 0) == 6 then
+		return 'YES'
+	end
+
+	return 'WebService_38'
+end
+
 
 -- 진화
 MAX_EVOLVE_MAT_COUNT = 4

@@ -111,6 +111,26 @@ function CHECK_JEWELL_COMMON_CONSTRAINT(item)
 	return false;
 end
 
+-- 강화 가능한 가디스 장비인가?
+function IS_ABLE_TO_REINFORCE_GODDESS(item)
+	if item == nil then
+		return false;
+	end
+	
+	if TryGetProp(item, 'ItemGrade', 0) < 6 then
+		return false
+	end
+
+    local classType = TryGetProp(item, 'ClassType');
+	local enableClassType = {'Sword', 'THSword', 'Staff', 'THBow', 'Bow', 'Mace', 'THMace', 'Spear', 'THSpear', 'Dagger', 'THStaff', 'Pistol', 'Rapier', 'Cannon', 'Musket', 'Shirt', 'Pants', 'Boots', 'Gloves', 'Shield', 'Trinket', 'Ring', 'Neck'};
+	for i = 1, #enableClassType do
+		if enableClassType[i] == classType then
+			return true;
+		end
+	end
+	return false;
+end
+
 function IS_ENABLE_EXTRACT_JEWELL(item)
     if item == nil then
 		return false;
@@ -191,7 +211,7 @@ function IS_ENABLE_APPLY_JEWELL_TOOLTIPTEXT(targetItem)
 	end
 		
     local classType = TryGetProp(targetItem, 'ClassType');
-    local classList = {'Seal', 'Ark','Ring' , 'Neck'}
+    local classList = {'Seal', 'Ark','Ring' , 'Neck', 'Earring'}
     for i = 1, #classList do
         if classList[i] == classType then
 	        return false, 'Type';

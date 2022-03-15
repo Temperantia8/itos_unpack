@@ -307,8 +307,8 @@ end
 
 -- 스킬 젬 추출 패널티 제거 케어 기간 입력
 function IS_GEM_EXTRACT_CARE_20211125()
-    local startTimeStr = "2021-11-25 09:00:00"
-	local endTimeStr = "2021-12-16 08:59:59"
+    local startTimeStr = "2021-12-23 09:00:00"
+    local endTimeStr = "2022-03-30 00:00:00"
 	
 	return date_time.is_between_time(startTimeStr, endTimeStr)
 end

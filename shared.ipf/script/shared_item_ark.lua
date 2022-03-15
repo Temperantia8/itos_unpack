@@ -338,6 +338,22 @@ shared_item_ark.get_return_ark_material = function()
 end
 ------------------ end of 반환 관련 로직 ---------------------------------------
 
+-- 아크 변환 체크
+shared_item_ark.is_able_to_convert = function(ark, scroll)
+    if TryGetProp(ark, 'CharacterBelonging', 0) ~= 1 then
+        return false, 'OnlyFromCabinetItemUsable'
+    end
+
+    if TryGetProp(ark, 'StringArg2', 'None') ~= 'Made_Ark' then        
+        return false, 'OnlyCabinetArk'
+    end
+
+    if TryGetProp(scroll, 'StringArg', 'None') ~= 'ArkConvertScroll' then
+        return false, 'NotValidItem'
+    end
+
+    return true, 'None'
+end
 
 -- 분해 가능한 마신/여신방어구 인가?
 -- stringArg, NumberArg1 체크

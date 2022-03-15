@@ -82,13 +82,13 @@ end
 
 function GET_ADDITIONAL_DROP_COUNT_PVP_MINE_MISC_BOOST2(pc, name)
     if name == 'uphill' then  -- 업힐    
-        return 5000
+        return 0
     elseif name == 'rift' then -- 차붕
-        return 4000
+        return 0
     elseif name == 'solo_dun' then -- 베르니케
         return 20000
     elseif name == 'weekly_boss' then -- 주간 보스
-        return 40000    
+        return 76000    
     end
 
     return 0

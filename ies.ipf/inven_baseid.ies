@@ -150,3 +150,7 @@ ClassID,BaseID,ClassName,TreeGroup,TreeGroupCaption,TreeSSetTitle,InvenTabName,M
 149,745001,"Gem_Relic_Black","Gem","젬","블랙 젬","Gem","NO"
 150,750001,"Weapon_Arcane","EquipGroup","장비","비전","Equip","NO"
 151,755001,"Gem_High_Color","Gem","젬","에테르 젬","Gem","NO"
+152,760001,"Accessory_Earring","EquipGroup","장비","귀걸이","Equip","NO"
+153,765001,"Pharmacy_Material","Pharmacy","비약 연성술","재료","Pharmacy","NO"
+154,770001,"Pharmacy_Additive","Pharmacy","비약 연성술","첨가물","Pharmacy","NO"
+155,775001,"Pharmacy_PharmacyRecipe","Pharmacy","비약 연성술","조제법","Pharmacy","NO"

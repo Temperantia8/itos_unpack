@@ -62,9 +62,13 @@ function IS_TRANSCEND_ABLE_ITEM(obj)
         return 0;
     end
 
-    local itemStringArg = TryGetProp(itemCls, "StringArg")
+    local itemStringArg = TryGetProp(itemCls, "StringArg", 'None')
     if itemStringArg == "Tutorial" then
         return 0;
+    end
+
+    if (TryGetProp(obj, 'ClassType', 'None') == 'Ring' or TryGetProp(obj, 'ClassType', 'None') == 'Neck') and TryGetProp(obj, 'ItemGrade', 0) >= 6 then
+        return 0
     end
 
     return 1;

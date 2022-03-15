@@ -94,6 +94,21 @@ end
 -- 아래 내용이 수정 될 경우, 프로그램팀에도 내용 전달 부탁드립니다.
 function SCR_QUEST_CHECK(pc,questname,npcquestcount_list)    
     
+    local reasonTB = {ScpArgMsg("Auto_isnotPassTutorial_startline3")}
+
+    if TUTORIAL_QUEST_EXCEPTION(pc, questname) == true then
+        -- 튜토리얼 퀘스트인경우
+        if TUTORIAL_CLEAR_CHECK(pc) == true then
+            return 'IMPOSSIBLE', reasonTB
+        end
+
+    else
+        -- 튜토리얼 퀘스트가 아닌 경우
+        if TUTORIAL_CLEAR_CHECK(pc) == false then
+            return 'IMPOSSIBLE', reasonTB
+        end
+    end
+
 	if IsServerSection(pc) == 0 then
 		return UpdateQuestCheck(pc, questname);
 	end
@@ -101,7 +116,7 @@ function SCR_QUEST_CHECK(pc,questname,npcquestcount_list)
 	if pc == nil then
 		return;
 	end
-
+    
     if pc.ClassName ~= 'PC' then
         if IsServerSection(pc) == 1 then
             print(ScpArgMsg("Auto_{Auto_1}_KweSeuTeuui_CheKeuSi_PCKa_aNin_{Auto_2}_ui_aegTeoJeongBoKa_NeomeooKo_issSeupNiDa.","Auto_1",questname,"Auto_2",pc.Name))
@@ -195,14 +210,7 @@ function SCR_QUEST_CHECK(pc,questname,npcquestcount_list)
                 
                 local noSuccessPropertyChangeFlag = 0
                 
---                if sObj ~= nil then
---                    if sObj[questIES.QuestPropertyName] >= CON_QUESTPROPERTY_END then
---                        req_end = 'NO'
---                        return 'COMPLETE'
---                    else
---                        req_end = 'YES'
---                    end
---                end
+
                 
                 if pc.Lv >= questIES.Succ_Lv then
                     Succ_req_Lv = 'YES';
@@ -1262,7 +1270,7 @@ function SCR_QUEST_CHECK(pc,questname,npcquestcount_list)
             
             
             if questIES.AOSLine == 'None' then
---                print('AAAAAAA',zoneInstID)
+
                 req_AOSLine = 'YES'
             else
                 

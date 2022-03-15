@@ -1584,6 +1584,12 @@ function SCR_Get_MON_SDR(self)
         end
     end
 
+    -- earring raid SDR setting
+    local is_earring_raid_mon = GetExProp(self, "is_earring_raid_mon");
+    if is_earring_raid_mon == 1 and IsBuffApplied(self, "GABIA_ENERGY_SDR_DEBUFF") == "YES" then
+        value = 0;
+    end 
+
     return math.floor(value);
 end
 

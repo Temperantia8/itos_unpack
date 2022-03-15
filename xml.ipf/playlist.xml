@@ -1,5 +1,5 @@
 <!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by sevin (IMCGAMES) -->
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (IMCGames Co., Ltd) -->
 <PlayList>
 	<BGM PlayListName="Login_Barrack" Volume="90" FileName1="tos_Kevin_TOS_Carol_2017.mp3" FileName2="tos_Tree_of_Savior_Piano.mp3" FileName3="tos_SFA_Openup_Po10.mp3"/>
 	<BGM PlayListName="NoMusic" Volume="90" FileName1="tos_mute_1minute.mp3"/>
@@ -126,6 +126,7 @@
 	<BGM PlayListName="master_Luchador" Volume="130" FileName1="tos_SFA_Polka_of_Wilderness.mp3"/>
 	<BGM PlayListName="master_Sadhu_re" Volume="130" FileName1="tos_Initium_Aoba_inst.mp3"/>
 	<BGM PlayListName="master_Hwarang" Volume="130" FileName1="tos_SFA_Rest_in_Peace.mp3"/>
+	<BGM PlayListName="master_Hackapell" Volume="130" FileName1="tos_SFA_Phantom_on_the_highway.mp3"/>
 	<BGM PlayListName="NPC_CHRISTMASTREE01" Volume="120" FileName1="Orgel_No_Matter_Christmas.mp3"/>
 	<BGM PlayListName="NPC_CHRISTMASTREE02" Volume="120" FileName1="Orgel_Dont_Cry.mp3"/>
 	<BGM PlayListName="raid_velcoffer" Volume="120" FileName1="tos_Drogo_Uno_Impetu.mp3" FileName2="tos_Drogo_Velvet_Penetration.mp3" FileName3="tos_Gaudium_Wrong_Theory.mp3"/>
@@ -149,6 +150,11 @@
 	<BGM PlayListName="raid_toshero" Volume="130" FileName1="tos_SFA_The_Ranunculales.mp3" FileName2="tos_Initium_Reina.mp3" FileName3="tos_SFA_The_Pledge.mp3"/>
 	<BGM PlayListName="f_unknownsanctuary" Volume="130" FileName1="tos_Initium_Adora.mp3" FileName2="tos_Drogo_Booming_in_ruins.mp3" FileName3="tos_SFA_Chaosas.mp3"/>
 	<BGM PlayListName="f_episode13_2" Volume="130" FileName1="tos_Initium_Hope_and_Cry.mp3" FileName2="tos_Initium_Stella.mp3" FileName3="tos_SFA_Klubas.mp3"/>
+	<BGM PlayListName="f_episode14_1_1" Volume="130" FileName1="tos_SFA_Memories_of_the_winter.mp3" FileName2="tos_SoundTeMP_Tender_Is_the_Night.mp3" FileName3="tos_Initium_Alcemy.mp3"/>
+	<BGM PlayListName="f_episode14_1_2" Volume="130" FileName1="tos_SFA_Eagle_Taloon.mp3" FileName2="tos_SFA_Velvety.mp3"/>
+	<BGM PlayListName="raid_delmore_1" Volume="130" FileName1="tos_SFA_The_Mirror_of_Fate.mp3"/>
+	<BGM PlayListName="raid_delmore_2" Volume="130" FileName1="tos_Symphonix_miles_to_go.mp3"/>
+	<BGM PlayListName="raid_earring" Volume="139" FileName1="tos_SFA_Perseguir_la_cola.mp3"/>
 	<BGM PlayListName="track" Volume="90" FileName1="track.mp3"/>
 	<BGM PlayListName="id_new_1" Volume="120" FileName1="tos_KubotaOsamu_The_Sun_Part2.mp3"/>
 	<BGM PlayListName="id_new_2" Volume="120" FileName1="tos_SFA_Xenute.mp3"/>

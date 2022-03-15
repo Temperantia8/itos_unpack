@@ -1,21 +1,23 @@
+local PC_MAX_MSPD = 60
+
 function SCR_GET_JOB_STAT_RATIO(pc, statName)
 	local stat = 0;
 	if statName == nil then
 		return 1;
-	end
-	
-	local jobList = GetJobHistoryList(pc);
-	if jobList ~= nil then
+    end
+    
+    local jobList = GetJobHistoryList(pc);
+    if jobList ~= nil then
 		local totalStatRatio = 0;
-		local jobCount = #jobList;
-		for i = 1, jobCount do
-			local jobClass = GetClassByType('Job', jobList[i]);
+        local jobCount = #jobList;
+        for i = 1, jobCount do
+            local jobClass = GetClassByType('Job', jobList[i]);
 			if jobClass ~= nil then
-			    local tempStatName = statName
-			    tempStatName = SCR_GET_JOB_STAT_CHANGE(pc, TryGetProp(jobClass, "ClassName", "None"), statName)
-				totalStatRatio = totalStatRatio + jobClass[tempStatName];
-			end
-		end
+                local tempStatName = statName
+			    tempStatName = SCR_GET_JOB_STAT_CHANGE(pc, TryGetProp(jobClass, "ClassName", "None"), statName, jobClass[statName])
+                totalStatRatio = totalStatRatio + jobClass[tempStatName];
+            end
+        end
 		
 		local statRatio = totalStatRatio / jobCount;
 	    local lv = TryGetProp(pc, "Lv", 1);
@@ -25,22 +27,39 @@ function SCR_GET_JOB_STAT_RATIO(pc, statName)
 	return math.floor(stat);
 end
 
-function SCR_GET_JOB_STAT_CHANGE(pc, jobClassName, statName)
-    
+function SCR_GET_JOB_STAT_CHANGE(pc, jobClassName, statName, statrate)
     local tempStatName = statName
     local propName = "CHANGE_STAT_"..jobClassName
-
+    
     if GetExProp(pc ,propName) == 0 then
         return tempStatName
     else
-        if tempStatName == "STR" then
-            tempStatName = "INT"
-        elseif tempStatName == "INT" then
-            tempStatName = "STR"
-        elseif tempStatName == "DEX" then
-            tempStatName = "MNA"
-        elseif tempStatName == "MNA" then
-            tempStatName = "DEX"
+        local abilCleric24 = GetAbility(pc, "Cleric24") -- 물리로 변경
+        local abilCleric36 = GetAbility(pc, "Cleric36") -- 마법으로 변경
+        if abilCleric24 ~= nil and TryGetProp(abilCleric24, "ActiveState", 0) == 1 then
+            if tempStatName == "STR" then
+                tempStatName = "INT"
+            elseif tempStatName == "DEX" then
+                tempStatName = "MNA"
+            end
+
+            if tempStatName == "INT" and statrate > 0 then
+                tempStatName = "STR"
+            elseif tempStatName == "MNA" and statrate > 0 then
+                tempStatName = "DEX"
+            end
+        elseif abilCleric36 ~= nil and TryGetProp(abilCleric36, "ActiveState", 0) == 1 then
+            if tempStatName == "INT"  then
+                tempStatName = "STR"
+            elseif tempStatName == "MNA" then
+                tempStatName = "DEX"
+            end
+
+            if tempStatName == "STR" and statrate > 0 then
+                tempStatName = "INT"
+            elseif tempStatName == "DEX" and statrate > 0 then
+                tempStatName = "MNA"
+            end
         end
     end
     
@@ -1030,7 +1049,7 @@ function SCR_Get_MAXPATK(self)
     if value < 1 then
     	value = 1;
     end
-    
+
     return math.floor(value);
 end
 
@@ -1116,7 +1135,7 @@ function SCR_Get_MINPATK_SUB(self)
     if value < 1 then
     	value = 1;
     end
-    
+
     return math.floor(value);
 end
 
@@ -1196,7 +1215,7 @@ function SCR_Get_MAXPATK_SUB(self)
     if value < 1 then
     	value = 1;
     end
-    
+
     return math.floor(value);
 end
 
@@ -1825,6 +1844,12 @@ function SCR_Get_HR(self)
     byRateBuff = math.floor(value * byRateBuff);
     
     value = value + byItemRareOption + byBuff + byRateBuff;
+
+    if GetExProp(self, "IS_Hakkapeliter1_Abil") == 1 then
+        local addhr = math.floor(value * 0.15)
+        SetExProp(self, "IS_Hakkapeliter1_Value", addhr) 
+        value = value - addhr
+    end
     
     if value < 0 then
     	value = 0
@@ -2620,9 +2645,9 @@ function SCR_Get_MSPD(self)
     if isDashRun > 0 then    -- 대시 런 --
         local dashRunAddValue = 10
         
-	    if jobCtrlType == "Wizard" then
-	    	dashRunAddValue = dashRunAddValue - 4
-	    end
+	    -- if jobCtrlType == "Wizard" then
+	    -- 	dashRunAddValue = dashRunAddValue - 4
+	    -- end
 	    
 --	    if jobCtrlType == "Archer" then
 --	    	if IsBattleState(self) == 0 or IsBuffApplied(self, "Tracking_Buff") == "YES" then
@@ -4056,6 +4081,10 @@ function SCR_GET_Gun_Atk(pc)
     end
     
     local value = byItem + byBuff;
+
+    if GetExProp(pc, "IS_Hakkapeliter1_Abil") == 1 then
+        value = value + GetExProp(pc, "IS_Hakkapeliter1_Value")
+    end
 	
     return math.floor(value);
 end
@@ -4172,9 +4201,10 @@ function SCR_GET_Magic_Dark_Atk(pc)
 end
 
 function SCR_GET_Magic_Holy_Atk(pc)
-    -- 아이템에서는 사용하지 않아 아이템에 대한 추가치 로직은 없음
-    -- 만약 아이템에서 사용하게 되면 로직 추가해야함
-    local byItem = 0;
+    local byItem = GetSumOfEquipItem(pc, "Magic_Holy_Atk");
+    if byItem == nil then
+        byItem = 0;
+    end
     
     local byBuff = TryGetProp(pc, "Magic_Holy_Atk_BM");
     if byBuff == nil then
@@ -4453,10 +4483,9 @@ function GET_MAXHATE_COUNT(self)
 	            byBuff = 0;
 	        end
 	        
-	        maxHateCount = defaultMaxHateCount + byBuff;
+            maxHateCount = defaultMaxHateCount + byBuff;
 	    end
     end
-    
     return maxHateCount;
 end
 

@@ -5924,6 +5924,78 @@
 			<ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
         </StartList>
     </AI>
+    <AI Name="EP14_1_FCASTLE2_MQ_3_BEFORE_ARROW" UpdateMS="1000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="EP14_1_FCASTLE2_MQ_3_BEFORE_ARROW_RUN"/>
+            </ToolScp>
+        </List>
+    </AI>
+    <AI Name="EP14_1_FCASTLE3_FIELDNPC_ACT1" UpdateMS="5000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="EP14_1_FCASTLE3_FIELDNPC_ACT1_RUN"/>
+            </ToolScp>
+        </List>
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+        </StartList>
+    </AI>
+    <AI Name="EP14_1_FCASTLE3_FIELDNPC_ACT2" UpdateMS="5000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="EP14_1_FCASTLE3_FIELDNPC_ACT2_RUN"/>
+            </ToolScp>
+        </List>
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+        </StartList>
+    </AI>
+    <AI Name="EP14_1_FCASTLE4_MQ_3_PROGNPC_AI_RUN_1_ACT" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="EP14_1_FCASTLE4_MQ_3_PROGNPC_AI_RUN_1_ACT_RUN"/>
+            </ToolScp>
+        </List>
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+        </StartList>
+    </AI>
+    <AI Name="EP14_1_FCASTLE4_MQ_7_FERRET_AI" UpdateMS="60000" ActiveMessageMapInBattle="1">
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+            <ToolScp Scp="S_AI_PLAYANI" Client="NO" UseSleep="NO">
+                <Str Str="std"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_BUFF" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str Str="EP14_1_FCASTLE4_MQ_7_FERRET_DEBUFF"/>
+                <Num Num="99"/>
+                <Num Num="0"/>
+                <Num Num="0"/>
+                <Num Num="1"/>
+                <Num Num="100"/>
+            </ToolScp>
+        </StartList>
+    </AI>
+    <AI Name="EP14_1_FIELD_SOLDIER_AI" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="S_AI_MOVE_RALLY_SELF" Client="NO" UseSleep="YES" ExtraArg="1">
+                <Pos Angle="0" Dist="0"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_SET_TENDENCY_RANGE" Client="NO" UseSleep="NO">
+                <Num Num="200"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_ATTACK_NEAR" Client="NO" UseSleep="NO">
+                <Num Num="200"/>
+            </ToolScp>
+        </List>
+        <StartList>
+            <ToolScp Scp="S_AI_SET_TENDENCY" Client="NO" UseSleep="NO">
+                <Str Str="Attack"/>
+            </ToolScp>
+        </StartList>
+    </AI>
     <AI Name="EVENT1912_4TH_BUFF2_RUN_MON_AI_RUN" UpdateMS="10000" ActiveMessageMapInBattle="1">
         <List>
             <ToolScp Scp="SAI_FUNC2_DIRECT" Client="NO" UseSleep="NO">
@@ -6746,6 +6818,16 @@
                 <Str Str="EXORCIST_MSTEP321_ITEM1_AI_UPDATE"/>
             </ToolScp>
         </List>
+    </AI>
+    <AI Name="Ep14_Raid_Eyes_EffectMonAI" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="SCR_REVIVAL_PAULIUS_EYES_LOOKAT_TARGET_AI"/>
+            </ToolScp>
+        </List>
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+        </StartList>
     </AI>
     <AI Name="FANTASYLIB481_MQ_3_NPC_AI" ActiveMessageMapInBattle="1">
         <StartList>
@@ -14035,6 +14117,16 @@
                 <Str_Arg Str="F_spread_out008_smoke2_green" Arg="0.40000001"/>
                 <Str Str="BOT"/>
             </ToolScp>
+            <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_spread_out008_smoke2_green" Arg="0.40000001"/>
+                <Str Str="BOT"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_spread_out008_smoke2_green" Arg="0.40000001"/>
+                <Str Str="BOT"/>
+            </ToolScp>
             <ToolScp Scp="SAI_R_MOVE" Client="NO" UseSleep="NO"/>
             <ToolScp Scp="SAI_R_MOVE" Client="NO" UseSleep="NO"/>
             <ToolScp Scp="SAI_R_MOVE" Client="NO" UseSleep="NO"/>
@@ -14068,6 +14160,16 @@
                 <Str_Arg Str="F_spread_out008_smoke2_mint" Arg="0.40000001"/>
                 <Str Str="BOT"/>
             </ToolScp>
+            <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_spread_out008_smoke2_mint" Arg="0.40000001"/>
+                <Str Str="BOT"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_spread_out008_smoke2_mint" Arg="0.40000001"/>
+                <Str Str="BOT"/>
+            </ToolScp>
             <ToolScp Scp="SAI_R_MOVE" Client="NO" UseSleep="NO"/>
             <ToolScp Scp="SAI_R_MOVE" Client="NO" UseSleep="NO"/>
             <ToolScp Scp="SAI_R_MOVE" Client="NO" UseSleep="NO"/>
@@ -14095,6 +14197,16 @@
         <List>
             <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
                 <Str Str="SCR_MAPLE_25_3_JOB_SHADOWMANCER_SHADOW_TIME_COUNT"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_spread_out008_smoke_violet" Arg="0.40000001"/>
+                <Str Str="BOT"/>
+            </ToolScp>
+            <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_spread_out008_smoke_violet" Arg="0.40000001"/>
+                <Str Str="BOT"/>
             </ToolScp>
             <ToolScp Scp="S_AI_EFFECT" Client="NO" UseSleep="NO">
                 <Num Num="0"/>
@@ -18409,6 +18521,23 @@ if self.HP == 0 then return 1; else return 0; end;">
             </ToolScp>
         </List>
     </AI>
+    <AI Name="SCR_EP14_1_FCASTLE3_MQ_5_MGAME_PAJAUTA_BATTEL_AI" UpdateMS="2000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="SCR_EP14_1_FCASTLE3_MQ_5_MGAME_PAJAUTA_BATTEL_RUN"/>
+            </ToolScp>
+        </List>
+    </AI>
+    <AI Name="SCR_EP14_1_F_CASTLE_1_KRAJICEK_AI_RUN_1" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="SCR_EP14_1_F_CASTLE_1_KRAJICEK_AI_RUN_1_ACT"/>
+            </ToolScp>
+        </List>
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+        </StartList>
+    </AI>
     <AI Name="SCR_ID_WHITETREES1_GIMMICK3_SETUP" ActiveMessageMapInBattle="1">
         <StartList>
             <ToolScp Scp="SAI_FUNC2_DIRECT" Client="NO" UseSleep="NO">
@@ -19965,6 +20094,35 @@ if self.HP == 0 then return 1; else return 0; end;">
                 <Num Num="0"/>
                 <Num Num="1"/>
                 <Num Num="100"/>
+            </ToolScp>
+        </StartList>
+    </AI>
+    <AI Name="StartLine3_TUTO_NPC_ALPHA" ActiveMessageMapInBattle="1">
+        <StartList>
+            <ToolScp Scp="S_AI_CHANGE_COLOR" Client="NO" UseSleep="NO">
+                <Num Num="255"/>
+                <Num Num="255"/>
+                <Num Num="255"/>
+                <Num Num="130"/>
+                <Num Num="1"/>
+            </ToolScp>
+        </StartList>
+    </AI>
+    <AI Name="StartLine3_TUTO_Wall_Dir_1" UpdateMS="1000" ActiveMessageMapInBattle="1">
+        <StartList>
+            <ToolScp Scp="S_AI_EFFECT_ATTACH" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_pattern009_orange_loop" Arg="8"/>
+                <Str Str="BOT"/>
+            </ToolScp>
+        </StartList>
+    </AI>
+    <AI Name="StartLine3_TUTO_Wall_Dir_2" UpdateMS="1000" ActiveMessageMapInBattle="1">
+        <StartList>
+            <ToolScp Scp="S_AI_EFFECT_ATTACH" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_pattern009_orange_loop90" Arg="8"/>
+                <Str Str="BOT"/>
             </ToolScp>
         </StartList>
     </AI>
@@ -25407,7 +25565,14 @@ if self.HP == 0 then return 1; else return 0; end;">
             </ToolScp>
         </LeaveList>
     </AI>
-    <AI Name="companion_Armadillo" ActiveMessageMapInBattle="1">
+    <AI Name="companion_pet_skunk" ActiveMessageMapInBattle="1">
+		<List>
+			<ToolScp Scp="SAI_FUNC2_DIRECT_SLEEP" Client="NO" UseSleep="YES">
+				<Str Str="PET_LOOP_AI"/>
+			</ToolScp>
+		</List>
+	</AI>
+	<AI Name="companion_Armadillo" ActiveMessageMapInBattle="1">
         <List>
             <ToolScp Scp="SAI_FUNC2_DIRECT_SLEEP" Client="NO" UseSleep="YES">
                 <Str Str="PET_LOOP_AI"/>
@@ -27730,6 +27895,20 @@ return GET_RATE_MHP(self, damage) * 100"/>
                 <Num Num="11"/>
             </ToolScp>
         </HitList>
+    </AI>
+    <AI Name="DELMORE_CASTLE_GATE_GRESME_RAVEN" UpdateMS="2000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC2_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="SCR_DELMORE_CATLE_GATE_GRESME_RAVEN_AI"/>
+            </ToolScp>
+        </List>
+    </AI>
+    <AI Name="DLEMORE_CASTLE_GATE_EYES" UpdateMS="1000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC2_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="DLEMORE_CASTLE_GATE_EYES_AI"/>
+            </ToolScp>
+        </List>
     </AI>
 	<AI Name="F_Moringponia_Summon_AI" ActiveMessageMapInBattle="1">
 		<List>

@@ -94,12 +94,12 @@
                     <Num Num="0"/>
                 </Scp>
                 <Scp Scp="SKL_BUFF" Client="NO" UseSleep="NO" Time="0">
-                    <Str Str="Finestra_Buff" UseFunc="0" FuncTxt=" 
+                    <Str Str="Finestra_Buff" UseFunc="1" FuncTxt=" 
                     local weapon = GetEquipItem(self, 'RH')
-                    if weapon ~= nil and weapon.ClassType2 == &quot;Spear&quot; then
-                        return &quot;Finestra_Buff&quot;
+                    if weapon ~= nil and weapon.ClassType2 == 'Spear' then
+                        return 'Finestra_Buff'
                     end
-                    return &quot;None&quot;"/>
+                    return 'None'"/>
                     <Num Num="1" UseFunc="1" FuncTxt="return obj.Level"/>
                     <Num Num="0"/>
                     <Num Num="15000"/>

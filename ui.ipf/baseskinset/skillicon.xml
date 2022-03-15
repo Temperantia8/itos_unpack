@@ -837,6 +837,14 @@
 		<image name="icon_scout_LinkDispense" file="\icon\skill\scout\icon_scout_LinkDispense.png" imgrect="0 0 128 128" CMM_Caption="링크 디스펜스"/>
 		<image name="icon_scout_ChainGrip" file="\icon\skill\scout\icon_scout_ChainGrip.png" imgrect="0 0 128 128" CMM_Caption="체인그립"/>
 		<image name="icon_scout_ManaCollect" file="\icon\icon_ability_scout04.tga" imgrect="128 128 128 128" CMM_Caption="마력 수집(스킬)"/>
+		<image name="icon_scout_HackaPoa" file="\icon\skill\scout\icon_scout_HackaPoa.png" imgrect="0 0 128 128" CMM_Caption="하카 포아"/>
+		<image name="icon_scout_Spaning" file="\icon\skill\scout\icon_scout_Spaning.png" imgrect="0 0 128 128" CMM_Caption="스파닝"/>
+		<image name="icon_scout_Blossa" file="\icon\skill\scout\icon_scout_Blossa.png" imgrect="0 0 128 128" CMM_Caption="블로사"/>
+		<image name="icon_scout_AnkleShot" file="\icon\skill\scout\icon_scout_AnkleShot.png" imgrect="0 0 128 128" CMM_Caption="앵클샷"/>
+		<image name="icon_scout_TrooperCharge" file="\icon\skill\scout\icon_scout_TrooperCharge.png" imgrect="0 0 128 128" CMM_Caption="트루퍼 차지"/>
+		<image name="icon_scout_InfiniteAssault" file="\icon\skill\scout\icon_scout_InfiniteAssault.png" imgrect="0 0 128 128" CMM_Caption="인피니티 어썰트"/>
+		<image name="icon_scout_EnachantAura" file="\icon\skill\scout\icon_scout_EnachantAura.png" imgrect="0 0 128 128" CMM_Caption="인챈트 아우라"/>
+		<image name="icon_scout_Transmute" file="\icon\skill\scout\icon_scout_Transmute.png" imgrect="0 0 128 128" CMM_Caption="트랜스뮤트"/>
 	</imagelist>
 	<imagelist category="summon_skillicon">
 		<image name="icon_summon_Common_ForcedAttack" file="\icon\skill\summon\icon_summon_Common_ForcedAttack.png" imgrect="0 0 128 128" CMM_Caption="소환수 강제 공격"/>
@@ -906,6 +914,9 @@
 		<image name="icon_common_retro01" file="\icon\skill\common\icon_common_retro01.png" imgrect="0 0 128 128" CMM_Caption="2021_9월 여신의 큐브 3종"/>
 		<image name="icon_common_retro02" file="\icon\skill\common\icon_common_retro02.png" imgrect="0 0 128 128"/>
 		<image name="icon_common_retro03" file="\icon\skill\common\icon_common_retro03.png" imgrect="0 0 128 128"/>
+		<image name="icon_earring_party_def_buff" file="\icon\skill\common\icon_earring_party_def_buff.png" imgrect="0 0 128 128" CMM_Caption="수비적인 버프"/>
+		<image name="icon_earring_party_atk_buff" file="\icon\skill\common\icon_earring_party_atk_buff.png" imgrect="0 0 128 128" CMM_Caption="공격적인 버프"/>
+		<image name="icon_earring_party_util_buff" file="\icon\skill\common\icon_earring_party_util_buff.png" imgrect="0 0 128 128" CMM_Caption="유틸적인 버프"/>
 	</imagelist>
 	<imagelist category="restquickslot_icon">
 		<image name="icon_rest_arrow" file="\icon\rest_mode_icon.tga" imgrect="0 0 128 128" CMM_Caption="화살제작"/>
@@ -3511,8 +3522,30 @@
 		<image name="ability_scout_rangda18" file="\icon\icon_ability_scout04.tga" imgrect="896 512 128 128" CMM_Caption="[아츠] 케레티한: 상급 강화"/>
 		<image name="ability_archer_Schwarzereiter34" file="\icon\icon_ability_scout04.tga" imgrect="0 640 128 128" CMM_Caption="[아츠] 회피기동: 지속"/>
 		<image name="ability_archer_Schwarzereiter35" file="\icon\icon_ability_scout04.tga" imgrect="128 640 128 128" CMM_Caption="슈바르츠라이터: 추가 대미지"/>
+		<image name="ability_scout_Hakkapeliter1" file="\icon\icon_ability_scout04.tga" imgrect="256 640 128 128" CMM_Caption="하카펠리테르"/>
+		<image name="ability_scout_Hakkapeliter2" file="\icon\icon_ability_scout04.tga" imgrect="384 640 128 128" CMM_Caption="하카 포아: 대응"/>
+		<image name="ability_scout_Hakkapeliter3" file="\icon\icon_ability_scout04.tga" imgrect="512 640 128 128" CMM_Caption="스파닝: 휴식"/>
+		<image name="ability_scout_Hakkapeliter4" file="\icon\icon_ability_scout04.tga" imgrect="640 640 128 128" CMM_Caption="블로사: 강화"/>
+		<image name="ability_scout_Hakkapeliter5" file="\icon\icon_ability_scout04.tga" imgrect="768 640 128 128" CMM_Caption="앵클 샷: 강화"/>
+		<image name="ability_scout_Hakkapeliter6" file="\icon\icon_ability_scout04.tga" imgrect="896 640 128 128" CMM_Caption="트루퍼 차지: 강화"/>
+		<image name="ability_scout_Hakkapeliter7" file="\icon\icon_ability_scout04.tga" imgrect="0 768 128 128" CMM_Caption="인피니트 어썰트: 강화"/>
+		<image name="ability_scout_Hakkapeliter8" file="\icon\icon_ability_scout04.tga" imgrect="128 768 128 128" CMM_Caption="인피니트 어썰트: 쳐내기"/>
+		<image name="ability_scout_Hakkapeliter9" file="\icon\icon_ability_scout04.tga" imgrect="256 768 128 128" CMM_Caption="[아츠] 하카펠: 전략적 전환"/>
+		<image name="ability_scout_Hakkapeliter10" file="\icon\icon_ability_scout04.tga" imgrect="384 768 128 128" CMM_Caption="[아츠] 트루퍼 차지: 크로사"/>
+		<image name="ability_scout_Hakkapeliter11" file="\icon\icon_ability_scout04.tga" imgrect="512 768 128 128" CMM_Caption="[아츠] 블로사: 상급 강화"/>
+		<image name="ability_scout_Hakkapeliter12" file="\icon\icon_ability_scout04.tga" imgrect="640 768 128 128" CMM_Caption="[아츠] 앵클 샷: 상급 강화"/>
+		<image name="ability_scout_Hakkapeliter13" file="\icon\icon_ability_scout04.tga" imgrect="768 768 128 128" CMM_Caption="[아츠] 트루퍼 차지: 상급 강화"/>
+		<image name="ability_scout_Hakkapeliter14" file="\icon\icon_ability_scout04.tga" imgrect="896 768 128 128" CMM_Caption="[아츠] 인피니트 어썰트: 상급 강화"/>
 		<image name="ability_scout_Rogue28" file="\icon\icon_ability_scout04.tga" imgrect="0 896 128 128" CMM_Caption="페인트: 강화"/>
 		<image name="ability_scout_Rogue29" file="\icon\icon_ability_scout04.tga" imgrect="128 896 128 128" CMM_Caption="[아츠] 페인트: 상급 강화"/>
+		<image name="ability_scout_Enchanter29" file="\icon\icon_ability_scout04.tga" imgrect="256 896 128 128" CMM_Caption="인챈트 아우라: 강화"/>
+		<image name="ability_scout_Enchanter30" file="\icon\icon_ability_scout04.tga" imgrect="384 896 128 128" CMM_Caption="[아츠]인챈트 아우라: 상급 강화"/>
+		<image name="ability_scout_Thaumaturge32" file="\icon\icon_ability_scout04.tga" imgrect="512 896 128 128" CMM_Caption="트랜스뮤트: 강화"/>
+		<image name="ability_scout_Thaumaturge33" file="\icon\icon_ability_scout04.tga" imgrect="640 896 128 128" CMM_Caption="[아츠]트랜스뮤트: 상급 강화"/>
+		<image name="ability_scout_Linker28" file="\icon\icon_ability_scout04.tga" imgrect="768 896 128 128" CMM_Caption="행맨스 낫: 강화"/>
+		<image name="ability_scout_Linker29" file="\icon\icon_ability_scout04.tga" imgrect="896 896 128 128" CMM_Caption="[아츠] 행맨스 낫: 상급 강화"/>
+		<image name="ability_archer_Bulletmarker26" file="\icon\icon_ability_scout05.tga" imgrect="0 0 128 128" CMM_Caption="더블 건 스탠스: 강화"/>
+		<image name="ability_archer_Bulletmarker27" file="\icon\icon_ability_scout05.tga" imgrect="128 0 128 128" CMM_Caption="[아츠 ]더블 건 스탠스: 상급 강화"/>
 	</imagelist>
 	<imagelist category="abilityicon">
 		<image name="icon_abil_1_1" file="\icon\ability_icon.tga" imgrect="0 0 64 64" CMM_Caption="절단"/>

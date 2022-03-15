@@ -665,6 +665,7 @@
 	<Code Code="ERROR_CHALLENGE_AUTO_MODE" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="챌린지모드 자동매칭 관련 에러"/>
 	<Code Code="INFO_TRACE_QUICKSLOT" Team="tos_team" Category="INFO" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="퀵슬롯"/>
 	<Code Code="ERROR_GILTINE" Team="tos_team" Category="SYSTEM" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="길티네 랭킹 관련 에러"/>
+	<Code Code="ERROR_CARD_PRESET" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="카드 프리셋 관련 에러"/>
 	<Code Code="ERROR_OTP_TAIWAN" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="성물 레이드 관련 에러"/>
 	<Code Code="ERROR_FAILED_START_WATCHDOG" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="Watchdog 프로세스 시작에 실패했습니다."/>
 	<Code Code="INFO_NEXON_MARKET" Team="tos_team" Category="INFO" SubCategory="" Logger="root" Enabled="NO" CallStack="NO" Desc="개발용 정보"/>

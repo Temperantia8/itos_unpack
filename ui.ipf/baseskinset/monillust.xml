@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by MintPC (Mi) -->
 <skinset name="Base">
 	<imagelist category="Monster_icon_boss_02">
@@ -185,6 +185,9 @@
 		<image name="boss_mokslas_valdovas" file="\icon\monster\boss\boss_mokslas_valdovas.png" imgrect="0 0 80 80"/>
 		<image name="boss_insane_marnoks" file="\icon\monster\boss\boss_insane_marnoks.png" imgrect="0 0 80 80"/>
 		<image name="boss_Vasilissa" file="\icon\monster\boss\boss_Vasilissa.png" imgrect="0 0 80 80"/>
+		<image name="boss_GresmeTruth" file="\icon\monster\boss\boss_GresmeTruth.png" imgrect="0 0 80 80"/>
+		<image name="boss_RevivalPaulius" file="\icon\monster\boss\boss_RevivalPaulius.png" imgrect="0 0 80 80"/>
+		<image name="boss_DelmoreCastleGate" file="\icon\monster\boss\boss_DelmoreCastleGate.png" imgrect="0 0 80 80"/>
 	</imagelist>
 	<imagelist category="Monster_icon_boss_01">
 		<image name="boss_FerretMarauder" file="\icon\monster\boss\boss_FerretMarauder.png" imgrect="0 0 80 80"/>
@@ -1612,5 +1615,17 @@
 		<image name="Goblin_brandingiron" file="\icon\monster\mon\Goblin_brandingiron.png" imgrect="0 0 80 80"/>
 		<image name="Dumaro" file="\icon\monster\mon\Dumaro.png" imgrect="0 0 80 80"/>
 		<image name="banshee" file="\icon\monster\mon\banshee.png" imgrect="0 0 80 80"/>
+		<image name="Bleakferret_Gladiator" file="\icon\monster\mon\Bleakferret_Gladiator.png" imgrect="0 0 80 80"/>
+		<image name="Bleakferret_Spear" file="\icon\monster\mon\Bleakferret_Spear.png" imgrect="0 0 80 80"/>
+		<image name="TransmutationSoldier" file="\icon\monster\mon\TransmutationSoldier.png" imgrect="0 0 80 80"/>
+		<image name="TransmutationMerchant" file="\icon\monster\mon\TransmutationMerchant.png" imgrect="0 0 80 80"/>
+		<image name="Bleakferret_shielder" file="\icon\monster\mon\Bleakferret_shielder.png" imgrect="0 0 80 80"/>
+		<image name="GresmeRaven" file="\icon\monster\mon\GresmeRaven.png" imgrect="0 0 80 80"/>
+		<image name="TransmutationPeople" file="\icon\monster\mon\TransmutationPeople.png" imgrect="0 0 80 80"/>
+		<image name="Bleakferret_Charger" file="\icon\monster\mon\Bleakferret_Charger.png" imgrect="0 0 80 80"/>
+		<image name="Bleakferret_Swordman" file="\icon\monster\mon\Bleakferret_Swordman.png" imgrect="0 0 80 80"/>
+		<image name="GresmeCrow" file="\icon\monster\mon\GresmeCrow.png" imgrect="0 0 80 80"/>
+		<image name="Bleakferret_Cannon" file="\icon\monster\mon\Bleakferret_Cannon.png" imgrect="0 0 80 80"/>
+		<image name="GresmeBird" file="\icon\monster\mon\GresmeBird.png" imgrect="0 0 80 80"/>
 	</imagelist>
 </skinset>

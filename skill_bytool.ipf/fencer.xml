@@ -62,7 +62,12 @@
                     <Str Str="voice_archer_pavise_shot"/>
                 </Scp>
                 <Scp Client="NO" Scp="SKL_BUFF" Time="900" UseSleep="NO">
-                    <Str Str="EpeeGarde_Buff"/>
+                    <Str Str="EpeeGarde_Buff" UseFunc="1" FuncTxt=" 
+                    local weapon = GetEquipItem(self, 'RH')
+                    if weapon ~= nil and weapon.ClassType == 'Rapier' then
+                        return 'EpeeGarde_Buff'
+                    end
+                    return 'None'"/>
                     <Num FuncTxt="return obj.Level" Num="1" UseFunc="1"/>
                     <Num Num="0"/>
                     <Num Num="1800000"/>

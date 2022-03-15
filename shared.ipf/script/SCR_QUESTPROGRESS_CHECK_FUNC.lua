@@ -980,7 +980,7 @@ function SCR_UQ_CLEAR_CHECK(pc, questName, scriptInfo)
 end
 
 -- 마스터 의뢰 퀘스트 수락 후 시작 NPC 대사에 삽입
-function SCR_SET_UNLOCK_AOBJ_UNLOCK(pc, questName, scriptInfo)--퀘스트 시작/성공 시 퀘스트 이름과 같은 Account On
+function SCR_SET_UNLOCK_AOBJ_UNLOCK(pc, questName, scriptInfo, argStr1, argStr2)--퀘스트 시작/성공 시 퀘스트 이름과 같은 Account On
     local aObj = nil;
     if IsServerSection(pc) == 1 then
         aObj = GetAccountObj(pc);
@@ -991,9 +991,15 @@ function SCR_SET_UNLOCK_AOBJ_UNLOCK(pc, questName, scriptInfo)--퀘스트 시작
 
     if aObj == nil then return; end
 
+    local After_Str = "None"
+    if argStr2 ~= nil then
+        After_Str = argStr2[1]
+    end
+
     local Target_aObj = TryGetProp(aObj, questName)
     if Target_aObj == 0 then
-        _SCR_SET_UNLOCK_AOBJ(pc, aObj, 1, questName)
+
+        _SCR_SET_UNLOCK_AOBJ(pc, aObj, 1, questName, After_Str)
     end
 end
 
@@ -1015,7 +1021,7 @@ function SCR_SET_UNLOCK_AOBJ_LOCK(pc, questName, scriptInfo)--퀘스트 시작/�
     end
 end
 
-function _SCR_SET_UNLOCK_AOBJ(pc, aObj, state, questName)
+function _SCR_SET_UNLOCK_AOBJ(pc, aObj, state, questName, argStr)
     local tx = TxBegin(pc)
 
     TxSetIESProp(tx, aObj, questName, state)
@@ -1023,6 +1029,9 @@ function _SCR_SET_UNLOCK_AOBJ(pc, aObj, state, questName)
 
     if ret == "SUCCESS" then
         CustomMongoLog(pc, "UnlockQuest", "Quest", questName, "On/Off", state, "QuestState", SCR_QUEST_CHECK(pc, questName));
+        if argStr ~= nil and argStr ~= "None" then
+            ShowOkDlg(pc, argStr, 1)
+        end
     end
 end
 
@@ -1123,4 +1132,17 @@ function IS_UNLOCK_QUEST_STARTED(pc, achieve_name)
         end
     end
     return false;
+end
+
+
+-- 영웅담 퀘스트 시작 조건 기본 클래스 포함 4개 이상
+function GET_TOSHERO_TUTO_01_ENABLE(pc, questName)
+    local Job = GetJobHistoryList(pc)
+    
+    if #Job >= 4 then
+        return "YES"
+    else
+        return "NO"
+    end
+
 end

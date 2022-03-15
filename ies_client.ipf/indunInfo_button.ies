@@ -15,3 +15,4 @@ ClassID,ClassName,DungeonType,SubType,RedButtonText,RedButtonScp,Button1Text,But
 15,"ChallengeSoloMode","Challenge_Solo","","입장하기","REQ_CHALLENGE_AUTO_UI_OPEN","","","","","",""
 16,"RaidSoloMode","Raid","Casual","입장하기","REQ_RAID_SOLO_UI_OPEN","","","","","",""
 17,"MythicSoloMode","MythicDungeon_Auto","Casual","입장하기","REQ_RAID_SOLO_UI_OPEN","","","","","",""
+18,"EarringRaid","EarringRaid","","입장하기","REQ_EARRING_RAID_UI_OPEN","","","","","",""

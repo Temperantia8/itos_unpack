@@ -724,5 +724,14 @@
 		<image name="TUTO_UNKNOWNSANTUARY_PIC_2" file="\helpimg\TUTO_UNKNOWNSANTUARY_PIC_2.jpg" imgrect="0 0 380 692"/>
 		<image name="TUTO_UNKNOWNSANTUARY_PIC_3" file="\helpimg\TUTO_UNKNOWNSANTUARY_PIC_3.jpg" imgrect="0 0 380 137"/>
 		<image name="TUTO_UNKNOWNSANTUARY_PIC_4" file="\helpimg\TUTO_UNKNOWNSANTUARY_PIC_4.jpg" imgrect="0 0 380 317"/>
+		<image name="TUTO_PHARMACY_PIC_1" file="\helpimg\TUTO_PHARMACY_PIC_1.png" imgrect="0 0 380 147"/>
+		<image name="TUTO_PHARMACY_PIC_2" file="\helpimg\TUTO_PHARMACY_PIC_2.png" imgrect="0 0 380 181"/>
+		<image name="TUTO_PHARMACY_PIC_3" file="\helpimg\TUTO_PHARMACY_PIC_3.png" imgrect="0 0 380 678"/>
+		<image name="TUTO_PHARMACY_PIC_4" file="\helpimg\TUTO_PHARMACY_PIC_4.png" imgrect="0 0 380 348"/>
+		<image name="TUTO_PHARMACY_PIC_5" file="\helpimg\TUTO_PHARMACY_PIC_5.png" imgrect="0 0 380 473"/>
+		<image name="TUTO_PHARMACY_PIC_6" file="\helpimg\TUTO_PHARMACY_PIC_6.png" imgrect="0 0 380 414"/>
+		<image name="TUTO_PHARMACY_PIC_7" file="\helpimg\TUTO_PHARMACY_PIC_7.png" imgrect="0 0 380 414"/>
+		<image name="TUTO_PHARMACY_PIC_8" file="\helpimg\TUTO_PHARMACY_PIC_8.png" imgrect="0 0 380 319"/>
+		<image name="TUTO_PHARMACY_PIC_9" file="\helpimg\TUTO_PHARMACY_PIC_9.png" imgrect="0 0 380 401"/>
 	</imagelist>
 </skinset>
