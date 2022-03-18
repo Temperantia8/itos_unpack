@@ -257,6 +257,10 @@ shared_item_pharmacy.enable_move_to = function(recipe_item, mat_item)
     
     if isTuto == 0 then
         local now_time = date_time.get_lua_now_datetime_str()
+        if IsServerSection() == 0 then
+            local server_time = geTime.GetServerSystemTime()
+            now_time = date_time.lua_datetime_to_str(date_time.get_lua_datetime(server_time.wYear, server_time.wMonth, server_time.wDay, server_time.wHour, server_time.wMinute, server_time.wSecond))
+        end
         if date_time.is_later_than(now_time, expire_time) == true then
             return false
         end
