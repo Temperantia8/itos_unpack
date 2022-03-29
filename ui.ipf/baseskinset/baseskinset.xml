@@ -13735,6 +13735,7 @@
 		<image name="icon_ObjectInteractionRideBuff" file="\icon\buff_icon5.tga" imgrect="640 1792 128 128" CMM_Caption="탑승"/>
 		<image name="icon_2022_newyear_buff" file="\icon\buff_icon5.tga" imgrect="0 1920 128 128" CMM_Caption="2022 신년 버프"/>
 		<image name="icon_buff_ridepet_YellowTiger" file="\icon\buff_icon5.tga" imgrect="128 1920 128 128" CMM_Caption="황호 버프"/>
+		<image name="icon_WeekendAndBurning" file="\icon\buff_icon5.tga" imgrect="384 1920 128 128" CMM_Caption="주말앤버닝 버프"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>

@@ -3345,12 +3345,35 @@ function SCR_ABIL_Sadhu35_INACTIVE(self, ability)
     RemoveBuff(self, "OOBE_Soulmaster_Sadhu35_Buff");
 end
 
+-- 방패타격술
+function SCR_CHECK_SHIELDSTRIKE_ABIL(self)
+    local abilOn = false;
+    local abilPeltasta38 = GetAbility(self, 'Peltasta38');
+    if abilPeltasta38 ~= nil and TryGetProp(abilPeltasta38, 'ActiveState', 0) == 1 then
+        abilOn = true;
+    end
+    local abilRodelero31 = GetAbility(self, 'Rodelero31');
+    if abilRodelero31 ~= nil and TryGetProp(abilRodelero31, 'ActiveState', 0) == 1 then
+        abilOn = true;
+    end
+    local abilMurmillo20 = GetAbility(self, 'Murmillo20');
+    if abilMurmillo20 ~= nil and TryGetProp(abilMurmillo20, 'ActiveState', 0) == 1 then
+        abilOn = true;
+    end
+
+    if abilOn == true then
+        SetExProp(self, 'IS_SHIELDSTRIKE_ABIL', 1);
+    else
+        SetExProp(self, 'IS_SHIELDSTRIKE_ABIL', 0);
+    end
+end
+
 function SCR_ABIL_SHIELDSTRIKE_ACTIVE(self, ability)
-    SetExProp(self, "IS_SHIELDSTRIKE_ABIL", 1);
+    SCR_CHECK_SHIELDSTRIKE_ABIL(self);
 end
 
 function SCR_ABIL_SHIELDSTRIKE_INACTIVE(self, ability)
-    DelExProp(self, "IS_SHIELDSTRIKE_ABIL");
+    SCR_CHECK_SHIELDSTRIKE_ABIL(self);
 end
 
 function SCR_ABIL_Luchador18_ACTIVE(self, ability)

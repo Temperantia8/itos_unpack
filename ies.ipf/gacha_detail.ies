@@ -166,3 +166,7 @@ ClassID,Count,Price,ClassName,ItemClassName,Group,GachaType,RewardGroup,PreCheck
 196,11,999,"Gacha_HairAcc_End_Year_ReSale_010_M_STM","Gacha_HairAcc_End_Year_ReSale_010_M_STM","CUBE","hair","GACHA_HAIRACC_End_Year_ReSale_001_M_STM","","GACHA_HAIRACC_End_Year_ReSale_001_M_STM","1","CUBE","NO","",""
 197,1,999,"Gacha_HairAcc_End_Year_ReSale_001_F_STM","Gacha_HairAcc_End_Year_ReSale_001_F_STM","CUBE","hair","GACHA_HAIRACC_End_Year_ReSale_001_F_STM","","GACHA_HAIRACC_End_Year_ReSale_001_F_STM","1","CUBE","NO","",""
 198,11,999,"Gacha_HairAcc_End_Year_ReSale_010_F_STM","Gacha_HairAcc_End_Year_ReSale_010_F_STM","CUBE","hair","GACHA_HAIRACC_End_Year_ReSale_001_F_STM","","GACHA_HAIRACC_End_Year_ReSale_001_F_STM","1","CUBE","NO","",""
+202,1,999,"GACHA_HAIRACC_Animal_001_M_STM","GACHA_HAIRACC_Animal_001_M_STM","CUBE","hair","GACHA_HAIRACC_Animal_001_M_STM","","GACHA_HAIRACC_ReSale_001_M_STM","1","CUBE","NO","",""
+203,11,999,"GACHA_HAIRACC_Animal_010_M_STM","GACHA_HAIRACC_Animal_010_M_STM","CUBE","hair","GACHA_HAIRACC_Animal_001_M_STM","","GACHA_HAIRACC_ReSale_001_M_STM","1","CUBE","NO","",""
+204,1,999,"GACHA_HAIRACC_Animal_001_F_STM","GACHA_HAIRACC_Animal_001_F_STM","CUBE","hair","GACHA_HAIRACC_Animal_001_F_STM","","GACHA_HAIRACC_ReSale_001_F_STM","1","CUBE","NO","",""
+205,11,999,"GACHA_HAIRACC_Animal_010_F_STM","GACHA_HAIRACC_Animal_010_F_STM","CUBE","hair","GACHA_HAIRACC_Animal_001_F_STM","","GACHA_HAIRACC_ReSale_001_F_STM","1","CUBE","NO","",""
