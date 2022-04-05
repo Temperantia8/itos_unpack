@@ -1,6 +1,7 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
 999901,202203,290000,202204,30000,202204,190000,202204,140000,0,0,"inGame_E1","Fashion Museum: Panda-nald had a Farm","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2510","","","",""
 999902,202203,150000,202203,200000,202204,120000,202204,80000,0,0,"inGame_E2","[Special] Marching March Package","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2495","","","",""
-999903,202203,150000,202203,200000,202204,120000,202204,80000,0,0,"inGame_E3","6th Anniversary Event","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2493","","","",""
+999903,202204,50000,202203,310000,202205,100000,202205,50000,0,0,"inGame_E3","Berk's Visit","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2512","","","",""
+999904,202203,150000,202203,200000,202204,120000,202204,80000,0,0,"inGame_E4","6th Anniversary Event","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2493","","","",""
 999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2483","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"

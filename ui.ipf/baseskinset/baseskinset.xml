@@ -14469,6 +14469,7 @@
 		<image name="plate_achieve_Hakkapeliter" file="\skin\user_title_skin.tga" imgrect="430 959 214 34" CMM_Caption="하카펠리테르 칭호"/>
 		<image name="plate_achieve_hakkapeliter_weekraid" file="\skin\user_title_skin.tga" imgrect="645 959 214 34" CMM_Caption="하카펠리테르 주보레 칭호"/>
 		<image name="plate_achieve_HocusPocus" file="\skin\user_title_skin.tga" imgrect="215 1029 214 34" CMM_Caption="스팀 몬스터 의인화 팬아트 보상 칭호"/>
+		<image name="plate_achieve_berksbestie" file="\skin\user_title_skin.tga" imgrect="861 1031 214 34" CMM_Caption="스팀 2022 설날 하우벅 칭호"/>
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>
