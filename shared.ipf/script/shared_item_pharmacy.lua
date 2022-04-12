@@ -186,12 +186,12 @@ shared_item_pharmacy.get_reveal_cost = function(item)
 
     if TryGetProp(item, 'NumberArg1', 0) == 470 then
         local check = 0
-        local event_2112_6th_pt2_startTime = '2022-03-15 00:00:00'
-        local event_2112_6th_pt2_endTime = '2022-03-29 00:00:00'
+        -- local event_2112_6th_pt2_startTime = '2022-03-15 00:00:00'
+        -- local event_2112_6th_pt2_endTime = '2022-03-29 00:00:00'
     
-        if date_time.is_between_time(event_2112_6th_pt2_startTime, event_2112_6th_pt2_endTime) == true then
-            check = 1
-        end
+        -- if date_time.is_between_time(event_2112_6th_pt2_startTime, event_2112_6th_pt2_endTime) == true then
+        --     check = 1
+        -- end
 
         if check == 0 then
             return 'GabijaCertificate', 3000

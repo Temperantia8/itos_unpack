@@ -89,5 +89,4 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5289,10122,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER4_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5290,10123,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER2_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5291,10124,1,40,1,1,1,2,0,0,0,0,0,"Event_2201_Npc","[이벤트]{nl}설날맞이 리틀벅","","","","","","","EVENT_2201_SEOLLAL","","","NO","YES","NO","Neutral","","","",""
-5297,10130,1,40,1,1,1,2,0,0,0,0,0,"event_2112_npc_kupole","[이벤트] 큐폴 루타","","","","","","","EVENT_2112_6TH","","","NO","YES","NO","Neutral","","","",""
 10001,50001,1,40,1,60000,1,2,0,0,0,0,0,"Board3_Event","이벤트 알림판","","","","","","","STEAM_TREASURE_EVENT","","","NO","YES","NO","Neutral","","","",""

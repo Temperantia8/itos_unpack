@@ -62,7 +62,7 @@ end"/>
 						<Scp Scp="SKL_RUN_SCRIPT" Client="NO" UseSleep="NO" Time="0">
 							<Str Str="SCR_VIBORA_PISTOL_Pistol_Attack2"/>
 						</Scp>
-						<Scp Scp="C_FORCE_EFT" Client="YES_Time" UseSleep="NO" Time="100">
+						<Scp Scp="C_FORCE_EFT" Client="YES_Time" UseSleep="NO" Time="0">
 							<Str_Arg Str="None" Arg="0.5"/>
 							<Str Str="None"/>
 							<Str_Arg Str="None" Arg="1"/>
@@ -104,33 +104,7 @@ end"/>
 							<Str Str="None"/>
 							<Str Str="SCR_LIMACON_SPEND_SP"/>
 						</ToolScp>
-						<ToolScp Scp="S_R_SET_FORCE_DAMAGE" Client="NO" UseSleep="NO">
-							<Num Num="1"/>
-							<Num Num="1"/>
-							<Num Num="2"/>
-							<Str_Arg Str="I_archer_pistol_atk_wildshot" Arg="1"/>
-							<Str Str="arrow_cast"/>
-							<Str_Arg Str="I_archer_pistol_hit" Arg="1"/>
-							<Str Str="arrow_blow"/>
-							<Str Str="SLOW"/>
-							<Num Num="800"/>
-							<Num Num="1"/>
-							<Num Num="0"/>
-							<Angle_Abs Angle="0"/>
-							<Num Num="5"/>
-							<Num Num="10"/>
-							<Num Num="0"/>
-							<Num Num="2"/>
-							<Num Num="50"/>
-							<Num Num="0.1"/>
-							<Num Num="4" UseFunc="1" FuncTxt="local value = 4
-                            if IsPVPField(self) == 1 and value > 2 then
-                            value = math.floor((math.max(0, value-2)^0.5))+math.min(2, value)
-                            end
-                            return value"/>
-							<Num Num="40"/>
-						</ToolScp>
-					</ResultList>
+						</ResultList>
 				</Skill>
 			</SubSkl>
 		</ByCondSkills>

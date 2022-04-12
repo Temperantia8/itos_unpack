@@ -25532,6 +25532,7 @@ ClassID,ClassName,Mesh,Path,ArmbandInfo,UseAlpha,IsJiggleBoneHair
 727708,"Mage_f_2021xmas03","char_hi\pc\Mage_f\Mage_f_2019xmas03.xac","char_texture\pc\body\warrior_f_2019xmas03\red\","S;Dummy_LU_armband","NO",""
 727709,"Scout_f_2021xmas03","char_hi\pc\Scout_f\Scout_f_2019xmas03.xac","char_texture\pc\body\warrior_f_2019xmas03\red\","S;Dummy_LU_armband","NO",""
 727800,"accessory_6th_glasses","char_hi\pc\accessory\accessory_6th_glasses.xac","char_texture\pc\accessory\","","NO",""
+727801,"accessory_neonkepa","char_hi\pc\accessory\accessory_neonkepa.xac","char_texture\pc\accessory\","","NO",""
 728006,"warrior_m_head6_eye01_wolf","","char_texture\pc\face\face_m_eye01_wolf\","","NO",""
 728007,"warrior_m_head7_eye01_wolf","","char_texture\pc\face\face_m_eye01_wolf\","","NO",""
 728008,"warrior_m_head8_eye01_wolf","","char_texture\pc\face\face_m_eye01_wolf\","","NO",""

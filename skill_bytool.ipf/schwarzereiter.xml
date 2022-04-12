@@ -621,33 +621,6 @@
             <HitList>
                 <Frame Type="FAN" Time="9799" HitCount="1" TermMin="0" TermMax="0" PosType="0" Dist="0" RandDist="0" RandomPerHit="0" Angle="0" Width="30" Length="30" SklAngle="0.17453292" AniTime="9999" RotAngle="0" ForceATK="0" ScriptIndex="0" ScriptName="" SkillType="0"/>
             </HitList>
-            <ResultList>
-                <ToolScp Scp="S_R_COND_ABILITY" Client="NO" UseSleep="NO">
-                    <Str Str="Schwarzereiter18"/>
-                </ToolScp>
-                <ToolScp Scp="S_R_SET_FORCE_DAMAGE" Client="NO" UseSleep="NO">
-                    <Num Num="1"/>
-                    <Num Num="1"/>
-                    <Num Num="2"/>
-                    <Str_Arg Str="I_force003_green" Arg="1"/>
-                    <Str Str="arrow_cast"/>
-                    <Str_Arg Str="I_explosion002_green" Arg="1"/>
-                    <Str Str="arrow_blow"/>
-                    <Str Str="SLOW"/>
-                    <Num Num="50"/>
-                    <Num Num="1"/>
-                    <Num Num="0"/>
-                    <Angle_Abs Angle="0"/>
-                    <Num Num="5"/>
-                    <Num Num="10"/>
-                    <Num Num="0"/>
-                    <Num Num="2"/>
-                    <Num Num="50"/>
-                    <Num Num="0.1"/>
-                    <Num Num="1"/>
-                    <Num Num="40"/>
-                </ToolScp>
-            </ResultList>
         </MainSkl>
     </Skill>
     <Skill Name="Schwarzereiter_Limacon">
