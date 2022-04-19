@@ -87,4 +87,5 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5287,5287,1,40,1,1,1,2,0,0,0,0,0,"Event_2201_Npc","[이벤트]{nl}설날맞이 리틀벅","","","","","","","EVENT_2201_SEOLLAL","","","NO","YES","NO","Neutral","","","",""
 5286,5286,1,40,1,60000,1,0,0,0,0,0,0,"npc_rangdagirl_02","소녀의 환영","","","","","","StartLine3_TUTO_NPC_ALPHA","EP14_MULIA_NPC_3","","","NO","YES","NO","Neutral","","","",""
 5250,5250,1,40,1,60000,1,1,0,0,0,0,0,"orsha_m_1","리만타스","","","","","","","CHAR119_MSTEP3_3_1_NPC","","","NO","YES","NO","Neutral","","","",""
+5289,5289,1,60,1,60000,1,1,0,0,0,0,0,"gacha_machine","여신의 축복","","","","","","","BLESSED_CUBE","","","NO","YES","NO","Neutral","","","",""
 10001,50001,1,40,1,60000,1,2,0,0,0,0,0,"Board3_Event","이벤트 알림판","","","","","","","STEAM_TREASURE_EVENT","","","NO","YES","NO","Neutral","","","",""

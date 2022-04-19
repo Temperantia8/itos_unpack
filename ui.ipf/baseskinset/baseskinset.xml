@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
 <!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by MintPC (Mi) -->
 <skinset name="Base">
 	<skinlist category="frames">
@@ -10439,7 +10439,7 @@
 		<image name="bulletinboard_unity_folding_btn" file="\skin\button_small.tga" imgrect="270 302 54 54" CMM_Caption="게시판 통합 폴딩 버튼"/>
 		<image name="bulletinboard_unity_folding_btn_cursoron" file="\skin\button_small.tga" imgrect="325 302 54 54"/>
 		<image name="bulletinboard_unity_folding_btn_clicked" file="\skin\button_small.tga" imgrect="380 302 54 54"/>
-	</imagelist>
+		</imagelist>
 	<imagelist category="yiseul_button">
 		<image name="pvpmine_shop_btn" file="\skin\pip_test.tga" imgrect="2049 61 66 59" CMM_Caption="용병단 증표 ui 버튼"/>
 		<image name="pvpmine_shop_btn_cursoron" file="\skin\pip_test.tga" imgrect="2049 121 66 59"/>
@@ -13737,6 +13737,19 @@
 		<image name="icon_buff_ridepet_YellowTiger" file="\icon\buff_icon5.tga" imgrect="128 1920 128 128" CMM_Caption="황호 버프"/>
 		<image name="icon_buff_ridepet_BlackmistTiger" file="\icon\buff_icon5.tga" imgrect="256 1920 128 128" CMM_Caption="검은안개 호랑이 버프"/>
 		<image name="icon_WeekendAndBurning" file="\icon\buff_icon5.tga" imgrect="384 1920 128 128" CMM_Caption="주말앤버닝 버프"/>
+		<image name="icon_tribulation_DebuffTime" file="\icon\buff_icon5.tga" imgrect="512 1920 128 128" CMM_Caption="디버프 시간 증가"/>
+		<image name="icon_tribulation_StaminaConsume" file="\icon\buff_icon5.tga" imgrect="640 1920 128 128" CMM_Caption="스태미나 소모량 증가"/>
+		<image name="icon_tribulation_CoolTime" file="\icon\buff_icon5.tga" imgrect="768 1920 128 128" CMM_Caption="클리어 시간 지연"/>
+		<image name="icon_tribulation_MoveSpeedDebuff" file="\icon\buff_icon5.tga" imgrect="896 1920 128 128" CMM_Caption="이동 속도 감소"/>
+		<image name="icon_tribulation_RelicPointConsume" file="\icon\buff_icon6.tga" imgrect="0 0 128 128" CMM_Caption="성물 마력 소모량 증가"/>
+		<image name="icon_tribulation_AtkUp" file="\icon\buff_icon6.tga" imgrect="128 0 128 128" CMM_Caption="공격력 증가"/>
+		<image name="icon_tribulation_DefUp" file="\icon\buff_icon6.tga" imgrect="256 0 128 128" CMM_Caption="방어력 증가"/>
+		<image name="icon_tribulation_Adventurer" file="\icon\buff_icon6.tga" imgrect="384 0 128 128" CMM_Caption="승부사"/>
+		<image name="icon_tribulation_SniperBlockade" file="\icon\buff_icon6.tga" imgrect="512 0 128 128" CMM_Caption="저격 봉쇄"/>
+		<image name="icon_tribulation_CaptureGaps" file="\icon\buff_icon6.tga" imgrect="640 0 128 128" CMM_Caption="빈틈포착"/>
+		<image name="icon_tribulation_WeaknessDetection" file="\icon\buff_icon6.tga" imgrect="768 0 128 128" CMM_Caption="약점 간파"/>
+		<image name="icon_tribulation_MeteoriteFall" file="\icon\buff_icon6.tga" imgrect="896 0 128 128" CMM_Caption="낙석 충돌"/>
+		<image name="icon_buff_ridepet_ep13animal" file="\icon\buff_icon6.tga" imgrect="768 256 128 128" CMM_Caption="목마 탈 것 버프"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>
@@ -14616,6 +14629,7 @@
 		<image name="ridepet_noblepopo" file="\icon\ridepet.tga" imgrect="480 0 80 80" CMM_Caption="노블포포"/>
 		<image name="ridepet_YellowTiger" file="\icon\ridepet.tga" imgrect="560 0 80 80" CMM_Caption="황호"/>
 		<image name="ridepet_BlackmistTiger" file="\icon\ridepet.tga" imgrect="0 80 80 80" CMM_Caption="검은 안개 호랑이"/>
+		<image name="ridepet_ep13animal" file="\icon\ridepet.tga" imgrect="80 80 80 80" CMM_Caption="목마"/>
 	</imagelist>
 	<effectimagelist category="effectlist">
 		<image name="blue_orb" file="\icon\blue_orb.tga" imgrect="0 0 256 256"/>

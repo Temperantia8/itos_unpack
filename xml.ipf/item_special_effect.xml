@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by IMCGames Co., Ltd (IMCGames Co., Ltd) -->
 <List>
 	<ItemList ItemClassName="wing_redlight_balloon">
 		<Layer effect="F_light165_red_loop" TargetNode="wing_Dummy_effect" scale="1.1" offset="0;0">
@@ -3224,7 +3224,7 @@
 		</Layer>
 	</ItemList>
 	<ItemList ItemClassName="EP13_Artefact_151">
-		<Layer effect="F_smoke206_grey" TargetNode="Dummy_trail02" scale="2" offset="0;0">
+		<Layer effect="F_smoke206_grey" TargetNode="None" scale="2" offset="0;0">
 			<Creation>
 				<Property PlayMoment="GiveAttackFrom">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
@@ -3246,6 +3246,316 @@
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP13_Artefact_218">
+		<Layer effect="F_pc_item_ep13animal_thsword_hit" TargetNode="None" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackSelf">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_ep13animal_thsword_glow" TargetNode="weapon_Dummy_effect001" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_ep13animal_thsword_glow" TargetNode="weapon_Dummy_effect002" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_ep13animal_thsword_glow" TargetNode="weapon_Dummy_effect003" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_ep13animal_thsword_bubble" TargetNode="weapon_Dummy_effect003_1" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_ep13animal_thsword_bubble" TargetNode="weapon_Dummy_effect002_1" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_ep13animal_thsword_bubble" TargetNode="weapon_Dummy_effect001_1" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO" AlwaysVisible="YES"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_013">
+		<Layer effect="F_bg_light015_blue" TargetNode="Dummy_trail02" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_014">
+		<Layer effect="F_bg_light015_blue" TargetNode="Dummy_trail02" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_003">
+		<Layer effect="F_spread_out056_leaf2" TargetNode="Dummy_trail01" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_004">
+		<Layer effect="F_spread_out056_leaf2" TargetNode="Dummy_trail01" scale="1.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634151">
+		<Layer effect="I_swrodtrail_2019halloween_thsword" TargetNode="Dummy_effect_atk2_ths_pet" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="ANIM/ATK2_RIDE" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_thsword" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_swrodtrail_2019halloween_thsword" TargetNode="Dummy_effect_atk_ths_pet" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="ANIM/ATK_RIDE" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_thsword" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_swrodtrail_2019halloween_thsword" TargetNode="Dummy_effect_atk_ths" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="ANIM/ATK" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_thsword" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_swrodtrail_2019halloween_thsword" TargetNode="Dummy_effect_atk2_ths" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="ANIM/ATK2" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_thsword" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_bat015_2" TargetNode="wepon_Dummy_effect01" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634152">
+		<Layer effect="I_warrior_florysh_shot_dash_orange" TargetNode="Dummy_jns_atk_weapon" scale="0.7" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_light015_orange" TargetNode="wepon_Dummy_effect" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_light055_orange4" TargetNode="Dummy_trail02" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634153">
+		<Layer effect="F_light015_orange" TargetNode="wepon_Dummy_effect01" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_light015_orange" TargetNode="wepon_Dummy_effect02" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_light055_orange4" TargetNode="wepon_Dummy_effect03" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634155">
+		<Layer effect="F_hit_halloween" TargetNode="Dummy_tsp_atk_weapon" scale="1.0" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634156">
+		<Layer effect="F_hit_halloween" TargetNode="Dummy_tsp_atk_weapon" scale="1.0" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634157">
+		<Layer effect="F_spread_out060_ghost" TargetNode="wepon_Dummy_effect" scale="0.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_bow" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634158">
+		<Layer effect="None" TargetNode="Dummy_body" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_crossbow" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634159">
+		<Layer effect="F_pc_item_2019halloween_musket_fire" TargetNode="wepon_Dummy_effect01" scale="0.07" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_2019halloween_musket_fire" TargetNode="wepon_Dummy_effect02" scale="0.07" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_pc_item_2019halloween_musket_fire" TargetNode="wepon_Dummy_effect03" scale="0.07" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634163">
+		<Layer effect="F_smoke193_orange_loop" TargetNode="wepon_Dummy_effect01" scale="0.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_staff" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="None" TargetNode="wepon_Dummy_effect01" scale="0.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="GiveAttackFrom">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="skl_eff_holloween_staff" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="F_smoke193_orange_loop" TargetNode="wepon_Dummy_effect02" scale="0.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_trail001_orange" TargetNode="wepon_Dummy_effect01" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_trail001_orange" TargetNode="wepon_Dummy_effect02" scale="1" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" ReinforceEffectState="None" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP12_Re_Artefact_634164">
+		<Layer effect="F_smoke192_green_loop" TargetNode="Dummy_trail01" scale="0.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
 					<Sound SoundName="None" SoundVolume="1"/>
 				</Property>
 			</Creation>

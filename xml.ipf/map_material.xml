@@ -649,5 +649,8 @@
 		<Anim Name="RUN_NOBLEPOPO">
 			<Particle From="F_pc_run_blank_dummy" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
 		</Anim>
+		<Anim Name="RUN_EP13ANIMAL">
+			<Particle From="F_pc_run_blank_dummy" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
+		</Anim>
 	</Material>
 </Map_materials>
