@@ -3789,6 +3789,7 @@
 		<image name="icon_item_Isdavi_neck_005" file="\icon\acc\icon_item_Isdavi_neck_005.png" imgrect="0 0 256 256" CMM_Caption="이시다비 트리우카스 네클리스"/>
 		<image name="icon_item_Isdavi_bracelet_006" file="\icon\acc\icon_item_Isdavi_bracelet_006.png" imgrect="0 0 256 256" CMM_Caption="이시다비 프리데티 브레이슬릿"/>
 		<image name="icon_item_Isdavi_neck_006" file="\icon\acc\icon_item_Isdavi_neck_006.png" imgrect="0 0 256 256" CMM_Caption="이시다비 프리데티 네클리스"/>
+		<image name="icon_item_armband_g9_silver" file="\icon\acc\icon_item_armband_g9_silver.png" imgrect="0 0 256 256" CMM_Caption="22년 식목일 암밴드"/>
 	</imagelist>
 	<imagelist category="hair_accesory">
 		<image name="hairacc_1_egg" file="\icon\hairacc\hairacc_1_egg.png" imgrect="0 0 256 256"/>
