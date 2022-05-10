@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by MintPC (Mi) -->
 <skinset name="Base">
 	<skinlist category="bars">
@@ -185,6 +185,24 @@
 			<img name="barbottom" imgrect="631 2012 19 8"/>
 			<img name="barbottom_cursoron" imgrect="651 2012 19 8"/>
 			<img name="barbottom_click" imgrect="671 2012 19 8"/>
+		</skin>
+		<skin name="tribal_scroll" texture="\skin\tribal.tga">
+			<img name="background" imgrect="285 35 16 26"/>
+			<img name="btnup" imgrect="357 35 16 16"/>
+			<img name="btnup_cursoron" imgrect="375 35 16 16"/>
+			<img name="btnup_click" imgrect="392 35 16 16"/>
+			<img name="btndown" imgrect="357 52 16 16"/>
+			<img name="btndown_cursoron" imgrect="375 52 16 16"/>
+			<img name="btndown_click" imgrect="392 52 16 16"/>
+			<img name="bartop" imgrect="304 35 16 12"/>
+			<img name="bartop_cursoron" imgrect="321 35 16 12"/>
+			<img name="bartop_click" imgrect="338 35 16 12"/>
+			<img name="barmiddle" imgrect="304 48 16 14"/>
+			<img name="barmiddle_cursoron" imgrect="321 48 16 14"/>
+			<img name="barmiddle_click" imgrect="338 48 16 14"/>
+			<img name="barbottom" imgrect="304 63 16 12"/>
+			<img name="barbottom_cursoron" imgrect="321 63 16 12"/>
+			<img name="barbottom_click" imgrect="338 63 16 12"/>
 		</skin>
 	</skinlist>
 </skinset>

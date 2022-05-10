@@ -132,6 +132,7 @@
 		<Category Name="Buff">
 			<Class Name="MagneticForce_Debuff_Hold" BuffID="282" Desc=""/>
 			<Class Name="ZaibasStun_Debuff" BuffID="2254" Desc="자이바스 경직"/>
+			<Class Name="Keraunos7_Debuff" BuffID="3216" Desc="케라우노스 감전"/>
 		</Category>
 		<Category Name="Skill">
 			<Class Name="Dummy" SkillID="-1" Desc=""/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by MintPC (Mi) -->
 <skinset name="Base">
 	<skinlist category="frames">
@@ -4879,6 +4879,50 @@
 			<img name="bottomcore" imgrect="745 1605 20 10"/>
 			<img name="bottomright" imgrect="766 1605 20 10"/>
 		</skin>
+		<skin name="pilgrim_group_list" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="0 252 20 20"/>
+			<img name="topcore" imgrect="21 252 20 20"/>
+			<img name="topright" imgrect="42 252 20 20"/>
+			<img name="bodyleft" imgrect="0 273 20 20"/>
+			<img name="bodycore" imgrect="21 273 20 20"/>
+			<img name="bodyright" imgrect="42 273 20 20"/>
+			<img name="bottomleft" imgrect="0 294 20 20"/>
+			<img name="bottomcore" imgrect="21 294 20 20"/>
+			<img name="bottomright" imgrect="42 294 20 20"/>
+		</skin>
+		<skin name="ps_ranking_bar" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="0 315 20 10"/>
+			<img name="topcore" imgrect="21 315 20 10"/>
+			<img name="topright" imgrect="42 315 20 10"/>
+			<img name="bodyleft" imgrect="0 326 20 10"/>
+			<img name="bodycore" imgrect="21 326 20 10"/>
+			<img name="bodyright" imgrect="42 326 20 10"/>
+			<img name="bottomleft" imgrect="0 337 20 10"/>
+			<img name="bottomcore" imgrect="21 337 20 10"/>
+			<img name="bottomright" imgrect="42 337 20 10"/>
+		</skin>
+		<skin name="pilgrim_tab_line" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="160 155 20 1"/>
+			<img name="topcore" imgrect="181 155 20 1"/>
+			<img name="topright" imgrect="202 155 20 1"/>
+			<img name="bodyleft" imgrect="160 156 20 1"/>
+			<img name="bodycore" imgrect="181 156 20 1"/>
+			<img name="bodyright" imgrect="202 156 20 1"/>
+			<img name="bottomleft" imgrect="160 157 20 1"/>
+			<img name="bottomcore" imgrect="181 157 20 1"/>
+			<img name="bottomright" imgrect="202 157 20 1"/>
+		</skin>
+		<skin name="pilgrim_myranking" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="0 510 26 17"/>
+			<img name="topcore" imgrect="27 510 26 17"/>
+			<img name="topright" imgrect="54 510 26 17"/>
+			<img name="bodyleft" imgrect="0 528 26 17"/>
+			<img name="bodycore" imgrect="27 528 26 17"/>
+			<img name="bodyright" imgrect="54 528 26 17"/>
+			<img name="bottomleft" imgrect="0 546 26 17"/>
+			<img name="bottomcore" imgrect="27 546 26 17"/>
+			<img name="bottomright" imgrect="54 546 26 17"/>
+		</skin>
 		<skin name="item_show_tootip" texture="\skin\normal_item_tootip.tga">
 			<img name="topleft" imgrect="0 249 50 1"/>
 			<img name="topcore" imgrect="51 249 50 1"/>
@@ -5067,6 +5111,72 @@
 			<img name="bottomleft" imgrect="0 513 187 1"/>
 			<img name="bottomcore" imgrect="188 513 14 1"/>
 			<img name="bottomright" imgrect="203 513 187 1"/>
+		</skin>
+		<skin name="pilgrim_group_invite" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="0 348 26 17"/>
+			<img name="topcore" imgrect="27 348 26 17"/>
+			<img name="topright" imgrect="54 348 26 17"/>
+			<img name="bodyleft" imgrect="0 366 26 17"/>
+			<img name="bodycore" imgrect="27 366 26 17"/>
+			<img name="bodyright" imgrect="54 366 26 17"/>
+			<img name="bottomleft" imgrect="0 384 26 17"/>
+			<img name="bottomcore" imgrect="27 384 26 17"/>
+			<img name="bottomright" imgrect="54 384 26 17"/>
+		</skin>
+		<skin name="pilgrim_group_invite_cursoron" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="0 402 26 17"/>
+			<img name="topcore" imgrect="27 402 26 17"/>
+			<img name="topright" imgrect="54 402 26 17"/>
+			<img name="bodyleft" imgrect="0 420 26 17"/>
+			<img name="bodycore" imgrect="27 420 26 17"/>
+			<img name="bodyright" imgrect="54 420 26 17"/>
+			<img name="bottomleft" imgrect="0 438 26 17"/>
+			<img name="bottomcore" imgrect="27 438 26 17"/>
+			<img name="bottomright" imgrect="54 438 26 17"/>
+		</skin>
+		<skin name="pilgrim_group_invite_clicked" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="0 456 26 17"/>
+			<img name="topcore" imgrect="27 456 26 17"/>
+			<img name="topright" imgrect="54 456 26 17"/>
+			<img name="bodyleft" imgrect="0 474 26 17"/>
+			<img name="bodycore" imgrect="27 474 26 17"/>
+			<img name="bodyright" imgrect="54 474 26 17"/>
+			<img name="bottomleft" imgrect="0 492 26 17"/>
+			<img name="bottomcore" imgrect="27 492 26 17"/>
+			<img name="bottomright" imgrect="54 492 26 17"/>
+		</skin>
+		<skin name="pilgrim_content_list_btn" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="347 505 30 1"/>
+			<img name="topcore" imgrect="378 505 30 1"/>
+			<img name="topright" imgrect="409 505 30 1"/>
+			<img name="bodyleft" imgrect="347 507 30 32"/>
+			<img name="bodycore" imgrect="378 507 30 32"/>
+			<img name="bodyright" imgrect="409 507 30 32"/>
+			<img name="bottomleft" imgrect="347 540 30 1"/>
+			<img name="bottomcore" imgrect="378 540 30 1"/>
+			<img name="bottomright" imgrect="409 540 30 1"/>
+		</skin>
+		<skin name="pilgrim_content_list_btn_cursoron" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="347 542 30 1"/>
+			<img name="topcore" imgrect="378 542 30 1"/>
+			<img name="topright" imgrect="409 542 30 1"/>
+			<img name="bodyleft" imgrect="347 544 30 32"/>
+			<img name="bodycore" imgrect="378 544 30 32"/>
+			<img name="bodyright" imgrect="409 544 30 32"/>
+			<img name="bottomleft" imgrect="347 577 30 1"/>
+			<img name="bottomcore" imgrect="378 577 30 1"/>
+			<img name="bottomright" imgrect="409 577 30 1"/>
+		</skin>
+		<skin name="pilgrim_content_list_btn_clicked" texture="\skin\party_search.tga">
+			<img name="topleft" imgrect="347 579 30 1"/>
+			<img name="topcore" imgrect="378 579 30 1"/>
+			<img name="topright" imgrect="409 579 30 1"/>
+			<img name="bodyleft" imgrect="347 581 30 32"/>
+			<img name="bodycore" imgrect="378 581 30 32"/>
+			<img name="bodyright" imgrect="409 581 30 32"/>
+			<img name="bottomleft" imgrect="347 614 30 1"/>
+			<img name="bottomcore" imgrect="378 614 30 1"/>
+			<img name="bottomright" imgrect="409 614 30 1"/>
 		</skin>
 	</skinlist>
 	<skinlist category="yiseul_frames">
@@ -5521,6 +5631,149 @@
 			<img name="bottomcore" imgrect="396 309 21 1"/>
 			<img name="bottomright" imgrect="418 309 22 1"/>
 		</skin>
+		<skin name="tribal_frame1" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="0 35 26 27"/>
+			<img name="topcore" imgrect="27 35 14 27"/>
+			<img name="topright" imgrect="42 35 26 27"/>
+			<img name="bodyleft" imgrect="0 63 26 12"/>
+			<img name="bodycore" imgrect="27 63 14 12"/>
+			<img name="bodyright" imgrect="42 63 26 12"/>
+			<img name="bottomleft" imgrect="0 76 26 27"/>
+			<img name="bottomcore" imgrect="27 76 14 27"/>
+			<img name="bottomright" imgrect="42 76 26 27"/>
+		</skin>
+		<skin name="tribal_frame2" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="70 35 26 27"/>
+			<img name="topcore" imgrect="97 35 14 27"/>
+			<img name="topright" imgrect="112 35 26 27"/>
+			<img name="bodyleft" imgrect="70 63 26 12"/>
+			<img name="bodycore" imgrect="97 63 14 12"/>
+			<img name="bodyright" imgrect="112 63 26 12"/>
+			<img name="bottomleft" imgrect="70 76 26 27"/>
+			<img name="bottomcore" imgrect="97 76 14 27"/>
+			<img name="bottomright" imgrect="112 76 26 27"/>
+		</skin>
+		<skin name="tribal_frame3" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="140 35 26 27"/>
+			<img name="topcore" imgrect="167 35 14 27"/>
+			<img name="topright" imgrect="182 35 26 27"/>
+			<img name="bodyleft" imgrect="140 63 26 12"/>
+			<img name="bodycore" imgrect="167 63 14 12"/>
+			<img name="bodyright" imgrect="182 63 26 12"/>
+			<img name="bottomleft" imgrect="140 76 26 27"/>
+			<img name="bottomcore" imgrect="167 76 14 27"/>
+			<img name="bottomright" imgrect="182 76 26 27"/>
+		</skin>
+		<skin name="tribal_frame4" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="210 35 26 27"/>
+			<img name="topcore" imgrect="237 35 14 27"/>
+			<img name="topright" imgrect="252 35 26 27"/>
+			<img name="bodyleft" imgrect="210 63 26 12"/>
+			<img name="bodycore" imgrect="237 63 14 12"/>
+			<img name="bodyright" imgrect="252 63 26 12"/>
+			<img name="bottomleft" imgrect="210 76 26 27"/>
+			<img name="bottomcore" imgrect="237 76 14 27"/>
+			<img name="bottomright" imgrect="252 76 26 27"/>
+		</skin>
+		<skin name="tribal_frameList" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="0 106 26 27"/>
+			<img name="topcore" imgrect="27 106 14 27"/>
+			<img name="topright" imgrect="42 106 26 27"/>
+			<img name="bodyleft" imgrect="0 134 26 12"/>
+			<img name="bodycore" imgrect="27 134 14 12"/>
+			<img name="bodyright" imgrect="42 134 26 27"/>
+			<img name="bottomleft" imgrect="0 147 26 27"/>
+			<img name="bottomcore" imgrect="27 147 14 27"/>
+			<img name="bottomright" imgrect="42 147 26 27"/>
+		</skin>
+		<skin name="tribal_gradient" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="271 261 1 10"/>
+			<img name="topcore" imgrect="0 261 270 10"/>
+			<img name="topright" imgrect="271 261 1 10"/>
+			<img name="bodyleft" imgrect="271 272 1 10"/>
+			<img name="bodycore" imgrect="0 272 270 10"/>
+			<img name="bodyright" imgrect="271 272 1 10"/>
+			<img name="bottomleft" imgrect="271 283 1 10"/>
+			<img name="bottomcore" imgrect="0 283 270 10"/>
+			<img name="bottomright" imgrect="271 283 1 10"/>
+		</skin>
+		<skin name="tribal_title_light" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="0 340 75 1"/>
+			<img name="topcore" imgrect="76 340 55 1"/>
+			<img name="topright" imgrect="132 340 75 1"/>
+			<img name="bodyleft" imgrect="0 296 75 43"/>
+			<img name="bodycore" imgrect="76 296 55 43"/>
+			<img name="bodyright" imgrect="132 296 75 43"/>
+			<img name="bottomleft" imgrect="0 340 75 1"/>
+			<img name="bottomcore" imgrect="76 340 55 1"/>
+			<img name="bottomright" imgrect="132 340 75 1"/>
+		</skin>
+		<skin name="tribal_title_dark" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="0 31 29 1"/>
+			<img name="topcore" imgrect="30 31 29 1"/>
+			<img name="topright" imgrect="60 31 29 1"/>
+			<img name="bodyleft" imgrect="0 0 29 30"/>
+			<img name="bodycore" imgrect="30 0 29 30"/>
+			<img name="bodyright" imgrect="60 0 29 30"/>
+			<img name="bottomleft" imgrect="0 31 29 1"/>
+			<img name="bottomcore" imgrect="30 31 29 1"/>
+			<img name="bottomright" imgrect="60 31 29 1"/>
+		</skin>
+		<skin name="tribal_frame_cate" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="417 147 44 1"/>
+			<img name="topcore" imgrect="462 147 25 1"/>
+			<img name="topright" imgrect="488 147 44 1"/>
+			<img name="bodyleft" imgrect="417 117 44 29"/>
+			<img name="bodycore" imgrect="462 117 25 29"/>
+			<img name="bodyright" imgrect="488 117 44 29"/>
+			<img name="bottomleft" imgrect="417 147 44 1"/>
+			<img name="bottomcore" imgrect="462 147 25 1"/>
+			<img name="bottomright" imgrect="488 147 44 1"/>
+		</skin>
+		<skin name="tribal_frameClear" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="740 345 1 50"/>
+			<img name="topcore" imgrect="0 345 739 50"/>
+			<img name="topright" imgrect="740 345 1 50"/>
+			<img name="bodyleft" imgrect="740 396 1 59"/>
+			<img name="bodycore" imgrect="0 396 739 59"/>
+			<img name="bodyright" imgrect="740 396 1 59"/>
+			<img name="bottomleft" imgrect="740 456 1 27"/>
+			<img name="bottomcore" imgrect="0 456 739 27"/>
+			<img name="bottomright" imgrect="740 456 1 27"/>
+		</skin>
+		<skin name="tribal_frameScore" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="732 487 1 35"/>
+			<img name="topcore" imgrect="0 487 731 35"/>
+			<img name="topright" imgrect="732 487 1 35"/>
+			<img name="bodyleft" imgrect="732 523 1 41"/>
+			<img name="bodycore" imgrect="0 523 731 41"/>
+			<img name="bodyright" imgrect="732 523 1 41"/>
+			<img name="bottomleft" imgrect="732 565 1 35"/>
+			<img name="bottomcore" imgrect="0 565 731 35"/>
+			<img name="bottomright" imgrect="732 565 1 35"/>
+		</skin>
+		<skin name="gabija_balloon" texture="\skin\say_balloon.tga">
+			<img name="topleft" imgrect="86 1162 41 24"/>
+			<img name="topcore" imgrect="128 1162 28 24"/>
+			<img name="topright" imgrect="157 1162 41 24"/>
+			<img name="bodyleft" imgrect="86 1187 41 32"/>
+			<img name="bodycore" imgrect="128 1187 28 32"/>
+			<img name="bodyright" imgrect="157 1187 41 32"/>
+			<img name="bottomleft" imgrect="86 1220 41 61"/>
+			<img name="bottomcore" imgrect="128 1220 28 61"/>
+			<img name="bottomright" imgrect="157 1220 41 61"/>
+		</skin>
+		<skin name="paulius_balloon" texture="\skin\say_balloon.tga">
+			<img name="topleft" imgrect="509 1 39 39"/>
+			<img name="topcore" imgrect="549 1 55 39"/>
+			<img name="topright" imgrect="605 1 39 39"/>
+			<img name="bodyleft" imgrect="509 41 39 51"/>
+			<img name="bodycore" imgrect="549 41 55 51"/>
+			<img name="bodyright" imgrect="605 41 39 51"/>
+			<img name="bottomleft" imgrect="509 93 39 31"/>
+			<img name="bottomcore" imgrect="549 93 55 31"/>
+			<img name="bottomright" imgrect="605 93 39 31"/>
+		</skin>
 	</skinlist>
 	<skinlist category="yiseul_buttons">
 		<skin name="worldmap2_btn_round" texture="\skin\worldmap2.tga">
@@ -5963,6 +6216,39 @@
 			<img name="bottomleft" imgrect="147 299 19 1"/>
 			<img name="bottomcore" imgrect="167 299 23 1"/>
 			<img name="bottomright" imgrect="191 299 19 1"/>
+		</skin>
+		<skin name="tribal_btn_list" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="417 111 45 1"/>
+			<img name="topcore" imgrect="463 111 37 1"/>
+			<img name="topright" imgrect="501 111 45 1"/>
+			<img name="bodyleft" imgrect="417 0 45 36"/>
+			<img name="bodycore" imgrect="463 0 37 36"/>
+			<img name="bodyright" imgrect="501 0 45 36"/>
+			<img name="bottomleft" imgrect="417 111 45 1"/>
+			<img name="bottomcore" imgrect="463 111 37 1"/>
+			<img name="bottomright" imgrect="501 111 45 1"/>
+		</skin>
+		<skin name="tribal_btn_list_cursoron" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="417 111 45 1"/>
+			<img name="topcore" imgrect="463 111 37 1"/>
+			<img name="topright" imgrect="501 111 45 1"/>
+			<img name="bodyleft" imgrect="417 37 45 36"/>
+			<img name="bodycore" imgrect="463 37 37 36"/>
+			<img name="bodyright" imgrect="501 37 45 36"/>
+			<img name="bottomleft" imgrect="417 111 45 1"/>
+			<img name="bottomcore" imgrect="463 111 37 1"/>
+			<img name="bottomright" imgrect="501 111 45 1"/>
+		</skin>
+		<skin name="tribal_btn_list_clicked" texture="\skin\tribal.tga">
+			<img name="topleft" imgrect="417 111 45 1"/>
+			<img name="topcore" imgrect="463 111 37 1"/>
+			<img name="topright" imgrect="501 111 45 1"/>
+			<img name="bodyleft" imgrect="417 74 45 36"/>
+			<img name="bodycore" imgrect="463 74 37 36"/>
+			<img name="bodyright" imgrect="501 74 45 36"/>
+			<img name="bottomleft" imgrect="417 111 45 1"/>
+			<img name="bottomcore" imgrect="463 111 37 1"/>
+			<img name="bottomright" imgrect="501 111 45 1"/>
 		</skin>
 	</skinlist>
 	<skinlist category="buttons">
@@ -9001,7 +9287,7 @@
 		<image name="birth_attribute_secret" file="\skin\keynbet.tga" imgrect="352 507 27 27" CMM_Caption="선천 버프 비공개"/>
 		<image name="birth_attribute_berserker" file="\skin\keynbet.tga" imgrect="379 507 27 27" CMM_Caption="버서커형"/>
 		<image name="birth_attribute_avoidance" file="\skin\keynbet.tga" imgrect="406 507 27 27" CMM_Caption="회피형"/>
-		<image name="birth_attribute_cancellation" file="\skin\keynbet.tga" imgrect="433 507 27 27" CMM_Caption="조인트 패널티 해제형"/>
+		<image name="birth_attribute_cancellation" file="\skin\keynbet.tga" imgrect="433 507 27 27" CMM_Caption="조인트 페널티 해제형"/>
 		<image name="birth_attribute_ld_defense" file="\skin\keynbet.tga" imgrect="352 534 27 27" CMM_Caption="원거리 방어형"/>
 		<image name="birth_attribute_explosion" file="\skin\keynbet.tga" imgrect="379 534 27 27" CMM_Caption="폭발형"/>
 		<image name="birth_attribute_absorption" file="\skin\keynbet.tga" imgrect="406 534 27 27" CMM_Caption="디버프 흡수형"/>
@@ -9595,6 +9881,8 @@
 		<image name="alchemy_neutralization_toxicity" file="\skin\alchemy.tga" imgrect="766 1616 20 30" CMM_Caption="독성 포션 아이콘"/>
 		<image name="alchemy_question_obstacle" file="\skin\alchemy.tga" imgrect="774 1564 24 24" CMM_Caption="장애물"/>
 		<image name="receive_complete_eng" file="\skin\attendance_sheet_skin.tga" imgrect="232 872 69 84" CMM_Caption="수령완료 마크_영문버전"/>
+		<image name="current_group_mark" file="\skin\party_search.tga" imgrect="194 302 16 16" CMM_Caption="현재 그룹"/>
+		<image name="pilgrim_group_invite_plus" file="\skin\party_search.tga" imgrect="353 315 60 60" CMM_Caption="그룹 추가 플러스 마크"/>
 		<image name="event_recently_notice_inform" file="\skin\normal_item_tootip.tga" imgrect="306 249 22 22" CMM_Caption="이벤트 현황 알림 표시"/>
 	</imagelist>
 	<imagelist category="yiseul_image">
@@ -9691,6 +9979,37 @@
 		<image name="ps_icon_input" file="\skin\party_search.tga" imgrect="478 190 20 20" CMM_Caption="파티찾기_입력아이콘"/>
 		<image name="Interaction_SkillCooldown" file="\skin\epicraid.tga" imgrect="198 135 44 44" CMM_Caption="에픽레이드 시계 소스"/>
 		<image name="bg_acc_paulius" file="\skin\bg_acc_paulius.tga" imgrect="0 0 660 546" CMM_Caption="파울루스 악세 배경"/>
+		<image name="tribal_levelframe_L00" file="\skin\tribal.tga" imgrect="389 178 80 80" CMM_Caption="시련 레벨프레임_대_잠금"/>
+		<image name="tribal_levelframe_L01" file="\skin\tribal.tga" imgrect="243 178 80 80" CMM_Caption="시련 레벨프레임_대01"/>
+		<image name="tribal_levelframe_L02" file="\skin\tribal.tga" imgrect="162 178 80 80" CMM_Caption="시련 레벨프레임_대02"/>
+		<image name="tribal_levelframe_L03" file="\skin\tribal.tga" imgrect="81 178 80 80" CMM_Caption="시련 레벨프레임_대03"/>
+		<image name="tribal_levelframe_L04" file="\skin\tribal.tga" imgrect="0 178 80 80" CMM_Caption="시련 레벨프레임_대04"/>
+		<image name="tribal_levelframe_S00" file="\skin\tribal.tga" imgrect="389 260 40 40" CMM_Caption="시련 레벨프레임_소_잠금"/>
+		<image name="tribal_levelframe_S01" file="\skin\tribal.tga" imgrect="194 106 40 40" CMM_Caption="시련 레벨프레임_소01"/>
+		<image name="tribal_levelframe_S02" file="\skin\tribal.tga" imgrect="153 106 40 40" CMM_Caption="시련 레벨프레임_소02"/>
+		<image name="tribal_levelframe_S03" file="\skin\tribal.tga" imgrect="112 106 40 40" CMM_Caption="시련 레벨프레임_소03"/>
+		<image name="tribal_levelframe_S04" file="\skin\tribal.tga" imgrect="70 106 40 40" CMM_Caption="시련 레벨프레임_소04"/>
+		<image name="tribal_icon_shell_L" file="\skin\tribal.tga" imgrect="95 0 30 28" CMM_Caption="시련 순례자아이콘 대"/>
+		<image name="tribal_icon_shell_S" file="\skin\tribal.tga" imgrect="126 0 22 20" CMM_Caption="시련 순례자아이콘 소"/>
+		<image name="tribal_icon_level_00" file="\skin\tribal.tga" imgrect="431 260 42 42" CMM_Caption="시련 레벨아이콘_잠금"/>
+		<image name="tribal_icon_level_01" file="\skin\tribal.tga" imgrect="237 106 42 42" CMM_Caption="시련 레벨아이콘 01"/>
+		<image name="tribal_icon_level_02" file="\skin\tribal.tga" imgrect="280 106 42 42" CMM_Caption="시련 레벨아이콘 02"/>
+		<image name="tribal_icon_level_03" file="\skin\tribal.tga" imgrect="323 106 42 42" CMM_Caption="시련 레벨아이콘 03"/>
+		<image name="tribal_icon_level_04" file="\skin\tribal.tga" imgrect="366 106 42 42" CMM_Caption="시련 레벨아이콘 04"/>
+		<image name="tribal_line" file="\skin\tribal.tga" imgrect="383 178 1 76" CMM_Caption="시련 세로 구분선"/>
+		<image name="tribal_line2" file="\skin\tribal.tga" imgrect="211 339 537 2" CMM_Caption="시련 가로 구분선"/>
+		<image name="tribal_icon_stone" file="\skin\tribal.tga" imgrect="472 178 16 22" CMM_Caption="시련의 돌 아이콘"/>
+		<image name="tribal_icon_totalscore" file="\skin\tribal.tga" imgrect="151 0 17 24" CMM_Caption="시련 totalscore 아이콘"/>
+		<image name="tribal_icon_playtime" file="\skin\tribal.tga" imgrect="169 0 17 24" CMM_Caption="시련 playtime 아이콘"/>
+		<image name="tribal_txt_extreme" file="\skin\tribal.tga" imgrect="550 0 250 83" CMM_Caption="시련 extreme 텍스트"/>
+		<image name="tribal_txt_clear" file="\skin\tribal.tga" imgrect="551 87 433 50" CMM_Caption="시련 clear 텍스트"/>
+		<image name="tribal_backEffect" file="\skin\tribal.tga" imgrect="507 158 444 178" CMM_Caption="시련 광원 효과"/>
+		<image name="gabija_balloon_direction" file="\skin\say_balloon.tga" imgrect="1 913 82 75" CMM_Caption="가비야 말풍선_꼬리"/>
+		<image name="gabija_balloon_deco1" file="\skin\say_balloon.tga" imgrect="200 1162 78 49" CMM_Caption="가비야 말풍선_데코1"/>
+		<image name="gabija_balloon_deco2" file="\skin\say_balloon.tga" imgrect="280 1162 18 21" CMM_Caption="가비야 말풍선_데코2_날개_왼"/>
+		<image name="gabija_balloon_deco3" file="\skin\say_balloon.tga" imgrect="300 1162 18 21" CMM_Caption="가비야 말풍선_데코2_날개_오"/>
+		<image name="paulius_balloon_direction" file="\skin\say_balloon.tga" imgrect="1 989 82 75" CMM_Caption="파울루스 말풍선_꼬리"/>
+		<image name="paulius_balloon_deco" file="\skin\say_balloon.tga" imgrect="645 1 99 66" CMM_Caption="파울루스 말풍선_데코"/>
 	</imagelist>
 	<imagelist category="je_button">
 		<image name="menu_guild_info" file="\skin\guild_skin.tga" imgrect="165 298 45 45" CMM_Caption="길드 정보"/>
@@ -10439,6 +10758,21 @@
 		<image name="bulletinboard_unity_folding_btn" file="\skin\button_small.tga" imgrect="270 302 54 54" CMM_Caption="게시판 통합 폴딩 버튼"/>
 		<image name="bulletinboard_unity_folding_btn_cursoron" file="\skin\button_small.tga" imgrect="325 302 54 54"/>
 		<image name="bulletinboard_unity_folding_btn_clicked" file="\skin\button_small.tga" imgrect="380 302 54 54"/>
+		<image name="ps_hud_pilgrim" file="\skin\party_search.tga" imgrect="81 376 36 36" CMM_Caption="순례자_허드 버튼"/>
+		<image name="ps_hud_pilgrim_cursoron" file="\skin\party_search.tga" imgrect="118 376 36 36"/>
+		<image name="ps_hud_pilgrim_clicked" file="\skin\party_search.tga" imgrect="155 376 36 36"/>
+		<image name="pilgrim_tab_btn" file="\skin\party_search.tga" imgrect="347 376 164 42" CMM_Caption="순례자 시즌 탭버튼"/>
+		<image name="pilgrim_tab_btn_cursoron" file="\skin\party_search.tga" imgrect="347 419 164 42"/>
+		<image name="pilgrim_tab_btn_clicked" file="\skin\party_search.tga" imgrect="347 462 164 42"/>
+		<image name="pilgrim_reward_gain" file="\skin\party_search.tga" imgrect="81 413 34 37" CMM_Caption="순례자 보상 받기 버튼"/>
+		<image name="pilgrim_reward_gain_cursoron" file="\skin\party_search.tga" imgrect="116 413 34 37"/>
+		<image name="pilgrim_reward_gain_clicked" file="\skin\party_search.tga" imgrect="151 413 34 37"/>
+		<image name="party_category_btn" file="\skin\button_small.tga" imgrect="0 401 54 54" CMM_Caption="파티 카테고리 버튼"/>
+		<image name="party_category_btn_cursoron" file="\skin\button_small.tga" imgrect="55 401 54 54"/>
+		<image name="party_category_btn_clicked" file="\skin\button_small.tga" imgrect="110 401 54 54"/>
+		<image name="party_pilgrim_btn" file="\skin\button_small.tga" imgrect="165 401 50 50" CMM_Caption="순례자 버튼"/>
+		<image name="party_pilgrim_btn_cursoron" file="\skin\button_small.tga" imgrect="216 401 50 50"/>
+		<image name="party_pilgrim_btn_clicked" file="\skin\button_small.tga" imgrect="267 401 50 50"/>
 		</imagelist>
 	<imagelist category="yiseul_button">
 		<image name="pvpmine_shop_btn" file="\skin\pip_test.tga" imgrect="2049 61 66 59" CMM_Caption="용병단 증표 ui 버튼"/>
@@ -10621,6 +10955,12 @@
 		<image name="growup_btn_small" file="\skin\button_small.tga" imgrect="0 340 58 60" CMM_Caption="성장지원 숏컷 버튼"/>
 		<image name="growup_btn_small_cursoron" file="\skin\button_small.tga" imgrect="59 340 58 60"/>
 		<image name="growup_btn_small_clicked" file="\skin\button_small.tga" imgrect="118 340 58 60"/>
+		<image name="tribal_btn_levelDown" file="\skin\tribal.tga" imgrect="325 178 26 32" CMM_Caption="시련 레벨 다운 버튼"/>
+		<image name="tribal_btn_levelDown_cursoron" file="\skin\tribal.tga" imgrect="325 211 26 32"/>
+		<image name="tribal_btn_levelDown_clicked" file="\skin\tribal.tga" imgrect="325 244 26 32"/>
+		<image name="tribal_btn_levelUp" file="\skin\tribal.tga" imgrect="352 178 26 32" CMM_Caption="시련 레벨 업 버튼"/>
+		<image name="tribal_btn_levelUp_cursoron" file="\skin\tribal.tga" imgrect="352 211 26 32"/>
+		<image name="tribal_btn_levelUp_clicked" file="\skin\tribal.tga" imgrect="352 244 26 32"/>
 	</imagelist>
 	<imagelist category="worldmap_image">
 		<image name="worldmap2_mainmap" file="\skin\worldmap\worldmap2_mainmap.jpg" imgrect="0 0 1920 1080" CMM_Caption="월드맵배경"/>
@@ -11737,6 +12077,17 @@
 		<image name="popo_emotion03" file="\icon\emoticon\popo_emotion03.png" imgrect="0 0 128 128"/>
 		<image name="Baubas_Valentine_01" file="\icon\emoticon\Baubas_Valentine_01.png" imgrect="0 0 128 128"/>
 		<image name="Baubas_toothbrushing_01" file="\icon\emoticon\Baubas_toothbrushing_01.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_127" file="\icon\emoticon\Gabija_EarringRaid_emoticon_1.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_128" file="\icon\emoticon\Gabija_EarringRaid_emoticon_2.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_129" file="\icon\emoticon\Gabija_EarringRaid_emoticon_3.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_130" file="\icon\emoticon\Gabija_EarringRaid_emoticon_4.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_131" file="\icon\emoticon\Gabija_EarringRaid_emoticon_5.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_132" file="\icon\emoticon\Gabija_EarringRaid_emoticon_6.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_133" file="\icon\emoticon\Gabija_EarringRaid_emoticon_7.png" imgrect="0 0 128 128"/>
+		<image name="Gabija_EarringRaid_emoticon_134" file="\icon\emoticon\Gabija_EarringRaid_emoticon_8.png" imgrect="0 0 128 128"/>
+		<image name="inesa_emoticon135" file="\icon\emoticon\inesa_emoticon01.png" imgrect="0 0 128 128"/>
+		<image name="inesa_emoticon136" file="\icon\emoticon\inesa_emoticon02.png" imgrect="0 0 128 128"/>
+		<image name="inesa_emoticon137" file="\icon\emoticon\inesa_emoticon03.png" imgrect="0 0 128 128"/>
 	</imagelist>
 	<imagelist category="itemtooltip_image">
 		<image name="circle_gem" file="\skin\tooltip_skin_3.tga" imgrect="805 228 30 30"/>
@@ -13177,7 +13528,7 @@
 		<image name="icon_nexonpc" file="\icon\buff_icon.tga" imgrect="640 1152 128 128" CMM_Caption="넥슨피시방"/>
 		<image name="icon_expup" file="\icon\buff_icon.tga" imgrect="768 1152 128 128" CMM_Caption="경험의서버프"/>
 		<image name="icon_teamexpup" file="\icon\buff_icon.tga" imgrect="896 1152 128 128" CMM_Caption="팀경험치"/>
-		<image name="icon_fieldboss" file="\icon\buff_icon.tga" imgrect="0 1280 128 128" CMM_Caption="필드보스패널티"/>
+		<image name="icon_fieldboss" file="\icon\buff_icon.tga" imgrect="0 1280 128 128" CMM_Caption="필드보스페널티"/>
 		<image name="icon_GreaterDEF" file="\icon\buff_icon.tga" imgrect="128 1280 128 128" CMM_Caption="광역방어버프"/>
 		<image name="icon_GreaterATK" file="\icon\buff_icon.tga" imgrect="256 1280 128 128" CMM_Caption="광역공격버프"/>
 		<image name="icon_L_Songpyeon" file="\icon\buff_icon.tga" imgrect="384 1280 128 128" CMM_Caption="대왕송편버프"/>
@@ -13205,7 +13556,7 @@
 		<image name="icon_Event_WhitDay_Candy_2" file="\icon\buff_icon.tga" imgrect="128 1664 128 128" CMM_Caption="사탕2"/>
 		<image name="icon_Event_WhitDay_Candy_3" file="\icon\buff_icon.tga" imgrect="256 1664 128 128" CMM_Caption="사탕3"/>
 		<image name="icon_Event_WhitDay_Candy_4" file="\icon\buff_icon.tga" imgrect="384 1664 128 128" CMM_Caption="사탕4"/>
-		<image name="icon_TeamBattleBan" file="\icon\buff_icon.tga" imgrect="512 1664 128 128" CMM_Caption="팀배틀패널티"/>
+		<image name="icon_TeamBattleBan" file="\icon\buff_icon.tga" imgrect="512 1664 128 128" CMM_Caption="팀배틀페널티"/>
 		<image name="icon_WeddingCake" file="\icon\buff_icon.tga" imgrect="640 1664 128 128" CMM_Caption="웨딩케이크버프"/>
 		<image name="icon_Fishing_Fire" file="\icon\buff_icon.tga" imgrect="768 1664 128 128" CMM_Caption="낚시 버프"/>
 		<image name="icon_Weak_Melee" file="\icon\buff_icon.tga" imgrect="896 1664 128 128" CMM_Caption="근접 공격 약점"/>
@@ -13292,7 +13643,7 @@
 		<image name="icon_boruta_echo" file="\icon\buff_icon2.tga" imgrect="896 896 128 128"/>
 		<image name="icon_goldpig_have" file="\icon\buff_icon2.tga" imgrect="0 1024 128 128" CMM_Caption="황금돼지 컴페니언 버프"/>
 		<image name="icon_sweet_potato" file="\icon\buff_icon2.tga" imgrect="128 1024 128 128" CMM_Caption="군고구마 버프"/>
-		<image name="icon_BK_Betrayer_1" file="\icon\buff_icon2.tga" imgrect="256 1024 128 128" CMM_Caption="길드탈퇴 패널티 디버프"/>
+		<image name="icon_BK_Betrayer_1" file="\icon\buff_icon2.tga" imgrect="256 1024 128 128" CMM_Caption="길드탈퇴 페널티 디버프"/>
 		<image name="icon_Event_ep11_reinforce" file="\icon\buff_icon2.tga" imgrect="384 1024 128 128" CMM_Caption="자라나라 나무나무 장비 업글 버프"/>
 		<image name="icon_Event_ep11_Expup" file="\icon\buff_icon2.tga" imgrect="512 1024 128 128" CMM_Caption="자라나라 나무나무 경험치 버프"/>
 		<image name="icon_Event_ep11_flower" file="\icon\buff_icon2.tga" imgrect="640 1024 128 128" CMM_Caption="새싹과 함께한"/>
@@ -13329,7 +13680,7 @@
 		<image name="icon_reappraisal_discount" file="\icon\buff_icon2.tga" imgrect="640 1536 128 128" CMM_Caption="재감정 비용 50% 할인"/>
 		<image name="icon_class_change_pointup" file="\icon\buff_icon2.tga" imgrect="768 1536 128 128" CMM_Caption="클래스 변경 포인트 지급량 500% 증가"/>
 		<image name="icon_even_transcend_discount" file="\icon\buff_icon2.tga" imgrect="896 1536 128 128" CMM_Caption="짝수 단계 초월 비용 50% 할인"/>
-		<image name="icon_penalty_clear_gem" file="\icon\buff_icon2.tga" imgrect="0 1664 128 128" CMM_Caption="젬 사용 패널티 면제"/>
+		<image name="icon_penalty_clear_gem" file="\icon\buff_icon2.tga" imgrect="0 1664 128 128" CMM_Caption="젬 사용 페널티 면제"/>
 		<image name="icon_unique_raid_bonus" file="\icon\buff_icon2.tga" imgrect="128 1664 128 128" CMM_Caption="유니크 레이드 보상 2배,스톤개수 고정"/>
 		<image name="icon_reinforce_discount" file="\icon\buff_icon2.tga" imgrect="256 1664 128 128" CMM_Caption="강화 50% 할인"/>
 		<image name="icon_healhsp_speedup" file="\icon\buff_icon2.tga" imgrect="384 1664 128 128" CMM_Caption="이동 속도증가,HP,SP회복"/>
@@ -13733,6 +14084,8 @@
 		<image name="icon_boss_RevivalPaulius_rage_build" file="\icon\buff_icon5.tga" imgrect="384 1792 128 128" CMM_Caption="격노"/>
 		<image name="icon_interaction_protection" file="\icon\buff_icon5.tga" imgrect="512 1792 128 128" CMM_Caption="탑승자 보호"/>
 		<image name="icon_ObjectInteractionRideBuff" file="\icon\buff_icon5.tga" imgrect="640 1792 128 128" CMM_Caption="탑승"/>
+		<image name="icon_wizard_ElectricShock" file="\icon\buff_icon5.tga" imgrect="768 1792 128 128" CMM_Caption="전류"/>
+		<image name="icon_wizard_Spark" file="\icon\buff_icon5.tga" imgrect="896 1792 128 128" CMM_Caption="스파크"/>
 		<image name="icon_2022_newyear_buff" file="\icon\buff_icon5.tga" imgrect="0 1920 128 128" CMM_Caption="2022 신년 버프"/>
 		<image name="icon_buff_ridepet_YellowTiger" file="\icon\buff_icon5.tga" imgrect="128 1920 128 128" CMM_Caption="황호 버프"/>
 		<image name="icon_buff_ridepet_BlackmistTiger" file="\icon\buff_icon5.tga" imgrect="256 1920 128 128" CMM_Caption="검은안개 호랑이 버프"/>
@@ -13749,7 +14102,22 @@
 		<image name="icon_tribulation_CaptureGaps" file="\icon\buff_icon6.tga" imgrect="640 0 128 128" CMM_Caption="빈틈포착"/>
 		<image name="icon_tribulation_WeaknessDetection" file="\icon\buff_icon6.tga" imgrect="768 0 128 128" CMM_Caption="약점 간파"/>
 		<image name="icon_tribulation_MeteoriteFall" file="\icon\buff_icon6.tga" imgrect="896 0 128 128" CMM_Caption="낙석 충돌"/>
+		<image name="icon_tribulation_DrUp" file="\icon\buff_icon6.tga" imgrect="0 128 128 128" CMM_Caption="회피증가"/>
+		<image name="icon_tribulation_CrtdrUp" file="\icon\buff_icon6.tga" imgrect="128 128 128 128" CMM_Caption="치명타저항증가"/>
+		<image name="icon_tribulation_CrtUp" file="\icon\buff_icon6.tga" imgrect="256 128 128 128" CMM_Caption="치명타증가"/>
+		<image name="icon_tribulation_GabijaEnergyTime" file="\icon\buff_icon6.tga" imgrect="384 128 128 128" CMM_Caption="가비야기운유지시간감소"/>
+		<image name="icon_tribulation_DoubleEdgedSword" file="\icon\buff_icon6.tga" imgrect="512 128 128 128" CMM_Caption="양날의검"/>
+		<image name="icon_tribulation_HolyPowerTime" file="\icon\buff_icon6.tga" imgrect="640 128 128 128" CMM_Caption="신성한힘버프지속시간감소"/>
+		<image name="icon_tribulation_WeakDespise" file="\icon\buff_icon6.tga" imgrect="768 128 128 128" CMM_Caption="약자멸시"/>
+		<image name="icon_tribulation_GabijaEnergyDark" file="\icon\buff_icon6.tga" imgrect="896 128 128 128" CMM_Caption="부정한기운"/>
+		<image name="icon_tribulation_SwordDance" file="\icon\buff_icon6.tga" imgrect="0 256 128 128" CMM_Caption="검무"/>
+		<image name="icon_tribulation_Isolation" file="\icon\buff_icon6.tga" imgrect="128 256 128 128" CMM_Caption="고립"/>
+		<image name="icon_tribulation_Windmill" file="\icon\buff_icon6.tga" imgrect="256 256 128 128" CMM_Caption="풍차"/>
+		<image name="icon_tribulation_SpotSpread" file="\icon\buff_icon6.tga" imgrect="384 256 128 128" CMM_Caption="반점"/>
+		<image name="icon_tribulation_MemoryManipulation" file="\icon\buff_icon6.tga" imgrect="512 256 128 128" CMM_Caption="기억조작"/>
+		<image name="icon_tribulation_PatternCategory" file="\icon\buff_icon6.tga" imgrect="640 256 128 128" CMM_Caption="패턴카테고리"/>
 		<image name="icon_buff_ridepet_ep13animal" file="\icon\buff_icon6.tga" imgrect="768 256 128 128" CMM_Caption="목마 탈 것 버프"/>
+	<image name="icon_Event_2203_ARBOR_DAY_BUFF" file="\icon\buff_icon6.tga" imgrect="896 256 128 128" CMM_Caption="자연의 축복"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>
@@ -13969,6 +14337,7 @@
 		<image name="03_goddess_Austeja" file="\skin\goddesscard\03_goddess_Austeja.tga" imgrect="0 0 330 440"/>
 		<image name="04_goddess_Dalia" file="\skin\goddesscard\04_goddess_Dalia.tga" imgrect="0 0 330 440"/>
 		<image name="05_goddess_Vakarine" file="\skin\goddesscard\05_goddess_Vakarine.tga" imgrect="0 0 330 440"/>
+		<image name="goddess_card_fragment_red" file="\skin\goddesscard\goddess_card_fragment_red.tga" imgrect="0 0 330 440"/>
 	</imagelist>
 	<imagelist category="npccard">
 		<image name="001_npc_payawoota" file="\skin\npccard\001_npc_payawoota.tga" imgrect="0 0 330 440"/>
@@ -14482,8 +14851,17 @@
 		<image name="plate_achieve_2022_newyear" file="\skin\user_title_skin.tga" imgrect="215 959 214 34" CMM_Caption="2022 설날 칭호"/>
 		<image name="plate_achieve_Hakkapeliter" file="\skin\user_title_skin.tga" imgrect="430 959 214 34" CMM_Caption="하카펠리테르 칭호"/>
 		<image name="plate_achieve_hakkapeliter_weekraid" file="\skin\user_title_skin.tga" imgrect="645 959 214 34" CMM_Caption="하카펠리테르 주보레 칭호"/>
+		<image name="plate_achieve_weeklyrank_19" file="\skin\user_title_skin.tga" imgrect="0 996 214 34" CMM_Caption="서큐버스 주보레 칭호"/>
+		<image name="plate_achieve_Keraunos" file="\skin\user_title_skin.tga" imgrect="0 1031 214 34" CMM_Caption="케라우노스 칭호"/>
+		<image name="plate_achieve_gabija_clear_1" file="\skin\user_title_skin.tga" imgrect="215 994 214 34" CMM_Caption="가비야 칭호1"/>
+		<image name="plate_achieve_gabija_clear_2" file="\skin\user_title_skin.tga" imgrect="430 994 214 34" CMM_Caption="가비야 칭호2"/>
+
+<image name="plate_achieve_Keraunos_weekraid" file="\skin\user_title_skin.tga" imgrect="645 994 214 34" CMM_Caption="케라우노스 주보레 칭호"/>
+		<image name="plate_achieve_EVENT_2203_WHITEDAY_CANDYLOVER_TITLE" file="\skin\user_title_skin.tga" imgrect="1075 961 214 34" CMM_Caption="2022_화이트데이 칭호"/>
+		<image name="plate_achieve_Taiwannewyear" file="\skin\user_title_skin.tga" imgrect="1075 996 214 34" CMM_Caption="2022_대만 춘절 칭호"/>
 		<image name="plate_achieve_HocusPocus" file="\skin\user_title_skin.tga" imgrect="215 1029 214 34" CMM_Caption="스팀 몬스터 의인화 팬아트 보상 칭호"/>
-		<image name="plate_achieve_berksbestie" file="\skin\user_title_skin.tga" imgrect="861 1031 214 34" CMM_Caption="스팀 2022 설날 하우벅 칭호"/>
+	<image name="plate_achieve_EVENT_2203_ARBOR_DAY_TITLE" file="\skin\user_title_skin.tga" imgrect="431 1029 214 34" CMM_Caption="2022 식목일 칭호"/>
+	<image name="plate_achieve_paulius" file="\skin\user_title_skin.tga" imgrect="646 1029 214 36" CMM_Caption="파울루스 칭호"/>
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>

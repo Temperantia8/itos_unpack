@@ -312,3 +312,11 @@ function IS_GEM_EXTRACT_CARE_20211125()
 	
 	return date_time.is_between_time(startTimeStr, endTimeStr)
 end
+
+function IS_GEM_EXTRACT_FREE_CHECK(pc)
+	if GetExProp(pc, 'Gem_Extract_Free') == 1 then
+		return true;
+	end
+
+	return IS_GEM_EXTRACT_CARE_20211125();
+end

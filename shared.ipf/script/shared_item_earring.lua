@@ -160,6 +160,10 @@ shared_item_earring.is_valid_unlock_item = function(scrollObj, itemObj)
 		return false, 'NotValidItem'
 	end
 
+    if TryGetProp(scrollObj, 'StringArg', 'None') == 'unlock_earring_team_belonging' and TryGetProp(itemObj, 'ClassName', 'None') == 'EP13_GabijaEarring' then
+        return true, 'None'
+    end
+    
 	if TryGetProp(scrollObj, 'StringArg', 'None') ~= TryGetProp(itemObj, 'ClassName', 'None') then		
 		return false, 'NotValidItem'
     end

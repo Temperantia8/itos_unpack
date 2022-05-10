@@ -36,6 +36,7 @@ ClassID,DrawRange,DrawTime,ArrowDirCnt,ClassName,DrawType,DrawColor,DrawBlinkCol
 20002,37.500000,0.010000,0,"Wizard_Lethargy","Circle","0,250,0,255","0,250,0,255","",""
 21812,85,0.010000,0,"Daoshi_FireCharm","Circle","0,250,0,255","0,250,0,255","",""
 21302,60,0.010000,0,"RuneCaster_Isa","Circle","0,250,0,255","0,250,0,255","",""
+21114,70,0.010000,0,"Featherfoot_Bloodpool","Circle","0,250,0,255","0,250,0,255","",""
 30001,30,0.010000,0,"Archer_Multishot","Circle","0,250,0,255","0,250,0,255","",""
 31103,50,0.010000,0,"Cannoneer_SiegeBurst","Circle","0,250,0,255","0,250,0,255","",""
 31106,75,0.010000,0,"Cannoneer_SmokeGrenade","Circle","0,250,0,255","0,250,0,255","",""

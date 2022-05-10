@@ -1146,3 +1146,43 @@ function GET_TOSHERO_TUTO_01_ENABLE(pc, questName)
     end
 
 end
+
+--뷰티샵 튜토리얼 퀘스트 체크 함수
+function SCR_PRE_TUTO_BEAUTYSHOP(pc, questname, scriptInfo)
+    local aObj
+    local etcObj
+    local sObj = GetSessionObject(pc, 'ssn_klapeda');
+
+
+    if IsServerSection(pc) == 1 then
+        aObj = GetAccountObj(pc);
+        etcObj = GetETCObject(pc);
+    else
+        aObj = GetMyAccountObj();
+        etcObj = GetMyEtcObject();
+    end
+    
+    if aObj == nil or etcObj == nil or sObj == nil then
+        return "NO";
+    end
+
+    local s_line = TryGetProp(sObj, "QSTARTZONETYPE");
+
+    if s_line == "StartLine3" then
+        local sObj_TUTOClear = TryGetProp(sObj, 'TUTO_START_LINE3');
+        local etcObj_TUTOClear = TryGetProp(etcObj, 'StartLine3_Clear');
+
+        if sObj_TUTOClear ~= 300 or etcObj_TUTOClear ~= 300 then
+            return "NO";
+        end
+    end
+    
+    local prop_name = "BeautyShop_Tuto_Achieve";
+    local achievePoint = GetAchievePoint(pc, prop_name)
+    if achievePoint >= 1 then
+        return "NO"
+    end
+
+
+    return "YES";
+end

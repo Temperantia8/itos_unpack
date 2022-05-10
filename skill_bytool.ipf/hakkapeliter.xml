@@ -90,7 +90,7 @@
             </ToolScp>
         </KeyInput>
         <KeyInputStart>
-            <ToolScp Scp="SKL_START_CLIENT_TARGET_CHECK" Client="YES" UseSleep="No">
+            <ToolScp Scp="SKL_START_CLIENT_TARGET_CHECK" Client="NO" UseSleep="No">
                 <Num Num="10"/>
             </ToolScp>
             <ToolScp Scp="SKL_BUFF" Client="NO" UseSleep="NO">
@@ -108,7 +108,7 @@
             <ToolScp Scp="SKL_BUFF_REMOVE" Client="NO" UseSleep="NO">
                 <Str Str="Hakkapeliter_Assault_Buff"/>
             </ToolScp>
-            <ToolScp Scp="SKL_END_CLIENT_TARGET_CHECK" Client="YES" UseSleep="No"/>
+            <ToolScp Scp="SKL_END_CLIENT_TARGET_CHECK" Client="NO" UseSleep="No"/>
         </KeyInputEnd>
         <MainSkl ScrLock="None" JumpFlee="NO" MSPDToUsePos="0">
             <HitList>

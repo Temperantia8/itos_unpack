@@ -348,6 +348,7 @@
 	<ReadXml Name="rank_system\GLOBAL_JP_rank_system_season_table"/>
 	<ReadXml Name="rank_system\GLOBAL_rank_system_season_table"/>
 	<ReadXml Name="rank_system\TAIWAN_rank_system_season_table"/>
+	<ReadXml Name="rank_system\tribulation_season_table"/>
 	<ReadXml Name="rank_system_reward_list"/>
 	<ReadXml Name="goddess_recipe"/>
 	<ReadXml Name="goddess_evolve"/>
@@ -372,4 +373,6 @@
 	<ReadXml Name="achieve_guidequest"/>
 	<ReadXml Name="monster_obj_interaction"/>
 	<ReadXml Name="ecs_system"/>
+	<ReadXml Name="rank_system_contents_list"/>
+	<ReadXml Name="tribulation_system_reward_list"/>
 </Category>

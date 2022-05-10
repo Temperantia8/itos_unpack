@@ -298,6 +298,9 @@ return obj.Level;"/>
                     <Num Num="1"/>
                     <Num Num="0"/>
                 </Scp>
+                <Scp Client="NO" Scp="SKL_RUN_SCRIPT" Time="450" UseSleep="NO">
+                    <Str Str="VIBORA_AROUSALCHARM_FIRE_PAD"/>
+                </Scp>
             </EtcList>
         </MainSkl>
     </Skill>
@@ -776,7 +779,15 @@ return obj.Level;"/>
                 </Scp>
                 <Scp Client="NO" Scp="MONSKL_PAD_FRONT_MSL" Time="300" UseSleep="YES">
                     <Pos Angle="0" Dist="30"/>
-                    <Str Str="Daoshi_CreepingDeath"/>
+                    <Str Str="Daoshi_CreepingDeath" UseFunc="1" FuncTxt="
+local padname = 'Daoshi_CreepingDeath'
+local skill = GetSkill(self, 'Daoshi_CreepingDeath')
+if skill ~= nil then
+    if (IsBuffApplied(self, 'ArousalCharm_Buff') == 'YES' or GetExProp(skill, 'ArousalCharm_ON') == 1) and GetExProp(self, 'ITEM_VIBORA_ArousalCharm') == 1 then
+        padname = 'Daoshi_CreepingDeath_vibora'
+    end
+end
+return padname"/>
                     <Num Num="300"/>
                     <Num Num="1"/>
                     <Num Num="5" UseFunc="1" FuncTxt="

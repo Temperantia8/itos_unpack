@@ -242,6 +242,7 @@
                     <Str_Arg Arg="1" Str="F_firewall_long_z"/>
                     <Str_Arg Arg="1" Str="F_firewall_short_z"/>
                     <Num Num="0.050000001"/>
+                    <Num Num="0"/>
                 </Scp>
                 <Scp Client="NO" Scp="MONSKL_CRE_PAD_VERTICAL" Time="0" UseSleep="NO">
                     <Pos Angle="0" Dist="3.8255448e-43" PosType="3"/>
@@ -252,6 +253,7 @@
                     <Str_Arg Arg="1" Str="F_firewall_long_z"/>
                     <Str_Arg Arg="1" Str="F_firewall_short_z"/>
                     <Num Num="0.050000001"/>
+                    <Num Num="90"/>
                 </Scp>
             </EtcList>
             <ResultList>

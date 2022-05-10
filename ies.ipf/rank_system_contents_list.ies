@@ -1,3 +1,4 @@
-ClassID,ClassName,Name,Desc
-1,"TOSHero","영웅담","주간"
-2,"테스트","테스트","월간"
+ClassID,SquadType,ClassName,Name,Category,Desc
+1,0,"TOSHero","영웅담","TOSHero","주간"
+2,1,"Goddess_Raid_Delmore_Extreme","델무어 격전지: 가디스(순례자)","Tribuation","주간"
+3,0,"EARRING_RAID_Extreme","여신의 전언: 불꽃의 기억(순례자)","Tribuation","주간"

@@ -18394,6 +18394,16 @@ if self.HP == 0 then return 1; else return 0; end;">
             </ToolScp>
         </StartList>
     </AI>
+    <AI Name="SAI_MASTER_CHAR2_24_1" ActiveMessageMapInBattle="1">
+        <StartList>
+            <ToolScp Scp="EnableAIOutOfPC" Client="NO" UseSleep="NO"/>
+            <ToolScp Scp="S_AI_EFFECT_ATTACH" Client="NO" UseSleep="NO">
+                <Num Num="0"/>
+                <Str_Arg Str="F_ground194_lightning_blue" Arg="0.69999999"/>
+                <Str Str="BOT"/>
+            </ToolScp>
+        </StartList>
+    </AI>
     <AI Name="SAI_RAID_BASIC_MONSTER_AI_1" ActiveMessageMapInBattle="1">
         <List>
             <ToolScp Scp="S_AI_ATTACK_NEAR" Client="NO" UseSleep="NO">

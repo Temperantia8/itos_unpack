@@ -1,3 +1,205 @@
+
+goddess_card_reinforce = {}
+local base_goddess_card_reinfoce_mat = nil
+local base_goddess_card_mat = nil
+
+function make_base_goddess_card_reinfoce_mat()
+    if base_goddess_card_reinfoce_mat ~= nil then
+        return
+    end
+
+    base_goddess_card_reinfoce_mat = {}
+    for i = 1, 10 do
+        base_goddess_card_reinfoce_mat[i] = {}
+    end
+    
+    local index = 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 1
+
+    -- 1 -> 2
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 1
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 2
+
+    -- 2 -> 3
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 2
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 3
+
+    -- 3 -> 4
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 4
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 4
+
+    -- 4 -> 5
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 5
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 7
+
+    -- 5 -> 6
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 7
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 12
+    
+    -- 6 -> 7
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 10
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 18
+    
+    -- 7 -> 8
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 16
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 28
+    
+    -- 8 -> 9
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 24
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 37
+    
+    -- 9 -> 10
+    index = index + 1
+    base_goddess_card_reinfoce_mat[index]['Goddess_card_Reinforce_2'] = 37
+    base_goddess_card_reinfoce_mat[index]['goddess_reinforce_misc'] = 43    
+
+
+	-- 여신 카드 레벨업
+	base_goddess_card_mat = {}
+    for i = 1, 10 do
+        base_goddess_card_mat[i] = {}
+    end
+    
+    index = 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 1
+
+    -- 1 -> 2
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 2
+
+    -- 2 -> 3
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 4
+
+    -- 3 -> 4
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 7
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 6
+
+    -- 4 -> 5
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 12
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 14
+
+    -- 5 -> 6
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 24
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 28
+    
+    -- 6 -> 7
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 42
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 50
+    
+    -- 7 -> 8
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 73
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 100
+    
+    -- 8 -> 9
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 120
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 184
+    
+    -- 9 -> 10
+    index = index + 1
+    base_goddess_card_mat[index]['Goddess_card_Reinforce_2'] = 232
+    base_goddess_card_mat[index]['goddess_reinforce_misc'] = 370
+end
+
+make_base_goddess_card_reinfoce_mat()
+
+-- 분해 했을 때, 얻는 재료들
+goddess_card_reinforce.get_goddess_card_reinfoce_mat_list = function(item)
+    if TryGetProp(item, 'ClassName', 'None') ~= 'Goddess_card_Reinforce' then
+        return nil
+    end
+
+    local now_lv = GET_ITEM_LEVEL(item)
+    now_lv = math.max(1, now_lv)
+
+    local mat_list = {}
+    for i = now_lv, 1, -1 do
+        for name, count in pairs(base_goddess_card_reinfoce_mat[i]) do
+            if mat_list[name] == nil then
+                mat_list[name] = count
+            else
+                mat_list[name] = mat_list[name] + count
+            end
+        end
+    end
+
+    return mat_list
+end
+
+-- 여신카드 레벨업을 위한 재료
+goddess_card_reinforce.get_goddess_card_mat_list = function(item, goal_lv)
+    if TryGetProp(item, 'Reinforce_Type', 'None') ~= 'GoddessCard' then
+        return nil
+    end
+
+	local item_name = TryGetProp(item, 'StringArg', 'None')
+	if item_name == 'None' or GetClass('Item', item_name) == nil then
+		return nil
+	end
+
+    local now_lv = GET_ITEM_LEVEL(item)
+    now_lv = math.max(1, now_lv)
+
+	-- now_lv = 2
+	-- goal_lv = 5
+	if goal_lv <= now_lv then
+		return nil
+	end
+
+    local mat_list = {}
+	local item_count = 0
+    for i = now_lv + 1, goal_lv do
+		item_count = item_count + i		
+        for name, count in pairs(base_goddess_card_mat[i]) do
+            if mat_list[name] == nil then
+                mat_list[name] = count
+            else
+                mat_list[name] = mat_list[name] + count
+            end
+        end
+    end
+
+	if item_count > 0 then
+		mat_list[item_name] = item_count
+	end
+
+    return mat_list
+end
+
+goddess_card_reinforce.get_goddess_card_need_point = function(item, goal_lv)
+	local reinforce_type = TryGetProp(item, 'Reinforce_Type', 'None')
+	local namespace = LEGENDCARD_REINFORCE_GET_MAIN_CARD_NAMESPACE(item)
+	local card_lv = GET_ITEM_LEVEL(item)
+	local add_lv = goal_lv - card_lv
+	if add_lv <= 0 then
+		return 0
+	end
+
+	local total_point = 0
+	for i = 0, add_lv - 1 do
+		local reinforce_cls = LEGENDCARD_GET_REINFORCE_CLASS(card_lv + i, reinforce_type, namespace)
+		local need_point = TryGetProp(reinforce_cls, "NeedPoint", 0)
+		total_point = total_point + need_point
+	end
+
+	return total_point
+end
+
+
 function LEGENDCARD_GET_REINFORCE_CLASS(cardLv,reinforceType,namespace)
 	local legendCardReinforceList, cnt = GetClassList(namespace)
 	for i = 0, cnt - 1 do
@@ -9,8 +211,8 @@ function LEGENDCARD_GET_REINFORCE_CLASS(cardLv,reinforceType,namespace)
 	return nil
 end
 
-function LEGENDCARD_REINFORCE_GET_MAIN_CARD_NAMESPACE(obj)
-	if obj.CardGroupName == nil then
+function LEGENDCARD_REINFORCE_GET_MAIN_CARD_NAMESPACE(obj)	
+	if TryGetProp(obj, 'CardGroupName', 'None') == 'None' then
 		return nil
 	end
 	if obj.CardGroupName == 'LEG' then
@@ -24,7 +226,7 @@ function LEGENDCARD_REINFORCE_GET_MAIN_CARD_NAMESPACE(obj)
 end
 
 function LEGENDCARD_REINFORCE_GET_MATERIAL_CARD_NAMESPACE(mainObj,materialObj)
-	if mainObj == nil or mainObj.CardGroupName == nil then
+	if mainObj == nil or TryGetProp(mainObj, 'CardGroupName', 'None') == 'None' then
 		return nil
 	end
 	if materialObj.CardGroupName == nil then

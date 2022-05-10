@@ -626,6 +626,10 @@
 			<Particle From="F_pc_run_smoke" To="F_pc_effectitem_catagnan" Scale="1" ForceConvert="NO"/>
 			<Sound From="walk_left" To="step_soil"/>
 		</Anim>
+		<Anim Name="RUN_COSAIR03">
+			<Particle From="F_pc_run_smoke" To="F_pc_effectitem_catagnan" Scale="1" ForceConvert="NO"/>
+			<Sound From="walk_left" To="step_soil"/>
+		</Anim>
 		<Anim Name="DASH">
 			<Particle From="I_warrior_dash_run" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
 			<Sound From="walk_left" To="step_soil"/>

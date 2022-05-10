@@ -2696,6 +2696,10 @@ function SCR_Get_MSPD(self)
         if GetExProp(self, 'RIDE_PET_MSPD_LIMIT_INCREASE') > 0 then
             value = value + GetExProp(self, 'RIDE_PET_MSPD_LIMIT_INCREASE')
         end
+
+        if GetExProp(self, 'COMMON_MSPD_LIMIT_INCREASE') > 0 then
+            value = value + GetExProp(self, 'COMMON_MSPD_LIMIT_INCREASE')
+        end
     end
     
     local byBonus = TryGetProp(self, "MSPD_Bonus");
@@ -4890,10 +4894,23 @@ function SCR_Get_HEAL_PWR(self)
         byAbil = 0
     end
     
+    local sum_of_heal_power = 0
+    sum_of_heal_power = sum_of_heal_power + byAbil
+
     local seal_option = GetExProp(self, "ITEM_Cleric_PatronSaint_HwpRate")        
-    seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
-    value = value * (1 + byAbil + seal_option) 
+    if seal_option > 0 then
+        seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
+        sum_of_heal_power = sum_of_heal_power + seal_option
+    end
     
+    if GetExProp(self, "ITEM_goddess_seal_lv1") > 0 then
+        seal_option = GetExProp(self, "ITEM_goddess_seal_lv1")
+        seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
+        sum_of_heal_power = sum_of_heal_power + seal_option
+    end
+
+    value = value * (1 + sum_of_heal_power) 
+
     if value < 1 then
     	value = 1;
     end

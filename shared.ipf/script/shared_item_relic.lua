@@ -570,3 +570,21 @@ function SCR_RELIC_REINFORCE_COUPON()
     }
     return list
 end
+
+function IS_VALID_RELICGEM_LVUP_BY_SCROLL(gem, scroll)
+    if TryGetProp(gem, 'GroupName', 'None') ~= 'Gem_Relic' then
+        return false, 'NotValidItem'
+    end
+
+    if TryGetProp(scroll, 'StringArg', 'None') ~= 'RelicGemLVUPScroll' then
+        return false, 'NotValidItem'
+    end
+
+    local now_lv = TryGetProp(gem, 'GemLevel', 1)
+    local goal_lv = TryGetProp(scroll, 'NumberArg1', 0)
+    if now_lv >= goal_lv then
+        return false, 'ItemLevelIsGreaterThanMatItem'
+    end
+
+    return true
+end

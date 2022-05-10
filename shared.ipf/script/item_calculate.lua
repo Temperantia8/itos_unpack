@@ -3,6 +3,7 @@
 g_itemLvList = { 1, 15, 40, 75, 120, 170, 220, 270, 315, 350, 380, 400, 430, 440 };
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
+-- CommonPropList 로 cpp로 이전됨
 function GET_COMMON_PROP_LIST()
     return {
         'MINATK',
@@ -172,7 +173,7 @@ function INIT_ARMOR_PROP(item, class)
 
     local commonPropList = GET_COMMON_PROP_LIST();
     for i = 1, #commonPropList do
-        local propName = commonPropList[i];
+        local propName = commonPropList[i];        
         local propValue = class[propName];
         if except_list[propName] ~= true and growth_rate > 0 and growth_rate < 1 then
             local growth_value = math.floor(propValue * growth_rate);
@@ -181,7 +182,7 @@ function INIT_ARMOR_PROP(item, class)
                 growth_value = 1;
             end
             propValue = growth_value;
-        end
+        end    
         item[propName] = propValue;
     end
     OVERRIDE_INHERITANCE_PROPERTY(item);

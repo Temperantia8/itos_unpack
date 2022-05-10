@@ -124,6 +124,10 @@
 		<Item Script="None" Name="Chat_Balloon_Dog_30d" Count="1" Price="2500" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2109_6"/>
 		<Item Script="None" Name="PersonalHousing_Item_hp_h_barrack_12_clock" Count="1" Price="10000" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2105_1"/>
 		<Item Script="None" Name="PersonalHousing_Item_hp_h_barrack_12_bird" Count="1" Price="10000" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2105_2"/>
+		<Item Script="None" Name="Relic_exp_token" Count="1" Price="25" DailyBuyLimit="0" AccountNeedProperty=""/>		
+		<Item Script="None" Name="Relic_exp_refine_conversion" Count="1" Price="500" DailyBuyLimit="0" AccountNeedProperty=""/>				
+		<Item Script="None" Name="Relic_gem_upgrade_token" Count="1" Price="250" DailyBuyLimit="0" AccountNeedProperty=""/>		
+		<Item Script="None" Name="misc_Relic_Gem" Count="1" Price="1" DailyBuyLimit="0" AccountNeedProperty=""/>		
 	</Shop>
 	<Shop Name="SEASONOFF_CONTENTS_TOTAL_SHOP" PointScript="GET_CONTENTS_TOTAL_POINT">
 		<Item Script="None" Name="DRESS_ROOM_COLLECT_1" Count="1" Price="3600" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2009_9"/>

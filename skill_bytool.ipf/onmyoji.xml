@@ -879,7 +879,11 @@ return value"/>
                     <Num Num="0"/>
                     <Num Num="250"/>
                     <Num Num="100"/>
-                    <Num Num="12"/>
+                    <Num Num="0" UseFunc="1" FuncTxt="local value = 12
+					if IsPVPField(self) == 1 and value > 2 then
+					value = math.floor((math.max(0, value-2)^0.5))+math.min(2, value)
+					end
+					return value"/>
                     <Num Num="2"/>
                     <Num Num="0"/>
                     <Num Num="0"/>

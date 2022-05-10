@@ -1,30 +1,10 @@
 -- shared_item_pharmacy.lua
 
 shared_item_pharmacy = {}
-local _pharmacy_reward_list = nil
 pharmacy_recipe_size_list = {19}
 _max_pharmacy_reward_count = 4
 _max_hurdle_count = 16
 _max_hurdle_count_per_quadrant = 4
-
-local function make_pharmacy_reward_list()
-    if _pharmacy_reward_list ~= nil then
-        return
-    end
-    
-    _pharmacy_reward_list = {}
-    _pharmacy_reward_list[470] = {}
-    
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_str_470', 1})  -- 보상 배율
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_int_470', 1})
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_con_470', 1})
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_mspd_470', 1})
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_rsp_470', 1})
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_holy_470', 2})
-    table.insert(_pharmacy_reward_list[470], {'secret_medicine_energy_470', 2})
-end
-
-make_pharmacy_reward_list()
 
 local _pharmacy_ui_parameter_list = nil
 local function make_pharmacy_ui_parameter_list()
@@ -379,39 +359,6 @@ shared_item_pharmacy.check_passing_hurdle = function(init_x, init_y, move_x, mov
     end
 
     return false
-end
-
-
--- 보상 개수 계산
-shared_item_pharmacy.get_reward_count = function(recipe)
-    local size = TryGetProp(recipe, 'RecipeSize', 0)
-    local try_count, max_try_count = shared_item_pharmacy.get_current_try_count(recipe) -- 남은 횟수
-    local received_reward_count = 0  -- 보상을 받은 수
-    
-    for i = 1, _max_pharmacy_reward_count do
-        local reward = TryGetProp(recipe, 'GoalReward_' .. i, 0)
-        if reward ~= 0 then
-            received_reward_count = received_reward_count + 1
-        end        
-    end
-
-    local count = 1
-    if received_reward_count == 0 then
-        count = math.ceil(try_count / 10)
-    elseif received_reward_count == 1 then
-        count = math.ceil(try_count / 5)
-    elseif received_reward_count == 2 then
-        count = math.ceil(try_count / 2)
-    else
-        count = try_count
-    end
-
-    count = math.max(count, 1) + received_reward_count
-    return math.ceil(count)
-end
-
-shared_item_pharmacy.get_reward_list = function(lv)
-    return _pharmacy_reward_list[lv]
 end
 
 shared_item_pharmacy.get_active_recipe_name = function(item)

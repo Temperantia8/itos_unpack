@@ -188,6 +188,22 @@
 		<image name="icon_wizar_TimeRestriction" file="\icon\skill\wizard\icon_wizar_TimeRestriction.png" imgrect="0 0 128 128" CMM_Caption="타임 리스트럭션"/>
 		<image name="icon_wizar_TimeEruption" file="\icon\skill\wizard\icon_wizar_TimeEruption.png" imgrect="0 0 128 128" CMM_Caption="타임 이럽션"/>
 		<image name="icon_wizar_TimeWarp" file="\icon\skill\wizard\icon_wizar_TimeWarp.png" imgrect="0 0 128 128" CMM_Caption="시간 왜곡"/>
+		<image name="icon_wizard_ElectricCurrent" file="\icon\skill\wizard\icon_wizard_ElectricCurrent.png" imgrect="0 0 128 128" CMM_Caption="일렉트릭 커렌트"/>
+		<image name="icon_wizard_ElectricDrive" file="\icon\skill\wizard\icon_wizard_ElectricDrive.png" imgrect="0 0 128 128" CMM_Caption="일렉트릭 드라이브"/>
+		<image name="icon_wizard_ElectRode" file="\icon\skill\wizard\icon_wizard_ElectRode.png" imgrect="0 0 128 128" CMM_Caption="일렉트로드"/>
+		<image name="icon_wizard_LightningSpear" file="\icon\skill\wizard\icon_wizard_LightningSpear.png" imgrect="0 0 128 128" CMM_Caption="라이트닝 스피어"/>
+		<image name="icon_wizard_MagneticField" file="\icon\skill\wizard\icon_wizard_MagneticField.png" imgrect="0 0 128 128" CMM_Caption="마그네틱 필드"/>
+		<image name="icon_wizard_OverLoad" file="\icon\skill\wizard\icon_wizard_OverLoad.png" imgrect="0 0 128 128" CMM_Caption="오버로드"/>
+		<image name="icon_wizard_Static" file="\icon\skill\wizard\icon_wizard_Static.png" imgrect="0 0 128 128" CMM_Caption="스테틱"/>
+		<image name="icon_wizrd_CurseOfBlood" file="\icon\skill\wizard\icon_wizrd_CurseOfBlood.png" imgrect="0 0 128 128" CMM_Caption="커스 오브 블러드"/>
+		<image name="icon_wizrd_BloodTransfusion" file="\icon\skill\wizard\icon_wizrd_BloodTransfusion.png" imgrect="0 0 128 128" CMM_Caption="블러드 트렌스퓨전"/>
+		<image name="icon_wizrd_Kundela" file="\icon\skill\wizard\icon_wizrd_Kundela.png" imgrect="0 0 128 128" CMM_Caption="쿤델라"/>
+		<image name="icon_wizrd_BloodExplosion" file="\icon\skill\wizard\icon_wizrd_BloodExplosion.png" imgrect="0 0 128 128" CMM_Caption="블러드 익스플로션"/>
+		<image name="icon_wizrd_BloodPool" file="\icon\skill\wizard\icon_wizrd_BloodPool.png" imgrect="0 0 128 128" CMM_Caption="블러드 풀"/>
+		<image name="icon_wizrd_Plague" file="\icon\skill\wizard\icon_wizrd_Plague.png" imgrect="0 0 128 128" CMM_Caption="플레그"/>
+		<image name="icon_cler_DivinePunishment_Upgrade_1" file="\icon\skill\wizard\icon_cler_DivinePunishment_Upgrade_1.png" imgrect="0 0 128 128" CMM_Caption="천형부 강화"/>
+		<image name="icon_cler_EnergyWave_Upgrade_1" file="\icon\skill\wizard\icon_cler_EnergyWave_Upgrade_1.png" imgrect="0 0 128 128" CMM_Caption="강화부 강화"/>
+		<image name="icon_wiz_FlameRadiation_Upgrade_1" file="\icon\skill\wizard\icon_wiz_FlameRadiation_Upgrade_1.png" imgrect="0 0 128 128" CMM_Caption="멸화부 강화"/>
 	</imagelist>
 	<imagelist category="archer_skillicon">
 		<image name="icon_arch_doubleShot" file="\icon\skill\archer\icon_arch_doubleShot.png" imgrect="0 0 128 128" CMM_Caption="멀티샷"/>
@@ -644,7 +660,7 @@
 		<image name="icon_warri_armorTouchup" file="\icon\skill\warrior\icon_warri_armorTouchup.png" imgrect="0 0 128 128" CMM_Caption="방어구손질"/>
 		<image name="icon_warri_foodrationing" file="\icon\skill\warrior\icon_warri_foodrationing.png" imgrect="0 0 128 128" CMM_Caption="배식테이블"/>
 		<image name="icon_warri_basecamp" file="\icon\skill\warrior\icon_warri_basecamp.png" imgrect="0 0 128 128" CMM_Caption="거점 텐트"/>
-		<image name="icon_warri_MitigatePenalty" file="\icon\skill\warrior\icon_warri_MitigatePenalty.png" imgrect="0 0 128 128" CMM_Caption="패널티감소"/>
+		<image name="icon_warri_MitigatePenalty" file="\icon\skill\warrior\icon_warri_MitigatePenalty.png" imgrect="0 0 128 128" CMM_Caption="페널티감소"/>
 		<image name="icon_warri_Crescent" file="\icon\skill\warrior\icon_warri_Crescent.png" imgrect="0 0 128 128" CMM_Caption="크레센트"/>
 		<image name="icon_warri_IronHook" file="\icon\skill\warrior\icon_warri_IronHook.png" imgrect="0 0 128 128" CMM_Caption="아이언후크"/>
 		<image name="icon_warri_subweaponcancel" file="\icon\skill\warrior\icon_warri_subweaponcancel.png" imgrect="0 0 128 128" CMM_Caption="서브웨폰 캔슬"/>
@@ -2144,6 +2160,30 @@
 		<image name="ability_Wizard_Chronomancer25" file="\icon\icon_ability_wizard09.tga" imgrect="0 256 128 128" CMM_Caption="타임 리스트릭션: 잔존"/>
 		<image name="ability_Wizard_Chronomancer26" file="\icon\icon_ability_wizard09.tga" imgrect="128 256 128 128" CMM_Caption="타임 리스트릭션: 강화"/>
 		<image name="ability_Wizard_Chronomancer27" file="\icon\icon_ability_wizard09.tga" imgrect="256 256 128 128" CMM_Caption="[아츠] 타임 리스트릭션: 상급 강화"/>
+		<image name="ability_Wizard_keraunos1" file="\icon\icon_ability_wizard09.tga" imgrect="384 256 128 128" CMM_Caption="오버로드 : 강화"/>
+		<image name="ability_Wizard_keraunos10" file="\icon\icon_ability_wizard09.tga" imgrect="512 256 128 128" CMM_Caption="[아츠] 오버로드 : 상급 강화"/>
+		<image name="ability_Wizard_keraunos2" file="\icon\icon_ability_wizard09.tga" imgrect="640 256 128 128" CMM_Caption="마그네틱 필드 : 강화"/>
+		<image name="ability_Wizard_keraunos11" file="\icon\icon_ability_wizard09.tga" imgrect="768 256 128 128" CMM_Caption="[아츠] 마그네틱 필드 : 상급 강화"/>
+		<image name="ability_Wizard_keraunos3" file="\icon\icon_ability_wizard09.tga" imgrect="896 256 128 128" CMM_Caption="라이트닝 스피어 : 강화"/>
+		<image name="ability_Wizard_keraunos12" file="\icon\icon_ability_wizard09.tga" imgrect="0 384 128 128" CMM_Caption="[아츠] 라이트닝 스피어 : 상급 강화"/>
+		<image name="ability_Wizard_keraunos4" file="\icon\icon_ability_wizard09.tga" imgrect="128 384 128 128
+" CMM_Caption="일렉트로드 : 강화"/>
+		<image name="ability_Wizard_keraunos13" file="\icon\icon_ability_wizard09.tga" imgrect="256 384 128 128" CMM_Caption="[아츠] 일렉트로드 : 상급 강화"/>
+		<image name="ability_Wizard_keraunos5" file="\icon\icon_ability_wizard09.tga" imgrect="384 384 128 128" CMM_Caption="스테틱 : 강화"/>
+		<image name="ability_Wizard_keraunos14" file="\icon\icon_ability_wizard09.tga" imgrect="512 384 128 128" CMM_Caption="[아츠] 스테틱 : 상급 강화"/>
+		<image name="ability_Wizard_keraunos6" file="\icon\icon_ability_wizard09.tga" imgrect="640 384 128 128" CMM_Caption="일렉트릭 드라이브 : 강화"/>
+		<image name="ability_Wizard_keraunos15" file="\icon\icon_ability_wizard09.tga" imgrect="768 384 128 128" CMM_Caption="[아츠] 일렉트릭 드라이브 : 상급 강화"/>
+		<image name="ability_Wizard_keraunos8" file="\icon\icon_ability_wizard09.tga" imgrect="896 384 128 128" CMM_Caption="[아츠] 마그네틱 필드 : 자력"/>
+		<image name="ability_Wizard_keraunos9" file="\icon\icon_ability_wizard09.tga" imgrect="0 512 128 128" CMM_Caption="[아츠] 일렉트릭 드라이브 : 광역화"/>
+		<image name="ability_Wizard_keraunos7" file="\icon\icon_ability_wizard09.tga" imgrect="128 512 128 128" CMM_Caption="감전"/>
+		<image name="ability_Wizard_Featherfoot35" file="\icon\icon_ability_wizard09.tga" imgrect="256 512 128 128" CMM_Caption="쿤델라 : 강화"/>
+		<image name="ability_Wizard_Featherfoot36" file="\icon\icon_ability_wizard09.tga" imgrect="384 512 128 128" CMM_Caption="블러드 익스플로션 : 강화"/>
+		<image name="ability_Wizard_Featherfoot37" file="\icon\icon_ability_wizard09.tga" imgrect="512 512 128 128" CMM_Caption="블러드 풀 : 강화"/>
+		<image name="ability_Wizard_Featherfoot38" file="\icon\icon_ability_wizard09.tga" imgrect="640 512 128 128" CMM_Caption="[아츠]쿤델라 : 상급 강화"/>
+		<image name="ability_Wizard_Featherfoot39" file="\icon\icon_ability_wizard09.tga" imgrect="768 512 128 128" CMM_Caption="[아츠]블러드 익스플로션 : 상급 강화"/>
+		<image name="ability_Wizard_Featherfoot40" file="\icon\icon_ability_wizard09.tga" imgrect="896 512 128 128" CMM_Caption="[아츠]블러드 풀 : 상급 강화"/>
+		<image name="ability_Wizard_Featherfoot41" file="\icon\icon_ability_wizard09.tga" imgrect="0 640 128 128" CMM_Caption="[아츠]쿤델라 : 부패"/>
+		<image name="ability_Wizard_Featherfoot42" file="\icon\icon_ability_wizard09.tga" imgrect="128 640 128 128" CMM_Caption="[아츠]은가둔디 : 감염"/>
 	</imagelist>
 	<imagelist category="abilityicon_archer">
 		<image name="ability_archer_Mark" file="\icon\icon_ability_archer01.tga" imgrect="0 0 128 128" CMM_Caption="멀티샷_치명타"/>

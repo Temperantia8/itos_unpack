@@ -202,8 +202,11 @@ function GET_GEAR_SCORE(item, pc)
 
 
     if type == 'SEAL' then
-        reinforce = GET_CURRENT_SEAL_LEVEL(item)        
-        local ret = ((0.7 *(100*reinforce))+((1100*grade)+(1*use_lv)) * 0.3)*0.26        
+        reinforce = GET_CURRENT_SEAL_LEVEL(item)
+        if use_lv == 380 then
+            grade = math.min(grade, 5)
+        end
+        local ret = ((0.7 *(100*reinforce))+((1100*grade)+(1*use_lv)) * 0.3)*0.26
         return math.floor(ret + 0.5)
     elseif type == 'RELIC' then        
         return 0
@@ -214,7 +217,8 @@ function GET_GEAR_SCORE(item, pc)
         if is_quest_ark == true then
             quest_ark_penalty = 0.95 -- 5% 패널티
         end
-        local ret = (0.2*(50*ark_lv)+((100*grade)+(1*use_lv)) * 0.8)*0.6 * quest_ark_penalty
+        grade = math.min(5, grade)
+        local ret = (251 + (25.1 * ark_lv)) * quest_ark_penalty        
         return math.floor(ret + 0.5)
     elseif type == 'EARRING' then
         if TryGetProp(item, 'ClassName', 'None') == 'EP13_SampleGabijaEarring' then
@@ -344,6 +348,8 @@ function GET_GEAR_SCORE(item, pc)
                     add_acc = 100
                 elseif TryGetProp(item, 'StringArg', 'None') == 'Acc_EP12' then
                     add_acc = 70
+                elseif grade >= 6 then
+                    add_acc = 100
                 else
                     add_acc = 30
                 end
@@ -386,7 +392,18 @@ function GET_GEAR_SCORE(item, pc)
         end
 
         set_option = 1 - random_option_penalty - enchant_option_penalty        
-        local ret = 0.5 * ( (4*transcend) + (3*reinforce)) + ( (30*grade) + (1.66*avg_lv) )*0.5
+        
+        local ret = 0    
+        if grade < 6 then
+            ret = 0.5 * ( (4*transcend) + (3*reinforce)) + ( (30*grade) + (1.66*avg_lv) )*0.5
+        else            
+            local reinforce_ratio = 20
+            local transcend_ratio = 3
+            local diff = avg_lv - 460
+            diff = math.max(0, diff)
+            ret = (transcend * transcend_ratio) + (reinforce_ratio * reinforce) + (diff * reinforce_ratio) + 460
+            ret = ret * (math.min(1, avg_lv / use_lv))
+        end
         ret = ret * set_option * set_advantage + add_acc + gem_point        
         
         if is_growth == true then

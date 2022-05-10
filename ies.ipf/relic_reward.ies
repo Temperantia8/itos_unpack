@@ -1,8 +1,8 @@
 ClassID,ClassName,RelicQuest,ClearProperty,Reward_1
 1,"","","",""
-100,"RQ_Category_1","RQ_Category_1","RQ_Category_1_CLEAR","Relic_exp_token/40"
-200,"RQ_Category_2","RQ_Category_2","RQ_Category_2_CLEAR","Relic_exp_token/40"
-300,"RQ_Category_3","RQ_Category_3","RQ_Category_3_CLEAR","Relic_exp_token/45"
+100,"RQ_Category_1","RQ_Category_1","RQ_Category_1_CLEAR","Relic_exp_token/160"
+200,"RQ_Category_2","RQ_Category_2","RQ_Category_2_CLEAR","Relic_exp_token/160"
+300,"RQ_Category_3","RQ_Category_3","RQ_Category_3_CLEAR","Relic_exp_token/180"
 101,"RQ_Category_1_1","RQ_Category_1_1","RQ_Category_1_1_CLEAR","Relic_exp_token/1"
 102,"RQ_Category_1_2","RQ_Category_1_2","RQ_Category_1_2_CLEAR","Relic_exp_token/1"
 103,"RQ_Category_1_3","RQ_Category_1_3","RQ_Category_1_3_CLEAR","Relic_exp_token/1"

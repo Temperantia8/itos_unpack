@@ -897,6 +897,10 @@
 		<image name="icon_item_2021xmas03_f" file="\icon\equip\icon_item_2021xmas03_f.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_hakkapeliter_achieve_m" file="\icon\equip\icon_item_hakkapeliter_achiever_m.png" imgrect="0 0 256 256" CMM_Caption="하카펠리테르 업적용 코스튬_2종"/>
 		<image name="icon_item_hakkapeliter_achieve_f" file="\icon\equip\icon_item_hakkapeliter_achiever_f.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_mage_keraunos_m" file="\icon\equip\icon_item_mage_keraunos_m.png" imgrect="0 0 256 256" CMM_Caption="케라우노스 검정 2종"/>
+		<image name="icon_item_mage_keraunos_f" file="\icon\equip\icon_item_mage_keraunos_f.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_mage_keraunos_01_m" file="\icon\equip\icon_item_mage_keraunos_01_m.png" imgrect="0 0 256 256" CMM_Caption="케라우노스 노랑 2종"/>
+		<image name="icon_item_mage_keraunos_01_f" file="\icon\equip\icon_item_mage_keraunos_01_f.png" imgrect="0 0 256 256"/>
 	</imagelist>
 	<imagelist category="256_costume_icons">
 		<image name="icon_item_Alchemist_f" file="\icon\equip\Alchemist_f_icon.png" imgrect="0 0 256 256" CMM_Caption="알케미스트"/>
@@ -6792,6 +6796,30 @@
 		<image name="icon_item_2022_newyear_box" file="\icon\item\icon_item_2022_newyear_box.png" imgrect="0 0 256 256" CMM_Caption="2022 신년 이벤트 상자"/>
 		<image name="icon_item_repairkit_470" file="\icon\item\icon_item_repairkit_470.png" imgrect="0 0 256 256" CMM_Caption="Lv.470 리페어 키트"/>
 		<image name="icon_item_2022_NewyearCoin" file="\icon\item\icon_item_2022_NewyearCoin.png" imgrect="0 0 128 128" CMM_Caption="2022 신년 이벤트 주화"/>
+		<image name="icon_item_TrialsStone" file="\icon\item\icon_item_TrialsStone.png" imgrect="0 0 128 128" CMM_Caption="시련의 돌"/>
+		<image name="icon_item_secret_medicine_mspd_470_lv2" file="\icon\item\icon_item_secret_medicine_mspd_470_lv2.png" imgrect="0 0 128 128" CMM_Caption="비약 - 바람2"/>
+		<image name="icon_item_archeology_compass" file="\icon\item\icon_item_archeology_compass.png" imgrect="0 0 128 128" CMM_Caption="유물나침반"/>
+		<image name="icon_item_archeology_compass_10ea" file="\icon\item\icon_item_archeology_compass_10ea.png" imgrect="0 0 256 256" CMM_Caption="유물나침반_10ea"/>
+		<image name="icon_item_archeology_compass_40ea" file="\icon\item\icon_item_archeology_compass_40ea.png" imgrect="0 0 256 256" CMM_Caption="유물나침반_40ea"/>
+		<image name="icon_item_secret_medicine_HP_470" file="\icon\item\icon_item_secret_medicine_HP_470.png" imgrect="0 0 128 128" CMM_Caption="고농축 HP포션"/>
+		<image name="icon_item_honormedal_Keraunos_Costume" file="\icon\item\icon_item_honormedal_Keraunos_Costume.png" imgrect="0 0 256 256" CMM_Caption="명예 훈장 - 케라우노스 코스튬 업적"/>
+		<image name="icon_item_honormedal_Keraunos_Job" file="\icon\item\icon_item_honormedal_Keraunos_Job.png" imgrect="0 0 256 256" CMM_Caption="명예 훈장 - 케라우노스 클래스 업적"/>
+		<image name="icon_item_Unlock_Keraunos" file="\icon\item\icon_item_Unlock_Keraunos.png" imgrect="0 0 256 256" CMM_Caption="위저드 계열 - 케라우노스 클래스 해금권"/>
+		<image name="icon_item_box_enrich_misc_Leticia" file="\icon\item\icon_item_box_enrich_misc_Leticia.png" imgrect="0 0 128 128" CMM_Caption="고급 연성제 상자"/>
+		<image name="icon_item_Extreme_RewardCoupon_Delmore_Raid" file="\icon\item\icon_item_Extreme_RewardCoupon_Delmore_Raid.png" imgrect="0 0 256 256" CMM_Caption="조개껍데기_보스"/>
+		<image name="icon_item_Extreme_RewardCoupon_Earring_Raid" file="\icon\item\icon_item_Extreme_RewardCoupon_Earring_Raid.png" imgrect="0 0 256 256" CMM_Caption="조개껍데기_여신"/>
+		<image name="icon_item_Extreme_RewardCoupon_Earring_Raid_White" file="\icon\item\icon_item_Extreme_RewardCoupon_Earring_Raid_White.png" imgrect="0 0 256 256" CMM_Caption="여신의 전언_색배리 4종"/>
+		<image name="icon_item_Extreme_RewardCoupon_Earring_Raid_Yellow" file="\icon\item\icon_item_Extreme_RewardCoupon_Earring_Raid_Yellow.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Extreme_RewardCoupon_Earring_Raid_Gray" file="\icon\item\icon_item_Extreme_RewardCoupon_Earring_Raid_Gray.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Extreme_RewardCoupon_Earring_Raid_Blue" file="\icon\item\icon_item_Extreme_RewardCoupon_Earring_Raid_Blue.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Extreme_RewardCoupon_Delmore_Raid_White" file="\icon\item\icon_item_Extreme_RewardCoupon_Delmore_Raid_White.png" imgrect="0 0 256 256" CMM_Caption="델무어 격전지_색배리 4종"/>
+		<image name="icon_item_Extreme_RewardCoupon_Delmore_Raid_Yellow" file="\icon\item\icon_item_Extreme_RewardCoupon_Delmore_Raid_Yellow.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Extreme_RewardCoupon_Delmore_Raid_Gray" file="\icon\item\icon_item_Extreme_RewardCoupon_Delmore_Raid_Gray.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Extreme_RewardCoupon_Delmore_Raid_Blue" file="\icon\item\icon_item_Extreme_RewardCoupon_Delmore_Raid_Blue.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Event_2203_ARBOR_DAY_Box" file="\icon\item\icon_item_Event_2203_ARBOR_DAY_Box.png" imgrect="0 0 256 256" CMM_Caption="식목일 상자"/>
+		<image name="icon_item_Event_2203_ARBOR_DAY_Seed" file="\icon\item\icon_item_Event_2203_ARBOR_DAY_Seed.png" imgrect="0 0 256 256" CMM_Caption="식목일 씨앗"/>
+	<image name="icon_item_relicgem_lvup_scroll_lv5" file="\icon\item\icon_item_relicgem_lvup_scroll_lv5.png" imgrect="0 0 256 256" CMM_Caption="성물 스크롤"/>
+		<image name="icon_item_goddess_card_fragment_red" file="\icon\item\icon_item_goddess_card_fragment_red.png" imgrect="0 0 256 256" CMM_Caption="여신 강화용 카드2"/>
 	</imagelist>
 	<imagelist category="housing">
 		<image name="icon_item_housing_craft_bronze_1" file="\icon\item\icon_item_housing_craft_bronze_1.png" imgrect="0 0 256 256" CMM_Caption="[하우징 공방] 쿠폰"/>
@@ -9077,6 +9105,7 @@
 		<image name="icon_item_202201package_A" file="\icon\payment\icon_item_202201package_A.png" imgrect="0 0 256 256" CMM_Caption="설 특판 성물 종합 선물 세트"/>
 		<image name="icon_item_202201package_B" file="\icon\payment\icon_item_202201package_B.png" imgrect="0 0 256 256" CMM_Caption="설 특판 챌린지 종합 선물 세트"/>
 		<image name="icon_item_202201package_C" file="\icon\payment\icon_item_202201package_C.png" imgrect="0 0 256 256" CMM_Caption="설 특판 성장 종합 선물 세트"/>
+		<image name="item_icon_doll_succubus" file="\icon\payment\item_icon_doll_succubus.png" imgrect="0 0 256 256" CMM_Caption="서큐버스 인형"/>
 		<image name="icon_item_Leticia_Card_Lv7_4ea_Box" file="\icon\payment\icon_item_Leticia_Card_Lv7_4ea_Box.png" imgrect="0 0 256 256" CMM_Caption="레티샤 카드 묶음"/>
 		<image name="icon_item_ep13maid01_m" file="\icon\payment\icon_item_ep13maid01_m.png" imgrect="0 0 256 256" CMM_Caption="2022 2월 메이드/버틀러 테마"/>
 		<image name="icon_item_ep13maid01_1_m" file="\icon\payment\icon_item_ep13maid01_1_m.png" imgrect="0 0 256 256"/>
@@ -9095,6 +9124,15 @@
 		<image name="icon_item_selectbox_ep13maid02" file="\icon\payment\icon_item_selectbox_ep13maid02.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_selectbox_ep13maid02_1" file="\icon\payment\icon_item_selectbox_ep13maid02_1.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_wing_ep13maid" file="\icon\payment\icon_item_wing_ep13maid.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_Ticket_vibora_vision_keraunos" file="\icon\payment\icon_item_Ticket_vibora_vision_keraunos.png" imgrect="0 0 256 256" CMM_Caption="바이보라 비전 - 일렉트릭 플로우 지급권"/>
+		<image name="icon_item_keraunos_standard_class_pack" file="\icon\payment\icon_item_keraunos_standard_class_pack.png" imgrect="0 0 256 256" CMM_Caption="케라우노스 스탠다드 패키지"/>
+		<image name="icon_item_keraunos_complete_class_pack" file="\icon\payment\icon_item_keraunos_complete_class_pack.png" imgrect="0 0 256 256" CMM_Caption="케라우노스 컴플리트 패키지"/>
+		<image name="icon_item_newbie_and_returner_complete_pack_1" file="\icon\payment\icon_item_newbie_and_returner_complete_pack_1.png" imgrect="0 0 256 256" CMM_Caption="신규/복귀 성장 격려 패키지"/>
+		<image name="icon_item_balloon_skin_badge_gabija" file="\icon\payment\icon_item_balloon_skin_badge_gabija.png" imgrect="0 0 256 256" CMM_Caption="가비야 마이크"/>
+		<image name="icon_item_balloon_skin_badge_gabija_pic" file="\icon\payment\icon_item_balloon_skin_badge_gabija_pic.png" imgrect="0 0 256 256" CMM_Caption="가비야 말풍선"/>
+		<image name="icon_item_balloon_skin_badge_paulius" file="\icon\payment\icon_item_balloon_skin_badge_paulius.png" imgrect="0 0 256 256" CMM_Caption="부활자 파울루스 마이크"/>
+		<image name="icon_item_balloon_skin_badge_paulius_pic" file="\icon\payment\icon_item_balloon_skin_badge_paulius_pic.png" imgrect="0 0 256 256" CMM_Caption="부활자 파울루스 말풍선"/>
+		<image name="icon_item_Doll_paulius" file="\icon\payment\icon_item_Doll_paulius.png" imgrect="0 0 256 256" CMM_Caption="파울루스 인형"/>
 		<image name="icon_item_blessed_cube_01" file="\icon\payment\icon_item_blessed_cube_01.png" imgrect="0 0 256 256" CMM_Caption="여큡 아이콘"/>
 		<image name="icon_item_blessed_cube_10" file="\icon\payment\icon_item_blessed_cube_10.png" imgrect="0 0 256 256" CMM_Caption="여큡 아이콘x10+1"/>
 		<image name="icon_item_selectbox_ep13maid02_tr" file="\icon\payment\icon_item_selectbox_ep13maid02_tr.png" imgrect="0 0 256 256" CMM_Caption="이벤트 코스튬 상자"/>
@@ -9111,6 +9149,9 @@
 		<image name="icon_item_6th_greenschool_f" file="\icon\payment\icon_item_6th_greenschool_f.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_6th_cardiganschool_m" file="\icon\payment\icon_item_6th_cardiganschool_m.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_6th_cardiganschool_f" file="\icon\payment\icon_item_6th_cardiganschool_f.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_wing_delmore" file="\icon\payment\icon_item_wing_delmore.png" imgrect="0 0 256 256"/>
+		<image name="icon_item_unlock_acc_belonging_scroll_470" file="\icon\payment\icon_item_unlock_acc_belonging_scroll_470.png" imgrect="0 0 256 256" CMM_Caption="이시다비 장신구 귀속 해제 스크롤"/>
+		<image name="icon_item_unlock_acc_belonging_scroll_470_3ea" file="\icon\payment\icon_item_unlock_acc_belonging_scroll_470_3ea.png" imgrect="0 0 256 256" CMM_Caption="이시다비 장신구 귀속 해제 스크롤 묶음"/>
 	</imagelist>
 	<imagelist category="seal">
 		<image name="icon_seal_yellow_cc_A1" file="\icon\seal\seal_yellow_cc_A1.tga" imgrect="0 0 80 80"/>
@@ -9282,5 +9323,12 @@
 		<image name="headicon_expression_02" file="\icon\questitemshow\headicon_expression_02.png" imgrect="0 0 80 80"/>
 		<image name="headicon_expression_03" file="\icon\questitemshow\headicon_expression_03.png" imgrect="0 0 80 80"/>
 		<image name="headicon_expression_04" file="\icon\questitemshow\headicon_expression_04.png" imgrect="0 0 80 80"/>
+		<image name="headicon_expression_05" file="\icon\questitemshow\headicon_expression_05.png" imgrect="0 0 80 80" CMM_Caption="감정표현 말풍선_2차"/>
+		<image name="headicon_expression_06" file="\icon\questitemshow\headicon_expression_06.png" imgrect="0 0 80 80"/>
+		<image name="headicon_expression_07" file="\icon\questitemshow\headicon_expression_07.png" imgrect="0 0 80 80"/>
+		<image name="headicon_expression_08" file="\icon\questitemshow\headicon_expression_08.png" imgrect="0 0 80 80"/>
+		<image name="headicon_expression_09" file="\icon\questitemshow\headicon_expression_09.png" imgrect="0 0 80 80"/>
+		<image name="headicon_expression_10" file="\icon\questitemshow\headicon_expression_10.png" imgrect="0 0 80 80"/>
+		<image name="headicon_expression_11" file="\icon\questitemshow\headicon_expression_11.png" imgrect="0 0 80 80"/>
 	</imagelist>
 </skinset>

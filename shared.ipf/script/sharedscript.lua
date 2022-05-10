@@ -1,5 +1,7 @@
 -- sharedscript.lua
 
+local json = require('json')
+
 function shuffle(tbl)
     local ret = {}
     for k, v in pairs(tbl) do
@@ -3205,6 +3207,25 @@ function JOB_HWARANG_PRE_CHECK(pc, jobCount)
     return 'NO'
 end
 
+function JOB_KERAUNOS_PRE_CHECK(pc, jobCount)
+
+    local aObj
+    if IsServerSection() == 0 then
+        aObj = GetMyAccountObj();
+    else
+        aObj = GetAccountObj(pc);
+    end
+    
+    if aObj ~= nil then
+        local value = TryGetProp(aObj, 'UnlockQuest_Char2_24', 0)
+        if value == 1 or IS_KOR_TEST_SERVER() == true then
+            return 'YES'
+        end
+    end
+
+    return 'YES'
+end
+
 
 function JOB_RUNECASTER_PRE_CHECK(pc, jobCount)
     if jobCount == nil then
@@ -3941,4 +3962,80 @@ function IS_DEFAULT_COSTUME_LOCK(JobID)
     end
 
     return 0;
+end
+
+
+function save_json(path, tbl)
+	file,err = io.open(path, "w")
+	if err then return _,err end
+
+	local s = json.encode(tbl);
+	file:write(s);
+	file:close();
+end
+
+function load_json(path, tblMerge, ignoreError)
+	local file, err=io.open(path,"r");
+	local t = nil;
+
+	if (err) then
+		if (ignoreError) then
+			t = {};
+		else 
+			return _,err
+		end
+	else
+		local content = file:read("*all");
+		file:close();
+		t = json.decode(content);
+	end
+
+	if tblMerge then
+		t = merge_left(tblMerge, t)
+		save_json(path, t);
+	end
+
+	return t;
+end
+
+function merge_left(t1, t2)
+	for k, v in pairs(t2) do
+		if (type(v) == "table") and (type(t1[k] or false) == "table") then
+			merge_left(t1[k], t2[k])
+		else
+			t1[k] = v
+		end
+	end
+
+	return t1
+end
+
+function DELETE_ITEM_OPEN_WARNINGBOX_MSG(itemCls)
+	if itemCls.MarketCategory == 'Premium_Costume' and itemCls.StringArg == 'SilverGacha' then
+		return 1
+	end
+
+	if itemCls.MarketCategory == 'Card_CardLeg' then
+		return 1
+    end
+    
+    return 0
+end
+
+function CONTENTS_ALERT_GET_CUTLINE(contentsID)
+    local contents_alert = GetClassByType('contents_alert_table', contentsID)
+    local indunInfoName = TryGetProp(contents_alert, "ShowIndunInfo")
+    local indunName = TryGetProp(contents_alert, "IndunName", "None")
+    local indunCls = GetClass("Indun", indunInfoName)
+    if indunCls == nil then
+        indunCls = GetClass("Indun", indunName)
+    end
+    
+    local gearScore = TryGetProp(indunCls, "GearScore")
+    local level = TryGetProp(indunCls, "Level")
+    if gearScore == 0 then
+        gearScore = TryGetProp(contents_alert, "GearScore")
+    end
+
+    return gearScore, level
 end

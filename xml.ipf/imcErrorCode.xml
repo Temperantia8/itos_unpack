@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <imcErrorCode>
 	<Code Code="FATAL_ASSERT" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="지정된 조건문은 항상 참이어야 합니다."/>
 	<Code Code="FATAL_ASSERT_EX" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="지정된 조건문은 항상 참이어야 합니다. 다음 정보를 참조하세요."/>
@@ -9,6 +9,7 @@
 	<Code Code="FATAL_SERVER_INIT" Team="tos_team" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="서버 초기화에 실패하였습니다. 프로그램을 종료합니다."/>
 	<Code Code="ERROR_AUTH_CHECK_FAIL" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="넥슨 AuthCheck에 실패하였습니다. 해당 오류코드와 authCheck.h의 오류코드표를 확인하세요."/>
   <Code Code="ERROR_RANK_SYSTEM" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="rank_system 관련 에러"/>
+	<Code Code="ERROR_SQUAD_SYSTEM" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="rank_system 관련 에러"/>
 	<Code Code="WARNING_SEND_ERROR_TO_CLIENT" Team="tos_team" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="클라이언트에 다음과 같은 에러 또는 로그를 전송하였습니다."/>
 	<Code Code="ERROR_BINARY_ALLOCATE_FAIL" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="바이너리에 메모리 Allocate를 실패했습니다. 바이너리 size 지정을 확인하세요."/>
 	<Code Code="FATAL_CIRCLE_QUEUE_OVERFLOW" Team="PROGRAM" Category="LOGIC" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="패킷 버퍼 오버 플로가 발생되었습니다."/>
@@ -676,5 +677,6 @@
 	<Code Code="WARNING_PVP_CHAT_USING" Team="PROGRAM" Category="CRITICAL" SubCategory="" Logger="root" Enabled="YES" CallStack="YES" Desc="PVP 채팅 에드온 조작 유저"/>
 	<Code Code="ERROR_NEXON_CEM_NO_SERVICE_ID" Team="tos_team" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="NEXON_CEM_ACCESS_KEY 및 NEXON_CEM_SECRET_KEY 환경변수가 지정되지 않았습니다"/>
 	<Code Code="ERROR_NEXON_CEM_NO_APIKEY" Team="tos_team" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="NEXON_CEM_ACCESS_KEY 및 NEXON_CEM_SECRET_KEY 환경변수가 지정되지 않았습니다"/>
+	<Code Code="ERROR_TRIBULATION_SYSTEM" Team="PROGRAM" Category="ERROR" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="시련 시스템 관련 에러"/>
 	<Code Code="INFO_PARTY_FIND" Team="PROGRAM" Category="INFO" SubCategory="" Logger="root" Enabled="YES" CallStack="NO" Desc="파티 찾기 게시판"/>
 </imcErrorCode>
