@@ -14855,13 +14855,14 @@
 		<image name="plate_achieve_Keraunos" file="\skin\user_title_skin.tga" imgrect="0 1031 214 34" CMM_Caption="케라우노스 칭호"/>
 		<image name="plate_achieve_gabija_clear_1" file="\skin\user_title_skin.tga" imgrect="215 994 214 34" CMM_Caption="가비야 칭호1"/>
 		<image name="plate_achieve_gabija_clear_2" file="\skin\user_title_skin.tga" imgrect="430 994 214 34" CMM_Caption="가비야 칭호2"/>
-
-<image name="plate_achieve_Keraunos_weekraid" file="\skin\user_title_skin.tga" imgrect="645 994 214 34" CMM_Caption="케라우노스 주보레 칭호"/>
+		<image name="plate_achieve_Keraunos_weekraid" file="\skin\user_title_skin.tga" imgrect="645 994 214 34" CMM_Caption="케라우노스 주보레 칭호"/>
 		<image name="plate_achieve_EVENT_2203_WHITEDAY_CANDYLOVER_TITLE" file="\skin\user_title_skin.tga" imgrect="1075 961 214 34" CMM_Caption="2022_화이트데이 칭호"/>
 		<image name="plate_achieve_Taiwannewyear" file="\skin\user_title_skin.tga" imgrect="1075 996 214 34" CMM_Caption="2022_대만 춘절 칭호"/>
 		<image name="plate_achieve_HocusPocus" file="\skin\user_title_skin.tga" imgrect="215 1029 214 34" CMM_Caption="스팀 몬스터 의인화 팬아트 보상 칭호"/>
-	<image name="plate_achieve_EVENT_2203_ARBOR_DAY_TITLE" file="\skin\user_title_skin.tga" imgrect="431 1029 214 34" CMM_Caption="2022 식목일 칭호"/>
-	<image name="plate_achieve_paulius" file="\skin\user_title_skin.tga" imgrect="646 1029 214 36" CMM_Caption="파울루스 칭호"/>
+		<image name="plate_achieve_EVENT_2203_ARBOR_DAY_TITLE" file="\skin\user_title_skin.tga" imgrect="431 1029 214 34" CMM_Caption="2022 식목일 칭호"/>
+		<image name="plate_achieve_paulius" file="\skin\user_title_skin.tga" imgrect="646 1029 214 36" CMM_Caption="파울루스 칭호"/>
+		<image name="plate_achieve_berksbestie" file="\skin\user_title_skin.tga" imgrect="861 1031 214 34" CMM_Caption="스팀 2022 설날 하우벅 칭호"/>
+	
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>
