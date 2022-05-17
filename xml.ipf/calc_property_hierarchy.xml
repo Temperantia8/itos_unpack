@@ -231,11 +231,13 @@
 		<Child Name="INT"/>
 	</hierarchy>
 	<hierarchy Name="DEF">
+		<Child Name="CON"/>
 		<Child Name="DEF_BM"/>
 		<Child Name="DEF_RATE_MUL_BM"/>
 		<Child Name="DEF_RATE_BM"/>
 	</hierarchy>
 	<hierarchy Name="MDEF">
+		<Child Name="CON"/>
 		<Child Name="MDEF_BM"/>
 		<Child Name="MDEF_RATE_BM"/>
 		<Child Name="MDEF_RATE_MUL_BM"/>

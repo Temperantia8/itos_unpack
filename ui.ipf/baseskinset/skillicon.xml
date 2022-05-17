@@ -933,6 +933,8 @@
 		<image name="icon_earring_party_def_buff" file="\icon\skill\common\icon_earring_party_def_buff.png" imgrect="0 0 128 128" CMM_Caption="수비적인 버프"/>
 		<image name="icon_earring_party_atk_buff" file="\icon\skill\common\icon_earring_party_atk_buff.png" imgrect="0 0 128 128" CMM_Caption="공격적인 버프"/>
 		<image name="icon_earring_party_util_buff" file="\icon\skill\common\icon_earring_party_util_buff.png" imgrect="0 0 128 128" CMM_Caption="유틸적인 버프"/>
+		<image name="Icon_common_magical_light" file="\icon\skill\common\Icon_common_magical_light.png" imgrect="0 0 128 128" CMM_Caption="2022.4월 테마 스킬 아이콘 2종"/>
+		<image name="Icon_common_magical_dark" file="\icon\skill\common\Icon_common_magical_dark.png" imgrect="0 0 128 128"/>
 	</imagelist>
 	<imagelist category="restquickslot_icon">
 		<image name="icon_rest_arrow" file="\icon\rest_mode_icon.tga" imgrect="0 0 128 128" CMM_Caption="화살제작"/>

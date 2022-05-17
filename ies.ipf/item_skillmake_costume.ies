@@ -52,3 +52,7 @@ ClassID,ClassName,SkillName,Theme,Keyword,Option,BuffName
 51,"EP13_costume_Com_123","tcance_transfrom_girl","Tcance","","","ITEM_BUFF_TCANCE_GIRL"
 52,"EP13_costume_Com_124","tcance_transfrom_boy","Tcance","","","ITEM_BUFF_TCANCE_BOY"
 53,"EP13_costume_Com_125","tcance_transfrom_girl","Tcance","","","ITEM_BUFF_TCANCE_GIRL"
+54,"EP14_costume_Com_001","MagicalGirl_MagicalBoyLumen","Magical","Lumen","","change_magicalboy_lumen_Buff"
+55,"EP14_costume_Com_002","MagicalGirl_MagicalGirlLumen","Magical","Lumen","","change_magicalgirl_lumen_Buff"
+56,"EP14_costume_Com_003","MagicalGirl_MagicalBoyNox","Magical","Nox","","change_magicalboy_nox_Buff"
+57,"EP14_costume_Com_004","MagicalGirl_MagicalGirlNox","Magical","Nox","","change_magicalgirl_nox_Buff"
