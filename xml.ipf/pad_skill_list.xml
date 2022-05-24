@@ -11859,8 +11859,8 @@ return obj.Level"/>
                 <Num Num="-1000"/>
                 <Num Num="0"/>
             </ToolScp>
-			<Str Str="SCR_FIELD_PADPATERN_TAKE_DAMAGE"/>
 			<ToolScp Scp="PAD_FUNC_UPDATE_DIRECT" Client="NO" UseSleep="NO">
+			<Str Str="SCR_FIELD_PADPATERN_TAKE_DAMAGE"/>
 			</ToolScp>
             <ToolScp Scp="PAD_BUFF_CHECK_BUFF_ENEMY" Client="NO" UseSleep="NO">
                 <Str Str="ENEMY"/>

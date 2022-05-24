@@ -3223,7 +3223,7 @@ function JOB_KERAUNOS_PRE_CHECK(pc, jobCount)
         end
     end
 
-    return 'YES'
+    return 'NO'
 end
 
 
