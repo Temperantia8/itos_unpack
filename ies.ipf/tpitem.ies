@@ -10,7 +10,6 @@ ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeekl
 53,38,0,210428,0,0,2,"ClassName53","TP_Premium","TP_Package","coin_package","","","","NO","","NO","AccountLimitWeeklyCountProperty_3","",""
 54,15,0,210428,0,0,3,"ClassName54","TP_Premium","TP_Package","seletbox_tricket_bountyhunt_ep13_hard","","","","NO","","NO","AccountLimitWeeklyCountProperty_4","",""
 55,56,0,210428,0,0,1,"ClassName55","TP_Premium","TP_Package","box_mythic_Auto_Hard_20ea","","","","NO","","NO","AccountLimitWeeklyCountProperty_5","",""
-99,49,0,210124,1,0,0,"ClassName99","TP_Premium","TP_Package","Premium_Vakarine","","","","NO","","NO","","",""
 100,39,0,210122,0,0,0,"ClassName100","TP_Premium","TP_Package","emoticonItem_24_46","","","","NO","","NO","","",""
 101,99,0,210125,0,0,0,"ClassName101","TP_Premium","TP_Useable","PremiumToken","","","","NO","","NO","","",""
 102,9,0,210124,0,0,0,"ClassName102","TP_Premium","TP_Useable","Premium_boostToken","","","","NO","","NO","","",""
