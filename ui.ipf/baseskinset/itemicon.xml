@@ -6823,6 +6823,11 @@
 		<image name="icon_item_Event_2203_ARBOR_DAY_Box" file="\icon\item\icon_item_Event_2203_ARBOR_DAY_Box.png" imgrect="0 0 256 256" CMM_Caption="식목일 상자"/>
 		<image name="icon_item_Event_2203_ARBOR_DAY_Seed" file="\icon\item\icon_item_Event_2203_ARBOR_DAY_Seed.png" imgrect="0 0 256 256" CMM_Caption="식목일 씨앗"/>
 	<image name="icon_item_relicgem_lvup_scroll_lv5" file="\icon\item\icon_item_relicgem_lvup_scroll_lv5.png" imgrect="0 0 256 256" CMM_Caption="성물 스크롤"/>
+		<image name="icon_item_Event_2204_Spring_CHK1" file="\icon\item\icon_item_Event_2204_Spring_CHK1.png" imgrect="0 0 128 128" CMM_Caption="캠핑 이벤트_5종"/>
+		<image name="icon_item_Event_2204_Spring_CHK2" file="\icon\item\icon_item_Event_2204_Spring_CHK2.png" imgrect="0 0 128 128"/>
+		<image name="icon_item_Event_2204_Spring_CHK3" file="\icon\item\icon_item_Event_2204_Spring_CHK3.png" imgrect="0 0 128 128"/>
+		<image name="icon_item_Event_2204_Spring_CHK4" file="\icon\item\icon_item_Event_2204_Spring_CHK4.png" imgrect="0 0 128 128"/>
+		<image name="icon_item_Event_2204_Spring_Secret" file="\icon\item\icon_item_Event_2204_Spring_Secret.png" imgrect="0 0 128 128"/>
 		<image name="icon_item_goddess_card_fragment_red" file="\icon\item\icon_item_goddess_card_fragment_red.png" imgrect="0 0 256 256" CMM_Caption="여신 강화용 카드2"/>
 	</imagelist>
 	<imagelist category="housing">

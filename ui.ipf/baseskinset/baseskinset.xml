@@ -14863,6 +14863,7 @@
 		<image name="plate_achieve_paulius" file="\skin\user_title_skin.tga" imgrect="646 1029 214 36" CMM_Caption="파울루스 칭호"/>
 		<image name="plate_achieve_berksbestie" file="\skin\user_title_skin.tga" imgrect="861 1031 214 34" CMM_Caption="스팀 2022 설날 하우벅 칭호"/>
 	
+		<image name="plate_achieve_EVENT_2204_SPRING_TITLE" file="\skin\user_title_skin.tga" imgrect="1075 1066 214 34" CMM_Caption="캠핑 칭호"/>
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>

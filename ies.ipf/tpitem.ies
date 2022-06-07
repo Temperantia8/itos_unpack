@@ -1,7 +1,4 @@
 ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeeklyCount,ClassName,Category,SubCategory,ItemClassName,Job,SellStartTime,SellEndTime,WarningMsg,BonusItemName,BonusOnlySeasonServer,AccountLimitWeeklyCountProperty,ItemSocial,buyOptionFunc
-1,79,0,210506,1,0,0,"ClassName1","TP_Premium","TP_Package","UnlockQuest_OverAchieveClear_Char2_24_Job","","2022-02-24 09:00:00","2022-06-24 06:00:00","NO","","NO","","",""
-2,149,0,210505,1,0,0,"ClassName2","TP_Premium","TP_Package","keraunos_standard_class_pack","","2022-02-24 09:00:00","2022-06-24 06:00:00","NO","","NO","","",""
-3,610,0,210504,1,0,0,"ClassName3","TP_Premium","TP_Package","keraunos_complete_class_pack","","2022-02-24 09:00:00","2022-06-24 06:00:00","NO","","NO","","",""
 4,294,0,210504,3,0,0,"ClassName4","TP_Premium","TP_Package","GLOBAL_202205package_Contents","","2022-02-24 09:00:00","2022-06-24 06:00:00","NO","","NO","","",""
 5,458,0,210504,3,0,0,"ClassName5","TP_Premium","TP_Package","GLOBAL_202205package_Reinforce","","2022-02-24 09:00:00","2022-06-24 06:00:00","NO","","NO","","",""
 6,999,0,210504,1,0,0,"ClassName6","TP_Premium","TP_Package","GLOBAL_202205package_AIO","","2022-02-24 09:00:00","2022-06-24 06:00:00","NO","","NO","","",""
