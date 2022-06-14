@@ -14118,6 +14118,7 @@
 		<image name="icon_tribulation_PatternCategory" file="\icon\buff_icon6.tga" imgrect="640 256 128 128" CMM_Caption="패턴카테고리"/>
 		<image name="icon_buff_ridepet_ep13animal" file="\icon\buff_icon6.tga" imgrect="768 256 128 128" CMM_Caption="목마 탈 것 버프"/>
 	<image name="icon_Event_2203_ARBOR_DAY_BUFF" file="\icon\buff_icon6.tga" imgrect="896 256 128 128" CMM_Caption="자연의 축복"/>
+		<image name="icon_buff_ridepet_ep14fivebird" file="\icon\buff_icon6.tga" imgrect="256 768 128 128" CMM_Caption="5월 테마 버프"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>
@@ -15010,6 +15011,7 @@
 		<image name="ridepet_YellowTiger" file="\icon\ridepet.tga" imgrect="560 0 80 80" CMM_Caption="황호"/>
 		<image name="ridepet_BlackmistTiger" file="\icon\ridepet.tga" imgrect="0 80 80 80" CMM_Caption="검은 안개 호랑이"/>
 		<image name="ridepet_ep13animal" file="\icon\ridepet.tga" imgrect="80 80 80 80" CMM_Caption="목마"/>
+		<image name="ridepet_ep14fivebird" file="\icon\ridepet.tga" imgrect="160 80 80 80" CMM_Caption="전투기"/>
 	</imagelist>
 	<effectimagelist category="effectlist">
 		<image name="blue_orb" file="\icon\blue_orb.tga" imgrect="0 0 256 256"/>

@@ -1,7 +1,6 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202206,70000,202206,120000,202206,210000,202206,160000,0,0,"inGame_E1","Leticia's Secret Cube","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2556","","","",""
-999902,202206,70000,202206,120000,202207,120000,202207,70000,0,0,"inGame_E2","TOS Summer Campfire","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2555","","","",""
-999903,202205,240000,202205,290000,202206,140000,202206,90000,0,0,"inGame_E3","[Special] Goldfish Returns Package","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2549","","","",""
-999904,202205,170000,202205,220000,202206,140000,202206,90000,0,0,"inGame_E4","Goddess glory: Eternal Savior","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2545","","","",""
+999901,202206,140000,202206,190000,202207,120000,202207,70000,0,0,"inGame_E1","Goddess' Glory","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2559","","","",""
+999902,202206,70000,202206,120000,202206,210000,202206,160000,0,0,"inGame_E2","Leticia's Secret Cube","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2556","","","",""
+999903,202206,70000,202206,120000,202207,120000,202207,70000,0,0,"inGame_E3","TOS Summer Campfire","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2555","","","",""
 999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2483","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"

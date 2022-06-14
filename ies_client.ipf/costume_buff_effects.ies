@@ -43,3 +43,5 @@ ClassID,ClassName,Name,ShowEffect,EffectName
 4686,"ITEM_EFFECT_EP13TCANCE","해변의 불꽃놀이","NO","E_effect_ep13tcance"
 4694,"ITEM_EFFECT_EP13RETRO","화려한 조명의 미러볼","NO",""
 4704,"ITEM_EFFECT_ZANAS","자나스 이펙트","NO","E_effect_zanas"
+4706,"ITEM_EFFECT_ep13athleisure","머슬 업 이펙트","NO","F_pc_effectitem_muscle"
+4717,"ITEM_EFFECT_ep14fivebird","불사조의 비상 이펙트","NO","E_pc_effectitem_fivebird001"
