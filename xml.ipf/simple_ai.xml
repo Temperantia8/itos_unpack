@@ -27736,6 +27736,13 @@ return &quot;A &quot; .. IMCRandom(0, 100);"/>
             </ToolScp>
         </List>
     </AI>
+    <AI Name="Jellyzele_underseaworm_AI" UpdateMS="1000" ActiveMessageMapInBattle="1">
+        <List>
+            <ToolScp Scp="SAI_FUNC2_DIRECT" Client="NO" UseSleep="NO">
+                <Str Str="SCR_JELLYZELE_SUMMON_UNDERSEAWORM_SIMPLE_AI"/>
+            </ToolScp>
+        </List>
+    </AI>
     <AI Name="골렘AI" ActiveMessageMapInBattle="1">
         <List>
             <ToolScp Scp="S_AI_ATTACK_NEAR" Client="NO" UseSleep="NO">

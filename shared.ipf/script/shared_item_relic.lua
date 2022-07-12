@@ -341,12 +341,12 @@ end
 
 -- RP
 shared_item_relic.get_rp_material_name_list = function()
-    local name_list = { 'misc_Ectonite', 'misc_Ectonite_NoTrade', }
+    local name_list = { 'misc_Ectonite', 'misc_Ectonite_NoTrade', 'misc_Ectonite_Care', }
     return name_list
 end
 
 shared_item_relic.get_rp_material_value_list = function()
-    local value_list = { 10, 1000, }
+    local value_list = { 10, 1000, 10, }
     return value_list
 end
 

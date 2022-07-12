@@ -167,6 +167,7 @@
 	</hierarchy>
 	<hierarchy Name="CRTMATK">
 		<Child Name="MNA"/>
+		<Child Name="INT"/>
 		<Child Name="CRTMATK_BM"/>
 	</hierarchy>
 	<hierarchy Name="MHP">
@@ -209,6 +210,7 @@
 	</hierarchy>
 	<hierarchy Name="MINMATK">
 		<Child Name="INT"/>
+		<Child Name="MNA"/>
 		<Child Name="MATK_BM"/>
 		<Child Name="MINMATK_BM"/>
 		<Child Name="MATK_RATE_BM"/>
@@ -220,6 +222,7 @@
 		</hierarchy>
 	<hierarchy Name="MAXMATK">
 		<Child Name="INT"/>
+		<Child Name="MNA"/>
 		<Child Name="MATK_BM"/>
 		<Child Name="MAXMATK_BM"/>
 		<Child Name="MATK_RATE_BM"/>

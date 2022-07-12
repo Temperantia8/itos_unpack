@@ -337,6 +337,8 @@
 	<ReadXml Name="cabinet_armor"/>
 	<ReadXml Name="cabinet_accessory"/>
 	<ReadXml Name="cabinet_ark"/>
+	<ReadXml Name="cabinet_skillgem"/>
+	<ReadXml Name="cabinet_relicgem"/>
 	<ReadXml Name="housingcraft_rewardgroup"/>
 	<ReadXml Name="EliteEquipDrop"/>
 	<ReadXml Name="challenge_mode_auto_map"/>
@@ -371,6 +373,7 @@
 	<ReadXml Name="achieve_level_reward"/>
 	<ReadXml Name="monster_earring_raid"/>
 	<ReadXml Name="achieve_guidequest"/>
+	<ReadXml Name="goddess_special_option"/>	
 	<ReadXml Name="monster_obj_interaction"/>
 	<ReadXml Name="ecs_system"/>
 	<ReadXml Name="rank_system_contents_list"/>

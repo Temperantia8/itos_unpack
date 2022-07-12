@@ -491,5 +491,58 @@ function SCR_ENABLE_GET_SKILL_TigerHunter_EyeofBeast(pc, skillClsName)
 	return true;
 end
 
+function SCR_ENABLE_GET_SKILL_Lama_StrongfistHanginglegs(pc, skillClsName)
+	local Lamapose = nil;
+	if IsServerObj(pc) == 1 then
+		Lamapose = GetSkill(pc, 'Lama_Lamapose');
+	else
+		Lamapose = session.GetSkillByName('Lama_Lamapose');
+	end
 
+	if Lamapose == nil then
+		return false;
+	end
+	return true;
+end
 
+function SCR_ENABLE_GET_SKILL_Lama_PointkickEarthshock(pc, skillClsName)
+	local Lamapose = nil;
+	if IsServerObj(pc) == 1 then
+		Lamapose = GetSkill(pc, 'Lama_Lamapose');
+	else
+		Lamapose = session.GetSkillByName('Lama_Lamapose');
+	end
+
+	if Lamapose == nil then
+		return false;
+	end
+	return true;
+end
+
+function SCR_ENABLE_GET_SKILL_Lama_FlyingkickSuddenkick(pc, skillClsName)
+	local Lamapose = nil;
+	if IsServerObj(pc) == 1 then
+		Lamapose = GetSkill(pc, 'Lama_Lamapose');
+	else
+		Lamapose = session.GetSkillByName('Lama_Lamapose');
+	end
+
+	if Lamapose == nil then
+		return false;
+	end
+	return true;
+end
+
+function SCR_ENABLE_GET_SKILL_Lama_Endlessattacks(pc, skillClsName)
+	local Lamapose = nil;
+	if IsServerObj(pc) == 1 then
+		Lamapose = GetSkill(pc, 'Lama_Lamapose');
+	else
+		Lamapose = session.GetSkillByName('Lama_Lamapose');
+	end
+
+	if Lamapose == nil then
+		return false;
+	end
+	return true;
+end

@@ -28,7 +28,7 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 27,27,1,100,1,60000,1,0,0,0,0,0,0,"HiddenTrigger6","","EP14_3LINE_TUTO_MQ_1_NPC","","","","","","","EP14_3LINE_TUTO_MQ_1_NPC","","NO","YES","NO","Neutral","","","",""
 28,28,1,100,1,60000,1,0,0,0,0,0,0,"HiddenTrigger6","","EP14_3LINE_TUTO_MQ_4_NPC","","","","","","","EP14_3LINE_TUTO_MQ_4_NPC","","NO","YES","NO","Neutral","","","",""
 29,29,1,40,1,60000,1,0,0,0,0,0,0,"HiddenTrigger6","","EP14_3LINE_TUTO_MQ_9_NPC","","","","","","","EP14_3LINE_TUTO_MQ_9_NPC","","NO","YES","NO","Neutral","","","",""
-30,30,1,40,1,60000,1,0,0,0,0,0,0,"HiddenTrigger6","","EP14_3LINE_TUTO_MQ_9_1_NPC","","","","","","","","","NO","YES","NO","Neutral","","","",""
+30,30,1,100,1,60000,1,0,0,0,0,0,0,"HiddenTrigger6","","EP14_3LINE_TUTO_MQ_9_1_NPC","","","","","","","EP14_3LINE_TUTO_MQ_9_1_HELP","","NO","YES","NO","Neutral","","","",""
 31,31,1,40,1,1,1,0,0,0,0,0,0,"Warp_arrow","튜토리얼 건너뛰기","","","","","","","EP14_TUTO_SKIP_NPC","","","NO","YES","NO","Neutral","","","",""
 32,32,1,40,1,1,10,0,0,0,1,0,0,"ep14_1_kingdomsodier","공관 경비병","","","","","","","","","","NO","YES","NO","Nuetral","","","",""
 33,33,1,40,1,60000,1,0,0,0,0,0,0,"orsha_m_3","오르샤 피난민","","","","","","","EP14_3LINE_TUTO_MQ_9_1_NPC","","","NO","YES","NO","Neutral","","","",""

@@ -1,0 +1,10 @@
+ClassID,EffectScale,FinishEffectScale,ClassName,EffectName,Sound,FinishEffectName,FinishSound
+1001,1.500000,2,"Test_Fireball","I_force011_orange2","skl_eff_fireball_cast_loop","I_explosion002_orange2","skl_wiz_fireball_finish_full"
+1002,2,0.400000,"Enchanter_EnchantAura","I_force018_trail_psychokinesis3_3","","F_explosion033_violet",""
+1003,1.500000,0.400000,"Keraunos_LightningSpear","F_wizard_lightningspear001","","F_wizard_lightningspear_explosion",""
+1004,2,2,"Vibora_Druid","F_light172_green_loop","","F_hit007_leaf",""
+1005,1,0.700000,"Goddess_PoisonArrow","I_arrow019_mash","arrow_cast","I_explosion002_green2","arrow_blow"
+1006,2,0.400000,"Goddess_EnergyBullet","I_force018_trail_psychokinesis3_3","skl_eff_energy_bolt_shot","F_explosion033_violet","swd_hit_cri_hi"
+2001,0.800000,2.800000,"Jellyzele_Missile","F_light206_bubble_loop","","F_explosion98_water","mon_move_jellyzele_skl7_bubble_boom"
+3001,0.200000,3,"Goddess_DarkLash","I_force018_trail_chain","skl_eff_whip_1","F_explosion123_dark",""
+3002,0.200000,3,"Goddess_CarnageScythe","I_force018_trail_chain","skl_eff_Archer_Caltrop","F_explosion123_red",""

@@ -1524,10 +1524,10 @@ function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 
 	local dungeon_type = TryGetProp(indun_cls, "DungeonType", "None");
 	local sub_type = TryGetProp(indun_cls, "SubType", "None");
-	
+	local class_name = TryGetProp(indun_cls, "ClassName", "None");
 	if dungeon_type == "Raid" then
 		-- vasilissa
-		if string.find(indun_cls.ClassName, "Goddess_Raid_Vasilissa") ~= nil then			
+		if string.find(class_name, "Goddess_Raid_Vasilissa") ~= nil then			
 			-- 가디스 장비 6부위 체크
 			local ret, msg = CHECK_GODDESS_EQUIP(pc)
 			if ret == false then
@@ -1536,17 +1536,8 @@ function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 			end
 		end
 
-		-- ** delmore raid : 아직 작업 완료되지 않음.
-		if string.find(indun_cls.ClassName, "Goddess_Raid_Delmore") ~= nil then
-			if indun_cls.ClassName == "Goddess_Raid_Delmore_Party" then -- 파티 하드
-				
-			elseif indun_cls.ClassName == "Goddess_Raid_Delmore_Extreme" then -- 파티 익스트림
-
-			elseif indun_cls.ClassName == "Goddess_Raid_Delmore_Auto" then -- 자동 매칭
-			
-			elseif indun_cls.ClassName == "Goddess_Raid_Delmore_Solo" then -- 1인
-			end
-			
+		-- delmore raid
+		if string.find(class_name, "Goddess_Raid_Delmore") ~= nil then
 			-- 가디스 장비 6부위 체크
 			local ret, msg = CHECK_GODDESS_EQUIP(pc);
 			if ret == false then
@@ -1554,6 +1545,16 @@ function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 				return false;
 			end
 		end		
+
+		-- jellyzele raid
+		if string.find(class_name, "Goddess_Raid_Jellyzele") ~= nil then
+			-- 가디스 장비 6부위 체크
+			local ret, msg = CHECK_GODDESS_EQUIP(pc);
+			if ret == false then
+				SendSysMsg(pc, msg);
+				return false;
+			end
+		end
 	end
 	return true;
 end

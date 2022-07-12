@@ -128,6 +128,7 @@
 	<BGM PlayListName="master_Hwarang" Volume="130" FileName1="tos_SFA_Rest_in_Peace.mp3"/>
 	<BGM PlayListName="master_Hackapell" Volume="130" FileName1="tos_SFA_Phantom_on_the_highway.mp3"/>
 	<BGM PlayListName="master_Keraunos" Volume="130" FileName1="tos_SFA_Openup_Keraunos.mp3"/>
+	<BGM PlayListName="master_Lama" Volume="130" FileName1="tos_Initium_Anthem_of_Lama.mp3"/>
 	<BGM PlayListName="NPC_CHRISTMASTREE01" Volume="120" FileName1="Orgel_No_Matter_Christmas.mp3"/>
 	<BGM PlayListName="NPC_CHRISTMASTREE02" Volume="120" FileName1="Orgel_Dont_Cry.mp3"/>
 	<BGM PlayListName="raid_velcoffer" Volume="120" FileName1="tos_Drogo_Uno_Impetu.mp3" FileName2="tos_Drogo_Velvet_Penetration.mp3" FileName3="tos_Gaudium_Wrong_Theory.mp3"/>
@@ -155,7 +156,7 @@
 	<BGM PlayListName="f_episode14_1_2" Volume="130" FileName1="tos_SFA_Eagle_Taloon.mp3" FileName2="tos_SFA_Velvety.mp3"/>
 	<BGM PlayListName="raid_delmore_1" Volume="130" FileName1="tos_SFA_The_Mirror_of_Fate.mp3"/>
 	<BGM PlayListName="raid_delmore_2" Volume="130" FileName1="tos_Symphonix_miles_to_go.mp3"/>
-	<BGM PlayListName="raid_earring" Volume="139" FileName1="tos_SFA_Perseguir_la_cola.mp3"/>
+	<BGM PlayListName="raid_earring" Volume="130" FileName1="tos_SFA_Perseguir_la_cola.mp3"/>
 	<BGM PlayListName="track" Volume="90" FileName1="track.mp3"/>
 	<BGM PlayListName="id_new_1" Volume="120" FileName1="tos_KubotaOsamu_The_Sun_Part2.mp3"/>
 	<BGM PlayListName="id_new_2" Volume="120" FileName1="tos_SFA_Xenute.mp3"/>
@@ -169,4 +170,5 @@
 	<BGM PlayListName="DLC_7" Volume="140" FileName1="tos_SFA_Deives_Veliava_feat_Romanas(DLC_special_edition).mp3" FileName2="tos_SFA_Cherish_the_Memory(bonus_track).mp3"/>
 	<BGM PlayListName="DLC_8" Volume="140" FileName1="tos_SFA_Samba_de_Seoul(DLC_SE1).mp3" FileName2="tos_SFA_Pristinee_Edm_mixed(DLC_SE2).mp3"/>
 	<BGM PlayListName="DLC_9" Volume="140" FileName1="tos_SFA_Cherry_Deive.mp3" FileName2="tos_SFA_Dieno_Blossom.mp3"/>
+	<BGM PlayListName="raid_jellyzele" Volume="130" FileName1="tos_SFA_Jelly_beenie_flight.mp3"/>
 </PlayList>

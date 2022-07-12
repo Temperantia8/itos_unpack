@@ -12,6 +12,26 @@ function shuffle(tbl)
       local j = math.random(i)
       ret[i], ret[j] = ret[j], ret[i]
     end
+
+    return ret
+end
+
+function shuffle2(tbl)
+    local ret = {}
+    for k, v in pairs(tbl) do
+        table.insert(ret, v)
+    end
+
+    for i = #ret, 2, -1 do
+        local j = math.random(i)
+        ret[i], ret[j] = ret[j], ret[i]
+    end
+
+    for i = #ret, 2, -1 do
+        local j = math.random(i)
+        ret[i], ret[j] = ret[j], ret[i]
+    end
+    
     return ret
 end
 
@@ -3227,6 +3247,31 @@ function JOB_KERAUNOS_PRE_CHECK(pc, jobCount)
 end
 
 
+function JOB_LAMA_PRE_CHECK(pc, jobCount)
+    if jobCount == nil then
+        jobCount = GetTotalJobCount(pc);
+    end
+    if jobCount >= 2 then
+        local aObj
+        if IsServerSection() == 0 then
+            aObj = GetMyAccountObj();
+        else
+            aObj = GetAccountObj(pc);
+        end
+        
+        if aObj ~= nil then
+            local value = TryGetProp(aObj, 'UnlockQuest_Char4_22', 0)
+            if value == 1 or IS_KOR_TEST_SERVER() == true then
+                return 'YES'
+            end
+        end
+    end
+
+    return 'YES'
+end
+
+
+
 function JOB_RUNECASTER_PRE_CHECK(pc, jobCount)
     if jobCount == nil then
         jobCount = GetTotalJobCount(pc);
@@ -3526,6 +3571,75 @@ function CAN_COMPOSITION_SKILL_GEM(item)
     return true, TryGetProp(item, 'NumberArg1', 0)
 end
 
+-- 연성 가능한 스킬젬인지 확인
+function CAN_UPGRADE_SKILL_GEM(item)
+    if TryGetProp(item, 'StringArg', 'None') ~= 'SkillGem' then                
+        return false, 0
+    end
+
+    local level = TryGetProp(item, 'NumberArg1', 0)    
+    local cls = GetClassByType('item_gem_upgrade', level)    
+    if cls == nil then                        
+        return false, 0
+    end
+
+    return true, TryGetProp(item, 'NumberArg1', 0)
+end
+
+function GET_SKILL_GEM_CLASS_NAME(item)
+    local level = TryGetProp(item, 'NumberArg1', 0)    
+    local class_name = TryGetProp(item, 'ClassName', 'None')
+    if level == 0 then
+        return 'None'
+    elseif level == 1 then
+        local token = StringSplit(class_name, '_')
+        local concate = ''
+        local i = 2
+        for i = 2, #token do
+            if i == #token then
+                concate = concate .. token[i]
+            else
+                concate = concate .. token[i] .. '_'
+            end
+        end
+        return concate
+    else
+        local i = 3
+        for i = 3, #token do
+            if i == #token then
+                concate = concate .. token[i]
+            else
+                concate = concate .. token[i] .. '_'
+            end
+        end
+        return concate
+    end
+end
+
+function EXIST_NEXT_LEVEL_SKILL_GEM(item)
+    local name = GET_SKILL_GEM_CLASS_NAME(item)
+    if name == 'None' then
+        return false
+    end
+
+    local class_name = 'GEM_Lv' .. tostring(TryGetProp(item, 'NumberArg1', 0) + 1) .. '_' .. name        
+    if skill_gem_class_name_list[TryGetProp(item, 'NumberArg1', 0) + 1][class_name] == nil then   
+        return false
+    else
+        return true
+    end
+end
+
+function GET_NEXT_LEVEL_SKILL_GEM_CLASS_NAME(item)
+    local name = GET_SKILL_GEM_CLASS_NAME(item)    
+    if name == '' then
+        return 'None'
+    end
+
+    local class_name = 'GEM_Lv' .. tostring(TryGetProp(item, 'NumberArg1', 0) + 1) .. '_' .. name
+    return class_name
+end
+
 function ENABLE_GUILD_MEMBER_JOIN_AUTO(aObj)
     if USE_GUILD_MEMBER_JOIN_AUTO == 0 then
         return false;
@@ -3544,7 +3658,6 @@ end
 function GET_GUILD_MEMBER_JOIN_AUTO_GUILD_IDX()
     local nation = GetServerNation();
     local groupid = GetServerGroupID();
-
     return GET_AUTO_MEMBER_JOIN_GUILD_IDX(groupid, nation)      
 end
 
@@ -3721,6 +3834,10 @@ function GET_EQUIP_GROUP_NAME(item)
 
     if name == 'Earring' then
         return 'Earring'
+    end
+
+    if name == 'BELT' then
+        return 'BELT'
     end
 
     name = TryGetProp(item, 'DefaultEqpSlot', 'None')

@@ -8471,6 +8471,12 @@
 			<img name="cooltime" imgrect="1565 804 54 54"/>
 			<img name="selected" imgrect="1565 804 54 54"/>
 		</skin>
+		<skin name="belt_slot" texture="\skin\pip_test_item.tga">
+			<img name="slot" imgrect="1283 1025 50 51"/>
+			<img name="mouseon" imgrect="1565 804 54 54"/>
+			<img name="cooltime" imgrect="1565 804 54 54"/>
+			<img name="selected" imgrect="1565 804 54 54"/>
+		</skin>
 	</skinlist>
 	<imagelist category="wearing_weapon">
 		<image name="weapon_OHS" file="\icon\wearing_weapon.tga" imgrect="0 0 20 20" CMM_Caption="한손검"/>
@@ -8548,6 +8554,7 @@
 		<image name="Map_Vasilissa" file="\skin\indunmap\Map_Vasilissa.png" imgrect="0 0 295 450" CMM_Caption="바실리사 맵"/>
 		<image name="Map_EarringRaid" file="\skin\indunmap\Map_EarringRaid.png" imgrect="0 0 295 450" CMM_Caption="광역 레이드"/>
 		<image name="Map_Raid_Delmore" file="\skin\indunmap\Map_Raid_Delmore.png" imgrect="0 0 295 450" CMM_Caption="델무어 격전지"/>
+		<image name="Map_Raid_Jellyzele" file="\skin\indunmap\Map_JellyzeleRaid.png" imgrect="0 0 295 450" CMM_Caption="가라앉는 나포선"/>
 	</imagelist>
 	<imagelist category="jootest_image">
 		<image name="market_hairacc" file="\skin\market_skin.tga" imgrect="1927 447 60 60" CMM_Caption="마켓_헤어악세사리"/>
@@ -9442,6 +9449,7 @@
 		<image name="tooltip_attribute2" file="\skin\pip_test.tga" imgrect="1426 229 14 14"/>
 		<image name="tooltip_attribute3" file="\skin\pip_test.tga" imgrect="1441 229 14 14"/>
 		<image name="tooltip_attribute4" file="\skin\pip_test.tga" imgrect="1456 229 14 14"/>
+		<image name="tooltip_attribute5" file="\skin\pip_test.tga" imgrect="1471 229 14 14"/>
 		<image name="BnYellow_skin" file="\skin\missionFail_skin.tga" imgrect="0 401 500 104"/>
 		<image name="Appraiser_item_bg" file="\skin\USsentiment.tga" imgrect="643 545 55 55" CMM_Caption="미감정"/>
 		<image name="white_s_arrow" file="\skin\Appraiser_skin.tga" imgrect="158 63 69 67" CMM_Caption="재감정"/>
@@ -10767,13 +10775,31 @@
 		<image name="pilgrim_reward_gain" file="\skin\party_search.tga" imgrect="81 413 34 37" CMM_Caption="순례자 보상 받기 버튼"/>
 		<image name="pilgrim_reward_gain_cursoron" file="\skin\party_search.tga" imgrect="116 413 34 37"/>
 		<image name="pilgrim_reward_gain_clicked" file="\skin\party_search.tga" imgrect="151 413 34 37"/>
+		<image name="swordsman_equipment_cabinet" file="\skin\indun_skin.tga" imgrect="0 1019 96 50" CMM_Caption="장비 보관함_소드맨"/>
+		<image name="swordsman_equipment_cabinet_cursoron" file="\skin\indun_skin.tga" imgrect="97 1019 96 50"/>
+		<image name="swordsman_equipment_cabinet_clicked" file="\skin\indun_skin.tga" imgrect="194 1019 96 50"/>
+		<image name="wizard_equipment_cabinet" file="\skin\indun_skin.tga" imgrect="0 1070 96 50" CMM_Caption="장비 보관함_위자드"/>
+		<image name="wizard_equipment_cabinet_cursoron" file="\skin\indun_skin.tga" imgrect="97 1070 96 50"/>
+		<image name="wizard_equipment_cabinet_clicked" file="\skin\indun_skin.tga" imgrect="194 1070 96 50"/>
+		<image name="archer_equipment_cabinet" file="\skin\indun_skin.tga" imgrect="0 1121 96 50" CMM_Caption="장비 보관함_아처"/>
+		<image name="archer_equipment_cabinet_cursoron" file="\skin\indun_skin.tga" imgrect="97 1121 96 50"/>
+		<image name="archer_equipment_cabinet_clicked" file="\skin\indun_skin.tga" imgrect="194 1121 96 50"/>
+		<image name="cleric_equipment_cabinet" file="\skin\indun_skin.tga" imgrect="291 1019 96 50" CMM_Caption="장비 보관함_클레릭"/>
+		<image name="cleric_equipment_cabinet_cursoron" file="\skin\indun_skin.tga" imgrect="388 1019 96 50"/>
+		<image name="cleric_equipment_cabinet_clicked" file="\skin\indun_skin.tga" imgrect="485 1019 96 50"/>
+		<image name="scout_equipment_cabinet" file="\skin\indun_skin.tga" imgrect="291 1070 96 50" CMM_Caption="장비 보관함_스카우트"/>
+		<image name="scout_equipment_cabinet_cursoron" file="\skin\indun_skin.tga" imgrect="388 1070 96 50"/>
+		<image name="scout_equipment_cabinet_clicked" file="\skin\indun_skin.tga" imgrect="485 1070 96 50"/>
 		<image name="party_category_btn" file="\skin\button_small.tga" imgrect="0 401 54 54" CMM_Caption="파티 카테고리 버튼"/>
 		<image name="party_category_btn_cursoron" file="\skin\button_small.tga" imgrect="55 401 54 54"/>
 		<image name="party_category_btn_clicked" file="\skin\button_small.tga" imgrect="110 401 54 54"/>
 		<image name="party_pilgrim_btn" file="\skin\button_small.tga" imgrect="165 401 50 50" CMM_Caption="순례자 버튼"/>
 		<image name="party_pilgrim_btn_cursoron" file="\skin\button_small.tga" imgrect="216 401 50 50"/>
 		<image name="party_pilgrim_btn_clicked" file="\skin\button_small.tga" imgrect="267 401 50 50"/>
-		</imagelist>
+		<image name="inventory_relic_gem" file="\skin\pip_test2.tga" imgrect="964 199 38 61" CMM_Caption="성물 인벤토리 버튼"/>
+		<image name="inventory_relic_gem_cursoron" file="\skin\pip_test2.tga" imgrect="964 261 38 61"/>
+		<image name="inventory_relic_gem_clicked" file="\skin\pip_test2.tga" imgrect="964 323 38 61"/>
+	</imagelist>
 	<imagelist category="yiseul_button">
 		<image name="pvpmine_shop_btn" file="\skin\pip_test.tga" imgrect="2049 61 66 59" CMM_Caption="용병단 증표 ui 버튼"/>
 		<image name="pvpmine_shop_btn_cursoron" file="\skin\pip_test.tga" imgrect="2049 121 66 59"/>
@@ -12637,6 +12663,7 @@
 		<image name="NOTICE_Dm_Shoptutorial" file="\icon\NOTICE_Dm_Shoptutorial.tga" imgrect="0 0 45 160"/>
 		<image name="key_SPACE" file="\icon\keycap_icon.tga" imgrect="576 128 128 64"/>
 		<image name="key_wheel" file="\icon\keycap_icon.tga" imgrect="960 128 64 64"/>
+		<image name="key_empty" file="\icon\keycap_icon.tga" imgrect="768 256 64 64"/>
 	</imagelist>
 	<imagelist category="social_icon">
 		<image name="icon_life_sell" file="\icon\system\icon_life_sell.tga" imgrect="0 0 80 80"/>
@@ -13423,6 +13450,7 @@
 		<image name="Dlg_port_Kaoneela" file="\npcimg\Kaoneela.png" imgrect="0 0 850 950" CMM_Caption="카오닐라"/>
 		<image name="Dlg_port_Ramin" file="\npcimg\Ramin.png" imgrect="0 0 800 1000" CMM_Caption="라민"/>
 		<image name="Dlg_port_Veliuona" file="\npcimg\Veliuona.png" imgrect="0 0 950 1000" CMM_Caption="벨리우오나"/>
+		<image name="Dlg_port_Lama" file="\npcimg\Lama.png" imgrect="0 0 700 800" CMM_Caption="라마"/>
 	</imagelist>
 	<imagelist category="Dlg_boss">
 		<image name="balloon_Skiaclipse" file="\skin\monster_Dlg.tga" imgrect="0 0 220 260" CMM_Caption="스키아클립스"/>
@@ -14117,8 +14145,34 @@
 		<image name="icon_tribulation_MemoryManipulation" file="\icon\buff_icon6.tga" imgrect="512 256 128 128" CMM_Caption="기억조작"/>
 		<image name="icon_tribulation_PatternCategory" file="\icon\buff_icon6.tga" imgrect="640 256 128 128" CMM_Caption="패턴카테고리"/>
 		<image name="icon_buff_ridepet_ep13animal" file="\icon\buff_icon6.tga" imgrect="768 256 128 128" CMM_Caption="목마 탈 것 버프"/>
-	<image name="icon_Event_2203_ARBOR_DAY_BUFF" file="\icon\buff_icon6.tga" imgrect="896 256 128 128" CMM_Caption="자연의 축복"/>
+		<image name="icon_Event_2203_ARBOR_DAY_BUFF" file="\icon\buff_icon6.tga" imgrect="896 256 128 128" CMM_Caption="자연의 축복"/>
+		<image name="icon_buff_cler_Lamafist" file="\icon\buff_icon6.tga" imgrect="0 384 128 128" CMM_Caption="주먹"/>
+		<image name="icon_buff_cler_Lamakick" file="\icon\buff_icon6.tga" imgrect="128 384 128 128" CMM_Caption="발차기"/>
+		<image name="icon_buff_cler_Lama16" file="\icon\buff_icon6.tga" imgrect="256 384 128 128" CMM_Caption="근육이동"/>
+		<image name="icon_cler_AddLama15" file="\icon\buff_icon6.tga" imgrect="384 384 128 128" CMM_Caption="신체강화"/>
+		<image name="icon_jellyzele_residual heat" file="\icon\buff_icon6.tga" imgrect="512 384 128 128" CMM_Caption="잔열"/>
+		<image name="icon_jellyzele_oxygen" file="\icon\buff_icon6.tga" imgrect="640 384 128 128" CMM_Caption="산소"/>
+		<image name="icon_jellyzele_corrosion" file="\icon\buff_icon6.tga" imgrect="768 384 128 128" CMM_Caption="부식"/>
+		<image name="icon_Jellyzele_changeform" file="\icon\buff_icon6.tga" imgrect="896 384 128 128" CMM_Caption="짜증"/>
+		<image name="icon_Jellyzele_sting" file="\icon\buff_icon6.tga" imgrect="0 512 128 128" CMM_Caption="따끔따끔"/>
+		<image name="icon_Jellyzele_spark" file="\icon\buff_icon6.tga" imgrect="128 512 128 128" CMM_Caption="찌릿찌릿"/>
+		<image name="icon_Jellyzele_electric" file="\icon\buff_icon6.tga" imgrect="256 512 128 128" CMM_Caption="전류"/>
+		<image name="icon_Jellyzele_undersea-garden" file="\icon\buff_icon6.tga" imgrect="384 512 128 128" CMM_Caption="해저정원"/>
+		<image name="icon_Jellyzele_twinkle" file="\icon\buff_icon6.tga" imgrect="512 512 128 128" CMM_Caption="반짝반짝"/>
+		<image name="icon_Jellyzele_conversion_marble_red" file="\icon\buff_icon6.tga" imgrect="640 512 128 128" CMM_Caption="빨간 구슬"/>
+		<image name="icon_Jellyzele_conversion_marble_blue" file="\icon\buff_icon6.tga" imgrect="768 512 128 128" CMM_Caption="파란 구슬"/>
+		<image name="icon_Jellyzele_sticky" file="\icon\buff_icon6.tga" imgrect="896 512 128 128" CMM_Caption="끈적끈적"/>
+		<image name="icon_Jellyzele_blind" file="\icon\buff_icon6.tga" imgrect="0 640 128 128" CMM_Caption="블라인드"/>
+		<image name="icon_Jellyzele_splash" file="\icon\buff_icon6.tga" imgrect="128 640 128 128" CMM_Caption="첨벙첨벙"/>
+		<image name="icon_Jellyzele_oxygen_max" file="\icon\buff_icon6.tga" imgrect="256 640 128 128" CMM_Caption="산소 포화"/>
+		<image name="icon_Jellyzele_oxygen_min" file="\icon\buff_icon6.tga" imgrect="384 640 128 128" CMM_Caption="산소 부족"/>
+		<image name="icon_Jellyzele_bubblebubble" file="\icon\buff_icon6.tga" imgrect="512 640 128 128" CMM_Caption="공기 방울"/>
+		<image name="icon_Jellyzele_crack" file="\icon\buff_icon6.tga" imgrect="640 640 128 128" CMM_Caption="균열"/>
+		<image name="icon_Jellyzele_ground_change" file="\icon\buff_icon6.tga" imgrect="768 640 128 128" CMM_Caption="지면 변화 피해"/>
+		<image name="icon_Jellyzele_summon_red" file="\icon\buff_icon6.tga" imgrect="896 640 128 128" CMM_Caption="빨강 덤블아이"/>
+		<image name="icon_Jellyzele_summon_Blue" file="\icon\buff_icon6.tga" imgrect="0 768 128 128" CMM_Caption="파랑 덤블아이"/>
 		<image name="icon_buff_ridepet_ep14fivebird" file="\icon\buff_icon6.tga" imgrect="256 768 128 128" CMM_Caption="5월 테마 버프"/>
+		<image name="icon_cler_kabal_anagram" file="\icon\buff_icon6.tga" imgrect="384 768 128 128" CMM_Caption="게부라 버프 아이콘"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>
@@ -14554,6 +14608,7 @@
 		<image name="163_boss_Avataras" file="\skin\bosscard\163_boss_Avataras.tga" imgrect="0 0 330 440"/>
 		<image name="164_boss_Vasilisa" file="\skin\bosscard\164_boss_Vasilisa.tga" imgrect="0 0 330 440"/>
 		<image name="165_boss_RevivalPaulius" file="\skin\bosscard\165_boss_RevivalPaulius.tga" imgrect="0 0 330 440"/>
+		<image name="166_boss_Jellyzele" file="\skin\bosscard\166_boss_Jellyzele.tga" imgrect="0 0 330 440"/>
 	</imagelist>
 	<imagelist category="sub_card3">
 		<image name="legend_card_fragment_lv1" file="\skin\bosscard\legend_card_fragment_lv1.tga" imgrect="0 0 330 440"/>
@@ -14863,8 +14918,16 @@
 		<image name="plate_achieve_EVENT_2203_ARBOR_DAY_TITLE" file="\skin\user_title_skin.tga" imgrect="431 1029 214 34" CMM_Caption="2022 식목일 칭호"/>
 		<image name="plate_achieve_paulius" file="\skin\user_title_skin.tga" imgrect="646 1029 214 36" CMM_Caption="파울루스 칭호"/>
 		<image name="plate_achieve_berksbestie" file="\skin\user_title_skin.tga" imgrect="861 1031 214 34" CMM_Caption="스팀 2022 설날 하우벅 칭호"/>
-	
+		<image name="plate_achieve_lama" file="\skin\user_title_skin.tga" imgrect="1076 1031 214 34" CMM_Caption="라마 칭호"/>
+		<image name="plate_achieve_Jellyzele_bronze" file="\skin\user_title_skin.tga" imgrect="0 1066 214 34" CMM_Caption="젤리젤 칭호 5종"/>
+		<image name="plate_achieve_Jellyzele_silver" file="\skin\user_title_skin.tga" imgrect="215 1066 214 34"/>
+		<image name="plate_achieve_Jellyzele_gold" file="\skin\user_title_skin.tga" imgrect="430 1066 214 34"/>
+		<image name="plate_achieve_Jellyzele_achivement" file="\skin\user_title_skin.tga" imgrect="645 1066 214 34"/>
+		<image name="plate_achieve_Jellyzele_pilgrim" file="\skin\user_title_skin.tga" imgrect="860 1066 214 34"/>
 		<image name="plate_achieve_EVENT_2204_SPRING_TITLE" file="\skin\user_title_skin.tga" imgrect="1075 1066 214 34" CMM_Caption="캠핑 칭호"/>
+		<image name="plate_achieve_Lama_weekraid" file="\skin\user_title_skin.tga" imgrect="0 1101 214 34" CMM_Caption="라마 주보레 칭호"/>
+		<image name="plate_achieve_EVENT_2206_SUMMER_TITLE" file="\skin\user_title_skin.tga" imgrect="215 1101 214 34" CMM_Caption="썸머 페스타 칭호"/>
+		<image name="plate_achieve_ignas_weekraid" file="\skin\user_title_skin.tga" imgrect="645 1101 214 34" CMM_Caption="이그나스 주보레 칭호"/>
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>

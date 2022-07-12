@@ -24,7 +24,7 @@ function IS_ENCHANT_ITEM(item)
 	   or item.ClassName == "Event_Enchantchip_12" or item.ClassName == "Event_Enchantchip_13" or item.ClassName == "Event_Enchantchip_16" or item.ClassName == "Event_Enchantchip_17"
 	   or item.ClassName == "Event_Enchantchip_18" or item.ClassName == "Event_Enchantchip_205" or item.ClassName == "Event_Enchantchip_25" or item.ClassName == "Event_Enchantchip_206"
 	   or item.ClassName == "Event_Enchantchip_33" or item.ClassName == "Event_Enchantchip_39" or item.ClassName == "Premium_Enchantchip_NoTrade" or item.ClassName == "Event_Enchantchip_limit"
-	   or item.ClassName == "Event_Enchantchip_limit_1" then
+	   or item.ClassName == "Event_Enchantchip_limit_1" or item.ClassName == "Event_Enchantchip_limit_2" then
 		return 1;
 	end
 

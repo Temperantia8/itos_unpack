@@ -591,6 +591,20 @@
 		<image name="icon_cler_Moksha" file="\icon\skill\cleric\icon_cler_Moksha.png" imgrect="0 0 128 128" CMM_Caption="모크샤"/>
 		<image name="icon_cler_Anila" file="\icon\skill\cleric\icon_cler_Anila.png" imgrect="0 0 128 128" CMM_Caption="에니라"/>
 		<image name="icon_cler_Patati" file="\icon\skill\cleric\icon_cler_Patati.png" imgrect="0 0 128 128" CMM_Caption="파타티"/>
+		<image name="icon_cler_Lamapose" file="\icon\skill\cleric\icon_cler_Lamapose.png" imgrect="0 0 128 128" CMM_Caption="라마 태세"/>
+		<image name="icon_cler_Avoid" file="\icon\skill\cleric\icon_cler_Avoid.png" imgrect="0 0 128 128" CMM_Caption="흐리기"/>
+		<image name="icon_cler_Relax" file="\icon\skill\cleric\icon_cler_Relax.png" imgrect="0 0 128 128" CMM_Caption="긴장풀기"/>
+		<image name="icon_cler_Lamadash" file="\icon\skill\cleric\icon_cler_Lamadash.png" imgrect="0 0 128 128" CMM_Caption="라마 질주"/>
+		<image name="icon_cler_Strongfist" file="\icon\skill\cleric\icon_cler_Strongfist.png" imgrect="0 0 128 128" CMM_Caption="붕권"/>
+		<image name="icon_cler_Hanginglegs" file="\icon\skill\cleric\icon_cler_Hanginglegs.png" imgrect="0 0 128 128" CMM_Caption="다리걸기"/>
+		<image name="icon_cler_Strongfist_Hanginglegs" file="\icon\skill\cleric\icon_cler_Strongfist_Hanginglegs.png" imgrect="0 0 128 128" CMM_Caption="붕권,다리걸기"/>
+		<image name="icon_cler_Pointkick" file="\icon\skill\cleric\icon_cler_Pointkick.png" imgrect="0 0 128 128" CMM_Caption="급소 차기"/>
+		<image name="icon_cler_Earthshock" file="\icon\skill\cleric\icon_cler_Earthshock.png" imgrect="0 0 128 128" CMM_Caption="땅 부수기"/>
+		<image name="icon_cler_Pointkick_Earthshock" file="\icon\skill\cleric\icon_cler_Pointkick_Earthshock.png" imgrect="0 0 128 128" CMM_Caption="급소 차기,땅 부수기"/>
+		<image name="icon_cler_Flyingkick" file="\icon\skill\cleric\icon_cler_Flyingkick.png" imgrect="0 0 128 128" CMM_Caption="날아차기"/>
+		<image name="icon_cler_Suddenkick" file="\icon\skill\cleric\icon_cler_Suddenkick.png" imgrect="0 0 128 128" CMM_Caption="기습차기"/>
+		<image name="icon_cler_Flyingkick_Suddenkick" file="\icon\skill\cleric\icon_cler_Flyingkick_Suddenkick.png" imgrect="0 0 128 128" CMM_Caption="날아차기,기습차기"/>
+		<image name="icon_cler_Endlessattacks" file="\icon\skill\cleric\icon_cler_Endlessattacks.png" imgrect="0 0 128 128" CMM_Caption="연격"/>
 	</imagelist>
 	<imagelist category="warrior_skillicon">
 		<image name="icon_warri_thrust" file="\icon\skill\warrior\icon_warri_thrust.png" imgrect="0 0 128 128" CMM_Caption="쓰러스트"/>
@@ -3317,6 +3331,58 @@
 		<image name="ability_cleric_Zealot18" file="\icon\icon_ability_cleric08.tga" imgrect="768 896 128 128" CMM_Caption="블라인드 페이쓰: 상급 강화"/>
 		<image name="ability_cleric_Druid29" file="\icon\icon_ability_cleric08.tga" imgrect="896 896 128 128" CMM_Caption="육식화: 강화"/>
 		<image name="ability_cleric_Druid30" file="\icon\icon_ability_cleric09.tga" imgrect="0 0 128 128" CMM_Caption="[아츠] 육식화: 상급 강화"/>
+		<image name="ability_cleric_Lama1" file="\icon\icon_ability_cleric09.tga" imgrect="128 0 128 128" CMM_Caption="붕권: 강화"/>
+		<image name="ability_cleric_Lama2" file="\icon\icon_ability_cleric09.tga" imgrect="256 0 128 128" CMM_Caption="다리걸기: 강화"/>
+		<image name="ability_cleric_Lama3" file="\icon\icon_ability_cleric09.tga" imgrect="384 0 128 128" CMM_Caption="급소차기: 강화"/>
+		<image name="ability_cleric_Lama4" file="\icon\icon_ability_cleric09.tga" imgrect="512 0 128 128" CMM_Caption="땅 부수기: 강화"/>
+		<image name="ability_cleric_Lama5" file="\icon\icon_ability_cleric09.tga" imgrect="640 0 128 128" CMM_Caption="날아차기: 강화"/>
+		<image name="ability_cleric_Lama6" file="\icon\icon_ability_cleric09.tga" imgrect="768 0 128 128" CMM_Caption="기습차기: 강화"/>
+		<image name="ability_cleric_Lama7" file="\icon\icon_ability_cleric09.tga" imgrect="896 0 128 128" CMM_Caption="연격: 강화"/>
+		<image name="ability_cleric_Lama8" file="\icon\icon_ability_cleric09.tga" imgrect="0 128 128 128" CMM_Caption="[아츠]붕권: 상급 강화"/>
+		<image name="ability_cleric_Lama9" file="\icon\icon_ability_cleric09.tga" imgrect="128 128 128 128" CMM_Caption="[아츠]다리걸기: 상급 강화"/>
+		<image name="ability_cleric_Lama10" file="\icon\icon_ability_cleric09.tga" imgrect="256 128 128 128" CMM_Caption="[아츠]급소차기: 상급 강화"/>
+		<image name="ability_cleric_Lama11" file="\icon\icon_ability_cleric09.tga" imgrect="384 128 128 128" CMM_Caption="[아츠]땅 부수기: 상급 강화"/>
+		<image name="ability_cleric_Lama12" file="\icon\icon_ability_cleric09.tga" imgrect="512 128 128 128" CMM_Caption="[아츠]날아차기: 상급 강화"/>
+		<image name="ability_cleric_Lama13" file="\icon\icon_ability_cleric09.tga" imgrect="640 128 128 128" CMM_Caption="[아츠] 기습차기: 상급 강화"/>
+		<image name="ability_cleric_Lama14" file="\icon\icon_ability_cleric09.tga" imgrect="768 128 128 128" CMM_Caption="[아츠] 연격: 상급 강화"/>
+		<image name="ability_cleric_Lama15" file="\icon\icon_ability_cleric09.tga" imgrect="896 128 128 128" CMM_Caption="신체 강화"/>
+		<image name="ability_cleric_Lama16" file="\icon\icon_ability_cleric09.tga" imgrect="0 256 128 128" CMM_Caption="라마 태세: 기획 포착"/>
+		<image name="ability_cleric_Lama17" file="\icon\icon_ability_cleric09.tga" imgrect="128 256 128 128" CMM_Caption="[아츠]흐리기: 질주"/>
+		<image name="ability_cleric_Lama18" file="\icon\icon_ability_cleric09.tga" imgrect="256 256 128 128" CMM_Caption="[아츠]긴장풀기: 회복"/>
+		<image name="ability_cleric_Priest44" file="\icon\icon_ability_cleric09.tga" imgrect="384 256 128 128" CMM_Caption="아스퍼션: 보호"/>
+		<image name="ability_cleric_Priest45" file="\icon\icon_ability_cleric09.tga" imgrect="512 256 128 128" CMM_Caption="리저렉션: 규탄 강화"/>
+		<image name="ability_cleric_Priest46" file="\icon\icon_ability_cleric09.tga" imgrect="640 256 128 128" CMM_Caption="리저렉션: 규탄 상급 강화"/>
+		<image name="ability_cleric_Priest47" file="\icon\icon_ability_cleric09.tga" imgrect="768 256 128 128" CMM_Caption="리저렉션: 규탄
+"/>
+		<image name="ability_cleric_Priest48" file="\icon\icon_ability_cleric09.tga" imgrect="896 256 128 128" CMM_Caption="매스힐: 광휘"/>
+		<image name="ability_cleric_Oracle36" file="\icon\icon_ability_cleric09.tga" imgrect="0 384 128 128" CMM_Caption="아케인에너지: 흡수 강화"/>
+		<image name="ability_cleric_Oracle37" file="\icon\icon_ability_cleric09.tga" imgrect="128 384 128 128" CMM_Caption="아케인에너지: 흡수 상급 강화"/>
+		<image name="ability_cleric_Oracle38" file="\icon\icon_ability_cleric09.tga" imgrect="256 384 128 128" CMM_Caption="아케인에너지: 흡수"/>
+		<image name="ability_cleric_Oracle39" file="\icon\icon_ability_cleric09.tga" imgrect="384 384 128 128" CMM_Caption="카운터스펠: 반사 강화"/>
+		<image name="ability_cleric_Oracle40" file="\icon\icon_ability_cleric09.tga" imgrect="512 384 128 128" CMM_Caption="카운터스펠: 반사 상급 강화"/>
+		<image name="ability_cleric_Oracle41" file="\icon\icon_ability_cleric09.tga" imgrect="640 384 128 128" CMM_Caption="카운터스펠: 반사"/>
+		<image name="ability_cleric_Oracle42" file="\icon\icon_ability_cleric09.tga" imgrect="768 384 128 128" CMM_Caption="프로퍼시: 비전 강화"/>
+		<image name="ability_cleric_Oracle43" file="\icon\icon_ability_cleric09.tga" imgrect="896 384 128 128" CMM_Caption="프로퍼시: 비전 상급강화"/>
+		<image name="ability_cleric_Oracle44" file="\icon\icon_ability_cleric09.tga" imgrect="0 512 128 128" CMM_Caption="프로퍼시: 비전"/>
+		<image name="ability_cleric_PlagueDoctor29" file="\icon\icon_ability_cleric09.tga" imgrect="128 512 128 128" CMM_Caption="소독: 살포 강화"/>
+		<image name="ability_cleric_PlagueDoctor30" file="\icon\icon_ability_cleric09.tga" imgrect="256 512 128 128" CMM_Caption="소독: 살포 상급 강화"/>
+		<image name="ability_cleric_PlagueDoctor31" file="\icon\icon_ability_cleric09.tga" imgrect="384 512 128 128" CMM_Caption="소독: 살포"/>
+		<image name="ability_cleric_Kabbalist41" file="\icon\icon_ability_cleric09.tga" imgrect="512 512 128 128" CMM_Caption="세피로트의 나무: 디에보 스페라"/>
+		<image name="ability_cleric_Kabbalist42" file="\icon\icon_ability_cleric09.tga" imgrect="640 512 128 128" CMM_Caption="아인소프: 치명"/>
+		<image name="ability_cleric_Dievdirbys34" file="\icon\icon_ability_cleric09.tga" imgrect="768 512 128 128" CMM_Caption="아우슈리네 조각상: 가호"/>
+		<image name="ability_cleric_Dievdirbys35" file="\icon\icon_ability_cleric09.tga" imgrect="896 512 128 128" CMM_Caption="[아츠]세계수 조각: 상급 강화"/>
+		<image name="ability_cleric_Dievdirbys36" file="\icon\icon_ability_cleric09.tga" imgrect="0 640 128 128" CMM_Caption="세계수 조각: 그리즈 타스"/>
+		<image name="ability_cleric_Dievdirbys37" file="\icon\icon_ability_cleric09.tga" imgrect="128 640 128 128" CMM_Caption="라이마 여신상: 강화"/>
+		<image name="ability_cleric_Dievdirbys38" file="\icon\icon_ability_cleric09.tga" imgrect="256 640 128 128" CMM_Caption="[아츠]라이마 여신상: 상급 강화"/>
+		<image name="ability_cleric_Dievdirbys39" file="\icon\icon_ability_cleric09.tga" imgrect="384 640 128 128" CMM_Caption="라이마 여신상: 칸치아"/>
+		<image name="ability_cleric_Dievdirbys40" file="\icon\icon_ability_cleric09.tga" imgrect="512 640 128 128" CMM_Caption="제미나 여신상: 파툼"/>
+		<image name="ability_cleric_Miko18" file="\icon\icon_ability_cleric09.tga" imgrect="640 640 128 128" CMM_Caption="카구라: 강화"/>
+		<image name="ability_cleric_Miko19" file="\icon\icon_ability_cleric09.tga" imgrect="768 640 128 128" CMM_Caption="[아츠]카구라: 상급 강화"/>
+		<image name="ability_cleric_Miko20" file="\icon\icon_ability_cleric09.tga" imgrect="896 640 128 128" CMM_Caption="카구라: 켄"/>
+		<image name="ability_cleric_Priest49" file="\icon\icon_ability_cleric09.tga" imgrect="0 768 128 128" CMM_Caption="사크라멘트: 강화"/>
+		<image name="ability_cleric_Priest50" file="\icon\icon_ability_cleric09.tga" imgrect="128 768 128 128" CMM_Caption="[아츠] 사크라멘트: 상급 강화"/>
+		<image name="ability_cleric_Kabbalist43" file="\icon\icon_ability_cleric09.tga" imgrect="256 768 128 128" CMM_Caption="아나그라마: 강화"/>
+		<image name="ability_cleric_Kabbalist44" file="\icon\icon_ability_cleric09.tga" imgrect="384 768 128 128" CMM_Caption="[아츠] 아나그라마: 상급 강화"/>
 	</imagelist>
 	<imagelist category="abilityicon_common">
 		<image name="ability_common_DaggerMastery" file="\icon\icon_ability_common.tga" imgrect="0 0 128 128" CMM_Caption="단검 마스터리"/>

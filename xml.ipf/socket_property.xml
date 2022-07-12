@@ -2983,4 +2983,28 @@
 		<Level Level="0" PropList_TopLeg="OptDesc/일렉트릭 드라이브 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/일렉트릭 드라이브 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
 		<Level Level="1" PropList_TopLeg="OptDesc/일렉트릭 드라이브 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/일렉트릭 드라이브 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
 	</Item>
+	<Item Name="GEM_Lama_Lamapose">
+		<Level Level="0" PropList_TopLeg="OptDesc/비파샤나 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/비파샤나 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/비파샤나 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/비파샤나 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Lama_StrongfistHanginglegs">
+		<Level Level="0" PropList_TopLeg="OptDesc/타개 ／ 다리걸기 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/타개 ／ 다리걸기 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/타개 ／ 다리걸기 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/타개 ／ 다리걸기 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Lama_PointkickEarthshock">
+		<Level Level="0" PropList_TopLeg="OptDesc/급소 차기 ／ 산 부수기 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/급소 차기 ／ 산 부수기 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/급소 차기 ／ 산 부수기 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/급소 차기 ／ 산 부수기 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Lama_FlyingkickSuddenkick">
+		<Level Level="0" PropList_TopLeg="OptDesc/기습 차기 ／ 날아차기 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/기습 차기 ／ 날아차기 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/기습 차기 ／ 날아차기 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/기습 차기 ／ 날아차기 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Lama_Endlessattacks">
+		<Level Level="0" PropList_TopLeg="OptDesc/만파능라격 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/만파능라격 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/만파능라격 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/만파능라격 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Kabbalist_Anagrama">
+		<Level Level="0" PropList_TopLeg="OptDesc/아나그라마 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/아나그라마 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/아나그라마 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/아나그라마 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
 </SocketProperty>

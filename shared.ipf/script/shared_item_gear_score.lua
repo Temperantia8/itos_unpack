@@ -116,6 +116,34 @@ function GET_ENCHANT_OPTION_PORTION(item)
     return math.floor(portion + 0.5) / 100
 end
 
+function GET_BELT_GEAR_SCORE(item)
+    local lv = TryGetProp(item, 'UseLv', 0)    
+    score = 700
+    if lv == 470 then
+        score = 900
+    else
+
+    end
+    
+    local high = 0
+    if string.find(TryGetProp(item, 'ClassName', 'None'), '_high') ~= nil then
+        high = 100
+    end
+
+    local max_count = shared_item_belt.get_max_random_option_count(item)
+    local sum = 0
+    
+    for i = 1, max_count do
+        local name = TryGetProp(item, 'RandomOption_' .. i)
+        local value = TryGetProp(item, 'RandomOptionValue_' .. i)
+        local _, max_value = shared_item_belt.get_option_value_range_equip(item, name)
+        sum = sum + (value / max_value)        
+    end
+
+    sum = sum / max_count
+    return math.floor((score * 0.9) + (score * 0.1 * sum)) + high
+end
+
 function GET_GEAR_SCORE(item, pc)     
     if TryGetProp(item, 'StringArg', 'None') == 'WoodCarving' then 
         return 0
@@ -152,6 +180,7 @@ function GET_GEAR_SCORE(item, pc)
         check_slot_list['SEAL'] = 1
         check_slot_list['ARK'] = 1        
         check_slot_list['EARRING'] = 1
+        check_slot_list['BELT'] = 1
     end
 
     local type = TryGetProp(item, 'DefaultEqpSlot', 'None')
@@ -226,6 +255,8 @@ function GET_GEAR_SCORE(item, pc)
         else
             return GET_EARRING_GEAR_SCORE(item)
         end
+    elseif type == 'BELT' then
+        return GET_BELT_GEAR_SCORE(item)
     else -- 무기/방어구/악세서리
         local icor_lv = use_lv
         local random_icor_lv = 0
@@ -465,7 +496,7 @@ function GET_PLAYER_GEAR_SCORE(pc)
         before_score = score
 
         local missing_count = 0
-        local item_sub_lh = GetEquipItemIgnoreDur(pc, 'RH_SUB')        
+        local item_sub_lh = GetEquipItemIgnoreDur(pc, 'LH_SUB')        
         if TryGetProp(item_sub_lh, 'ClassName', 'None') == 'NoWeapon' or TryGetProp(item_sub_lh, 'ClassName', 'None') == 'None' then
             missing_count = missing_count + 1
         end

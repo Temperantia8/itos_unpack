@@ -454,17 +454,10 @@
                             <Num Num="0"/>
                             <Num Num="0"/>
                             <Num Num="0"/>
-                        </Scp>
-                        <Scp Client="NO" Scp="SKL_BUFF_REMOVE_BY_KEYWORD_RODELERO" Time="500" UseSleep="NO">
-                            <Str Str="PARTY"/>
-                            <Str Str="Freeze"/>
-                            <Str Str="Debuff"/>
-                            <Num Num="1"/>
-                            <Num Num="3"/>
-                        </Scp>
+                        </Scp>                        
                         <Scp Client="NO" Scp="SKL_BUFF_REMOVE_BY_KEYWORD_RODELERO" Time="500" UseSleep="NO">
                             <Str Str="ENEMY"/>
-                            <Str Str="Freeze"/>
+                            <Str Str="None"/>
                             <Str Str="Debuff"/>
                             <Num Num="1"/>
                             <Num Num="3"/>

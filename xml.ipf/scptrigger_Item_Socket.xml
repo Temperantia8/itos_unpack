@@ -16382,4 +16382,136 @@
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="GEM_Lama_Lamapose">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_Lamapose"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_Lamapose"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Lama_StrongfistHanginglegs">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_StrongfistHanginglegs"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_StrongfistHanginglegs"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Lama_PointkickEarthshock">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_PointkickEarthshock"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_PointkickEarthshock"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Lama_FlyingkickSuddenkick">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_FlyingkickSuddenkick"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_FlyingkickSuddenkick"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Lama_Endlessattacks">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_Endlessattacks"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Lama_Endlessattacks"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Kabbalist_Anagrama">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Kabbalist_Anagrama"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Kabbalist_Anagrama"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 </SpcItemList>

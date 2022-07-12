@@ -281,7 +281,7 @@ ClassID,Value,Value2,ClassName,Desc,UseInScript
 280000,1,0,"USE_INTEG_INDUN","1일 경우 통합인던. 0이라면 서버별 인던","NO"
 280001,1,0,"AUTOMATCH_RELAX_TIME1","자동매칭 레벨 제한 완화 시간1(MS)","NO"
 280003,1,0,"UNDERSTAFF_ENTER_ALLOW_TIME","4인 이하 매칭 가능 시간(MS)","NO"
-280004,60000,0,"WAITING_TIME_FOR_HEALER","이 시간(1분)까지 힐러를 기다려보고 안되면 아무나 매칭시킨다.(MS)","NO"
+280004,20000,0,"WAITING_TIME_FOR_HEALER","이 시간(1분)까지 힐러를 기다려보고 안되면 아무나 매칭시킨다.(MS)","NO"
 280005,30000,0,"UNDERSTAFF_ENTER_ALLOW_TIME_HALF","50% 동의 모드 - 4인 이하 매칭 가능 시간(MS)","NO"
 290000,1,0,"USE_REPORT_BOT_TO_STEAM","1일 경우 스팀 VAC에 봇 신고 기능 사용","NO"
 290001,1,0,"USE_REPORT_BOT_TO_CLASSIFIER","1일 경우 분류기를 통한 봇 검출 기능 사용","NO"

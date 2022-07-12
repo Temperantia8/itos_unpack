@@ -1231,6 +1231,10 @@ function SCR_Get_DEFAULT_MINMATK(self)
     local byLevel = lv * 1;
     
     local stat = TryGetProp(self, "INT");
+    local abilCleric37 = GetAbility(self, 'Cleric37');
+    if abilCleric37 ~= nil and TryGetProp(abilCleric37, 'ActiveState', 0) == 1 then
+        stat = TryGetProp(self, 'MNA');
+    end
     if stat == nil then
         stat = 1;
     end
@@ -1365,6 +1369,10 @@ function SCR_Get_DEFAULT_MAXMATK(self)
     local byLevel = lv * 1;
     
     local stat = TryGetProp(self, "INT");
+    local abilCleric37 = GetAbility(self, 'Cleric37');
+    if abilCleric37 ~= nil and TryGetProp(abilCleric37, 'ActiveState', 0) == 1 then
+        stat = TryGetProp(self, 'MNA');
+    end
     if stat == nil then
         stat = 1;
     end
@@ -2044,6 +2052,10 @@ function SCR_Get_CRTMATK(self)
     local byLevel = lv * 1.0;
 	
     local stat = TryGetProp(self, "MNA");
+    local abilCleric37 = GetAbility(self, 'Cleric37');
+    if abilCleric37 ~= nil and TryGetProp(abilCleric37, 'ActiveState', 0) == 1 then
+        stat = TryGetProp(self, 'INT');
+    end
     if stat == nil then
         stat = 1;
     end
@@ -2099,6 +2111,12 @@ function SCR_Get_RHP(self)
         value = value / 2
     end
     
+    -- HealControl 레이드 체크
+    if IsHealControlMap(self) == 1 then
+        local add_rhp_bm = GET_HEAL_CTRL_RAID_RHP_BM(self, value);
+        value = value + add_rhp_bm;
+    end
+
     if value < 0 then
         value = 0;
     end
@@ -4837,7 +4855,14 @@ function SCR_GET_LOOTINGCHANCE(self)
     return math.floor(value);
 end
 
+-- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function SCR_Get_HEAL_PWR(self)
+    local flag = 2
+    if flag == 1 then 
+        return SCR_Get_HEAL_PWR_VER1(self) -- 기존 연산식
+    elseif flag == 2 then 
+        return SCR_Get_HEAL_PWR_VER2(self) -- 신규 연산식
+    end
     
     -- 이전 치유력 계산식
     --local defaultValue = 20;
@@ -4852,6 +4877,141 @@ function SCR_Get_HEAL_PWR(self)
     --local byAttack = SCR_GET_DEFAULT_ATK_COMPARE(self) * 0.086
     --local value = math.floor(defaultValue + byLevel + byStat + byAttack)
 
+    local defaultValue = 20;
+    
+    local lv = TryGetProp(self, "Lv");
+    if lv == nil then
+        lv = 1;
+    end
+
+    local byLevel = lv * 2.5;
+    
+    local stat = TryGetProp(self, "MNA");
+    if stat == nil then
+        stat = 1;
+    end
+
+    local byStat = stat * 1;
+
+    local atk = SCR_GET_DEFAULT_ATK_COMPARE(self)
+    atk = atk / 3
+        
+    -- local byAttack = atk * 0.08
+
+    -- local value = math.floor(defaultValue + byLevel + byStat + byAttack)
+    local value = math.floor(defaultValue + byLevel + byStat)
+
+    local byBuff = 0;
+    
+    local byBuffTemp = TryGetProp(self, "HEAL_PWR_BM");
+    if byBuffTemp ~= nil then
+        byBuff = byBuff + byBuffTemp;
+    end
+    
+    local byRateBuff = 0;
+
+    local byRateBuffTemp = TryGetProp(self, "HEAL_PWR_RATE_BM"); 
+    if byRateBuffTemp ~= nil then
+        byRateBuff = byRateBuff + byRateBuffTemp;
+    end
+    
+    -- HealControl 레이드 체크
+    if IsHealControlMap(self) == 1 then
+        local by_rate_raid = GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self);
+        byRateBuff = byRateBuff + by_rate_raid;
+        atk = atk * (1 + by_rate_raid)
+    end
+
+    byRateBuff = math.floor(value * byRateBuffTemp);
+    value = value + byBuff + byRateBuff;    
+    local byAbil = GetExProp(self, "ABIL_MACE_ADDHEAL")
+    if byAbil == nil then
+        byAbil = 0
+    end
+    
+    local sum_of_heal_power = 0
+    sum_of_heal_power = sum_of_heal_power + byAbil
+
+    local seal_option = GetExProp(self, "ITEM_Cleric_PatronSaint_HwpRate")        
+    if seal_option > 0 then
+        seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
+        sum_of_heal_power = sum_of_heal_power + seal_option
+    end
+    
+    if GetExProp(self, "ITEM_goddess_seal_lv1") > 0 then
+        seal_option = GetExProp(self, "ITEM_goddess_seal_lv1")
+        seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
+        sum_of_heal_power = sum_of_heal_power + seal_option
+    end
+
+    value = value * (1 + sum_of_heal_power)
+
+    local sum_of_value_atk = math.floor((value * 0.4) + (atk * 0.6))
+    if sum_of_value_atk < 1 then
+    	sum_of_value_atk = 1;
+    end
+
+    return sum_of_value_atk;
+end
+
+-- 신규 연산식
+function SCR_Get_HEAL_PWR_VER2(self)
+    local defaultValue = 20;
+    
+    local lv = TryGetProp(self, "Lv", 1);
+    local byLevel = lv * 2.5;
+
+    local stat = TryGetProp(self, "MNA", 1);
+    local byStat = stat * 1;
+    
+    local value = math.floor(defaultValue + byLevel + byStat)
+    
+    local byBuff = TryGetProp(self, "HEAL_PWR_BM", 0);
+    value = value + byBuff;
+    
+    local atk = SCR_GET_DEFAULT_ATK_COMPARE(self)
+    local byAttack = atk / 4
+    value = math.floor((value * 0.4) + (byAttack * 0.6))
+    
+    local byRateBuff = TryGetProp(self, "HEAL_PWR_RATE_BM", 0); 
+    value = value * (1 + byRateBuff)
+    
+    local sum_of_heal_power = 0
+    local byAbil = GetExProp(self, "ABIL_MACE_ADDHEAL") -- 클레릭: 치유력 특성
+    if byAbil == nil then
+        byAbil = 0
+    end
+    sum_of_heal_power = sum_of_heal_power + byAbil
+
+    local seal_option = GetExProp(self, "ITEM_Cleric_PatronSaint_HwpRate") -- 보루타 인장 - 클레릭
+    if seal_option > 0 then
+        seal_option = seal_option / 1000
+        sum_of_heal_power = sum_of_heal_power + seal_option
+    end
+    if GetExProp(self, "ITEM_goddess_seal_lv1") > 0 then -- 보루타 인장 - 공용
+        seal_option = GetExProp(self, "ITEM_goddess_seal_lv1")
+        seal_option = seal_option / 1000
+        sum_of_heal_power = sum_of_heal_power + seal_option
+    end
+
+    value = value * (1 + sum_of_heal_power)
+
+    -- HealControl 레이드 체크
+    if IsHealControlMap(self) == 1 then
+        local by_rate_raid = GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self);
+        value = value * (1 + by_rate_raid)
+    end
+
+    if value < 1 then
+    	value = 1;
+    end
+    
+    return math.floor(value);
+end
+
+-- 기존 연산식
+function SCR_Get_HEAL_PWR_VER1(self)
+    
     local defaultValue = 20;
     
     local lv = TryGetProp(self, "Lv");
@@ -4894,23 +5054,10 @@ function SCR_Get_HEAL_PWR(self)
         byAbil = 0
     end
     
-    local sum_of_heal_power = 0
-    sum_of_heal_power = sum_of_heal_power + byAbil
-
     local seal_option = GetExProp(self, "ITEM_Cleric_PatronSaint_HwpRate")        
-    if seal_option > 0 then
-        seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
-        sum_of_heal_power = sum_of_heal_power + seal_option
-    end
+    seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
+    value = value * (1 + byAbil + seal_option) 
     
-    if GetExProp(self, "ITEM_goddess_seal_lv1") > 0 then
-        seal_option = GetExProp(self, "ITEM_goddess_seal_lv1")
-        seal_option = seal_option / 1000 -- 치유력 증가 합연산으로 처리한다
-        sum_of_heal_power = sum_of_heal_power + seal_option
-    end
-
-    value = value * (1 + sum_of_heal_power) 
-
     if value < 1 then
     	value = 1;
     end
@@ -4918,6 +5065,7 @@ function SCR_Get_HEAL_PWR(self)
     return math.floor(value);
 end
 
+-- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function SCR_GET_Leather_Def(pc)
     local byItem = GetSumOfEquipItem(pc, "Leather_Def");
     if byItem == nil then
@@ -5099,4 +5247,49 @@ function SCR_GET_DEFAULT_ATK_COMPARE(self)
     local maxAtk = math.max(atkPatk, atkMatk)
 
     return maxAtk
+end
+
+-- ** [ 힐량 컨트롤 관련 기능 ] ** --
+-- RHP_BM
+function GET_HEAL_CTRL_RAID_RHP_BM(self, value)
+    if self == nil then return 0; end
+    if IsHealControlMap(self) == 0 then return 0; end
+
+    if IsServerSection() == 1 then
+        local cmd = GetMGameCmd(self);
+        if cmd == nil then return 0; end
+        local mgame_name = cmd:GetMGameName();
+        if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil then
+            local add_rhp_bm = value * 0.9 * -1.0;
+            return add_rhp_bm;
+        end
+    else
+        local mgame_name = session.mgame.GetCurrentMGameName()
+        if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil then
+            return -0.9; -- 90% 감소
+        end
+    end
+
+    
+    return 0;
+end
+
+-- HEAL_PWR_RATE_BM
+function GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self)
+    if self == nil then return 0; end
+    if IsHealControlMap(self) == 0 then return 0; end
+    if IsServerSection() == 1 then
+        local cmd = GetMGameCmd(self);
+        if cmd == nil then return 0; end
+        local mgame_name = cmd:GetMGameName();
+        if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil then
+            return -0.9; -- 90% 감소
+        end
+    else
+        local mgame_name = session.mgame.GetCurrentMGameName()
+        if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil then
+            return -0.9; -- 90% 감소
+        end
+    end
+    return 0;
 end

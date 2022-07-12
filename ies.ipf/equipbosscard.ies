@@ -212,3 +212,4 @@ ClassID,ConditionArg4,ClassName,UseType,ValueType,PropertyType,ConditionScp,Cond
 211,0,"Master_card_PhilipAureolus","Always","StarCount","","","","","","SCR_CARDEFFECT_ADD_BUFF_STARVALUE_PC","CARD_Poison_Buff","","0","독 속성 마법 공격 시 대미지 {@st66d_y}{s16}[%d]{/}{/}%% 증가","1"
 212,0,"Legend_card_Vasilisa","Always","StarCount","","","","","","SCR_CARDEFFECT_ADD_BUFF_STARVALUE_PC","CARD_VASILISA_PRE_BUFF","","0","보스를 제외한 몬스터 대상 최종 대미지 증가{@st66d_y}{s16}[%d]{/}{/}%%, 받는 피해 감소{@st66d_y}{s16}[%d]{/}{/}%% ","1.5/1"
 213,0,"Legend_card_RevivalPaulius","BeforeAttack","StarCount","","","","","","SCR_CARDEFFECT_ATTACK_FINALHITRATE","","","5","명중 확률 +{@st66d_y}{s16}[%d]{/}{/}%% 증가","5"
+214,0,"Legend_card_Jellyzele","BeforeAttack","StarCount","","","","","","SCR_CARDEFFECT_ATTACK_FINALHITBLOCKBREAK","","","5","블록 관통 확률 +{@st66d_y}{s16}[%d]{/}{/}%% 증가","5"

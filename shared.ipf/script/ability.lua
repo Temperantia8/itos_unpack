@@ -2868,11 +2868,11 @@ function SCR_ABIL_CRYOMANCER24_INACTIVE(self, ability)
 end
 
 function SCR_ABIL_Monk27_ACTIVE(self, ability)
-    AddBuff(self, self, "Monk27_Buff", 1, 0, 0, 1)
+    -- AddBuff(self, self, "Monk27_Buff", 1, 0, 0, 1)
 end
 
 function SCR_ABIL_Monk27_INACTIVE(self, ability)
-    RemoveBuff(self, "Monk27_Buff")
+    -- RemoveBuff(self, "Monk27_Buff")
 end
 
 function SCR_ABIL_ARQUEBUSIER12_ACTIVE(self, ability)
@@ -3002,14 +3002,37 @@ function SCR_ABIL_Cleric32_ACTIVE(self, ability)
     AddBuff(self, self, "Cleric32_DARK_SPHERE_BUFF");
     local skl = GetSkill(self, "Cleric_Heal")
     if skl ~= nil then
-        local attribute = TryGetProp(skl, "Attribute", "Melee")
-        SetExProp_Str(ability, "Heal_Attribute", attribute)
+        local curAttribute = TryGetProp(skl, "Attribute", "Melee")
+        SetExProp_Str(ability, "Heal_Attribute", curAttribute)
+
+        local curAttackType = TryGetProp(skl, "AttackType", "None")
+        SetExProp_Str(ability, "Heal_AttackType", curAttackType)
+
+        local curClassType = TryGetProp(skl, "ClassType", "None")
+        SetExProp_Str(ability, "Heal_ClassType", curClassType)
 
         local valuetype = TryGetProp(skl, "ValueType", "None")
         SetExProp_Str(ability, "Heal_ValueType", valuetype)
+        
+        local classType = "Magic"
+        local attackType = "Magic"
+        local attribute = "Holy"
+        local abilCleric24 = GetAbility(self, "Cleric24")
+        if abilCleric24 ~= nil and TryGetProp(abilCleric24, "ActiveState", 0) == 1 then
+            classType = "Melee"
+            attackType = "Strike"
+            attribute = "Melee"
+        end
 
-        skl.Attribute = "Melee"
+        SetSkillOverHeat(self, TryGetProp(skl, "ClassName", "None"), 3, 1)
+        
         skl.ValueType = "Attack"
+        skl.ClassType = classType
+        skl.AttackType = attackType
+        skl.Attribute = attribute
+
+        InvalidateSkill(self, skl.ClassName)
+        SendSkillProperty(self, skl)
     end
 end
 
@@ -3018,7 +3041,11 @@ function SCR_ABIL_Cleric32_INACTIVE(self, ability)
     local skl = GetSkill(self, "Cleric_Heal")
     if skl ~= nil then
         skl.Attribute = GetExProp_Str(ability, "Heal_Attribute")
+        skl.AttackType = GetExProp_Str(ability, "Heal_AttackType")
+        skl.ClassType = GetExProp_Str(ability, "Heal_ClassType")
         skl.ValueType = GetExProp_Str(ability, "Heal_ValueType")
+
+        SetSkillOverHeat(self, TryGetProp(skl, "ClassName", "None"), 0, 1)
     end
 end
 
@@ -3580,4 +3607,178 @@ function SCR_ABIL_ALLCHANGE_CLERIC(self)
             end
         end
     end
+end
+
+function SCR_ABIL_Lama15_ACTIVE(self, ability)
+    if IsBuffApplied(self, "Lama15_Add_Buff") ~= "YES" then
+        AddBuff(self, self, "Lama15_Add_Buff", 99, 0, 0, 1);
+    end
+end
+
+function SCR_ABIL_Lama15_INACTIVE(self, ability)
+    RemoveBuff(self, "Lama15_Add_Buff")
+end
+
+function SCR_ABIL_Priest39_ACTIVE(self, ability)
+    local skill = GetSkill(self, 'Priest_Resurrection')
+    if skill ~= nil then
+        AddInstSkill(self, 'Priest_Condemn', TryGetProp(skill, 'Level', 1))
+    end
+end
+
+function SCR_ABIL_Priest39_INACTIVE(self, ability)
+    RemoveInstSkill(self, 'Priest_Condemn')
+end
+
+function SCR_ABIL_Priest41_ACTIVE(self, ability)
+    local skill = GetSkill(self, 'Priest_MassHeal')
+    if skill ~= nil then
+        AddInstSkill(self, 'Priest_Luminosity', TryGetProp(skill, 'Level', 1))
+    end
+    RemoveBuff(self, 'MassHealFreeze_Lv4_Buff')
+end
+
+function SCR_ABIL_Priest41_INACTIVE(self, ability)
+    RemoveInstSkill(self, 'Priest_Luminosity')
+    RemoveBuff(self, 'MassHealFreeze_Lv4_Atk_Buff')
+end
+
+function SCR_ABIL_CHANGE_INT_MNA_ACTIVE(self, ability)
+    Invalidate(self, 'MINMATK')
+    Invalidate(self, 'MAXMATK')
+    Invalidate(self, 'CRTMATK')
+end
+
+function SCR_ABIL_CHANGE_INT_MNA_INACTIVE(self, ability)
+    Invalidate(self, 'MINMATK')
+    Invalidate(self, 'MAXMATK')
+    Invalidate(self, 'CRTMATK')
+end
+
+function SCR_ABIL_Miko18_ACTIVE(self, ability)
+    local skill = GetSkill(self, "Miko_KaguraDance")
+    if skill ~= nil then
+        local shootTime = TryGetProp(skill, "ShootTime", 0)
+        SetExProp(ability, "Miko18_shootTime", shootTime)
+
+        local valueType = TryGetProp(skill, "ValueType", "None")
+        SetExProp_Str(ability, "Miko18_valueType", valueType)
+
+        local curClassType = TryGetProp(skill, "ClassType", "None")
+        SetExProp_Str(ability, "Miko18_classType", curClassType)
+
+        local curAttackType = TryGetProp(skill, "AttackType", "None")
+        SetExProp_Str(ability, "Miko18_attackType", curAttackType)
+
+        local curAttribute = TryGetProp(skill, "Attribute", "None")
+        SetExProp_Str(ability, "Miko18_attribute", curAttribute)
+
+        local classType = "Magic"
+        local attackType = "Magic"
+        local attribute = "Holy"
+        local abilCleric24 = GetAbility(self, "Cleric24")
+        if abilCleric24 ~= nil and TryGetProp(abilCleric24, "ActiveState", 0) == 1 then
+            classType = "Melee"
+            attackType = "Strike"
+            attribute = "Melee"
+        end
+
+        skill.ShootTime = 99999
+        skill.ValueType = "Attack"
+        skill.ClassType = classType
+        skill.AttackType = attackType
+        skill.Attribute = attribute
+        skill.CastingCategory = "channeling"
+
+        InvalidateSkill(self, skill.ClassName)
+        SendSkillProperty(self, skill)
+    end
+end
+
+function SCR_ABIL_Miko18_INACTIVE(self, ability)
+    local skill = GetSkill(self, "Miko_KaguraDance")
+    if skill ~= nil then
+        local shootTime = GetExProp(ability, "Miko18_shootTime")
+        skill.ShootTime = shootTime
+
+        local valueType = GetExProp_Str(ability, "Miko18_valueType")
+        skill.ValueType = valueType
+
+        local classType = GetExProp_Str(ability, "Miko18_classType")
+        skill.ClassType = classType
+
+        local attackType = GetExProp_Str(ability, "Miko18_attackType")
+        skill.AttackType = attackType
+
+        local attribute = GetExProp_Str(ability, "Miko18_attribute")
+        skill.Attribute = attribute
+
+        skill.CastingCategory = "cast"
+
+        InvalidateSkill(self, skill.ClassName)
+        SendSkillProperty(self, skill)
+    end
+end
+
+function SCR_ABIL_Kabbalist38_ACTIVE(self, ability)
+    local skill = GetSkill(self, "Kabbalist_TheTreeOfSepiroth")
+    if skill ~= nil then
+        local valueType = TryGetProp(skill, "ValueType", "None")
+        SetExProp_Str(ability, "Kabbalist38_valueType", valueType)
+
+        local curClassType = TryGetProp(skill, "ClassType", "None")
+        SetExProp_Str(ability, "Kabbalist38_classType", curClassType)
+
+        local curAttackType = TryGetProp(skill, "AttackType", "None")
+        SetExProp_Str(ability, "Kabbalist38_attackType", curAttackType)
+
+        local curAttribute = TryGetProp(skill, "Attribute", "None")
+        SetExProp_Str(ability, "Kabbalist38_attribute", curAttribute)
+
+        local classType = "Magic"
+        local attackType = "Magic"
+        local attribute = "Holy"
+        local abilCleric24 = GetAbility(self, "Cleric24")
+        if abilCleric24 ~= nil and TryGetProp(abilCleric24, "ActiveState", 0) == 1 then
+            classType = "Melee"
+            attackType = "Strike"
+            attribute = "Melee"
+        end
+
+        skill.ValueType = "Attack"
+        skill.ClassType = classType
+        skill.AttackType = attackType
+        skill.Attribute = attribute
+
+        InvalidateSkill(self, skill.ClassName)
+        SendSkillProperty(self, skill)
+    end
+end
+
+function SCR_ABIL_Kabbalist38_INACTIVE(self, ability)
+    local skill = GetSkill(self, "Kabbalist_TheTreeOfSepiroth")
+    if skill ~= nil then
+        local valueType = GetExProp_Str(ability, "Kabbalist38_valueType")
+        skill.ValueType = valueType
+
+        local classType = GetExProp_Str(ability, "Kabbalist38_classType")
+        skill.ClassType = classType
+
+        local attackType = GetExProp_Str(ability, "Kabbalist38_attackType")
+        skill.AttackType = attackType
+
+        local attribute = GetExProp_Str(ability, "Kabbalist38_attribute")
+        skill.Attribute = attribute
+
+        InvalidateSkill(self, skill.ClassName)
+        SendSkillProperty(self, skill)
+    end
+end
+
+function SCR_ABIL_Linker19_ACTIVE(self, ability)
+    LINK_DESTRUCT(self, 'Link_Enemy')
+end
+
+function SCR_ABIL_Linker19_INACTIVE(self, ability)
+    LINK_DESTRUCT(self, 'Link_Enemy')
 end

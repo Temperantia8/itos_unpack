@@ -260,8 +260,8 @@ return value"/>
                 <Scp Scp="SKL_TGT_BUFF_IF_NOBUFF" Client="NO" UseSleep="NO" Time="0">
                     <Str Str="ProvocationImmunity_Debuff"/>
                     <Str Str="SwashBuckling_Debuff"/>
-                    <Num Num="1"/>
-                    <Num Num="0"/>
+                    <Num Num="1" UseFunc="1" FuncTxt="return obj.Level"/>
+                    <Num Num="1"/>                    
                     <Num Num="1" UseFunc="1" FuncTxt="local buffTime = 5000 + obj.Level * 2000
                     if IsPVPField(self) == 1 then
                     buffTime = buffTime * 0.5
@@ -334,7 +334,7 @@ return value"/>
                         <Scp Scp="SKL_TGT_BUFF_IF_NOBUFF" Client="NO" UseSleep="NO" Time="100">
                             <Str Str="SwashBuckling_Expletive_Immune_Debuff"/>
                             <Str Str="SwashBuckling_Expletive_Debuff"/>
-                            <Num Num="1"/>
+                            <Num Num="1" UseFunc="1" FuncTxt="return obj.Level"/>
                             <Num Num="0"/>
                             <Num Num="0" UseFunc="1" FuncTxt="return (obj.Level * 200) + 1000"/>
                             <Num Num="1"/>

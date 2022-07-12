@@ -1,31 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ToolSkill>
     <Skill Name="Monk_Golden_Bell_Shield">
-        <MainSkl JumpFlee="NO" MSPDToUsePos="0" ScrLock="None">
+        <MainSkl ScrLock="None" JumpFlee="NO" MSPDToUsePos="0">
             <HitList>
-                <Frame Angle="0" AniTime="99999" Dist="0" ForceATK="0" HitCount="1" PosType="0" RandDist="0" RandomPerHit="0" RotAngle="0" TermMax="0" TermMin="0" Time="99799" Type="FAN"/>
+                <Frame Type="FAN" Time="99799" HitCount="1" TermMin="0" TermMax="0" PosType="0" Dist="0" RandDist="0" RandomPerHit="0" Angle="0" AniTime="99999" RotAngle="0" ForceATK="0" />
             </HitList>
             <EtcList>
-                <Scp Client="YES" Scp="C_VOICE_SOUND" Time="0" UseSleep="NO">
+                <Scp Scp="C_VOICE_SOUND" Client="YES" UseSleep="NO" Time="0">
                     <Str Str="voice_cleric_m_goldenbellshield_shot"/>
                     <Str Str="voice_cleric_goldenbellshield_shot"/>
                 </Scp>
-                <Scp Client="YES" Scp="MONSKL_C_PLAY_ANIM" Time="0" UseSleep="NO">
+                <Scp Scp="MONSKL_C_PLAY_ANIM" Client="YES" UseSleep="NO" Time="0">
                     <Str Str="SKL_GOLDEN_BELL_SHIELD_READY"/>
                     <Num Num="1"/>
                     <Num Num="1"/>
                     <Num Num="0"/>
                 </Scp>
-                <Scp Client="NO" Scp="SKL_BUFF" Time="500" UseSleep="NO">
+                <Scp Scp="SKL_BUFF" Client="NO" UseSleep="NO" Time="500">
                     <Str Str="Golden_Bell_Shield_Buff"/>
-                    <Num FuncTxt="return obj.Level" Num="1" UseFunc="1"/>
+                    <Num Num="1" UseFunc="1" FuncTxt="return obj.Level"/>
                     <Num Num="0"/>
-                    <Num Num="10000"/>
+                    <Num Num="10000" UseFunc="1" FuncTxt="
+                    local value = 10000
+                    local abilMonk27 = GetAbility(self, 'Monk27')
+                    if abilMonk27 ~= nil and TryGetProp(abilMonk27, 'ActiveState') == 1 then
+                        value = 30000
+                    end
+                    return value;
+                    "/>
                     <Num Num="1"/>
                     <Num Num="100"/>
                     <Num Num="0"/>
                 </Scp>
-                <Scp Client="YES" Scp="C_SHOCKWAVE" Time="500" UseSleep="NO">
+                <Scp Scp="C_SHOCKWAVE" Client="YES" UseSleep="NO" Time="500">
                     <Num Num="2"/>
                     <Num Num="0.30000001"/>
                     <Num Num="45"/>
@@ -33,47 +40,6 @@
                 </Scp>
             </EtcList>
         </MainSkl>
-        <ByCondSkills>
-            <SubSkl>
-                <Cond>
-                    <ToolScp Scp="SKL_SELECT_BUFF" Client="NO" UseSleep="NO">
-                        <Str Str="Golden_Bell_limit_Buff"/>
-                    </ToolScp>
-                </Cond>
-                <Skill ScrLock="None" JumpFlee="NO" MSPDToUsePos="0">
-                    <HitList>
-                        <Frame Type="FAN" Time="99799" HitCount="1" TermMin="0" TermMax="0" PosType="0" Dist="0" RandDist="0" RandomPerHit="0" Angle="0" AniTime="99999" RotAngle="0" ForceATK="0"/>
-                    </HitList>
-                    <EtcList>
-                        <Scp Scp="C_VOICE_SOUND" Client="YES" UseSleep="NO" Time="0">
-                            <Str Str="voice_cleric_m_goldenbellshield_shot"/>
-                            <Str Str="voice_cleric_goldenbellshield_shot"/>
-                        </Scp>
-                        <Scp Scp="MONSKL_C_PLAY_ANIM" Client="YES" UseSleep="NO" Time="0">
-                            <Str Str="SKL_GOLDEN_BELL_SHIELD_READY"/>
-                            <Num Num="1"/>
-                            <Num Num="1"/>
-                            <Num Num="0"/>
-                        </Scp>
-                        <Scp Scp="SKL_BUFF" Client="NO" UseSleep="NO" Time="500">
-                            <Str Str="Golden_Bell_Boom_Buff"/>
-                            <Num Num="1" UseFunc="1" FuncTxt="return obj.Level"/>
-                            <Num Num="0"/>
-                            <Num Num="30000"/>
-                            <Num Num="1"/>
-                            <Num Num="100"/>
-                            <Num Num="0"/>
-                        </Scp>
-                        <Scp Scp="C_SHOCKWAVE" Client="YES" UseSleep="NO" Time="500">
-                            <Num Num="2"/>
-                            <Num Num="0.30000001"/>
-                            <Num Num="45"/>
-                            <Num Num="999"/>
-                        </Scp>
-                    </EtcList>
-                </Skill>
-            </SubSkl>
-        </ByCondSkills>
     </Skill>
     <Skill Name="Monk_God_Finger_Flicking">
         <MainSkl ScrLock="None" JumpFlee="NO" MSPDToUsePos="0">

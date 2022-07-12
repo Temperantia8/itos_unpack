@@ -23,7 +23,7 @@ function IS_ITEM_AWAKENING_STONE(obj)
 		   or obj.ClassName == "Event_awakeningStone_15" or obj.ClassName == "Event_awakeningStone_16" or obj.ClassName == "Event_awakeningStone_18"
 		   or obj.ClassName == "Event_awakeningStone_19" or obj.ClassName == "Event_awakeningStone_20" or obj.ClassName == "Event_awakeningStone_205"
 		   or obj.ClassName == "Event_awakeningStone_33" or obj.ClassName == "Event_awakeningStone_39" or obj.ClassName == "Event_awakeningStone_limit"
-		   or obj.ClassName == "Event_awakeningStone_limit_1" then
+		   or obj.ClassName == "Event_awakeningStone_limit_1" or obj.ClassName == "Event_awakeningStone_limit_2" then
 		return true;
 	end
 

@@ -19,10 +19,15 @@ local function make_cabinet_required_item_list()
     category_list['Armor'] = 3
     category_list['Accessory'] = 1
     category_list['Ark'] = 1
-  
+    --2022/03 DY
+    category_list['Skillgem'] = 1
+    --
+    category_list['Relicgem'] = 1
     for k, v in pairs(category_list) do
         g_cabinet_required_item_list[k] = {} -- 카테고리 생성
     end
+
+
 
     -- g_cabinet_required_item_list[category][item_name][level][재료] = 개수
 
@@ -238,6 +243,58 @@ local function make_cabinet_required_item_list()
             end
         end
     end
+
+    --Skillgem 추가 : 2022/02/24 DY
+    local class_list, cnt = GetClassList("cabinet_skillgem")
+    for i=0, cnt-1 do
+        local category = 'Skillgem'
+        local entry_cls = GetClassByIndexFromList(class_list,i) -- 보관함 목록
+        
+        if entry_cls ~= nil then
+            local item_name = TryGetProp(entry_cls, 'ClassName','None')
+            local max_lv = TryGetProp(entry_cls,'MaxUpgrade',0)
+            local item_cls = GetClass('Item',item_name)
+            local acc_prop = TryGetProp(entry_cls, 'AccountProperty', 'None')
+            local acc_upgrade_prop = TryGetProp(entry_cls, 'UpgradeAccountProperty', 'None') --미사용
+   
+            --*조건 이렇게만 해도 되는지 확인해볼필요가있음*
+            if item_cls ~= nil and TryGetProp(entry_cls,'Basic',0) == 0 and (TryGetProp(item_cls,'StringArg','None'))=='SkillGem' then
+                if g_cabinet_required_item_list['Skillgem'][item_name] ==nil then
+                    g_cabinet_required_item_list['Skillgem'][item_name] = {}
+                end
+                local lv = 0 --스킬잼은 현재 업그레이드 미사용으로 lv 0 , 추후 잼 업그레이드 컨텐츠 추가될경우 위해 upgrade카테고리 보유
+                for lv=0, max_lv do
+                    if g_cabinet_required_item_list['Skillgem'][item_name][lv] ==nil then
+                        g_cabinet_required_item_list['Skillgem'][item_name][lv] ={}
+                    end
+                    g_cabinet_required_item_list['Skillgem'][item_name][lv][item_name]=1 -- 스킬잼 
+                   
+                end
+            end
+        end
+    end
+
+    local class_list,cnt = GetClassList('cabinet_relicgem')
+    for i =0,cnt -1 do
+        local entry_cls = GetClassByIndexFromList(class_list,i)
+        if entry_cls ~=nil then
+            local item_name = TryGetProp(entry_cls,'ClassName','None')
+            local max_lv    = TryGetProp(entry_cls,'MaxUpgrade',1)
+            local item_cls  = GetClass('Item',item_name)
+            if item_cls ~= nil and TryGetProp(entry_cls,'Basic',0) == 0 then
+                if g_cabinet_required_item_list['Relicgem'][item_name] == nil then
+                    g_cabinet_required_item_list['Relicgem'][item_name] = {}
+                end
+                local lv = 1
+                for lv = 1 ,max_lv do
+                    if g_cabinet_required_item_list['Relicgem'][item_name][lv] ==nil then
+                        g_cabinet_required_item_list['Relicgem'][item_name][lv] ={}
+                    end
+                    g_cabinet_required_item_list['Relicgem'][item_name][lv][item_name] = 1
+                end
+            end
+        end
+    end
 end
 
 make_cabinet_required_item_list()
@@ -251,15 +308,51 @@ function GET_ACC_UPGRADE_GROUP_PROPERTY_LIST(group)
 end
 
 function GET_REGISTER_MATERIAL(category, item_name, lv)
-    if g_cabinet_required_item_list[category] == nil then       
+ 
+    if g_cabinet_required_item_list[category] == nil then
         return nil
     end
 
-    if g_cabinet_required_item_list[category][item_name] == nil then        
+    if g_cabinet_required_item_list[category][item_name] == nil then
         return nil
     end
     
     return g_cabinet_required_item_list[category][item_name][lv]
+end
+
+-- 장비보관함 아이템 레벨 표기방식이, 성물젬은 무기나 방어구와 다르게 되어있어 호환불가
+function ITEM_CABINET_GET_RELICGEM_UPGRADE_ACC_PROP(frame,itemCls)
+	local acc = GetMyAccountObj()
+	local category = ITEM_CABINET_GET_CATEGORY(frame)
+    if category~="Relicgem" then
+        return 0
+    end
+    local clsName  = TryGetProp(itemCls,"ClassName") 
+    local id_space = 'cabinet_'..string.lower(category)
+    local cabinet_itemCls  = GetClass(id_space,clsName)
+    local upgradeAccountProp = TryGetProp(cabinet_itemCls,"UpgradeAccountProperty","None")
+	if upgradeAccountProp~='None' then
+        local propVal  = TryGetProp(acc,upgradeAccountProp)
+		return propVal
+	end
+	return 0
+end
+  
+function ITEM_CABINET_GET_RELICGEM_ACC_PROP(frame,itemCls)
+	local acc = GetMyAccountObj()
+	local category = ITEM_CABINET_GET_CATEGORY(frame)
+    if category~="Relicgem" then
+        return 0
+    end
+    local clsName  = TryGetProp(itemCls,"ClassName") 
+    local id_space = 'cabinet_'..string.lower(category)
+    local cabinet_itemCls  = GetClass(id_space,clsName)
+    local accountProp = TryGetProp(cabinet_itemCls,"AccountProperty","None")
+	if upgradeAccountProp~='None' then
+        local propVal  = TryGetProp(acc,accountProp)
+		return propVal
+	end
+	return 0
 end
 
 -- 클라에서 표기용
@@ -267,17 +360,25 @@ function GET_CABINET_ITEM_NAME(cls, acc)
     if cls == nil or acc == nil then
         return 'None'
     end
-
+    --계정에서 아이템별 업그레이드 상황을 받아온다 
     if TryGetProp(cls, 'Upgrade', 'None') == 1 then
         local name = TryGetProp(cls, 'ClassName', 'None')
-        local upgrade_property = TryGetProp(cls, 'UpgradeAccountProperty', 0)
+         --성물젬은 무기나 갑옷과 다르게 레벨별 아이템이 분류되있지 않아 젬레벨을 갱신해 표기
+        local category = TryGetProp(cls,"Category","None")
+   
+        local upgrade_property = TryGetProp(cls, 'UpgradeAccountProperty', 0) 
         local lv = TryGetProp(acc, upgrade_property, 0)
+        if category == "Relicgem" then 
+            return name 
+        end
+
         if lv <= 1 then
             return name
         else
             name = name .. '_Lv' .. lv
             return name
         end
+ 
     else
         return TryGetProp(cls, 'ClassName', 'None')
     end
@@ -287,6 +388,12 @@ end
 function GET_UPGRADE_CABINET_ITEM_NAME(cls, lv)
     if cls == nil then
         return 'None'
+    end
+    
+    -- Relicgem 은 해당 Func 미사용
+    if TryGetProp(cls,'Category','None') =="Relicgem" then
+        local name = TryGetProp(cls, 'ClassName', 'None')        
+        return name  -- Relicgem 은 무기 또는 여마신 방어구와 다르게 아이템+lv 표기로 item.xml 추가되어있지 않다. 
     end
 
     if TryGetProp(cls, 'Upgrade', 'None') == 1 then
@@ -734,6 +841,7 @@ function IS_ACCOUNT_COIN(name)
         end
     end
 end
+
 function IS_STRING_COIN(name)
     local cls = GetClass('accountprop_inventory_list', name)
     if cls == nil then

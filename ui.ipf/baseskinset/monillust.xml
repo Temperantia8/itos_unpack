@@ -188,6 +188,7 @@
 		<image name="boss_GresmeTruth" file="\icon\monster\boss\boss_GresmeTruth.png" imgrect="0 0 80 80"/>
 		<image name="boss_RevivalPaulius" file="\icon\monster\boss\boss_RevivalPaulius.png" imgrect="0 0 80 80"/>
 		<image name="boss_DelmoreCastleGate" file="\icon\monster\boss\boss_DelmoreCastleGate.png" imgrect="0 0 80 80"/>
+		<image name="boss_Jellyzele" file="\icon\monster\boss\boss_Jellyzele.png" imgrect="0 0 80 80"/>
 	</imagelist>
 	<imagelist category="Monster_icon_boss_01">
 		<image name="boss_FerretMarauder" file="\icon\monster\boss\boss_FerretMarauder.png" imgrect="0 0 80 80"/>
@@ -1627,5 +1628,7 @@
 		<image name="GresmeCrow" file="\icon\monster\mon\GresmeCrow.png" imgrect="0 0 80 80"/>
 		<image name="Bleakferret_Cannon" file="\icon\monster\mon\Bleakferret_Cannon.png" imgrect="0 0 80 80"/>
 		<image name="GresmeBird" file="\icon\monster\mon\GresmeBird.png" imgrect="0 0 80 80"/>
+		<image name="Jellyzele_seaweed" file="\icon\monster\mon\Jellyzele_seaweed.png" imgrect="0 0 80 80"/>
+		<image name="Jellyzele_UnderseaWorm" file="\icon\monster\mon\Jellyzele_UnderseaWorm.png" imgrect="0 0 80 80"/>
 	</imagelist>
 </skinset>

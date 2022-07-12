@@ -324,7 +324,7 @@
                             <Num Num="1.5"/>
                             <Num Num="0"/>
                             <Num Num="0.5"/>
-                            <Num Num="50"/>
+                            <Num Num="100"/>
                         </Scp>
                         <Scp Scp="SKL_RUN_SCRIPT" Client="NO" UseSleep="NO" Time="800">
                             <Str Str="SKL_SHIELDTRAIN_ABIL"/>

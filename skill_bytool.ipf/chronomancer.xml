@@ -62,6 +62,10 @@
 		</MainSkl>
 	</Skill>
 	<Skill Name="Chronomancer_Pass">
+        <EnableScripts>
+			<ToolScp Scp="SKL_CHECK_Chronomancer_Pass" Client="BOTH" UseSleep="NO">
+			</ToolScp>
+		</EnableScripts>
 		<MainSkl JumpFlee="NO" MSPDToUsePos="0" ScrLock="None">
 			<HitList>
 				<Frame Angle="0" AniTime="9999" Dist="0" ForceATK="0" HitCount="1" PosType="0" RandDist="0" RandomPerHit="0" RotAngle="0" TermMax="0" TermMin="0" Time="9799" Type="FAN" />
@@ -71,7 +75,7 @@
 					<Str Str="voice_war_atk_medium" />
 					<Str Str="voice_atk_medium_war_f" />
 				</Scp>
-				<Scp Client="NO" Scp="SKL_BUFF" Time="0" UseSleep="NO">
+                <Scp Client="NO" Scp="SKL_BUFF_SAME_TARGET_DEBUFF" Time="0" UseSleep="NO">
                     <Str Str="Pass_Buff" />
                     <Num FuncTxt="return obj.Level;" Num="0" UseFunc="1" />
                     <Num Num="0" />
@@ -79,15 +83,13 @@
                     <Num Num="1" />
                     <Num Num="100" />
                     <Num Num="1" />
-                </Scp>
-                <Scp Client="NO" Scp="SKL_BUFF" Time="0" UseSleep="NO">
 					<Str Str="Pass_Debuff" />
                     <Num FuncTxt="return obj.Level;" Num="0" UseFunc="1" />
                     <Num Num="0" />
                     <Num Num="40000" />
                     <Num Num="1" />
                     <Num Num="100" />
-                    <Num Num="1" />
+                    <Num Num="0" />
 					</Scp>
                 <Scp Client="YES" Scp="C_EFFECT" Time="0" UseSleep="NO">
                     <Str_Arg Arg="2" Str="F_wizard_Pass_ground" />

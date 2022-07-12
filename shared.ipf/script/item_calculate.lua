@@ -837,16 +837,20 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
         buffarg = GetExProp(item, "Rewards_BuffValue");
     end
     
-    local equipMaterial = TryGetProp(item, "Material");
+    local equipMaterial = TryGetProp(item, "Material");    
     if equipMaterial == nil then
         return 0;
     end
     
-    local classType = TryGetProp(item,"ClassType");
+    local classType = TryGetProp(item,"ClassType");    
     if classType == nil then
         return 0;
     end
     
+    if classType == 'BELT' then
+        equipMaterial = 'Leather'
+    end
+
     local itemGradeClass = GetClassList('item_grade')
     if itemGradeClass == nil then
         return 0;
@@ -890,11 +894,16 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
                 else
                     -- 상,하,장,신
                     basicDef = TryGetProp(cls, 'BasicDef', 0) * 0.25
-    
+                    if classType == 'BELT' then
+                        basicDef = TryGetProp(cls, 'BasicDef', 0) * 0.5
+                        basicDef = basicDef + TryGetProp(item, 'Additional_def', 0)                        
+                    end
+
                     local armorMaterialRatio = GetClassByNameFromList(itemGradeClass,'armorMaterial_'..basicProp)
-    
+                    if armorMaterialRatio ~= nil then                        
                     basicDef = basicDef * armorMaterialRatio[equipMaterial]
                 end
+            end
             end
             upgradeRatio = upgradeRatio + GET_UPGRADE_ADD_DEF_RATIO(item, ignoreReinfAndTranscend) / 100;
         end
@@ -911,9 +920,12 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
             end
         end
 
+        if basicProp ~= 'None' then
                 basicDef = math.floor(basicDef) * upgradeRatio + GET_REINFORCE_ADD_VALUE(basicProp, item, ignoreReinfAndTranscend, reinfBonusValue) + buffarg
+            
                 item[basicProp] = SyncFloor(basicDef);
         end
+    end
         
     if TryGetProp(item, "EquipGroup", "None") == "SubWeapon" then
         local evolvedMaxAtkUp = 0
@@ -1141,15 +1153,17 @@ function APPLY_RANDOM_OPTION(item)
         local propName = "RandomOption_"..i;
         local propValue = "RandomOptionValue_"..i;
         local getProp = TryGetProp(item, propName);
-        if getProp ~= nil and item[propValue] ~= 0 and item[propName] ~= "None" then
-            local prop = item[propName];
-            local propData = item[prop]
-            local addValue = math.floor(item[propValue] * growth_rate);
-            if addValue <= 0 then
-                -- RandomOption_i 가 None이 아니라는 것은 랜덤옵션이 존재한다는 뜻이므로 무조건 성장 비율에 대한 최소치 보정을 해준다
-                addValue = 1
+        if getProp ~= nil and item[propValue] ~= 0 and item[propName] ~= "None" then            
+            if GetClass('goddess_special_option', item[propName]) == nil then
+                local prop = item[propName];
+                local propData = item[prop]
+                local addValue = math.floor(item[propValue] * growth_rate);
+                if addValue <= 0 then
+                    -- RandomOption_i 가 None이 아니라는 것은 랜덤옵션이 존재한다는 뜻이므로 무조건 성장 비율에 대한 최소치 보정을 해준다
+                    addValue = 1
+                end
+                item[prop] = propData + addValue
             end
-            item[prop] = propData + addValue
         end
     end
 end
@@ -1581,6 +1595,7 @@ function GET_REPAIR_PRICE(item, fillValue, taxRate)
     local value;
 
     local equipGruop = TryGetProp(item, "EquipGroup", "None")
+    local defEqpSlot = TryGetProp(item, "DefaultEqpSlot", "None")
     
     if equipGruop == 'Weapon' or equipGruop == 'THWeapon' or equipGruop == 'SubWeapon' then
         local stat_weapon = GetClassByType("Stat_Weapon", lv)
@@ -1588,12 +1603,9 @@ function GET_REPAIR_PRICE(item, fillValue, taxRate)
     elseif equipGruop == 'SHIRT' or equipGruop == 'PANTS' or equipGruop == 'GLOVES' or equipGruop == 'BOOTS'then
         local stat_weapon = GetClassByType("Stat_Weapon", lv)
         value = (stat_weapon.RepairPrice_SHIRT + stat_weapon.RepairPrice_PANTS + stat_weapon.RepairPrice_GLOVES + stat_weapon.RepairPrice_BOOTS) / 4
-    elseif item.DefaultEqpSlot == 'NECK' then
+    elseif defEqpSlot == 'NECK' or defEqpSlot == 'RING' or defEqpSlot == 'BELT' then
         local stat_weapon = GetClassByType("Stat_Weapon", lv)
-        value = stat_weapon.RepairPrice_NECK;
-    elseif item.DefaultEqpSlot == 'RING' then
-        local stat_weapon = GetClassByType("Stat_Weapon", lv)
-        value = stat_weapon.RepairPrice_RING;    
+        value = stat_weapon['RepairPrice_' .. defEqpSlot]
     end
     
     local reinforceRatio = (0.01 * reinforceCount);
@@ -1879,7 +1891,12 @@ function SCR_GET_HP_COOLDOWN(item)
         end
     end
     --------------------------------------------
-  return item.ItemCoolDown;
+    local ret = IsHealControlMap(owner)
+    if ret == 1 then
+        return 100000 -- 100초
+    end
+
+    return item.ItemCoolDown;
 end
 
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.

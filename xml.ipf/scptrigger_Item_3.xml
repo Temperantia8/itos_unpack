@@ -1773,6 +1773,52 @@
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="TMAC04_118_9_Lv2">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="TMAC04_118_10_Lv2">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 	<!--바이보라 Lv3-->
 	<SpcItem Name="SWD04_126_Lv3">
 		<TriggerList Act="UnEquip">
@@ -3523,6 +3569,52 @@
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="TMAC04_118_9_Lv3">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="TMAC04_118_10_Lv3">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 	<!--바이보라 Lv4-->
 	<SpcItem Name="SWD04_126_Lv4">
 		<TriggerList Act="UnEquip">
@@ -5158,6 +5250,52 @@
 		</TriggerList>
 	</SpcItem>
 	<SpcItem Name="SWD04_126_8_Lv4">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="TMAC04_118_9_Lv4">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="TMAC04_118_10_Lv4">
 		<TriggerList Act="UnEquip">
 			<Trigger>
 				<ExecList>

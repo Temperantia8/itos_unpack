@@ -238,22 +238,6 @@ function GET_GEM_PROTECT_NEED_COUNT(gemObj)
     return TryGetProp(cls, 'NeedCount', 999999)
 end
 
--- goddess
-function SET_GODDESS_EVOLVED_EFFECT_INFO(self, guid, equip)
-    if IsServerSection() == 1 then
-        if equip == true then
-            SetAuraInfoByItem(self, guid, "Goddess_Evolved_Color_Green");
-        else
-            SetAuraInfoByItem(self, guid, "");
-        end
-    end
-end
-
-
-
-
-
-
 function SCR_PRECHECK_TEST_DUMMY_SCR_USE_SCROLL(self)
     if OnKnockDown(self) == 'YES' then
         return 0;
@@ -274,8 +258,42 @@ function SCR_PRECHECK_TEST_DUMMY_SCR_USE_SCROLL(self)
 	if sObj == nil then
 		return 0;
 	end
-
 	return 1;
 end
 
+-- goddess
+function GET_GODDESS_EVOLVED_EFFECT_FACTOR_OFFSET(item_cls)
+    local factor_offset = 0.0;
+    if item_cls ~= nil then
+        local item_class_name = TryGetProp(item_cls, "ClassName", "None");
+        if item_class_name == "EP13_Artefact_040" then
+            factor_offset = 4.0;
+        elseif item_class_name == "EP13_Artefact_039" then
+            factor_offset = 4.0;
+        elseif item_class_name == "EP13_Artefact_047" then
+            factor_offset = 2.0;
+        end
+    end
+    return factor_offset;
+end
 
+function SET_GODDESS_EVOLVED_EFFECT_INFO(self, guid, equip)
+    if IsServerSection() == 1 then
+        if equip == true then
+            local factor_offset = 0.0;
+            local item = GetEquipItemByGuid(self, guid);
+            if item ~= nil then
+                local briquetting_index = TryGetProp(item, "BriquettingIndex", 0);
+                if briquetting_index > 0 then
+                    local briquetting_item_cls = GetClassByType("Item", briquetting_index);
+                    if briquetting_item_cls ~= nil then
+                        factor_offset = GET_GODDESS_EVOLVED_EFFECT_FACTOR_OFFSET(briquetting_item_cls);
+                    end
+                end
+            end
+            SetAuraInfoByItem(self, guid, "Goddess_Evolved_Color_Green", factor_offset);
+        else
+            SetAuraInfoByItem(self, guid, "");
+        end
+    end
+end

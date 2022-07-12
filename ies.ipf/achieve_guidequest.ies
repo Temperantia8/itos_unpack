@@ -33,3 +33,4 @@ ClassID,argNum,ClassName,SubGroup,PreCheckAcieve,Category,Category_Sub,argStr,De
 320,300,"GuideQuest_6_3","GuideQuest_6","GuideQuest_5","GQ_CONTENTS","EPISODE_PRE","EP14_1_FCASTLE5_MQ_8","[퀘스트] 에피소드 14-1 클리어"
 330,14,"GuideQuest_6_4","GuideQuest_6","GuideQuest_5","GQ_EQUIP","CARD","GODDESS","[장비] 카드첩(3)"
 340,0,"GuideQuest_6_5","GuideQuest_6","GuideQuest_5","GQ_CONTENTS","RAID","","[콘텐츠] 델무어 총력전 10회 클리어"
+341,0,"GuideQuest_6_6","GuideQuest_6","GuideQuest_5","GQ_CONTENTS","RAID","","[콘텐츠] 가디스 : 가라앉는 나포선 5회 클리어"

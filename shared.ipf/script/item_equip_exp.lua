@@ -122,11 +122,16 @@ function GET_MORE_EVENT_EXP(pc)
 	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2004_FRUIT_BUFF4'); -- 축복받은 열매 4단계
 	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2004_FRUIT_BUFF5'); -- 축복받은 열매 5단계
 	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_1905_TOS_CHIILD_BUFF1'); --자라나라 나무나무 성장 버프 --
-	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_brochette'); -- 2006 여름 이벤트 맛있는 꼬치 --
-	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_mojito'); -- 2006 여름 이벤트 짜릿한 레몬아이스티 --
-	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_coconut'); -- 2006 여름 이벤트 시원한 코코넛주스 --
-	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_bingsu'); -- 2006 여름 이벤트 달달한 과일빙수 --
-	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_softice'); -- 2006 여름 이벤트 부드러운 소프트아이스크림 --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_brochette'); -- 여름 이벤트 맛있는 꼬치 경험치 증가 5% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_mojito'); -- 여름 이벤트 짜릿한 레몬아이스티 경험치 증가 5% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_coconut'); -- 여름 이벤트 시원한 코코넛주스 경험치 증가 5% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_bingsu'); -- 여름 이벤트 달달한 과일빙 경험치 증가 5%수 --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_softice'); -- 여름 이벤트 부드러운 소프트아이스크림 경험치 증가 5% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_brochette'); -- 여름 이벤트 맛있는 꼬치 경험치 증가 30% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_mojito'); -- 여름 이벤트 짜릿한 레몬아이스티 경험치 증가 30% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_coconut'); -- 여름 이벤트 시원한 코코넛주스 경험치 증가 30% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_bingsu'); -- 여름 이벤트 달달한 과일빙수 경험치 증가 30% --
+	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SUMMER_EXPUP_softice'); -- 여름 이벤트 부드러운 소프트아이스크림 경험치 증가 30% --
 	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2008_OBON_FULLMOON_BUFF'); -- jpn 추석 이벤트 보름달 버프
 	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SWEET_ZONGZI_1'); -- 2006 단쫑즈 1단계 --
 	sumExp = sumExp + IsBuffAppliedEXP(pc, 'EVENT_2006_SWEET_ZONGZI_2'); -- 2006 단쫑즈 2단계 --
@@ -180,7 +185,7 @@ function GET_MORE_EVENT_EXP(pc)
 	end
 
 	if TryGetProp(pc, 'Lv', 0) >= 450 and TryGetProp(pc, 'Lv', 0) < 460 then
-		sumExp = sumExp + 3
+		sumExp = sumExp + 6
 	end
 
 	return sumExp; 

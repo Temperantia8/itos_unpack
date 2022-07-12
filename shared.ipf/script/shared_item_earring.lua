@@ -148,11 +148,11 @@ shared_item_earring.get_max_special_option_count = function(lv)
 end
 
 shared_item_earring.is_valid_unlock_item = function(scrollObj, itemObj)
-    if TryGetProp(itemObj, 'CharacterBelonging', 0) == 0 then		
+    if TryGetProp(itemObj, 'CharacterBelonging', 0) == 0 then
 		return false, 'OnlyUseBelongingItem'
 	end
 
-	if TryGetProp(itemObj, 'ItemLv', 0) ~= TryGetProp(scrollObj, 'NumberArg1', 999) then		
+	if TryGetProp(itemObj, 'ItemLv', 0) ~= TryGetProp(scrollObj, 'NumberArg1', 999) then
 		return false, 'NotValidItem'
 	end
 
@@ -164,7 +164,7 @@ shared_item_earring.is_valid_unlock_item = function(scrollObj, itemObj)
         return true, 'None'
     end
     
-	if TryGetProp(scrollObj, 'StringArg', 'None') ~= TryGetProp(itemObj, 'ClassName', 'None') then		
+	if TryGetProp(scrollObj, 'StringArg', 'None') ~= TryGetProp(itemObj, 'ClassName', 'None') then
 		return false, 'NotValidItem'
     end
     
@@ -189,18 +189,35 @@ shared_item_earring.get_earring_grade = function(item)
     return grade
 end
 
-shared_item_earring.is_able_to_fragmetation = function(item)
-    if TryGetProp(item, 'GroupName', 'None') ~= 'Earring' then
-        return false
+shared_item_earring.get_fragmentation_count = function(item)
+    if TryGetProp(item, 'GroupName', 'None') == 'Earring' then
+        local lv = TryGetProp(item, 'ItemLv', 0)
+        local count = shared_item_earring.get_max_special_option_count(lv)
+        local grade = 0
+        for i = 1, count do
+            grade = grade + TryGetProp(item, 'EarringSpecialOptionLevelValue_' .. i, 0)
+        end
+
+        return grade
+    elseif TryGetProp(item, 'GroupName', 'None') == 'BELT' then
+        return TryGetProp(item, 'NumberArg1', 1)
     end
-    
+
+    return 1
+end
+
+shared_item_earring.is_able_to_fragmetation = function(item)    
     if TryGetProp(item, 'ClassName', 'None') == 'EP13_SampleGabijaEarring' then
         return false
     end
 
-    if TryGetProp(item, 'ItemLv', 0) < 470 then
+    if TryGetProp(item, 'UseLv', 0) < 470 then
         return false
     end
 
+    if TryGetProp(item, 'GroupName', 'None') ~= 'Earring' and TryGetProp(item, 'GroupName', 'None') ~= 'BELT' then
+        return false
+    end
+    
     return true
 end
