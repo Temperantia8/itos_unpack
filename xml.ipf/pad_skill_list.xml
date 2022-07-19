@@ -20629,7 +20629,7 @@ end"/>
             </ToolScp>
         </updateEvent>
     </PadSkill>
-    <PadSkill Name="PAULIUS_SECOND_FLOOR_FIRE_PAD" CheckerType="0" Dist="60.782455" Angle="-1.863539" Range="80" UpdateTerm="1000" AllowOverlap="1">
+    <PadSkill Name="PAULIUS_SECOND_FLOOR_FIRE_PAD" CheckerType="0" Dist="60.782455" Angle="-1.863539" Range="80" UpdateTerm="1000" AllowOverlap="1" EnableSearch="0">
         <createEvent>
             <ToolScp Scp="PAD_USEABLE_PC" Client="NO" UseSleep="NO"/>
             <ToolScp Scp="C_PAD_EFFECT_POS" Client="YES" UseSleep="NO">
