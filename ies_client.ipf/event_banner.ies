@@ -1,7 +1,7 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202207,120000,202207,170000,202208,90000,202208,40000,0,0,"inGame_E1","Goddess Glory","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2571","","","",""
-999902,202207,120000,202207,170000,202208,90000,202208,40000,0,0,"inGame_E2","[Special] Lama Package","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2573","","","",""
-999903,202207,120000,202207,170000,202208,160000,202208,110000,0,0,"inGame_E3","Summer Festa","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2570","","","",""
-999904,202207,50000,202207,100000,202207,190000,202207,140000,0,0,"inGame_E4","Leticia's Secret Cube","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2568","","","",""
+999901,202207,260000,202207,310000,202208,160000,202208,110000,0,0,"inGame_E1","[Special] Ocean Depths Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2581","","","",""
+999902,202207,120000,202207,170000,202208,230000,202208,180000,0,0,"inGame_E2","Goddess Glory","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2571","","","",""
+999903,202207,120000,202207,170000,202208,90000,202208,40000,0,0,"inGame_E3","[Special] Lama Package","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2573","","","",""
+999904,202207,120000,202207,170000,202208,160000,202208,110000,0,0,"inGame_E4","Summer Festa","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2570","","","",""
 999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2566","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"
