@@ -11,8 +11,8 @@ end
 -- 왕국 재건단 보급관 NPC 생성 및 입구로 돌아가는 시간 늘리는 인던 
 local npcmgamelist = {"ID_ZACHA_MINI", "ID_CMINE_MINI", "ID_HUEVILLAGE_MINI", "ID_CATACOMB_MINI", 
 "ID_CASTLE_03_MINI", "ID_SIAULIAI_MINI", "ID_ROKAS_MINI", "CHALLENGE_AUTO_HARD", "LEGEND_RAID_GILTINE_AUTO", "UNDERAQUEDUCT_MGAME", "IRREDIAN1131_SRAID_C",
-"MYTHIC_STARTOWER_MINI_AUTO","MYTHIC_FIRETOWER_MINI_AUTO","MYTHIC_CASTLE_MINI_AUTO", "Goddess_Raid_Delmore_Auto", "Goddess_Raid_Vasilissa_Auto"
-};
+ "Goddess_Raid_Delmore_Auto", "Goddess_Raid_Vasilissa_Auto"
+,"Goddess_Raid_Jellyzele_Auto"};
 function IS_EVENT_2101_SUPPLY_NPC_CREATE_CONTENT(mgameName)
     for k, v in pairs(npcmgamelist) do 
         if v == mgameName then

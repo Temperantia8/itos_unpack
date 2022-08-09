@@ -1,7 +1,4 @@
 ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeeklyCount,ClassName,Category,SubCategory,ItemClassName,Job,SellStartTime,SellEndTime,WarningMsg,BonusItemName,BonusOnlySeasonServer,AccountLimitWeeklyCountProperty,ItemSocial,buyOptionFunc
-1,79,0,210506,1,0,0,"ClassName1","TP_Premium","TP_Package","UnlockQuest_OverAchieveClear_Char4_22_Job","","2022-04-28 09:00:00","2022-08-26 06:00:00","NO","","NO","","",""
-2,149,0,210505,1,0,0,"ClassName2","TP_Premium","TP_Package","lama_standard_class_pack","","2022-04-28 09:00:00","2022-08-26 06:00:00","NO","","NO","","",""
-3,610,0,210504,1,0,0,"ClassName3","TP_Premium","TP_Package","lama_complete_class_pack","","2022-04-28 09:00:00","2022-08-26 06:00:00","NO","","NO","","",""
 4,549,0,220701,5,0,0,"ClassName4","TP_Premium","TP_Package","GLOBAL_202207package_Entrance","","2022-04-28 09:00:00","2022-08-26 06:00:00","NO","","NO","","",""
 5,229,0,220702,5,0,0,"ClassName5","TP_Premium","TP_Package","GLOBAL_202207package_Relic","","2022-04-28 09:00:00","2022-08-26 06:00:00","NO","","NO","","",""
 6,179,0,220703,5,0,0,"ClassName6","TP_Premium","TP_Package","GLOBAL_202207package_Reinforce","","2022-04-28 09:00:00","2022-08-26 06:00:00","NO","","NO","","",""

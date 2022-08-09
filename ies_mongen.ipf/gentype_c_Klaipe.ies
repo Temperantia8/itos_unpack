@@ -80,6 +80,7 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5246,5246,1,20,1,1,1,2,0,0,0,0,0,"Board3_Event","이벤트 게시판","","","","MON_DUMMY","","","EVENT_YOUR_MASTER_NPC","","","No","YES","NO","Neutral","","","",""
 5252,10090,1,40,1,1,1,2,0,0,0,0,0,"npc_Ragana_shop","[마신의 유혹]{nl}마신 라가나의 환영","","","","","","SHOP_NPC_RAGANA_CITY_AI","SHOP_NPC_RAGANA_CITY_1","","","NO","YES","NO","Neutral","","","",""
 5258,10095,1,40,1,1,1,2,0,0,0,0,0,"npc_huevill_female_1_Ev","[5주년] 특별한 케도라 상인","","","","","","","EVENT_2011_5TH_NPC","","","NO","YES","NO","Neutral","","","",""
+5262,10099,1,40,1,1,1,2,0,0,0,0,0,"Event_supply_NPC_2","[이벤트] 왕국 재건단{nl}수습 보급병","","","","","","","EVENT_2101_SUPPLY_NPC5","","","NO","YES","NO","Neutral","","","",""
 5263,5263,1,40,1,1,1,2,0,0,0,0,0,"Ev_Npc_baby_marnoks","[신년맞이 이벤트] 말순이","","","","","","","EVENT_2101_NEW_YEAR_NPC","","","NO","YES","NO","Neutral","","","",""
 5265,10101,1,40,1,1,1,2,0,0,0,0,0,"reputation_Board1","[왕국 재건단] 게시판","","","","","","","REPUTATION_QUEST_BOARD_01","","","NO","YES","NO","Neutral","","","",""
 5275,5275,1,40,-1,60000,1,0,0,1,0,0,1,"HiddenTrigger6","UnvisibleName","","","","LETICIA_ALARM","","","","","","NO","YES","NO","Neutral","","","",""

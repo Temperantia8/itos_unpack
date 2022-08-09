@@ -37,3 +37,4 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 1010,1010,1,40,1,60000,35,0,0,0,0,0,0,"saugumas_defender","","","","","","","","","","","NO","YES","NO","Monster","SmartGen","","",""
 1011,1011,1,80,1,60000,2,0,0,0,0,0,0,"saugumas_guardion","","","","","","","","","","","NO","YES","NO","Monster","","","",""
 1012,1012,1,40,1,60000,1,0,0,0,0,0,0,"magical_bomb","UnvisibleName","","","","","","","","EP13_F_SIAULIAI_4_BOMB","","NO","YES","NO","Neutral","","","",""
+1013,1013,1,40,1,60000,1,0,0,0,0,0,0,"hidden_monster4","UnvisibleName","","","","","","EVENT_2101_SUPPLY_NPC3_1_CREAT_AI","","","","NO","YES","NO","Neutral","","","",""

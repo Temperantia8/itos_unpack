@@ -63,6 +63,7 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5233,5233,1,40,-1,1,1,0,0,0,0,0,0,"fishing_sign","","","","","","","","KLAPEDA_FISHING_BOARD","","","NO","YES","NO","Neutral","","","",""
 5234,5234,1,1,-1,1,1,2,0,0,0,0,0,"Event_FishingBox","[낚시 상점]{nl}요하의 살림통","","","","","","","FISHING_SUB_NPC","","","NO","YES","NO","Neutral","","","",""
 5237,5237,1,40,1,1,1,2,0,0,0,0,0,"npc_huevill_female_1_Ev","[5주년] 특별한 케도라 상인","","","","","","","EVENT_2011_5TH_NPC","","","NO","YES","NO","Neutral","","","",""
+5241,5241,1,40,1,1,1,2,0,0,0,0,0,"Event_supply_NPC_2","[이벤트]왕국 재건단{nl}수습 보급병","","","","","","","EVENT_2101_SUPPLY_NPC5","","","NO","YES","NO","Neutral","","","",""
 5242,5242,1,40,1,1,1,2,0,0,0,0,0,"Ev_Npc_baby_marnoks","[신년맞이 이벤트] 말순이","","","","","","","EVENT_2101_NEW_YEAR_NPC","","","NO","YES","NO","Neutral","","","",""
 5239,5239,1,1,-1,1,1,2,0,0,0,100,0,"event_2001_cat","낚시터 고양이","","","","","","","EVENT_2006_SUMMER_CAT","","","NO","YES","NO","Neutral","","","",""
 5244,5244,1,40,1,1,1,2,0,0,1,0,0,"npc_city_alchemist","[전문 알케미스트]{nl}쿼바스트","","","","","","","ALCHEIST_EXPERT_NPC_FEDIMIAN","","","NO","YES","NO","Neutral","","","",""
