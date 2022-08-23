@@ -3777,6 +3777,16 @@
 			</Creation>
 		</Layer>
 	</ItemList>
+	<ItemList ItemClassName="EP14_Artefact_013">
+		<Layer effect="F_breath007_fire2" TargetNode="Dummy_effect_fire" scale="0.8" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="NO" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
 </List>
 <!--프로퍼티 설명
 

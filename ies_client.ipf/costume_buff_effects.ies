@@ -45,3 +45,4 @@ ClassID,ClassName,Name,ShowEffect,EffectName
 4704,"ITEM_EFFECT_ZANAS","자나스 이펙트","NO","E_effect_zanas"
 4706,"ITEM_EFFECT_ep13athleisure","머슬 업 이펙트","NO","F_pc_effectitem_muscle"
 4717,"ITEM_EFFECT_ep14fivebird","불사조의 비상 이펙트","NO","E_pc_effectitem_fivebird001"
+4719,"ITEM_EFFECT_Effect_twn6th_bubble","버블티 포포리온 이펙트","NO","F_pc_effectitem_bubbletea"

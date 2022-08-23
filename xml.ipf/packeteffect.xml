@@ -855,6 +855,9 @@
         <Effect Name="TheTreeOfSepiroth_Abil_Pad"/>
         <Effect Name="Cleric_Romuva_abil2"/>
         <Effect Name="Cleric_Laima_abil"/>
+        <Effect Name="skl_eff_pet_ep14rider_ride_on"/>
+        <Effect Name="skl_eff_pet_ep14rider_idl_2sec"/>
+        <Effect Name="skl_eff_pet_ep14rider_run_2sec"/>
     </Category>
     <Category ID="187">
         <Effect Name="F_bg_boil002"/>

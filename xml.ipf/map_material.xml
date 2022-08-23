@@ -657,4 +657,14 @@
 			<Particle From="F_pc_run_blank_dummy" To="F_pc_effectitem_catagnan_ride" Scale="1" ForceConvert="NO"/>
 		</Anim>
 	</Material>
+	<Material ID="38" Name="ridepet_ep14rider" KorName="토스 데이비슨" MaterialItem="None">
+		<Anim Name="LAND">
+			<Particle From="F_pc_jump_smoke" To="F_pc_jump_smoke" Scale="1" ForceConvert="NO"/>
+			<Sound From="pc_war_jump_2" To="skl_eff_pet_ep14rider_landing"/>
+		</Anim>
+		<Anim Name="JUMP">
+			<Particle From="F_pc_jump_smoke" To="F_pc_jump_smoke" Scale="0.6" ForceConvert="NO"/>
+			<Sound From="pc_war_jump" To="skl_eff_pet_ep14rider_jump"/>
+		</Anim>
+	</Material>
 </Map_materials>
