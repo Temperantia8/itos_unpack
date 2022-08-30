@@ -1,7 +1,8 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202208,230000,202208,280000,202209,200000,202209,150000,0,0,"inGame_E1","[Special] Oreoreo Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2595","","","",""
-999902,202208,230000,202208,280000,202210,40000,202209,300000,0,0,"inGame_E2","Goddess Glory: TOS METAL","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2605","","","",""
-999903,202208,90000,202208,140000,202209,130000,202209,80000,0,0,"inGame_E3","Kingdom Reconstruction's Supply","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2592","","","",""
-999904,202207,120000,202207,170000,202208,230000,202208,180000,0,0,"inGame_E4","Goddess Glory","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2571","","","",""
+999901,202208,300000,202209,40000,202209,130000,202209,80000,0,0,"inGame_E1","Leticia's Secret Cube","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2610","","","",""
+999902,202208,230000,202208,280000,202209,200000,202209,150000,0,0,"inGame_E2","[Special] Oreoreo Package","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2595","","","",""
+999903,202208,230000,202208,280000,202210,40000,202209,300000,0,0,"inGame_E3","Goddess Glory: TOS METAL","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2605","","","",""
+999904,202208,90000,202208,140000,202209,130000,202209,80000,0,0,"inGame_E4","Kingdom Reconstruction's Supply","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2592","","","",""
+999905,202207,120000,202207,170000,202208,230000,202208,180000,0,0,"inGame_E5","Goddess Glory","inGame_E5","https://treeofsavior.com/page/news/view.php?n=2571","","","",""
 999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2588","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"
