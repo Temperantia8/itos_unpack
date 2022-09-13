@@ -12,3 +12,4 @@ ClassID,ParamU,ParamV,PlayTime,FrameCnt,ClassName,AnimType,Path,MaskTex,TargetMa
 11,-0.030000,0,1,1,"wing_froster_lord","Translation","char_texture\npc\wing_froster_lord\","aura4.dds","Tex01"
 12,0.300000,0,1,1,"policeline001.xac","Translation","item_texture\","mask_1.dds","Tex01"
 13,-0.200000,-0.200000,1,1,"wing_summer_wave","Translation","char_texture\npc\wing_summer_wave\","mask.dds","test01"
+14,0,0.400000,1,1,"wing_vakarine","Translation","char_texture\npc\wing_vakarine\","mask.dds","test01"

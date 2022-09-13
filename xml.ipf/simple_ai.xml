@@ -6707,13 +6707,6 @@
             </ToolScp>
         </StartList>
     </AI>
-    <AI Name="EVENT_2101_SUPPLY_PORTAL_AI" UpdateMS="1000" ActiveMessageMapInBattle="1">
-        <List>
-            <ToolScp Scp="SAI_FUNC_DIRECT" Client="NO" UseSleep="NO">
-                <Str Str="EVENT_2101_SUPPLY_NPC_PORTAL_UPDATE"/>
-            </ToolScp>
-        </List>
-    </AI>
     <AI Name="EVENT_CURSED_COAST_POTAL" ActiveMessageMapInBattle="1">
         <StartList>
             <ToolScp Scp="S_AI_EFFECT_ATTACH" Client="NO" UseSleep="NO">

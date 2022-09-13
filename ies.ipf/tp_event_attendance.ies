@@ -24,3 +24,4 @@ ClassID,TotalNumberDays,ClassName,Name,AttendancePass,StartTime,EndTime
 124,7,"Event_Attendance_GR","성장 지원 출석체크","NO","2021-07-08 00:09:00","2022-07-08 00:09:00"
 125,30,"EventUserSupport","신규/복귀 유저 정착 지원","NO","",""
 126,5,"202203ArborDay","식목일 접속 이벤트","NO","2022-05-11 06:00:00","2022-05-17 06:00:00"
+131,7,"Event2209GmAttendance","GM 깜짝 선물 상자 이벤트","NO","2022-09-13 00:00:00","2022-09-20 00:00:00"

@@ -12115,6 +12115,12 @@
 		<image name="inesa_emoticon135" file="\icon\emoticon\inesa_emoticon01.png" imgrect="0 0 128 128"/>
 		<image name="inesa_emoticon136" file="\icon\emoticon\inesa_emoticon02.png" imgrect="0 0 128 128"/>
 		<image name="inesa_emoticon137" file="\icon\emoticon\inesa_emoticon03.png" imgrect="0 0 128 128"/>
+		<image name="Mulia_emotion138" file="\icon\emoticon\Mulia_emotion03.png" imgrect="0 0 128 128"/>
+		<image name="Mulia_emotion139" file="\icon\emoticon\Mulia_emotion04.png" imgrect="0 0 128 128"/>
+		<image name="Mulia_emotion140" file="\icon\emoticon\Mulia_emotion05.png" imgrect="0 0 128 128"/>
+		<image name="Mulia_emotion141" file="\icon\emoticon\Mulia_emotion06.png" imgrect="0 0 128 128"/>
+		<image name="Mulia_emotion142" file="\icon\emoticon\Mulia_emotion07.png" imgrect="0 0 128 128"/>
+		<image name="Mulia_emotion143" file="\icon\emoticon\Mulia_emotion08.png" imgrect="0 0 128 128"/>
 	</imagelist>
 	<imagelist category="itemtooltip_image">
 		<image name="circle_gem" file="\skin\tooltip_skin_3.tga" imgrect="805 228 30 30"/>

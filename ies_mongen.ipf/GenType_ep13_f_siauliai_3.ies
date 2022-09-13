@@ -116,4 +116,3 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 1098,1098,1,200,1,1,1,0,0,0,1,0,0,"noshadow_npc","UnvisibleName","","","","","","","","EP13_F_SIAULIAI_3_HQ_01_TRG_1","","NO","YES","NO","Neutral","","","",""
 1099,1099,1,50,1,0,1,2,0,0,1,0,0,"Warp_arrow","아샤크 지하 감옥 2층","","","","MON_DUMMY","","","","WARP_EP13_F_SIAULIAI_3_TO_EP13_2_D_PRISON_2","","NO","YES","NO","Neutral","","","",""
 1101,1101,1,40,1,1,1,0,0,0,0,0,0,"noshadow_npc","거대 크루비나 장벽","","","","MON_DUMMY","","","EP13_2_DPRISON2_MQ_NPC_1","","","NO","YES","NO","Neutral","","","",""
-1102,1102,1,40,1,1,1,0,0,0,0,0,0,"hidden_monster4","UnvisibleName","","","","","","EVENT_2101_SUPPLY_NPC3_1_CREAT_AI","","","","NO","YES","NO","Neutral","","","",""

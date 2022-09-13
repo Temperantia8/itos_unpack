@@ -44,4 +44,3 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 1046,1046,1,40,1,60000,1,1,0,0,0,0,0,"Hiddennpc_Q2","성자의 기도소","","","","","","PORTAL_GREEN","GODDESS_RAID_VASILISSA_PORTAL","","","NO","YES","NO","Neutral","","","",""
 1047,1047,1,40,1,60000,1,2,0,0,0,0,0,"npc_Arbalester_master","[아발리스터 마스터]{nl}빌리우스","","","","","","","MASTER_ARBALESTER_NPC","","","NO","YES","NO","Neutral","","","",""
 1048,1048,1,20,1,60000,1,0,0,0,1,0,0,"HiddenTrigger4","UnvisibleName","","","","","","","","EXPLORER_MISLE12","","NO","YES","NO","Neutral","","","",""
-1049,1049,1,40,1,1,1,0,0,0,0,0,0,"hidden_monster","UnvisibleName","","","","","","EVENT_2101_SUPPLY_NPC3_1_CREAT_AI","","","","NO","YES","NO","Neutral","","","",""

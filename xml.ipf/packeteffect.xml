@@ -1613,6 +1613,7 @@
         <Effect Name="EP14_2_DCASTLE3_MQ_4_MINI"/>
         <Effect Name="EP14_2_DCASTLE3_MQ_3_MINI"/>
         <Effect Name="EP14_2_DCASTLE3_MQ_5_MINI"/>
+        <Effect Name="F_wizard_dirtywall_shot_1"/>
     </Category>
     <Category ID="144">
         <Effect Name="F_pc_CardBook_ground_dark"/>
@@ -8598,6 +8599,10 @@
         <Effect Name="EP14_2_DCASTLE2_MQ_7"/>
         <Effect Name="skl_Impaler_arun"/>
         <Effect Name="F_wizard_DivinePunishment_hit"/>
+        <Effect Name="I_cleric_StormCalling_force3#Dummy_effect_darksight"/>
+        <Effect Name="Goddess_Raid_Spreader_Solo"/>
+        <Effect Name="Goddess_Raid_Spreader_Party"/>
+        <Effect Name="Goddess_Raid_Spreader_Auto"/>
     </Category>
     <Category ID="27">
         <Effect Name="SAPPER_TRAP_Sapper_BroomTrap"/>
