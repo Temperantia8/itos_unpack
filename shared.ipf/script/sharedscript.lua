@@ -4156,3 +4156,68 @@ function CONTENTS_ALERT_GET_CUTLINE(contentsID)
 
     return gearScore, level
 end
+
+
+-- 통합 서버 & 시즌 서버 컨텐츠 시간 제한
+-- 낚시, 콜로니전
+function CHECK_FISHING_AND_COLONY_RESTRICT_TIME(self)
+    local time = nil;
+    if IsServerSection() == 1 then time = GetDBTime();
+    else time = geTime.GetServerSystemTime(); end
+    if time ~= nil then
+        local month = time.wMonth;
+        local day = time.wDay;
+        local hour = time.wHour;
+        if IS_SEASON_SERVER(self) == "YES" then
+            if month == 7 then
+                if day >= 18 and day < 28 then
+                    return true;
+                end
+                if day == 28 and hour < 12 then 
+                    return true;
+                end
+            end
+        else
+            if month == 7 then
+                if day >= 4 and day < 14 then
+                    return true;
+                end
+                if day == 14 and hour < 12 then 
+                    return true;
+                end
+            end
+        end
+    end
+    return false;
+end
+
+-- 봉쇄전, 베르니케, 영웅담, 주간 보스 레이드, 델무어 격전지 & 여신의 전언 순례자
+function CHECK_INDUN_CONTENTS_RESTRICT_TIME(self)
+    local time = nil;
+    if IsServerSection() == 1 then time = GetDBTime();
+    else time = geTime.GetServerSystemTime(); end
+    if time ~= nil then
+        local month = time.wMonth;
+        local day = time.wDay;
+        local hour = time.wHour;
+        if IS_SEASON_SERVER(self) == "YES" then
+            if day >= 25 and day < 28 then
+                return true;
+            end
+            if day == 28 and hour < 12 then
+                return true;
+            end
+        else
+            if month == 9 then
+                if day == 19 and hour >= 6 then
+                    return true;
+                end
+
+                if day == 20 and hour < 1 then
+                    return true;
+                end
+            end
+        end
+    end
+    return false;
+end

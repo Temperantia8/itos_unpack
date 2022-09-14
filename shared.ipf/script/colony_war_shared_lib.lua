@@ -31,7 +31,12 @@ end
 
 function IS_COLONY_SPOT(mapClassName)
     local cls = GetClass("SharedConst", "COLONY_WAR_OPEN");
-    local curValue = TryGetProp(cls, "Value")
+    local curValue = TryGetProp(cls, "Value");
+
+    if CHECK_FISHING_AND_COLONY_RESTRICT_TIME() == true then
+        curValue = 0
+    end
+
     if curValue == 0 then
         return false;
     end
