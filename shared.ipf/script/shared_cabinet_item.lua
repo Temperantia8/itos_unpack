@@ -877,6 +877,9 @@ local cabinet_armor_list_type = nil
 local cabinet_item_acc_list = nil
 local cabinet_acc_list_type = nil
 
+local cabinet_item_luci_acc_list = nil
+local cabinet_luci_acc_list_type = nil
+
 local cabinet_item_ark_list = nil
 local cabinet_ark_list_type = nil
 
@@ -901,6 +904,10 @@ function init_cabinet_item_armor_list()
 end
 function init_cabinet_item_acc_list()
     if cabinet_item_acc_list ~= nil then
+        return
+    end
+
+    if cabinet_item_luci_acc_list ~= nil then
         return
     end
 
@@ -930,6 +937,34 @@ function init_cabinet_item_acc_list()
     cabinet_item_acc_list['piktis'] = {}
     table.insert(cabinet_item_acc_list['piktis'], 'EP12_NECK05_HIGH_005')
     table.insert(cabinet_item_acc_list['piktis'], 'EP12_BRC05_HIGH_005')
+
+    cabinet_luci_acc_list_type = {'isgariti_2', 'juoda_2', 'kantrybe_2', 'triukas_2', 'predeti_2', 'piktis_2'}
+    cabinet_item_luci_acc_list = {}
+
+    cabinet_item_luci_acc_list['isgariti_2'] = {}
+    table.insert(cabinet_item_luci_acc_list['isgariti_2'], 'EP12_NECK06_HIGH_002')
+    table.insert(cabinet_item_luci_acc_list['isgariti_2'], 'EP12_BRC06_HIGH_002')
+
+    cabinet_item_luci_acc_list['juoda_2'] = {}
+    table.insert(cabinet_item_luci_acc_list['juoda_2'], 'EP12_NECK06_HIGH_001')
+    table.insert(cabinet_item_luci_acc_list['juoda_2'], 'EP12_BRC06_HIGH_001')
+
+    cabinet_item_luci_acc_list['kantrybe_2'] = {}
+    table.insert(cabinet_item_luci_acc_list['kantrybe_2'], 'EP12_NECK06_HIGH_003')
+    table.insert(cabinet_item_luci_acc_list['kantrybe_2'], 'EP12_BRC06_HIGH_003')
+
+    cabinet_item_luci_acc_list['triukas_2'] = {}
+    table.insert(cabinet_item_luci_acc_list['triukas_2'], 'EP12_NECK06_HIGH_005')
+    table.insert(cabinet_item_luci_acc_list['triukas_2'], 'EP12_BRC06_HIGH_005')
+
+    cabinet_item_luci_acc_list['predeti_2'] = {}
+    table.insert(cabinet_item_luci_acc_list['predeti_2'], 'EP12_NECK06_HIGH_006')
+    table.insert(cabinet_item_luci_acc_list['predeti_2'], 'EP12_BRC06_HIGH_006')
+
+    cabinet_item_luci_acc_list['piktis_2'] = {}
+    table.insert(cabinet_item_luci_acc_list['piktis_2'], 'EP12_NECK06_HIGH_004')
+    table.insert(cabinet_item_luci_acc_list['piktis_2'], 'EP12_BRC06_HIGH_004')
+
 end
 function init_cabinet_item_ark_list()
     if cabinet_item_ark_list ~= nil then
@@ -979,6 +1014,21 @@ function GET_CABINET_ITEM_ACC_TYPE_LIST()
 end
 function GET_CABINET_ITEM_ACC_LIST(name)
     return cabinet_item_acc_list[name]
+end
+
+function GET_CABINET_LUCI_ACC_INDEX(type)
+    for i = 1, #cabinet_armor_list_type do
+        if cabinet_luci_acc_list_type[i] == type then
+            return i
+        end
+    end
+    return 0
+end
+function GET_CABINET_ITEM_LUCI_ACC_TYPE_LIST()
+    return cabinet_luci_acc_list_type
+end
+function GET_CABINET_ITEM_LUCI_ACC_LIST(name)
+    return cabinet_item_luci_acc_list[name..'_2']
 end
 
 function GET_CABINET_ARK_INDEX(type)
@@ -1103,6 +1153,32 @@ function IS_VALID_CREATE_CABINET_ITEM_ACC2_OPEN(acc, type)
     end
     
     return 0
+end
+
+--루시페리 개방권 전용
+function IS_VALID_CABINET_ITEM_LUCI_ACC_OPEN(acc, type)
+    local list = GET_CABINET_ITEM_ACC_LIST(type)
+    if list == nil then
+        return 0, 'NotValidItem'
+    end
+
+    for _, v in pairs(list) do
+        local cls = GetClass('cabinet_accessory', v)
+        if cls == nil then
+            return 0, 'NotValidItem'
+        end
+        local prop = TryGetProp(cls, 'AccountProperty', 'None')
+        local prop_2 = TryGetProp(cls, 'UpgradeAccountProperty', 'None')
+        if prop == 'None' or prop_2 == 'None' then
+            return 0, 'NotValidItem'
+        end
+
+        if TryGetProp(acc, prop_2, 0) == 2 then
+            return 0
+        end
+    end
+    
+    return 1
 end
 
 function IS_VALID_CABINET_ITEM_ARK_OPEN(acc, type)

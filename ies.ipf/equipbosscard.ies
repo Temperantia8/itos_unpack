@@ -213,3 +213,4 @@ ClassID,ConditionArg4,ClassName,UseType,ValueType,PropertyType,ConditionScp,Cond
 212,0,"Legend_card_Vasilisa","Always","StarCount","","","","","","SCR_CARDEFFECT_ADD_BUFF_STARVALUE_PC","CARD_VASILISA_PRE_BUFF","","0","보스를 제외한 몬스터 대상 최종 대미지 증가{@st66d_y}{s16}[%d]{/}{/}%%, 받는 피해 감소{@st66d_y}{s16}[%d]{/}{/}%% ","1.5/1"
 213,0,"Legend_card_RevivalPaulius","BeforeAttack","StarCount","","","","","","SCR_CARDEFFECT_ATTACK_FINALHITRATE","","","5","명중 확률 +{@st66d_y}{s16}[%d]{/}{/}%% 증가","5"
 214,0,"Legend_card_Jellyzele","BeforeAttack","StarCount","","","","","","SCR_CARDEFFECT_ATTACK_FINALHITBLOCKBREAK","","","5","블록 관통 확률 +{@st66d_y}{s16}[%d]{/}{/}%% 증가","5"
+215,0,"Legend_card_Spreader","BeforeAttack","StarCount","","","","","","SCR_CARDEFFECT_ATTACK_FINALHITBLOCKRATE","","","3","블록 확률 +{@st66d_y}{s16}[%d]{/}{/}%% 증가","3"

@@ -71,6 +71,10 @@ function IS_TRANSCEND_ABLE_ITEM(obj)
         return 0
     end
 
+    if TryGetProp(obj, 'ItemGrade', 0) >= 6 and TryGetProp(obj, 'UseLv', 0) >= 470 then
+        return 0
+    end
+
     return 1;
 end
 

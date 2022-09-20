@@ -482,14 +482,8 @@ return value"/>
                     <Pos Angle="0" Dist="0"/>
                     <Num Num="45"/>
                     <Num Num="130"/>
-                    <Num Num="1" UseFunc="1" FuncTxt="local cnt1 = math.min(4 + math.floor(TryGetProp(self, 'SR', 0) / 3), 10);
-                    local cnt2 = math.min(4 + math.floor(TryGetProp(self, 'SR', 0) / 2), 10);
-                    if IsPVPField(self) == 1 and cnt1 > 2 then
-                    cnt1 = math.floor((math.max(0, cnt1-2)^0.5))+math.min(2, cnt1)
-                    end
-                    if IsPVPField(self) == 1 and cnt2 > 2 then
-                    cnt2 = math.floor((math.max(0, cnt2-2)^0.5))+math.min(2, cnt2)
-                    end
+                    <Num Num="1" UseFunc="1" FuncTxt="local cnt1 = SCR_GET_Fanning_Ratio2(obj)
+                    local cnt2 = SCR_GET_Fanning_Ratio(obj)
                     return IMCRandom(cnt1, cnt2)"/>
                     <Str Str="ENEMY"/>
                     <Num Num="1"/>

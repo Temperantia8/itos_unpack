@@ -266,3 +266,6 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 1248,1248,1,60,1,30000,1,0,0,0,1,0,0,"TransmutationSoldier","","","","","","","","","","","NO","YES","NO","Monster","","","",""
 1249,1249,1,60,1,30000,1,0,0,0,1,0,0,"TransmutationSoldier","","","","","","","","","","","NO","YES","NO","Monster","","","",""
 1250,1250,1,60,1,30000,1,0,0,0,1,0,0,"TransmutationSoldier","","","","","","","","","","","NO","YES","NO","Monster","","","",""
+1251,1251,1,40,1,60000,1,1,0,0,0,0,0,"Hiddennpc_Q2","반대편으로 넘어가기","","","","MON_DUMMY","","PORTAL_BLUE","EP14_2_PORTAL1","","","NO","YES","NO","Neutral","","","",""
+1252,1252,1,40,1,60000,1,1,0,0,0,0,0,"Hiddennpc_Q2","반대편으로 넘어가기","","","","MON_DUMMY","","PORTAL_BLUE","EP14_2_PORTAL2","","","NO","YES","NO","Neutral","","","",""
+1253,1253,1,100,1,1,1,2,0,0,0,0,0,"Warp_arrow","델무어 대합실 ","","","","","","","","WARP_EP14_1_F_CASTLE_5_TO_EP14_2_D_CASTLE_1","","NO","YES","NO","Neutral","","","",""

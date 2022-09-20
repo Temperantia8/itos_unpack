@@ -107,3 +107,25 @@ function EVENT_STAMP_IS_HIDDEN_SUMMER(aObj,num)
 	end
 	return false
 end
+
+
+function EVENT_STAMP_GET_RECEIVABLE_REWARD_COUNT(aObj)
+	local clsList, cnt = GetClassListByProp('note_eventlist', 'Group', 'REGULAR_EVENT_STAMP_TOUR')
+	local rewardCnt = 0
+	for j = 1, cnt do
+		local cls = clsList[j]
+		for i = 1, 3 do
+			local clearprop = TryGetProp(cls, "ClearProp"..i, 'None');
+			local clear = TryGetProp(aObj, clearprop, 'false');
+			local checkprop = TryGetProp(cls, "CheckProp"..i, 'None');
+			local proplist = StringSplit(checkprop, "/");
+			local propname = proplist[1];
+			local goalcnt = proplist[2];
+			local curcnt = TryGetProp(aObj, propname, 0);
+			if clear ~= 'true' and tonumber(goalcnt) <= tonumber(curcnt) then
+				rewardCnt = rewardCnt + 1
+			end
+		end
+	end
+	return rewardCnt
+end

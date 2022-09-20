@@ -80,3 +80,5 @@ ClassID,minLv,maxLv,dropRatio,ClassName,Name,ServerMsg,EventCompositon,Dropable,
 79,420,450,2,"SWD04_126_8","바이보라 비전 - 라쓰","NO","NO","YES","Barbarian"
 80,420,450,2,"TMAC04_118_9","바이보라 비전 - 공공진결","NO","NO","YES","Lama"
 81,420,450,2,"TMAC04_118_10","바이보라 비전 - 숲의 영혼","NO","NO","YES","Druid"
+82,420,450,2,"MAC04_129_4","바이보라 비전 - 아우라","NO","NO","YES","Oracle"
+83,420,450,2,"MAC04_129_5","바이보라 비전 - 갈망","NO","NO","YES","Kabbalist"

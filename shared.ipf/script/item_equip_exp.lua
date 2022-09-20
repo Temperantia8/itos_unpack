@@ -188,6 +188,10 @@ function GET_MORE_EVENT_EXP(pc)
 		sumExp = sumExp + 6
 	end
 
+	if IS_SEASON_SERVER(pc) == 'YES' then
+		sumExp = sumExp + 12
+	end
+
 	return sumExp; 
 end
 

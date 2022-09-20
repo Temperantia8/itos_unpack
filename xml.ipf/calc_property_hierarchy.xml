@@ -384,6 +384,48 @@
 	<hierarchy Name="MiddleSize_Def">
 		<Child Name="MiddleSize_Def_BM"/>
 	</hierarchy>
+	<hierarchy Name="AllMaterialType_Def">
+		<Child Name="AllMaterialType_Def_BM"/>
+		<Child Name="Leather_Def"/>
+		<Child Name="Leather_Def_BM"/>
+		<Child Name="Cloth_Def"/>
+		<Child Name="Cloth_Def_BM"/>
+		<Child Name="Iron_Def"/>
+		<Child Name="Iron_Def_BM"/>
+	</hierarchy>
+	<hierarchy Name="AllMaterialType_Atk">
+		<Child Name="AllMaterialType_Atk_BM"/>
+		<Child Name="Cloth_Atk"/>
+		<Child Name="Cloth_Atk_BM"/>
+		<Child Name="Leather_Atk"/>
+		<Child Name="Leather_Atk_BM"/>
+		<Child Name="Iron_Atk"/>
+		<Child Name="Iron_Atk_BM"/>
+		<Child Name="Ghost_Atk"/>
+		<Child Name="Ghost_Atk_BM"/>		
+	</hierarchy>
+	<hierarchy Name="AllSize_Atk">
+		<Child Name="AllSize_Atk_BM"/>
+		<Child Name="SmallSize_Atk"/>
+		<Child Name="SmallSize_Atk_BM"/>
+		<Child Name="MiddleSize_Atk"/>
+		<Child Name="MiddleSize_Atk_BM"/>
+		<Child Name="LargeSize_Atk"/>
+		<Child Name="LargeSize_Atk_BM"/>
+	</hierarchy>
+	<hierarchy Name="AllRace_Atk">
+		<Child Name="AllRace_Atk_BM"/>
+		<Child Name="Widling_Atk"/>
+		<Child Name="Widling_Atk_BM"/>
+		<Child Name="Paramune_Atk"/>
+		<Child Name="Paramune_Atk_BM"/>
+		<Child Name="Forester_Atk"/>
+		<Child Name="Forester_Atk_BM"/>
+		<Child Name="Velnias_Atk"/>
+		<Child Name="Velnias_Atk_BM"/>
+		<Child Name="Klaida_Atk"/>
+		<Child Name="Klaida_Atk_BM"/>
+	</hierarchy>	
 	<hierarchy Name="Leather_Def">
 		<Child Name="Leather_Def_BM"/>
 	</hierarchy>

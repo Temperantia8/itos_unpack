@@ -140,6 +140,46 @@ function get_MiddleSize_Def_ratio_for_status(value)
     return value .. ' {#66b3ff}(' .. ret .. '%)'
 end
 
+function get_AllMaterialType_Def_ratio_for_status(value)
+    local ret = 0
+
+    local pc = GetMyPCObject()
+    if pc ~= nil then        
+        ret = get_calc_atk_value_for_status(pc, value)
+    end
+    return value .. ' {#66b3ff}(' .. ret .. '%)'
+end
+
+function get_AllMaterialType_Atk_ratio_for_status(value)
+    local ret = 0
+
+    local pc = GetMyPCObject()
+    if pc ~= nil then        
+        ret = get_calc_atk_value_for_status(pc, value)
+    end
+    return value .. ' {#ff4040}(' .. ret .. '%)'
+end
+
+function get_AllSize_Atk_ratio_for_status(value)
+    local ret = 0
+
+    local pc = GetMyPCObject()
+    if pc ~= nil then        
+        ret = get_calc_atk_value_for_status(pc, value)
+    end
+    return value .. ' {#ff4040}(' .. ret .. '%)'
+end
+
+function get_AllRace_Atk_ratio_for_status(value)
+    local ret = 0
+
+    local pc = GetMyPCObject()
+    if pc ~= nil then        
+        ret = get_calc_atk_value_for_status(pc, value)
+    end
+    return value .. ' {#ff4040}(' .. ret .. '%)'
+end
+
 function get_Cloth_Atk_ratio_for_status(value)
     local ret = 0
 

@@ -237,6 +237,17 @@ function SCR_Get_MON_MHP(self)
         value = 1;
     end
 
+    local zone_name = GetZoneName(self)
+    if zone_name ~= nil then
+        local prefix = 'field_monster_status_' .. zone_name
+        local spec_cls = GetClass(prefix, self.ClassName)
+        if spec_cls ~= nil then
+            if TryGetProp(spec_cls, 'MHP', 0) > 0 then
+                return TryGetProp(spec_cls, 'MHP', 0) 
+            end
+        end
+    end
+
     value = GET_CONVERT_EXCEPTION_MHP(self, value);
 
     return math.floor(value);
@@ -300,6 +311,15 @@ function SCR_GET_MON_EXP(self)
     
     value = value * (expValue / 100) * raceTypeRate;
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'EXP', 0) > 0 then
+            return TryGetProp(spec_cls, 'EXP', 0) 
+        end        
+    end
+
     return math.floor(value);
 end
 
@@ -326,6 +346,15 @@ function SCR_GET_MON_JOBEXP(self)
     
     value = value * (jexpValue / 100) * raceTypeRate;
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'JOBEXP', 0) > 0 then
+            return TryGetProp(spec_cls, 'JOBEXP', 0) 
+        end
+    end
+
     return math.floor(value);
 end
 
@@ -423,6 +452,15 @@ function SCR_Get_MON_DEF(self)
         end
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'DEF', 0) > 0 then
+            return TryGetProp(spec_cls, 'DEF', 0) 
+        end
+    end
+
     return math.floor(value)
 end
 
@@ -521,6 +559,15 @@ function SCR_Get_MON_MDEF(self)
         end
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'MDEF', 0) > 0 then
+            return TryGetProp(spec_cls, 'MDEF', 0) 
+        end
+    end
+    
     return math.floor(value)
 end
 
@@ -553,6 +600,15 @@ function SCR_Get_MON_HR(self)
     	value = 0;
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'HR', 0) > 0 then
+            return TryGetProp(spec_cls, 'HR', 0) 
+        end
+    end
+
     return math.floor(value);
 end
 
@@ -587,6 +643,15 @@ function SCR_Get_MON_DR(self)
     	value = 0;
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'DR', 0) > 0 then
+            return TryGetProp(spec_cls, 'DR', 0) 
+        end
+    end
+
     return math.floor(value);
 end
 
@@ -620,6 +685,15 @@ function SCR_Get_MON_CRTHR(self)
     
     if value < 0 then
     	value = 0;
+    end
+    
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'CRTHR', 0) > 0 then
+            return TryGetProp(spec_cls, 'CRTHR', 0) 
+        end
     end
     
     return math.floor(value);
@@ -671,6 +745,15 @@ function SCR_Get_MON_CRTDR(self)
         end
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'CRTDR', 0) > 0 then
+            return TryGetProp(spec_cls, 'CRTDR', 0) 
+        end
+    end
+
     return math.floor(value);
 end
 
@@ -691,6 +774,15 @@ function SCR_Get_MON_CRTATK(self)
     
     local value = byLevel + byStat;
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'CRTATK', 0) > 0 then
+            return TryGetProp(spec_cls, 'CRTATK', 0) 
+        end
+    end
+
     return math.floor(value);
 end
 
@@ -711,6 +803,15 @@ function SCR_Get_MON_CRTMATK(self)
     
     local value = byLevel + byStat;
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'CRTMATK', 0) > 0 then
+            return TryGetProp(spec_cls, 'CRTMATK', 0) 
+        end
+    end
+
     return math.floor(value);
 end
 
@@ -811,6 +912,15 @@ function SCR_Get_MON_MINPATK(self)
             SetExProp(self, "MON_ORIGIN_MINPATK", math.floor(value));
         elseif value < reduceAtkLimit then
             value = reduceAtkLimit;
+        end
+    end
+
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'MINPATK', 0) > 0 then
+            return TryGetProp(spec_cls, 'MINPATK', 0) 
         end
     end
 
@@ -917,6 +1027,15 @@ function SCR_Get_MON_MAXPATK(self)
         end
     end
 
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'MAXPATK', 0) > 0 then
+            return TryGetProp(spec_cls, 'MAXPATK', 0) 
+        end
+    end
+    
     return math.floor(value);
 end
 
@@ -1017,6 +1136,15 @@ function SCR_Get_MON_MINMATK(self)
             SetExProp(self, "MON_ORIGIN_MINMATK", math.floor(value));
         elseif value < reduceAtkLimit then
             value = reduceAtkLimit;
+        end
+    end
+
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'MINMATK', 0) > 0 then
+            return TryGetProp(spec_cls, 'MINMATK', 0) 
         end
     end
 
@@ -1123,6 +1251,15 @@ function SCR_Get_MON_MAXMATK(self)
         end
     end
 
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'MAXMATK', 0) > 0 then
+            return TryGetProp(spec_cls, 'MAXMATK', 0) 
+        end        
+    end
+
     return math.floor(value);
 end
 
@@ -1164,6 +1301,15 @@ function SCR_Get_MON_BLK(self)
     	value = 0;
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'BLK', 0) > 0 then
+            return TryGetProp(spec_cls, 'BLK', 0) 
+        end        
+    end
+
     return math.floor(value);
 end
 
@@ -1194,6 +1340,15 @@ function SCR_Get_MON_BLK_BREAK(self)
     	value = 0;
     end
     
+    local zone_name = GetZoneName(self)
+    local prefix = 'field_monster_status_' .. zone_name
+    local spec_cls = GetClass(prefix, self.ClassName)
+    if spec_cls ~= nil then
+        if TryGetProp(spec_cls, 'BLK_BREAK', 0) > 0 then
+            return TryGetProp(spec_cls, 'BLK_BREAK', 0) 
+        end  
+    end
+
     return math.floor(value);
 end
 
@@ -1225,9 +1380,7 @@ function SCR_GET_COMPANION_RHPTIME(self)
 end
 
 function SCR_GET_MON_MSHIELD(self)
-    
     return self.ShieldRate/100 * self.MHP;
-
 end
 
 -- Regenerate HP

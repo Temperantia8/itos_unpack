@@ -592,7 +592,7 @@ return obj.Level;"/>
                 <Scp Scp="C_EFFECT_ATTACH" Client="YES" UseSleep="NO" Time="0">
                     <Str_Arg Str="F_cleric_energy_blast_shot#Dummy_effect_energyblast" Arg="1"/>
                     <Num Num="2"/>
-                    <Pos Angle="0" Dist="0" Height="100"/>
+                    <Pos Angle="0" Dist="0" Height="0"/>
                     <Num Num="0"/>
                 </Scp>
                 <Scp Scp="C_VOICE_SOUND" Client="YES" UseSleep="NO" Time="0">
@@ -669,7 +669,7 @@ return obj.Level;"/>
                         <Scp Scp="C_EFFECT_ATTACH" Client="YES" UseSleep="NO" Time="0">
                             <Str_Arg Str="F_cleric_energy_blast_shot#Dummy_effect_energyblast" Arg="1"/>
                             <Num Num="2"/>
-                            <Pos Angle="0" Dist="0" Height="100"/>
+                            <Pos Angle="0" Dist="0" Height="0"/>
                             <Num Num="0"/>
                         </Scp>
                         <Scp Scp="C_VOICE_SOUND" Client="YES" UseSleep="NO" Time="0">
@@ -733,7 +733,7 @@ return obj.Level;"/>
                         <Scp Scp="C_EFFECT_ATTACH" Client="YES" UseSleep="NO" Time="1000">
                             <Str_Arg Str="F_cleric_energy_blast_shot#Dummy_effect_energyblast" Arg="2"/>
                             <Num Num="2"/>
-                            <Pos Angle="0" Dist="0" Height="100"/>
+                            <Pos Angle="0" Dist="0" Height="0"/>
                             <Num Num="0"/>
                         </Scp>
                         <Scp Scp="C_EFFECT_DETACH" Client="YES" UseSleep="NO" Time="2000">
@@ -743,7 +743,7 @@ return obj.Level;"/>
                         <Scp Scp="C_EFFECT_ATTACH" Client="YES" UseSleep="NO" Time="2000">
                             <Str_Arg Str="F_cleric_energy_blast_shot#Dummy_effect_energyblast" Arg="3"/>
                             <Num Num="2"/>
-                            <Pos Angle="0" Dist="0" Height="100"/>
+                            <Pos Angle="0" Dist="0" Height="0"/>
                             <Num Num="0"/>
                         </Scp>
                         <Scp Scp="SKL_SET_IMMUNE_STATE_REMOVE" Client="NO" UseSleep="YES" Time="2000">

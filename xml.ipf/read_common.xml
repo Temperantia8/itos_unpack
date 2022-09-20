@@ -3,6 +3,7 @@
 	<ReadXml Name="bonescale"/>
 	<ReadXml Name="item_goddess_reinforce"/>
 	<ReadXml Name="item_goddess_reinforce_470"/>
+	<ReadXml Name="item_goddess_reinforce_480"/>
 	<ReadXml Name="pharmacy_material_type"/>	
 	<ReadXml Name="skill_Simony"/>
 	<ReadXml Name="archeology_property"/>
@@ -229,6 +230,7 @@
 	<ReadXml Name="Beauty_Shop_Costume"/>
 	<ReadXml Name="Beauty_Shop_Dye"/>
 	<ReadXml Name="Beauty_Shop_Hair"/>
+	<ReadXml Name="Beauty_Shop_Hair_Season"/>
 	<ReadXml Name="Beauty_Shop_Lens"/>
 	<ReadXml Name="Beauty_Shop_Package_Cube"/>
 	<ReadXml Name="Beauty_Shop_Wig"/>
@@ -260,6 +262,7 @@
 	<ReadXml Name="ancient_rarity"/>
 	<ReadXml Name="Ancient_info"/>
 	<ReadXml Name="Beauty_Shop_Skin"/>
+	<ReadXml Name="Beauty_Shop_Skin_Season"/>
 	<ReadXml Name="skintone"/>
 	<ReadXml Name="ancient_combo"/>
 	<ReadXml Name="Episode_Quest"/>
@@ -355,6 +358,7 @@
 	<ReadXml Name="goddess_recipe"/>
 	<ReadXml Name="goddess_evolve"/>
 	<ReadXml Name="fieldboss_worldevent_reward_count"/>
+	<ReadXml Name="fieldboss_worldevent_reward_count_season"/>	
 	<ReadXml Name="job_unlockquest"/>
 	<ReadXml Name="itemdecompose_mistake"/>
 	<ReadXml Name="resurrect_return_control"/>
@@ -375,7 +379,14 @@
 	<ReadXml Name="achieve_guidequest"/>
 	<ReadXml Name="goddess_special_option"/>	
 	<ReadXml Name="monster_obj_interaction"/>
+	<ReadXml Name="goddess_atk_def_option"/>
 	<ReadXml Name="ecs_system"/>
 	<ReadXml Name="rank_system_contents_list"/>
 	<ReadXml Name="tribulation_system_reward_list"/>
+	<ReadXml Name="class_tree_recommend"/>
+	<ReadXml Name="guide_mission\guide_main"/>
+	<ReadXml Name="guide_mission\guide_submission"/>
+	<ReadXml Name="tpitem_season"/>		
+	<ReadXml Name="skill_attribute_mon"/>
+	<ReadXml Name="buff_attribute"/>
 </Category>

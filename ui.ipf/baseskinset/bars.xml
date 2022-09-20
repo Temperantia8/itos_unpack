@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
 <!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by MintPC (Mi) -->
 <skinset name="Base">
 	<skinlist category="bars">
@@ -203,6 +203,24 @@
 			<img name="barbottom" imgrect="304 63 16 12"/>
 			<img name="barbottom_cursoron" imgrect="321 63 16 12"/>
 			<img name="barbottom_click" imgrect="338 63 16 12"/>
+		</skin>
+		<skin name="verticalscrollbar4" texture="\skin\essential_guide.tga">
+			<img name="background" imgrect="0 17 12 14"/>
+			<img name="btnup" imgrect="0 0 12 16"/>
+			<img name="btnup_cursoron" imgrect="13 0 12 16"/>
+			<img name="btnup_click" imgrect="26 0 12 16"/>
+			<img name="btndown" imgrect="0 32 12 16"/>
+			<img name="btndown_cursoron" imgrect="13 32 12 16"/>
+			<img name="btndown_click" imgrect="26 32 12 16"/>
+			<img name="bartop" imgrect="0 49 12 10"/>
+			<img name="bartop_cursoron" imgrect="13 49 12 10"/>
+			<img name="bartop_click" imgrect="26 49 12 10"/>
+			<img name="barmiddle" imgrect="0 60 12 10"/>
+			<img name="barmiddle_cursoron" imgrect="13 60 12 10"/>
+			<img name="barmiddle_click" imgrect="26 60 12 10"/>
+			<img name="barbottom" imgrect="0 71 12 10"/>
+			<img name="barbottom_cursoron" imgrect="13 71 12 10"/>
+			<img name="barbottom_click" imgrect="26 71 12 10"/>
 		</skin>
 	</skinlist>
 </skinset>

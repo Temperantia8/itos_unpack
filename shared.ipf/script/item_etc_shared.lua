@@ -1,5 +1,9 @@
 function GET_LIMITATION_TO_BUY(tpItemID)
-    local tpItemObj = GetClassByType('TPitem', tpItemID);    
+    local tpItemObj = GetClassByType('TPitem', tpItemID);
+    if IS_SEASON_SERVER() == 'YES' then
+        tpItemObj = GetClassByType('TPitem_SEASON', tpItemID);
+    end
+    
     if tpItemObj == nil then
         return 'NO', 0;
     end
@@ -36,6 +40,9 @@ function GET_LIMITATION_TO_BUY_WITH_SHOPTYPE(tpItemID, shopType)
         tpItemObj = GetClassByType('TPitem_User_New', tpItemID);
     else
         tpItemObj = GetClassByType('TPitem', tpItemID);
+        if IS_SEASON_SERVER() == 'YES' then
+            tpItemObj = GetClassByType('TPitem_SEASON', tpItemID);
+        end
     end
     
     if tpItemObj == nil then

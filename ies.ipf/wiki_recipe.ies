@@ -1265,6 +1265,7 @@ ClassID,WikiPoint,TeachPoint,AutoGet,ClassName,TargetClassName,TargetMapName,Ill
 50205,10,5,0,"R_Ticket_Vasilissa_Party_Enter2_NoTrade","R_Ticket_Vasilissa_Party_Enter2_NoTrade","","icon_item_recipe_misc1","제작서 - 성자의 기도소: 가디스 1회 입장권(거래불가)","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"
 50206,10,5,0,"R_pilgrim_TrialsStone","R_pilgrim_TrialsStone","","icon_item_recipe_misc1","제작서 - [Lv.470] 시련의 돌","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"
 50207,10,5,0,"R_Ticket_Jellyzele_Auto_Enter_NoTrade","R_Ticket_Jellyzele_Auto_Enter_NoTrade","","icon_item_recipe_misc1","제작서 - 가라앉는 나포선(자동 매칭, 1인) 1회 입장권(거래불가)","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"
+50208,10,5,0,"R_Ticket_TurbulentCore_Auto_Enter_NoTrade","R_Ticket_TurbulentCore_Auto_Enter_NoTrade","","icon_item_recipe_misc1","제작서 - 격동의 핵(자동 매칭, 1인) 1회 입장권(거래불가)","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"
 100000,0,0,0,"R_HIDDEN_BULLETMARKER_ITEM1","R_HIDDEN_BULLETMARKER_ITEM1","","icon_item_recipe_misc1","제작서 - 냉기탄","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"
 100001,0,0,0,"R_HIDDEN_BULLETMARKER_ITEM2","R_HIDDEN_BULLETMARKER_ITEM2","","icon_item_recipe_misc1","제작서 - 화염탄","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"
 100002,0,0,0,"R_HIDDEN_BULLETMARKER_ITEM3","R_HIDDEN_BULLETMARKER_ITEM3","","icon_item_recipe_misc1","제작서 - 전기탄","Recipe","{#5090ff}{ol}","{/}{/}{/}","WIKIPAGE_ITEM","재료를 만들 수 있는 제작서"

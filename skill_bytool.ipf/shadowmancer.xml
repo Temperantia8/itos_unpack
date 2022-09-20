@@ -286,13 +286,7 @@
 					<Str Str="ShadowFatter_Debuff" />
 					<Num FuncTxt="return obj.Level;" Num="0" UseFunc="1" />
 					<Num Num="0" />
-                    <Num FuncTxt="
-                    local value = SCR_GET_ShadowFatter_Bufftime(obj) * 1000
-                            if IsPVPServer(self) == 1 or IsPVPField(self) == 1 then
-                                value = value / 2
-                            end
-                    return value;
-                    " Num="0" UseFunc="1" />
+                    <Num Num="1000" UseFunc="1" FuncTxt="return SCR_GET_ShadowFatter_Bufftime(obj) * 1000"  />
 					<Num Num="1" />
 					<Num Num="100" />
 					<Num Num="0" />
@@ -352,7 +346,7 @@ return value"/>
 					<Num FuncTxt="local value = obj.Level * 500; 
 local abil = GetAbility(self, 'Shadowmancer16')
 if abil ~= nil then
-    value = 5000
+    value = obj.Level * 1000
 end
 return value" Num="0" UseFunc="1" />
 					<Num Num="1" />

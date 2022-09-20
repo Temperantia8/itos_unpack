@@ -4,6 +4,10 @@
 
 -- 현재 account obj 에 저장되어 있는 시간에 add_sec한 시간을 가져온다. yyyy-mm-dd hh-mm-ss 형태로 반환함
 function GET_TIME_PVP_MINE_MISC_END_TIME(acc, add_sec, pc)	
+    if IS_SEASON_SERVER(pc) == 'YES' then
+        return '2022-07-31 00:00:00'
+    end
+
 	local end_time = TryGetProp(acc, 'PVP_MINE_MISC_BOOST_END_DATETIME', 'None')
 	
 	if end_time == 'None' then
@@ -25,6 +29,10 @@ end
 
 -- 부스트 버프 시간이 종료되었는가?
 function PVP_MINE_MISC_BOOST_EXPIRED(pc)    
+    if IS_SEASON_SERVER(pc) == 'YES' then
+        return false
+    end
+
     local acc = nil
     if IsServerSection() == 1 then        
         acc = GetAccountObj(pc)
@@ -65,6 +73,10 @@ function GET_PVP_MINE_MISC_BOOST_COUNT(pc)
     return GET_PVP_MINE_MISC_BOOST_COUNT2(pc) -- 10만개 증가
 end
 function GET_PVP_MINE_MISC_BOOST_COUNT2(pc)
+    if IS_SEASON_SERVER(pc) == 'YES' then
+        return 200000
+    end
+
     return 100000 -- 10만개 증가
 end
 -- 각 콘텐츠별 추가 획득량

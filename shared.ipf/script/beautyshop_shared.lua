@@ -99,7 +99,7 @@ function IS_PURCHASE_DUPLICATE_DISCOUNT(pc, productList, hairCouponItem, dyeCoup
 		end	
 
 		-- 헤어일 경우 처리
-		if info.IDSpace == "Beauty_Shop_Hair" then
+		if info.IDSpace == "Beauty_Shop_Hair" or info.IDSpace == "Beauty_Shop_Hair_Season" then
 			-- hair 
 			local cacheHairList = BEAUTYSHOP_MAKE_ITEM_CACHELIST(info.IDSpace);
 			if cacheHairList[info.ClassName] ~= nil then
@@ -123,7 +123,7 @@ function IS_PURCHASE_DUPLICATE_DISCOUNT(pc, productList, hairCouponItem, dyeCoup
 					return true;
 				end
 			end
-		elseif info.IDSpace == "Beauty_Shop_Skin" then
+		elseif info.IDSpace == "Beauty_Shop_Skin" or info.IDSpace == "Beauty_Shop_Skin_Season" then
 			local cacheList = BEAUTYSHOP_MAKE_ITEM_CACHELIST(info.IDSpace);
 			if cacheList[info.ClassName] ~= nil then
 				local cls = GetClass(info.IDSpace, cacheList[info.ClassName])
@@ -152,14 +152,14 @@ function GET_BEAUTYSHOP_ITEM_PRICE(pc, info, hairCouponItem, dyeCouponItem, skin
 		skinDiscountValue = nil,
 	}
 
-	if info.IDSpace == "Beauty_Shop_Hair" then
+	if info.IDSpace == "Beauty_Shop_Hair" or info.IDSpace == "Beauty_Shop_Hair_Season" then
 		local totalPrice, hairPrice, colorDyePrice, hairDiscountValue, dyeDiscountValue = GET_BEAUTYSHOP_HAIR_PRICE(pc, info, hairCouponItem, dyeCouponItem);
 		result.totalPrice = totalPrice;
 		result.hairPrice = hairPrice;
 		result.colorDyePrice = colorDyePrice;
 		result.hairDiscountValue = hairDiscountValue;
 		result.dyeDiscountValue = dyeDiscountValue;
-	elseif info.IDSpace == "Beauty_Shop_Skin" then
+	elseif info.IDSpace == "Beauty_Shop_Skin" or info.IDSpace == "Beauty_Shop_Skin_Season" then
 		local totalPrice, skinDiscountValue =  GET_BEAUTYSHOP_SKIN_PRICE(pc, info, skinCouponItem);
 		result.totalPrice = totalPrice;
 		result.skinDiscountValue = skinDiscountValue;
@@ -239,6 +239,10 @@ function GET_BEAUTYSHOP_HAIR_PRICE(pc, info, hairCouponItem, dyeCouponItem)
 			if price == nil then
 				-- 정상이 아님.
 				return -1
+			end
+
+			if IS_SEASON_SERVER() == "YES" then
+				price = 1;
 			end
 
 			colorDyePrice = price

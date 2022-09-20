@@ -1186,3 +1186,18 @@ function SCR_PRE_TUTO_BEAUTYSHOP(pc, questname, scriptInfo)
 
     return "YES";
 end
+
+
+-- 퀘스트 포기/실패/시스템 취소 시 함수에 삽입
+function SCR_SET_ETC_OBJ_ABANDON(pc, tx, funcCutList, questName)--퀘스트 실패/포기 시 etc 0으로 설정
+    local etc    
+    
+    if IsServerSection(pc) == 1 then
+        etc = GetETCObject(pc)
+    else
+        etc = GetMyEtcObject()
+    end
+
+    if etc == nil then return end
+    TxSetIESProp(tx, etc, questName, 0)
+end

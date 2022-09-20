@@ -12,6 +12,7 @@ function GET_MAX_ENGARVE_SLOT_COUNT(acc_obj)
 
     base = base + TryGetProp(acc_obj, 'ADDITIONAL_ENGRAVE_SLOT_TEAMBATTLE', 0)
     base = base + TryGetProp(acc_obj, 'ADDITIONAL_ENGRAVE_SLOT_ACHIEVELEVEL', 0)
+    base = base + TryGetProp(acc_obj, 'ADDITIONAL_ENGRAVE_SLOT_ACHIEVE', 0)
 
     return base
 end
@@ -34,7 +35,11 @@ end
 
 -- 각인이 가능한 아이템인가?, 아이커인 경우, 방어구 랜덤 아이커만 가능
 -- return,  가능여부, 기본성공확률
-function IS_ENABLE_TO_ENGARVE(item_obj)
+function IS_ENABLE_TO_ENGARVE(item_obj)    
+    if shared_item_goddess_icor.get_goddess_icor_grade(item_obj) > 0 then
+        return true, 100
+    end
+
     if TryGetProp(item_obj, 'GroupName', 'None') == 'Icor' and TryGetProp(item_obj, 'InheritanceRandomItemName', 'None') ~= 'None' then
         local cls = GetClass('Item', TryGetProp(item_obj, 'InheritanceRandomItemName', 'None'))
         if cls == nil then
@@ -57,9 +62,13 @@ function IS_ENABLE_TO_ENGARVE(item_obj)
         end
     else
         local grade = TryGetProp(item_obj, 'ItemGrade', 1)
-        local lv = TryGetProp(item_obj, 'UseLv', 1)
+        local lv = TryGetProp(item_obj, 'UseLv', 1)        
+        if grade >= 6 and lv >= 470 and TryGetProp(item_obj, 'GroupName', 'None') == 'Armor' then            
+            return false, 0
+        end
+
         local option_count = GET_VAILD_RANDOM_OPTION_COUNT(item_obj)
-        if grade >= 6 and option_count >= 1 and lv >= 460 then
+        if grade >= 6 and option_count >= 1 and lv == 460 then
             return true, 0
         end
     end
@@ -107,6 +116,10 @@ function GET_COST_APPLY_ENGRAVE(item_obj)
     -- 시즌이 거듭되면 위에다가 레벨 체크 추가
     if lv <= 460 then
         coin = 'GabijaCertificate'
+    end
+
+    if lv == 480 then
+        coin = 'VakarineCertificate'
     end
 
     local cost = math.floor((lv / 20) * 3)    
@@ -214,8 +227,10 @@ function GET_ENGRAVED_OPTION_LIST(etc, index, spot)
     local option_list = SCR_STRING_CUT(option_prop, '/')
     local group_list = SCR_STRING_CUT(group_prop, '/')
     local value_list = SCR_STRING_CUT(value_prop, '/')
+  
+    local is_goddess_option = TryGetProp(etc, 'IsGoddessIcorOption'.. suffix, 0)
 
-    return option_list, group_list, value_list
+    return option_list, group_list, value_list, is_goddess_option
 end
 
 -- 저장된 각인 정보 딕셔너리 가져오기
@@ -224,7 +239,7 @@ function GET_ENGRAVED_OPTION_BY_INDEX_SPOT(etc, index, spot)
         return nil
     end
 
-    local option_list, group_list, value_list = GET_ENGRAVED_OPTION_LIST(etc, index, spot)
+    local option_list, group_list, value_list, is_goddess_option = GET_ENGRAVED_OPTION_LIST(etc, index, spot)     
     if option_list == nil then
         return nil
     end
@@ -241,6 +256,7 @@ function GET_ENGRAVED_OPTION_BY_INDEX_SPOT(etc, index, spot)
     end
 
     option_dic['Size'] = #option_list
+    option_dic['is_goddess_option'] = is_goddess_option
 
     return option_dic
 end
@@ -314,8 +330,38 @@ function COMPARE_ITEM_OPTION_TO_ENGRAVED_OPTION(item_dic, engrave_dic)
 end
 
 -- 각인 부여 가능한 아이템인가
-function IS_ENABLE_TO_ENGRAVE_APPLY(item_obj)
-    if item_obj == nil then return false end
+function IS_ENABLE_TO_ENGRAVE_APPLY(item_obj, index, spot, etc)
+    if item_obj == nil then return false, 'None' end
 
-    return TryGetProp(item_obj, 'ItemGrade', 0) == 6
+    local suffix = string.format('IsGoddessIcorOption_%d_%s', tonumber(index), spot) 
+    local is_goddess_icor_option = TryGetProp(etc, suffix, 0) -- 저장된 옵션이 가디스 아이커 옵션인가?    
+    if TryGetProp(item_obj, 'ItemGrade', 0) ~= 6 then
+        return false, 'OnlyGoddessGradeEquipment'
+    end
+
+    if is_goddess_icor_option >= 1 and TryGetProp(item_obj, 'EnableGoddessIcor', 0) == 0 then        
+        return false, 'CantEngraveGoddessIcor'
+    end
+
+    return true
+end
+
+function IS_GODDESS_ICOR_SPOT(spot)
+    if spot == 'SHIRT' or spot == 'PANTS' or spot == 'GLOVES' or spot == 'BOOTS' or spot == 'RH' or spot == 'RH_SUB' or spot == 'LH' or spot == 'LH_SUB' then
+        return true
+    else
+        return false
+    end
+end
+
+function ENABLE_ENGRAVE_EQUIP(item_obj)
+    local group_name = TryGetProp(item_obj, 'GroupName', 'None')
+
+    if TryGetProp(item_obj, 'ItemGrade' , 0) >= 6 and TryGetProp(item_obj, 'UseLv', 0) >= 460 then
+		if group_name == 'Armor' or  string.find(group_name, 'Weapon') ~= nil then
+			return true
+		end
+    end
+    
+    return false
 end

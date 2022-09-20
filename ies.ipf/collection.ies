@@ -215,3 +215,4 @@ ClassID,ClassName,Name,ItemName_1,ItemName_2,ItemName_3,ItemName_4,ItemName_5,It
 314,"COLLECT_314","컬렉션: 탐험 중의 발견","misc_collect_gimk_008","misc_collect_gimk_009","misc_collect_gimk_010","misc_collect_gimk_011","misc_collect_gimk_012","misc_collect_gimk_013","misc_collect_gimk_014","misc_collect_gimk_015","","","","COLLECT_314/3/kupole_emotion02/1","TRUE"
 315,"COLLECT_315","컬렉션: 대길이의 선물","misc_collect_gimk_016","misc_collect_gimk_017","misc_collect_gimk_018","misc_collect_gimk_019","misc_collect_gimk_020","misc_collect_gimk_021","misc_collect_gimk_022","","","","","COLLECT_315/3/kupole_emotion03/1","TRUE"
 317,"COLLECT_317","컬렉션: 가비야의 권능","Goddess_fragments_gabiaA","Goddess_fragments_gabiaB","Goddess_fragments_gabiaC","","","","","","","PATK_BM/2000/MATK_BM/2000","","","TRUE"
+318,"COLLECT_318","컬렉션: 바카리네의 권능","Goddess_fragments_vakarineA","Goddess_fragments_vakarineB","Goddess_fragments_vakarineC","","","","","","","PATK_BM/2200/MATK_BM/2200","","","TRUE"

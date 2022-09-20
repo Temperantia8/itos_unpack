@@ -155,3 +155,5 @@ ClassID,BaseID,ClassName,TreeGroup,TreeGroupCaption,TreeSSetTitle,InvenTabName,M
 154,770001,"Pharmacy_Additive","Pharmacy","비약 연성술","첨가물","Pharmacy","NO"
 155,775001,"Pharmacy_PharmacyRecipe","Pharmacy","비약 연성술","조제법","Pharmacy","NO"
 156,780001,"Armor_Belt","EquipGroup","장비","방어구","Equip","Armor"
+157,785001,"OPTMisc_GoddessIcorWeapon","Material","재료","아이커","Etc","Icor"
+158,790001,"OPTMisc_GoddessIcorArmor","Material","재료","아이커","Etc","Icor"

@@ -309,6 +309,11 @@ end
 -- 같이 변경해야 함
 -- done , 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그래팀에 알려주시기 바랍니다.
 function SCR_REINFORCEABILITY_FOR_BUFFSKILL(self, skill)
+	local ignore_hidden_list = {
+		"Oracle_CounterSpell",
+		"Dievdirbys_CarveAustrasKoks",
+	}
+	
     local addRate = 1;
     if self ~= nil and skill ~= nil then
         local reinforceAbilName = TryGetProp(skill, "ReinforceAbility", "None");
@@ -324,7 +329,7 @@ function SCR_REINFORCEABILITY_FOR_BUFFSKILL(self, skill)
                 addRate = addRate + (abilLevel * 0.005 + masterAddValue);
 				
 				local hidden_abil_cls = GetClass("HiddenAbility_Reinforce", skill.ClassName);
-				if abilLevel >= 65 and hidden_abil_cls ~= nil then
+				if table.find(ignore_hidden_list, skill.ClassName) == 0 and abilLevel >= 65 and hidden_abil_cls ~= nil then
 					local hidden_abil_name = TryGetProp(hidden_abil_cls, "HiddenReinforceAbil");
 					local hidden_abil = GetAbility(self, hidden_abil_name);
 					if hidden_abil ~= nil then

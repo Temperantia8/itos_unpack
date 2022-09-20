@@ -207,6 +207,15 @@ function GET_RECIPE_MATERIAL_INFO(recipeCls, index,pc)
         return recipeItemCnt, propCount, dragRecipeItem, nil,recipeItemLv,nil
     end
 
+    if itemName == 'dummy_VakarineCertificate' then -- 여신의 증표(바카리네)
+        local aObj = GetMyAccountObj()
+        local propCount = TryGetProp(aObj, 'VakarineCertificate', '0')
+        if propCount == 'None' then
+            propCount = '0'
+        end
+        return recipeItemCnt, propCount, dragRecipeItem, nil,recipeItemLv,nil
+    end
+
     if itemName == 'dummy_TeamBattleCoin' then -- 팀배코인
         local aObj = GetMyAccountObj()
         local propCount = TryGetProp(aObj, 'TeamBattleCoin', '0')

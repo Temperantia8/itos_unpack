@@ -2,6 +2,9 @@
 
 local json = require('json')
 
+SEASON_COIN_NAME = 'VakarineCertificate'
+SEASON_COIN_PREFIX_NAME = 'VakarineCertificateCoin'
+
 function shuffle(tbl)
     local ret = {}
     for k, v in pairs(tbl) do
@@ -192,6 +195,7 @@ local function init_random_option_range_table()
     init_random_option_range_table_for_lv(430)
     init_random_option_range_table_for_lv(440)
     init_random_option_range_table_for_lv(460)
+    init_random_option_range_table_for_lv(470)
     init_random_option_range_table_for_lv(490)
 end
 -- end of 초기 정보 (min, max) 세팅 함수 ----------------------------------------------
@@ -3527,7 +3531,11 @@ function CLMSG_DIALOG_CONVERT(npc,msg)
 	return string.format("%s*@*%s",name,msg)
 end
 
-function GET_ABILITY_POINT_EXTRACTOR_FEE(type)
+function GET_ABILITY_POINT_EXTRACTOR_FEE(type)    
+    if IS_SEASON_SERVER() == 'YES' then
+        return 0
+    end
+
     if type == 2 then
         -- 특성 포인트 추출 수수료 퍼센트
         return 5;
@@ -3559,6 +3567,11 @@ end
 -- 합성 가능한 스킬젬인지 확인
 function CAN_COMPOSITION_SKILL_GEM(item)
     if TryGetProp(item, 'StringArg', 'None') ~= 'SkillGem' then
+        return false, 0
+    end
+
+    local ret = IS_RANDOM_OPTION_SKILL_GEM(item)
+    if ret == true then
         return false, 0
     end
 
@@ -3675,6 +3688,8 @@ function GET_AUTO_MEMBER_JOIN_GUILD_IDX(groupid, nation)
             return "1137006692273513";
         elseif groupid == 1002 then -- 바이보라
             return "1137058231881971";
+        elseif groupid == 3002 then
+            return '1325061835325512'
         end
     elseif nation == 'GLOBAL_JP' then
         if groupid == 1202 then --사내 JPN
@@ -3890,6 +3905,22 @@ function TRIM_STRING_WITH_SPACING(str)
 		end
 	end
 	return str
+end
+
+function GET_CHAR_COUNT(str)
+    str = string.gsub(str," ","")
+    local function GetAsciiLen(str)
+        local chars = {}
+        for char in str:gmatch("[%w\0-\128]") do 
+            table.insert(chars, char) 
+        end
+    
+        return #chars
+    end
+    local asciiLen = GetAsciiLen(str)
+    local unicodeLen = (string.len(str) - asciiLen)/3
+
+    return asciiLen + unicodeLen
 end
 
 function UQ_GET_JOB_SETTING_JOB(JobClassName) -- job_unlockquest.xml에서 cls를 가져온다
@@ -4157,6 +4188,17 @@ function CONTENTS_ALERT_GET_CUTLINE(contentsID)
     return gearScore, level
 end
 
+function IS_DESTROYABLE_COSTUME_ITEM(item)
+    local name = TryGetProp(item, 'ClassName', 'None')
+    local cls = GetClass('recycle_shop', name)
+    if cls ~= nil then
+        if TryGetProp(item, 'TeamBelonging', 0) ~= 0 or TryGetProp(item, 'CharacterBelonging', 0) ~= 0 then
+            return true
+        end
+    end
+
+    return false
+end
 
 -- 통합 서버 & 시즌 서버 컨텐츠 시간 제한
 -- 낚시, 콜로니전

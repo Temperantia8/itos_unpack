@@ -7134,4 +7134,526 @@
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="EP14_RAID_SWORD">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_THSWORD">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_STAFF">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_THBOW">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_BOW">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_MACE">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_THMACE">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_SHIELD">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_SPEAR">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_THSPEAR">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_DAGGER">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_THSTAFF">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_PISTOL">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_RAPIER">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_CANNON">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_MUSKET">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_TRINKET">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_weapon" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_CLOTH_TOP">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_CLOTH_LEG">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_CLOTH_FOOT">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_CLOTH_HAND">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_LEATHER_TOP">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_LEATHER_LEG">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_LEATHER_FOOT">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_LEATHER_HAND">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_PLATE_TOP">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_PLATE_LEG">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_PLATE_FOOT">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="EP14_RAID_PLATE_HAND">
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_ep14_goddess_armor" Client="NO" UseSleep="NO">
+          </ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 </SpcItemList>

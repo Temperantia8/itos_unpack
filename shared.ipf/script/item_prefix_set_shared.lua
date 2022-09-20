@@ -143,3 +143,27 @@ function GET_LEGEND_PREFIX_NEED_MATERIAL_COUNT_BY_NEEDITEM(targetObj, needItemCl
     
     return 0;
 end
+
+
+function ENABLE_EQUIP_SETOPTION(invitem)
+	local enable_set_option = false
+
+	local group_name = TryGetProp(invitem, 'GroupName', 'None')
+
+	if TryGetProp(invitem, 'ItemGrade', 0) >= 6 then
+		if group_name == 'Acc' then
+		elseif group_name == 'Armor' then -- 방어구 각성 불가
+			enable_set_option = true
+			if TryGetProp(invitem, 'UseLv', 0) >= 470 then
+				enable_set_option = false			
+			end
+		elseif string.find(group_name, 'Weapon') ~= nil then -- 무기
+			enable_set_option = true
+			if TryGetProp(invitem, 'UseLv', 0) >= 470 then
+				enable_set_option = false
+			end
+		end
+	end
+
+	return enable_set_option
+end

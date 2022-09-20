@@ -46,6 +46,9 @@
 			<Class Name="HoleOfDarkness_Debuff" BuffID="3102" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="ShieldShoving_Debuff" BuffID="252" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="Friedenslied_AbilDance_Debuff" BuffID="2347" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
+			<Class Name="SwashBuckling_Expletive_Debuff" BuffID="3175" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
+			<Class Name="Ceremonia_M_Debuff" BuffID="527" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
+			<Class Name="Ceremonia_F_Debuff" BuffID="528" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="Lv99_bound" BuffID="9051" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="Lv99_stun" BuffID="9053" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="Common_HoldAI" BuffID="160011" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
@@ -113,6 +116,7 @@
 			<Class Name="DarkLash_Hold" BuffID="6030" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="Whirlwind_Slow_Debuff" BuffID="6031" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 			<Class Name="CarnageScythe_Hold" BuffID="6033" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
+			<Class Name="Feint_HoldMove_Debuff" BuffID="1151" Desc="BuffID에 buff.xml에 있는 buff의 ClassID가 들어간다."/>
 		</Category>
 	</Category>
 	<!-- ############################################################################################################################################################### -->

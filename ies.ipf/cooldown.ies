@@ -1230,6 +1230,7 @@ ClassID,OverHeatResetTime,ClassName,IsOverHeat,ReducePlayOnly,ForceReset
 2520,3000,"Luchador_AbilSkill_OH","YES","FALSE","YES"
 2521,50000,"GroovingMuzzle_OH","YES","FALSE","YES"
 2522,15000,"AnkleShot_OH","YES","FALSE","YES"
+2523,25000,"CarveLaima_OH","YES","FALSE","YES"
 3000,0,"Mon","NO","FALSE","YES"
 3001,0,"Mon_1","NO","FALSE","YES"
 3002,0,"Mon_2","NO","FALSE","YES"

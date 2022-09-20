@@ -580,7 +580,52 @@ function IS_VALID_RELICGEM_LVUP_BY_SCROLL(gem, scroll)
         return false, 'NotValidItem'
     end
 
+    if TryGetProp(gem, 'CharacterBelonging', 0) == 1 then
+        return false, 'NotValidItem'
+    end
+
     local now_lv = TryGetProp(gem, 'GemLevel', 1)
+    local goal_lv = TryGetProp(scroll, 'NumberArg1', 0)
+    if now_lv >= goal_lv then
+        return false, 'ItemLevelIsGreaterThanMatItem'
+    end
+
+    return true
+end
+
+function IS_VALID_RELICGEM_LVUP_BY_SCROLL_CABINET(pc, gem_name, scroll)
+    local acc = nil
+    if IsServerSection() == 1 then
+        acc = GetAccountObj(pc)
+    else
+        acc = GetMyAccountObj()
+    end
+
+    if acc == nil then
+        return false, 'NotValidItem'
+    end
+
+    if TryGetProp(scroll, 'StringArg', 'None') ~= 'RelicGemLVUPScroll' then
+        return false, 'NotValidItem'
+    end
+
+    local gem_cls = GetClass('Item', gem_name)
+    local cabinet_cls = GetClass('cabinet_relicgem', gem_name)
+    if gem_cls == nil or cabinet_cls == nil then
+        return false, 'NotValidItem'
+    end
+
+    if TryGetProp(gem_cls, 'GroupName', 'None') ~= 'Gem_Relic' then
+        return false, 'NotValidItem'
+    end
+
+    local open_name = TryGetProp(cabinet_cls, 'AccountProperty', 'None')
+    if TryGetProp(acc, open_name, 0) ~= 1 then
+        return false, 'NotValidItem'
+    end
+
+    local lv_name = TryGetProp(cabinet_cls, 'UpgradeAccountProperty', 'None')
+    local now_lv = TryGetProp(acc, lv_name, 0)
     local goal_lv = TryGetProp(scroll, 'NumberArg1', 0)
     if now_lv >= goal_lv then
         return false, 'ItemLevelIsGreaterThanMatItem'

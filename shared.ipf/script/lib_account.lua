@@ -8,6 +8,11 @@ function GET_ACCOUNT_WAREHOUSE_SLOT_COUNT(pc, accountObj)
     if accountObj == nil then
         return 0;
     end
+
+    if IS_SEASON_SERVER() == 'YES' then
+        return 70
+    end
+
     local slotCount = accountObj.BasicAccountWarehouseSlotCount + accountObj.MaxAccountWarehouseCount + accountObj.AccountWareHouseExtend + accountObj.AccountWareHouseExtendByItem;
     -- token
     if IsServerObj(pc) == 1 then

@@ -23,7 +23,11 @@ function GET_TIME_ENGRAVE_SLOT_EXTENSION_END_TIME(acc, add_sec)
 end
 
 -- 확장 기간이 종료되었는가?
-function ENGRAVE_SLOT_EXTENSION_EXPIRED(acc)    
+function ENGRAVE_SLOT_EXTENSION_EXPIRED(acc) 
+    if IS_SEASON_SERVER(pc) == 'YES' then
+        return false
+    end
+    
     if IsServerSection() == 1 then
         local end_time = TryGetProp(acc, 'ENGRAVE_SLOT_EXTENSION_END_DATETIME', 'None')
         if end_time == 'None' then
@@ -47,10 +51,15 @@ function ENGRAVE_SLOT_EXTENSION_EXPIRED(acc)
 end
 
 -- 종료까지 남은 시간(초)를 가져옴
-function GET_REMAIN_SECOND_ENGRAVE_SLOT_EXTENSION_TIME(acc)
+function GET_REMAIN_SECOND_ENGRAVE_SLOT_EXTENSION_TIME(acc)    
     local serverTime = geTime.GetServerSystemTime()
     local now = string.format("%04d-%02d-%02d %02d:%02d:%02d", serverTime.wYear, serverTime.wMonth, serverTime.wDay, serverTime.wHour, serverTime.wMinute, serverTime.wSecond)
     local end_time = TryGetProp(acc, 'ENGRAVE_SLOT_EXTENSION_END_DATETIME', 'None')
+
+    if IS_SEASON_SERVER() == 'YES' then
+        end_time = '2022-07-31 00:00:00'
+    end
+
     if end_time == 'None' then
         return 0
     end

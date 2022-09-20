@@ -4958,27 +4958,32 @@ function SCR_EPISODE_CHECK(pc, episodeRewardClassName)
         end
     end
 
+    local questCnt = 0
+    local list = GET_EPISODE_QUEST_LIST(episodeNumberStrProp)
+    if list == nil then
+        return "Error"
+    end
+    for _notUse , questID in pairs(list) do
+        questCnt = questCnt + 1
+    end
+    
     -- 2. Account 프로퍼티에 1이 있는 경우 Clear
     local clearPropName = episodeRewardClassName .. "_Clear";
     local clearProp = TryGetProp(accountObj, clearPropName)
     if clearProp == 1 then
-        return "Clear"; -- 이미 받아감.
+        return "Clear", questCnt; -- 이미 받아감.
     end
     
     
     local tgtProp = ScrollUnLockGroup.."_ScrollUnLock"
     local isUnLock = TryGetProp(accountObj, tgtProp, 0)
     if isUnLock > 0 then
-        return "Reward";
+        return "Reward", questCnt;
     end
 
 
     -- 3. 에피소드의 모든 퀘스트 검사.
-    local list = GET_EPISODE_QUEST_LIST(episodeNumberStrProp)
-    if list == nil then
-        return "Error"
-    end
-    
+    local clearCnt = 0
     for _notUse , questID in pairs(list) do
         local questIES = GetClassByType('QuestProgressCheck', questID);
         if questIES == nil then
@@ -4990,9 +4995,10 @@ function SCR_EPISODE_CHECK(pc, episodeRewardClassName)
         end
         local state = SCR_QUEST_CHECK(pc, questName )
         if state ~= "COMPLETE" then
-            return "Progress";
+            return "Progress", clearCnt;
         end
+        clearCnt = clearCnt + 1
     end
     
-    return "Reward";
+    return "Reward", clearCnt;
 end

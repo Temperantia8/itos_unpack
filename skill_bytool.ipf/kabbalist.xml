@@ -168,7 +168,11 @@
                 <Scp Client="NO" Scp="MONSKL_CRE_PAD" Time="600" UseSleep="NO">
                     <Pos Angle="0" Dist="0" PosType="3"/>
                     <Angle Angle="0"/>
-                    <Str Str="Nachash_Pad"/>
+                    <Str Str="Nachash_Pad" UseFunc="1" FuncTxt="local pad_name = &quot;Nachash_Pad&quot;
+                    if GetExProp(self, &quot;ITEM_VIBORA_Ilgesys&quot;) > 0 then
+                        pad_name = &quot;Nachash_Vibora_Pad&quot;
+                    end
+                    return pad_name"/>
                 </Scp>
             </EtcList>
         </MainSkl>

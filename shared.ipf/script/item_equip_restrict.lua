@@ -1428,6 +1428,50 @@ function CHECK_GODDESS_EQUIP(pc)
 	return true;
 end
 
+function CHECK_GODDESS_EQUIP_EP14(pc)
+	local icorable_spot = {	RH = "NoWeapon", LH = "NoWeapon", SHIRT = "NoShirt", PANTS = "NoPants", GLOVES = "NoGloves", BOOTS = "NoBoots" };
+
+	local function _check_equip(pc, item, check)
+		-- no equip
+		if item == nil then return false, "MustEquipWeaponArmorToEnter"; end
+		local class_name = TryGetProp(item, "ClassName", "None");
+		if class_name == check then return false, "MustEquipWeaponArmorToEnter"; end
+		-- item grade
+		local item_grade = TryGetProp(item, "ItemGrade");
+		if item_grade < 6 then return false, "MustGoddessEquipWeaponArmorToEnter";end
+		-- pvp
+		local string_arg = TryGetProp(item, "StringArg", "None");
+		if string_arg == "FreePVP" then return false, "NotAllowFreePvPEquip"; end
+		-- UseLv
+		local use_lv = TryGetProp(item, "UseLv", 0);
+		if use_lv < 480 then return false, "MustGoddessEquipWeaponbArmorUseLvToEnter_480"; end
+		return true, "None";
+	end
+
+	for spot, check in pairs(icorable_spot) do
+		local item = GetEquipItem(pc, spot);
+		local ret, msg = _check_equip(pc, item, check);
+		if ret == false then			
+			return false, msg;
+		end
+
+		-- two hand check
+		if spot == "RH" then
+			local equip_group = TryGetProp(item, "EquipGroup", "None");
+			if equip_group == "THWeapon" then
+				local sub_spot = "LH";
+				local sub_check = "NoOuter";
+				local sub_item = GetEquipItem(pc, sub_spot);
+				ret, msg = _check_equip(pc, sub_item, sub_check);
+				if ret == false then					
+					return false, msg;
+				end
+			end
+		end
+	end
+	return true; 
+end
+
 function CHECK_GODDESS_EQUIP_ADD_SUB_SLOT(pc)
 	local icorable_spot = {	RH = "NoWeapon", LH = "NoWeapon", RH_SUB = "NoWeapon", LH_SUB = "NoWeapon", SHIRT = "NoShirt", PANTS = "NoPants", GLOVES = "NoGloves", BOOTS = "NoBoots" };
 
@@ -1504,7 +1548,7 @@ function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 		end
 
 		-- 가디스 장비 체크
-		local ret, msg = CHECK_GODDESS_EQUIP(pc)
+		local ret, msg = CHECK_GODDESS_EQUIP_EP14(pc)
 		if ret == false then
 			SendSysMsg(pc, msg)
 			return false;
@@ -1526,33 +1570,23 @@ function CHECK_GEAR_SCORE_FOR_CONTENTS(pc, indun_cls)
 	local sub_type = TryGetProp(indun_cls, "SubType", "None");
 	local class_name = TryGetProp(indun_cls, "ClassName", "None");
 	if dungeon_type == "Raid" then
-		-- vasilissa
-		if string.find(class_name, "Goddess_Raid_Vasilissa") ~= nil then			
-			-- 가디스 장비 6부위 체크
-			local ret, msg = CHECK_GODDESS_EQUIP(pc)
-			if ret == false then
-				SendSysMsg(pc, msg)
-				return false;
-			end
-		end
-
-		-- delmore raid
-		if string.find(class_name, "Goddess_Raid_Delmore") ~= nil then
-			-- 가디스 장비 6부위 체크
-			local ret, msg = CHECK_GODDESS_EQUIP(pc);
-			if ret == false then
-				SendSysMsg(pc, msg);
-				return false;
-			end
-		end		
-
-		-- jellyzele raid
-		if string.find(class_name, "Goddess_Raid_Jellyzele") ~= nil then
-			-- 가디스 장비 6부위 체크
-			local ret, msg = CHECK_GODDESS_EQUIP(pc);
-			if ret == false then
-				SendSysMsg(pc, msg);
-				return false;
+		-- goddess raid check
+		local contents_check_name_list = {
+			"Goddess_Raid_Vasilissa", -- 성자의 기도소
+			"Goddess_Raid_Delmore", -- 델무어 격전지
+			"Goddess_Raid_Jellyzele", -- 가라앉은 나포선
+			"Goddess_Raid_Spreader", -- 격동의핵 - 변질의 전파자
+			"Goddess_Raid_Falouros" -- 격동의핵 - 팔로우로스
+		}
+		for i = 1, #contents_check_name_list do
+			local check_name = contents_check_name_list[i];
+			if string.find(class_name, check_name) ~= nil then
+				-- 가디스 장비 6부위 체크
+				local ret, msg = CHECK_GODDESS_EQUIP(pc);
+				if ret == false then
+					SendSysMsg(pc, msg);
+					return false;
+				end
 			end
 		end
 	end
@@ -1651,7 +1685,7 @@ function CHECK_ENTERANCE_FOR_TEAM_BATTLE_LEAGUE(pc, index)
 	end
 
 	if is_goddess_equip == 0 then
-		SendSysMsg(pc, "MustGoddessEquipWeaponArmorToEnter_ChangeCharacter");
+		SendSysMsg(pc, "MustGoddessEquipWeaponbArmorUseLvToEnter_480_ChangeCharacter");
 		return false;
 	end
 

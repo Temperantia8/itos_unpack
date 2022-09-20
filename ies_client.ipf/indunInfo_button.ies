@@ -22,3 +22,4 @@ ClassID,ClassName,DungeonType,SubType,RedButtonText,RedButtonScp,Button1Text,But
 22,"MythicSoloHardMode","MythicDungeon_Auto_Hard","Casual","입장하기","REQ_RAID_SOLO_UI_OPEN","","","","","",""
 23,"LevelDungeonFix","Indun","Level","입장하기","REQ_LEVEL_DUNGEON_UI_OPEN","","","","","",""
 24,"LevelDungeonPeriodic","MissionIndun","Level","입장하기","REQ_LEVEL_DUNGEON_UI_OPEN","","","","","",""
+25,"RaidHardEnter","Raid_HardEnter","Hard","입장하기","INDUNINFO_MOVE_TO_ENTER_HARD","","","","","",""

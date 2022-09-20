@@ -6,7 +6,7 @@ ClassID,ResetType,RewardDepth,GoalCount1,ClassName,Name,Desc,Category,QuestType,
 101,1,1,500,"RQ_Category_1_1","[일일] 소형 몬스터 처치","에피소드 13-1 이상 지역의 소형 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 소형 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_1"
 102,1,1,500,"RQ_Category_1_2","[일일] 중형 몬스터 처치","에피소드 13-1 이상 지역의 중형 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 중형 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_2"
 103,1,1,500,"RQ_Category_1_3","[일일] 대형 몬스터 처치","에피소드 13-1 이상 지역의 대형 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 대형 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_3"
-104,1,1,150,"RQ_Category_1_4","[일일] 엘리트 몬스터 처치","에피소드 13-1 이상 지역의 엘리트 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 엘리트 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_4"
+104,1,1,15,"RQ_Category_1_4","[일일] 엘리트 몬스터 처치","에피소드 13-1 이상 지역의 엘리트 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 엘리트 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_4"
 105,1,1,20,"RQ_Category_1_5","[일일] 유저 상점 이용","유저 상점 이용하기","RQ_Category_1","Quest","RQ_Category_1_5"
 106,2,1,20000,"RQ_Category_1_6","[주간] 몬스터 처치","에피소드 13-1 이상 지역의 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_6"
 107,2,1,150,"RQ_Category_1_7","[주간] 보스 몬스터 처치","에피소드 13-1 이상 지역의 보스 몬스터 처치 혹은 던전/레이드 콘텐츠에서 440레벨 이상 보스 몬스터 처치","RQ_Category_1","Quest","RQ_Category_1_7"

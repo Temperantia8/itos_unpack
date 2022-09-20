@@ -738,5 +738,33 @@
 		<image name="TUTO_PILGRIM_3" file="\helpimg\TUTO_PILGRIM_3.png" imgrect="0 0 380 331"/>
 		<image name="TUTO_PILGRIM_4" file="\helpimg\TUTO_PILGRIM_4.png" imgrect="0 0 380 315"/>
 		<image name="TUTO_PILGRIM_5" file="\helpimg\TUTO_PILGRIM_5.png" imgrect="0 0 380 274"/>
+		<image name="Guide_01_01_01" file="\helpimg\Guide_01_01_01.jpg" imgrect="0 0 733 258"/>
+		<image name="Guide_01_01_02" file="\helpimg\Guide_01_01_02.jpg" imgrect="0 0 380 788"/>
+		<image name="Guide_01_02_01" file="\helpimg\Guide_01_02_01.jpg" imgrect="0 0 708 216"/>
+		<image name="Guide_01_02_02" file="\helpimg\Guide_01_02_02.jpg" imgrect="0 0 380 767"/>
+		<image name="Guide_01_02_03" file="\helpimg\Guide_01_02_03.jpg" imgrect="0 0 304 203"/>
+		<image name="Guide_01_04_01" file="\helpimg\Guide_01_04_01.jpg" imgrect="0 0 319 200"/>
+		<image name="Guide_01_05_01" file="\helpimg\Guide_01_05_01.jpg" imgrect="0 0 303 1280"/>
+		<image name="Guide_01_06_01" file="\helpimg\Guide_01_06_01.jpg" imgrect="0 0 766 237"/>
+		<image name="Guide_01_07_01" file="\helpimg\Guide_01_07_01.jpg" imgrect="0 0 694 144"/>
+		<image name="Guide_01_08_01" file="\helpimg\Guide_01_08_01.jpg" imgrect="0 0 694 144"/>
+		<image name="Guide_01_09_01" file="\helpimg\Guide_01_09_01.jpg" imgrect="0 0 380 380"/>
+		<image name="Guide_02_01_01" file="\helpimg\Guide_02_01_01.jpg" imgrect="0 0 380 557"/>
+		<image name="Guide_02_05_01" file="\helpimg\Guide_02_05_01.jpg" imgrect="0 0 380 433"/>
+		<image name="Guide_02_05_02" file="\helpimg\Guide_02_05_02.jpg" imgrect="0 0 380 274"/>
+		<image name="Guide_02_05_03" file="\helpimg\Guide_02_05_03.jpg" imgrect="0 0 380 524"/>
+		<image name="Guide_03_03_01" file="\helpimg\Guide_03_03_01.jpg" imgrect="0 0 714 456"/>
+		<image name="Guide_03_07_01" file="\helpimg\Guide_03_07_01.jpg" imgrect="0 0 252 331"/>
+		<image name="Guide_03_07_02" file="\helpimg\Guide_03_07_02.jpg" imgrect="0 0 398 97"/>
+		<image name="Guide_04_01_01" file="\helpimg\Guide_04_01_01.jpg" imgrect="0 0 302 334"/>
+		<image name="Guide_04_01_02" file="\helpimg\Guide_04_01_02.jpg" imgrect="0 0 475 101"/>
+		<image name="Guide_04_04_01" file="\helpimg\Guide_04_04_01.jpg" imgrect="0 0 567 314"/>
+		<image name="Guide_04_06_01" file="\helpimg\Guide_04_06_01.jpg" imgrect="0 0 484 491"/>
+		<image name="Guide_04_06_02" file="\helpimg\Guide_04_06_02.jpg" imgrect="0 0 374 513"/>
+		<image name="Guide_04_07_01" file="\helpimg\Guide_04_07_01.jpg" imgrect="0 0 350 412"/>
+		<image name="Guide_04_08_01" file="\helpimg\Guide_04_08_01.jpg" imgrect="0 0 390 500"/>
+		<image name="Guide_06_01_01" file="\helpimg\Guide_06_01_01.jpg" imgrect="0 0 423 506"/>
+		<image name="Guide_06_04_01" file="\helpimg\Guide_06_04_01.jpg" imgrect="0 0 380 380"/>
+		<image name="Guide_08_05_01" file="\helpimg\Guide_08_05_01.jpg" imgrect="0 0 676 670"/>
 	</imagelist>
 </skinset>

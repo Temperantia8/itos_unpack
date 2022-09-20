@@ -1,4 +1,8 @@
 function SCR_BURNING_EVENT_LIST_LOAD(inputType, isServer)
+    if IS_SEASON_SERVER() == 'YES' then
+        return 'None'
+    end
+
 
     local sysTime
     
@@ -43,6 +47,10 @@ end
 
 function SCR_BURNING_EVENT_BUFF_CHECK(self, isServer)
     if IsServerSection() == 1 then
+        if IS_SEASON_SERVER(self) == 'YES' then
+            return
+        end
+        
         -- load event list
         local eventList = {}
         local xmlList, xmlCount = GetClassList("weekendevent_list")

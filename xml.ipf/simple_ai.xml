@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <AIList>
     <AI Name="3CMLAKE262_SQ11_CHECK" ActiveMessageMapInBattle="1">
         <List>
@@ -5566,7 +5567,7 @@
 				<Str_Arg Str="F_cleric_ausirine_loop" Arg="1"/>
 				<Num Num="0.1"/>
 			</ToolScp>
-			<ToolScp Scp="SAI_DEAD_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
 				<Str Str="Dievdirbys_CarveAusirine"/>
 			</ToolScp>
@@ -5577,23 +5578,23 @@
 				<Str_Arg Str="F_cleric_ausirine_loop" Arg="1"/>
 				<Str Str="BOT"/>
 			</ToolScp>
-			<ToolScp Scp="S_AI_CRE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Pos Angle="0" Dist="0"/>
 				<Angle Angle="0"/>
 				<Str Str="Dievdirbys_CarveAusirine"/>
-				<Num Num="1"/>
+				<Str Str="Dievdirbys_CarveAusirine"/>
 			</ToolScp>
 		</StartList>
 	</AI>
 	<AI Name="Dievdirbys_Laima" UpdateMS="5000" ActiveMessageMapInBattle="1">
 		<List>
-			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="5000"/>
 				<Str Str="Cleric_Laima"/>
 			</ToolScp>
 		</List>
 		<DeadList>
-			<ToolScp Scp="SAI_DEAD_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
 				<Str Str="Cleric_Laima"/>
 			</ToolScp>
@@ -5604,15 +5605,32 @@
 			</ToolScp>
 		</DeadList>
 		<StartList>
-			<ToolScp Scp="S_AI_CRE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Pos Angle="0" Dist="0"/>
 				<Angle Angle="0"/>
 				<Str Str="Cleric_Laima"/>
+				<Str Str="Dievdirbys_CarveLaima"/>
 			</ToolScp>
 			<ToolScp Scp="S_AI_EFFECT_ATTACH" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
 				<Str_Arg Str="F_cleric_laima_loop" Arg="1"/>
 				<Str Str="BOT"/>
+			</ToolScp>
+		</StartList>
+	</AI>
+	<AI Name="Dievdirbys_Laima_abil" UpdateMS="3000" ActiveMessageMapInBattle="1">
+		<DeadList>
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
+				<Num Num="0"/>
+				<Str Str="Cleric_Laima_abil"/>
+			</ToolScp>
+		</DeadList>
+		<StartList>
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
+				<Pos Angle="0" Dist="0"/>
+				<Angle Angle="0"/>
+				<Str Str="Cleric_Laima_abil"/>
+				<Str Str="Dievdirbys_CarveLaima"/>
 			</ToolScp>
 		</StartList>
 	</AI>
@@ -5674,55 +5692,79 @@
 	</AI>
 	<AI Name="Dievdirbys_Romuva" ActiveMessageMapInBattle="1">
 		<List>
-			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="500"/>
 				<Str Str="Cleric_Romuva"/>
 			</ToolScp>
 		</List>
 		<DeadList>
-			<ToolScp Scp="SAI_DEAD_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
 				<Str Str="Cleric_Romuva"/>
 			</ToolScp>
 		</DeadList>
 		<StartList>
-			<ToolScp Scp="S_AI_CRE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Pos Angle="0" Dist="0"/>
 				<Angle Angle="0"/>
 				<Str Str="Cleric_Romuva"/>
+				<Str Str="Dievdirbys_CarveAustrasKoks"/>
 			</ToolScp>
 		</StartList>
 	</AI>
 	<AI Name="Dievdirbys_Romuva_abil" ActiveMessageMapInBattle="1">
 		<List>
-			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="500"/>
 				<Str Str="Cleric_Romuva_abil"/>
 			</ToolScp>
 		</List>
 		<DeadList>
-			<ToolScp Scp="SAI_DEAD_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
 				<Str Str="Cleric_Romuva_abil"/>
 			</ToolScp>
 		</DeadList>
 		<StartList>
-			<ToolScp Scp="S_AI_CRE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Pos Angle="0" Dist="0"/>
 				<Angle Angle="0"/>
 				<Str Str="Cleric_Romuva_abil"/>
+				<Str Str="Dievdirbys_CarveAustrasKoks"/>
+			</ToolScp>
+		</StartList>
+	</AI>
+	<AI Name="Dievdirbys_Romuva_abil2" ActiveMessageMapInBattle="1">
+		<List>
+			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
+				<Num Num="500"/>
+				<Str Str="Cleric_Romuva_abil2"/>
+			</ToolScp>
+		</List>
+		<DeadList>
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
+				<Num Num="0"/>
+				<Str Str="Cleric_Romuva_abil2"/>
+			</ToolScp>
+		</DeadList>
+		<StartList>
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
+				<Pos Angle="0" Dist="0"/>
+				<Angle Angle="0"/>
+				<Str Str="Cleric_Romuva_abil2"/>
+				<Str Str="Dievdirbys_CarveAustrasKoks"/>
 			</ToolScp>
 		</StartList>
 	</AI>
 	<AI Name="Dievdirbys_Zemina" UpdateMS="1000" ActiveMessageMapInBattle="1">
 		<List>
-			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CEHCK_LIFE_TIME_AND_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="1000"/>
 				<Str Str="Cleric_Zemina"/>
 			</ToolScp>
 		</List>
 		<DeadList>
-			<ToolScp Scp="SAI_DEAD_REMOVE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="SAI_DEAD_REMOVE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
 				<Str Str="Cleric_Zemina"/>
 			</ToolScp>
@@ -5733,10 +5775,11 @@
 			</ToolScp>
 		</DeadList>
 		<StartList>
-			<ToolScp Scp="S_AI_CRE_PAD" Client="NO" UseSleep="NO">
+			<ToolScp Scp="S_AI_CRE_OWNER_PAD" Client="NO" UseSleep="NO">
 				<Pos Angle="0" Dist="0"/>
 				<Angle Angle="0"/>
 				<Str Str="Cleric_Zemina"/>
+				<Str Str="Dievdirbys_CarveZemina"/>
 			</ToolScp>
 			<ToolScp Scp="S_AI_EFFECT_ATTACH" Client="NO" UseSleep="NO">
 				<Num Num="0"/>
@@ -11261,6 +11304,13 @@
             </ToolScp>
         </StartList>
     </AI>
+	<AI Name="SPREADER_TRANSITION_CRYSTAL_FRAGMENT_MON_AI" UpdateMS="100" ActiveMessageMapInBattle="1">
+		<List>
+			<ToolScp Scp="SAI_FUNC2_DIRECT" Client="NO" UseSleep="NO">
+				<Str Str="SCR_SPREADER_TRANSITION_CRYSTAL_FRAGMENT_SUMMON_MONSTER_AI"/>
+			</ToolScp>
+		</List>
+	</AI>
     <AI Name="GM_BK_Reigning_1" ActiveMessageMapInBattle="1">
         <List>
             <ToolScp Scp="S_AI_ATTACK_NEAR_MAXHATECOUNT_CHECK" Client="NO" UseSleep="NO">
@@ -25852,6 +25902,20 @@ if self.HP == 0 then return 1; else return 0; end;">
             </ToolScp>
         </List>
     </AI>
+	<AI Name="companion_pet_twnocelot_black" ActiveMessageMapInBattle="1">
+		<List>
+			<ToolScp Scp="SAI_FUNC2_DIRECT_SLEEP" Client="NO" UseSleep="YES">
+				<Str Str="PET_LOOP_AI"/>
+			</ToolScp>
+		</List>
+	</AI>
+	<AI Name="companion_pet_twnocelot_white" ActiveMessageMapInBattle="1">
+		<List>
+			<ToolScp Scp="SAI_FUNC2_DIRECT_SLEEP" Client="NO" UseSleep="YES">
+				<Str Str="PET_LOOP_AI"/>
+			</ToolScp>
+		</List>
+	</AI>
 	<AI Name="companion_pet_weddingbird" ActiveMessageMapInBattle="1">
         <List>
             <ToolScp Scp="SAI_FUNC2_DIRECT_SLEEP" Client="NO" UseSleep="YES">

@@ -763,6 +763,17 @@ return 2500 + obj.Level * 200;"/>
 					<Num Num="0"/>
 					<Num Num="1"/>
 				</Scp>
+                <Scp Scp="SKL_TGT_BUFF" Client="NO" UseSleep="NO" Time="330">
+                    <Str Str="Feint_HoldMove_Debuff"/>
+                    <Num Num="1"/>
+                    <Num Num="0"/>
+                    <Num Num="5000" UseFunc="1" FuncTxt="
+return 2500 + obj.Level * 200;"/>
+                    <Num Num="1"/>
+                    <Num Num="100"/>
+                    <Num Num="0"/>
+                    <Num Num="1"/>
+                </Scp>
                 <Scp Scp="SKL_BUFF" Client="NO" UseSleep="NO" Time="0">
                     <Str Str="Feint_Buff"/>
 					<Num Num="1"/>

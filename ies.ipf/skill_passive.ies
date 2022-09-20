@@ -12,6 +12,7 @@ ClassID,ClassName,Job,Script
 21308,"RuneCaster_Berkana","Char2_17","SCR_SKILL_PASSIVE_RuneCaster_Berkana"
 21809,"Daoshi_LightningCharm","Char2_21","SCR_SKILL_PASSIVE_Daoshi_LightningCharm"
 21111,"Featherfoot_Bloodtransfusion","Char2_16","SCR_SKILL_PASSIVE_Featherfoot_Bloodtransfusion"
+40407,"Dievdirbys_CarveAusirine","Char4_7","SCR_SKILL_PASSIVE_Dievdirbys_CarveAusirine"
 50409,"Corsair_Brutality","Char5_5","SCR_SKILL_PASSIVE_Corsair_Brutality"
 50803,"Enchanter_EnchantLightning","Char5_8","SCR_SKILL_PASSIVE_Enchanter_EnchantLightning"
 50901,"Rogue_SneakHit","Char5_10","SCR_SKILL_PASSIVE_Rogue_SneakHit"

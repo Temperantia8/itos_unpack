@@ -405,7 +405,7 @@ function GET_GEAR_SCORE(item, pc)
                 end
             end
 
-            if is_sub_slot == true then
+            if is_sub_slot == true or (use_lv >= 480 and grade >= 6) then
                 set_advantage = 1
             end
 
@@ -414,15 +414,15 @@ function GET_GEAR_SCORE(item, pc)
             end
         end
         
-        if TryGetProp(item, 'ItemGrade', 1) >= 6 and TryGetProp(item, 'UseLv', 0) >= 470 then
-            transcend = 10
-        end
-        if grade >= 6 and TryGetProp(item, 'UseLv', 1) >= 470 and TryGetProp(item, 'GroupName', 'None') == 'Armor' then
+        if grade >= 6 and TryGetProp(item, 'UseLv', 1) >= 470 then
             random_option_penalty = 0
             enchant_option_penalty = 0
         end
 
         set_option = 1 - random_option_penalty - enchant_option_penalty        
+        if TryGetProp(item, 'ItemGrade', 1) >= 6 and TryGetProp(item, 'UseLv', 0) >= 470 then
+            transcend = 10
+        end
         
         local ret = 0    
         if grade < 6 then
@@ -431,7 +431,11 @@ function GET_GEAR_SCORE(item, pc)
             local reinforce_ratio = 20
             local transcend_ratio = 3
             local diff = avg_lv - 460
+            if use_lv >= 480 then
+                diff = use_lv - 460                
+            end
             diff = math.max(0, diff)
+            
             ret = (transcend * transcend_ratio) + (reinforce_ratio * reinforce) + (diff * reinforce_ratio) + 460
             ret = ret * (math.min(1, avg_lv / use_lv))
         end

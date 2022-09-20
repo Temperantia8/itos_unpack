@@ -364,6 +364,10 @@ end
 
 -- 살림통 업그레이드할 때 소모될 tp --
 function GET_FISHING_ITEM_BAG_UPGRADE_COST(pc, currentExpandCount)
+    if IS_SEASON_SERVER(pc) == 'YES' then
+        return 0
+    end
+
     if currentExpandCount == nil then
         return 0;   -- 0 반환하면 업그레이드 안시켜주게 해놓을 거에요
     end

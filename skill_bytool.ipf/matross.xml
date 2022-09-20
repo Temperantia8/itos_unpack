@@ -58,8 +58,13 @@
 				</Scp>
 				<Scp Scp="SKL_TGT_MOVE" Client="NO" UseSleep="YES" Time="300">
 					<Num Num="30"/>
-					<Num Num="0" UseFunc="1" FuncTxt="local value = 90; if GET_ABIL_LEVEL(self, &quot;Matross2&quot;) > 0 then value =  value  * 0.5; end return value"/>
-					<Num Num="180" UseFunc="1" FuncTxt="local value = GetDirection(self) return 180-value"/>
+					<Num Num="0" UseFunc="1" FuncTxt="local value = 90
+					if GET_ABIL_LEVEL(self, &quot;Matross2&quot;) &gt; 0 then
+						value = value * 0.5
+					end
+					return value"/>
+					<Num Num="180" UseFunc="1" FuncTxt="local value = GetDirection(self)
+					return 180 - value"/>
 					<Num Num="0"/>
 					<Num Num="0"/>
 					<Num Num="1"/>
@@ -117,12 +122,8 @@
 					<Num Num="60"/>
 					<Num Num="1"/>
 					<Num Num="0.1"/>
-					<Num Num="5" UseFunc="1" FuncTxt="local value = math.floor(3 + skill.Level * 0.375)
-
-                    if IsPVPField(self) == 1 and value > 2 then
-                    value = math.floor((math.max(0, value-2)^0.5))+math.min(2, value)
-                    end
-                    return value;"/>
+					<Num Num="5" UseFunc="1" FuncTxt="local value = SCR_GET_Explosion_Ratio(skill)
+                    return value"/>
 				</ToolScp>
 				<ToolScp Scp="S_R_COND_SCRIPT" Client="NO" UseSleep="NO">
 					<Str Str="SCR_ITEM_MATROSS_VIBORA_EXPLOSION"/>
@@ -158,12 +159,8 @@
 				<Scp Scp="SKL_SET_TARGET_CIRCLE" Client="NO" UseSleep="NO" Time="500">
 					<Pos Angle="0" Dist="80"/>
 					<Num Num="80"/>
-					<Num Num="5" UseFunc="1" FuncTxt="local value = 5 + obj.Level * 3
-if IsPVPField(self) == 1 and value > 2 then
-value = math.floor((math.max(0, value-2)^0.5))+math.min(2, value)
-end
-
-return value;"/>
+					<Num Num="5" UseFunc="1" FuncTxt="local value = SCR_GET_MenaceShot_Ratio(obj)
+					return value"/>
 					<Num Num="2"/>
 					<Num Num="0"/>
 					<Num Num="0"/>
@@ -174,7 +171,11 @@ return value;"/>
 					<Str Str="Panic_Debuff"/>
 					<Num Num="1" UseFunc="1" FuncTxt="return obj.Level;"/>
 					<Num Num="0"/>
-					<Num Num="5000" UseFunc="1" FuncTxt="local value = 5000; if IsPVPServer(self) == 1 or IsPVPField(self) == 1 then value = value * 0.5; end return value;"/>
+					<Num Num="5000" UseFunc="1" FuncTxt="local value = 5000
+					if IsPVPServer(self) == 1 or IsPVPField(self) == 1 then
+						value = value * 0.5
+					end
+					return value"/>
 					<Num Num="1"/>
 					<Num Num="100"/>
 					<Num Num="0"/>

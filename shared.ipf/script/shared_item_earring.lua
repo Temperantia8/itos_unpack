@@ -23,6 +23,8 @@ iten_earring_base_ctrl_list = {'Warrior', 'Wizard', 'Archer', 'Cleric', 'Scout'}
 local item_earring_max_special_option_count = nil 
 item_earring_ctrl_tree = nil
 
+shared_item_earring.MAX_SLOT_CNT = 25;
+
 local function make_item_earring_option_range()
     if item_earring_option_range ~= nil then
         return
@@ -199,14 +201,20 @@ shared_item_earring.get_fragmentation_count = function(item)
         end
 
         return grade
-    elseif TryGetProp(item, 'GroupName', 'None') == 'BELT' then
+    elseif TryGetProp(item, 'GroupName', 'None') == 'BELT' or shared_item_goddess_icor.get_goddess_icor_grade(item) > 0 then
         return TryGetProp(item, 'NumberArg1', 1)
+    elseif IS_RANDOM_OPTION_SKILL_GEM(item) then
+        return 1
     end
 
     return 1
 end
 
 shared_item_earring.is_able_to_fragmetation = function(item)    
+    if IS_RANDOM_OPTION_SKILL_GEM(item) == true then
+        return true
+    end
+
     if TryGetProp(item, 'ClassName', 'None') == 'EP13_SampleGabijaEarring' then
         return false
     end
@@ -215,9 +223,25 @@ shared_item_earring.is_able_to_fragmetation = function(item)
         return false
     end
 
-    if TryGetProp(item, 'GroupName', 'None') ~= 'Earring' and TryGetProp(item, 'GroupName', 'None') ~= 'BELT' then
+    if TryGetProp(item, 'GroupName', 'None') ~= 'Earring' and TryGetProp(item, 'GroupName', 'None') ~= 'BELT' 
+        and shared_item_goddess_icor.get_goddess_icor_grade(item) == 0
+    then
         return false
     end
     
     return true
+end
+
+-- 지급할 아이템
+shared_item_earring.get_give_item_name = function(item)
+    if TryGetProp(item, 'GroupName', 'None') == 'Earring' or TryGetProp(item, 'GroupName', 'None') == 'BELT' or shared_item_goddess_icor.get_goddess_icor_grade(item) > 0 then
+        return TryGetProp(item, 'StringArg', 'None')
+    elseif IS_RANDOM_OPTION_SKILL_GEM(item) then
+        local name = 'piece_random_skill_gem_'
+        local lv = TryGetProp(item, 'RandomGemLevel', 0) -- 지급할 아이템 suffix 를 의미함
+        name = name .. lv
+        return name
+    end
+
+    return 'None'
 end

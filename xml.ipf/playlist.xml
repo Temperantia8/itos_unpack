@@ -1,5 +1,5 @@
 <!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by sevin (IMCGAMES) -->
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (IMCGames Co., Ltd) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <PlayList>
 	<BGM PlayListName="Login_Barrack" Volume="90" FileName1="tos_Kevin_TOS_Carol_2017.mp3" FileName2="tos_Tree_of_Savior_Piano.mp3" FileName3="tos_SFA_Openup_Po10.mp3"/>
 	<BGM PlayListName="NoMusic" Volume="90" FileName1="tos_mute_1minute.mp3"/>
@@ -154,9 +154,15 @@
 	<BGM PlayListName="f_episode13_2" Volume="130" FileName1="tos_Initium_Hope_and_Cry.mp3" FileName2="tos_Initium_Stella.mp3" FileName3="tos_SFA_Klubas.mp3"/>
 	<BGM PlayListName="f_episode14_1_1" Volume="130" FileName1="tos_SFA_Memories_of_the_winter.mp3" FileName2="tos_SoundTeMP_Tender_Is_the_Night.mp3" FileName3="tos_Initium_Alcemy.mp3"/>
 	<BGM PlayListName="f_episode14_1_2" Volume="130" FileName1="tos_SFA_Eagle_Taloon.mp3" FileName2="tos_SFA_Velvety.mp3"/>
+	<BGM PlayListName="f_episode14_2_1" Volume="130" FileName1="tos_SFA_Never_Surrender.mp3"/>
+	<BGM PlayListName="f_episode14_2_2" Volume="130" FileName1="tos_SoundTeMP_Age_of_Rage.mp3"/>
+	<BGM PlayListName="f_episode14_2_3" Volume="130" FileName1="tos_SFA_The_Awakening_of_Pluto.mp3"/>
 	<BGM PlayListName="raid_delmore_1" Volume="130" FileName1="tos_SFA_The_Mirror_of_Fate.mp3"/>
 	<BGM PlayListName="raid_delmore_2" Volume="130" FileName1="tos_Symphonix_miles_to_go.mp3"/>
 	<BGM PlayListName="raid_earring" Volume="130" FileName1="tos_SFA_Perseguir_la_cola.mp3"/>
+	<BGM PlayListName="raid_jellyzele" Volume="130" FileName1="tos_SFA_Jelly_beenie_flight.mp3"/>
+	<BGM PlayListName="raid_turbulentcore" Volume="130" FileName1="tos_Gaudium_Searching.mp3"/>
+	<BGM PlayListName="boss_spreader" Volume="130" FileName1="tos_Cinenote_Action7_Spreader.mp3"/>
 	<BGM PlayListName="track" Volume="90" FileName1="track.mp3"/>
 	<BGM PlayListName="id_new_1" Volume="120" FileName1="tos_KubotaOsamu_The_Sun_Part2.mp3"/>
 	<BGM PlayListName="id_new_2" Volume="120" FileName1="tos_SFA_Xenute.mp3"/>
@@ -170,5 +176,4 @@
 	<BGM PlayListName="DLC_7" Volume="140" FileName1="tos_SFA_Deives_Veliava_feat_Romanas(DLC_special_edition).mp3" FileName2="tos_SFA_Cherish_the_Memory(bonus_track).mp3"/>
 	<BGM PlayListName="DLC_8" Volume="140" FileName1="tos_SFA_Samba_de_Seoul(DLC_SE1).mp3" FileName2="tos_SFA_Pristinee_Edm_mixed(DLC_SE2).mp3"/>
 	<BGM PlayListName="DLC_9" Volume="140" FileName1="tos_SFA_Cherry_Deive.mp3" FileName2="tos_SFA_Dieno_Blossom.mp3"/>
-	<BGM PlayListName="raid_jellyzele" Volume="130" FileName1="tos_SFA_Jelly_beenie_flight.mp3"/>
 </PlayList>

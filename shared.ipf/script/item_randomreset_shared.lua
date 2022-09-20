@@ -101,6 +101,16 @@ function CHECK_JEWELL_COMMON_CONSTRAINT(item)
 		return false;
 	end
 	
+	if TryGetProp(item, 'ClassType', 'None') == 'Ring' or TryGetProp(item, 'ClassType', 'None') == 'Neck' then
+		return 'WebService_38'
+	end
+
+	local group_name = TryGetProp(item, 'GroupName', 'None')
+	-- 470제 이상 가디스 방어구는 인챈트 불가
+	if TryGetProp(item, 'ItemGrade', 0) >= 6 and TryGetProp(item, 'UseLv', 0) >= 470 and (TryGetProp(item, 'GroupName', 'None') == 'Armor' or string.find(group_name, 'Weapon') ~= nil) then
+		return false
+	end
+
     local classType = TryGetProp(item, 'ClassType');
 	local enableClassType = {'Sword', 'THSword', 'Staff', 'THBow', 'Bow', 'Mace', 'THMace', 'Spear', 'THSpear', 'Dagger', 'THStaff', 'Pistol', 'Rapier', 'Cannon', 'Musket', 'Shirt', 'Pants', 'Boots', 'Gloves', 'Shield', 'Trinket'};
 	for i = 1, #enableClassType do
@@ -119,6 +129,11 @@ function IS_ABLE_TO_REINFORCE_GODDESS(item)
 	
 	if TryGetProp(item, 'ItemGrade', 0) < 6 then
 		return false
+	end
+
+	local equip_group = TryGetProp(item, 'EquipGroup', 'None')
+	if TryGetProp(item, 'UseLv', 0) == 480 and (equip_group == 'SHIRT' or equip_group == 'PANTS' or equip_group == 'BOOTS' or equip_group == 'GLOVES') then
+		return false, 'LockReinforceState'
 	end
 
     local classType = TryGetProp(item, 'ClassType');
@@ -217,7 +232,12 @@ function IS_ENABLE_APPLY_JEWELL_TOOLTIPTEXT(targetItem)
 	        return false, 'Type';
 	    end
 	end
-	
+
+	if TryGetProp(targetItem, 'UseLv', 0) >= 470 and TryGetProp(targetItem, 'GroupName', 'None') == 'Armor' then
+		return false, 'Type';
+	end
+
+	return false, 'Type';
 end
 
 
