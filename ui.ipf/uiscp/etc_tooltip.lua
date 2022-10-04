@@ -254,7 +254,7 @@ function DRAW_ETC_DESC_TOOLTIP(tooltipframe, invitem, yPos, mainframename)
 				Desc = dic.getTranslatedStr(Desc)
 				Desc = replace(Desc, dic.getTranslatedStr(ClMsg('ExchangeRecycleMedal_1')), '')
 				Desc = replace(Desc, dic.getTranslatedStr(ClMsg('ExchangeRecycleMedal_2')), '')
-			print(Desc, ClMsg('ExchangeRecycleMedal_2'))
+				
 				if TryGetProp(invitem, 'TeamBelonging', 0) == 0 and TryGetProp(invitem, 'CharacterBelonging', 0) == 0 then
 					local suffix = '{nl}' .. ScpArgMsg('ExchangeRecycleMedal', 'value', sell)
 					Desc = Desc .. suffix
