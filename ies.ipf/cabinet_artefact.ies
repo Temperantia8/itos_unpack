@@ -1,0 +1,4 @@
+ClassID,Upgrade,MakeCostSilver,MaxUpgrade,Basic,Category,ClassName,GetItemFunc,RegisterFunc,EnchantFunc,AccountProperty,UpgradeAccountProperty,Name
+1,0,10000,1,0,"Artefact","EP14_Artefact_014","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_014_cabinet","","헬리오폴리스 아누비스 캐논"
+2,0,10000,1,0,"Artefact","EP14_Artefact_015","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_015_cabinet","","헬리오폴리스 오시리스 대거"
+3,0,10000,1,0,"Artefact","EP14_Artefact_016","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_016_cabinet","","헬리오폴리스 호루스 스피어"

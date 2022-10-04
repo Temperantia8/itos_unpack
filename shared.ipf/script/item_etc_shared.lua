@@ -304,3 +304,16 @@ function SET_GODDESS_EVOLVED_EFFECT_INFO(self, guid, equip)
         end
     end
 end
+
+-- dress room
+function IS_REGISTER_ENABLE_COSTUME(item)
+    if item == nil then
+        return false
+    end
+
+    if TryGetProp(item, "TeamBelonging", 0) == 1 then
+        return false, "CantRegisterCuzTeamBelonging"
+    end
+
+    return true
+end

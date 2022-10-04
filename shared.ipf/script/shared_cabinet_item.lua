@@ -23,6 +23,8 @@ local function make_cabinet_required_item_list()
     category_list['Skillgem'] = 1
     --
     category_list['Relicgem'] = 1
+    category_list['Artefact'] = 1
+
     for k, v in pairs(category_list) do
         g_cabinet_required_item_list[k] = {} -- 카테고리 생성
     end
@@ -295,6 +297,28 @@ local function make_cabinet_required_item_list()
             end
         end
     end
+
+    local class_list,cnt = GetClassList('cabinet_artefact')
+    for i =0,cnt -1 do
+        local entry_cls = GetClassByIndexFromList(class_list,i)
+        if entry_cls ~=nil then
+            local item_name = TryGetProp(entry_cls,'ClassName','None')
+            local max_lv    = TryGetProp(entry_cls,'MaxUpgrade',1)
+            local item_cls  = GetClass('Item',item_name)
+            if item_cls ~= nil and TryGetProp(entry_cls,'Basic',0) == 0 then
+                if g_cabinet_required_item_list['Artefact'][item_name] == nil then
+                    g_cabinet_required_item_list['Artefact'][item_name] = {}
+                end
+                local lv = 1
+                for lv = 1 ,max_lv do
+                    if g_cabinet_required_item_list['Artefact'][item_name][lv] ==nil then
+                        g_cabinet_required_item_list['Artefact'][item_name][lv] ={}
+                    end
+                    g_cabinet_required_item_list['Artefact'][item_name][lv][item_name] = 1
+                end
+            end
+        end
+    end
 end
 
 make_cabinet_required_item_list()
@@ -547,7 +571,6 @@ end
 
 function CHECK_ENCHANT_VALIDATION(target_item, category, type, aObj, pc)
     if target_item == nil then return end
-    
     if TryGetProp(target_item, 'ItemGrade', 1) < 6 then        
         return false, "OnlyEquipGoddessItemOnSlot";
     end
@@ -566,6 +589,8 @@ function CHECK_ENCHANT_VALIDATION(target_item, category, type, aObj, pc)
         idspace = 'cabinet_weapon'
     elseif category == 'Armor' then
         idspace = 'cabinet_armor'
+    elseif category == 'Artefact' then
+        idspace = 'cabinet_artefact'
     end    
     
     if idspace == 'None' then         
@@ -593,6 +618,10 @@ function CHECK_ENCHANT_VALIDATION(target_item, category, type, aObj, pc)
 
     if TryGetProp(target_item, 'InheritanceItemName', 'None') == TryGetProp(inheritance_item_name_cls, 'ClassName', 'None') then        
         return false, "AlreadyPrefixOption";
+    end
+
+    if TryGetProp(target_item, 'BriquettingIndex', 'None') == TryGetProp(inheritance_item_name_cls, 'ClassID', 'None') then        
+        return false, "AlreadyBriquet";
     end
 
     if TryGetProp(inheritance_item_name_cls, 'ClassType', 'None') == 'Arcane' then        

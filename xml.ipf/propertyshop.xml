@@ -127,6 +127,7 @@
 		<Item Script="None" Name="Mulia_emotion_Pack1" Count="1" Price="6000" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2208_1"/>
 		<Item Script="None" Name="Spreader_moticon01" Count="1" Price="3000" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2208_2"/>
 		<Item Script="None" Name="Spreader_moticon02" Count="1" Price="3000" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2208_3"/>
+		<Item Script="None" Name="DRESS_ROOM_COLLECT_8" Count="1" Price="3000" DailyBuyLimit="0" AccountNeedProperty="ContentsTotalShop_2209_3"/>
 		<Item Script="None" Name="Relic_exp_token" Count="1" Price="25" DailyBuyLimit="0" AccountNeedProperty=""/>
 		<Item Script="None" Name="Relic_exp_refine_conversion" Count="1" Price="500" DailyBuyLimit="0" AccountNeedProperty=""/>
 		<Item Script="None" Name="Relic_gem_upgrade_token" Count="1" Price="250" DailyBuyLimit="0" AccountNeedProperty=""/>

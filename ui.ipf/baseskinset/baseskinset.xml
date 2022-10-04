@@ -14629,6 +14629,7 @@
 		<image name="icon_spreader_transition_curse" file="\icon\buff_icon6.tga" imgrect="896 896 128 128" CMM_Caption="변이 저주"/>
 		<image name="icon_spreader_transition_vestige" file="\icon\buff_icon6.tga" imgrect="0 1024 128 128" CMM_Caption="흔적"/>
 		<image name="icon_buff_ridepet_ep14rider" file="\icon\buff_icon6.tga" imgrect="128 1024 128 128" CMM_Caption="7월 테마 버프"/>
+		<image name="icon_buff_ridepet_ep14egypt" file="\icon\buff_icon6.tga" imgrect="256 1280 128 128" CMM_Caption="9월 테마 버프"/>
 	</imagelist>
 	<imagelist category="housing_bufficon">
 		<image name="icon_Weapon_Klaida" file="\icon\icon_hosing_buff.tga" imgrect="0 0 128 128"/>
@@ -15541,6 +15542,7 @@
 		<image name="ridepet_ep13animal" file="\icon\ridepet.tga" imgrect="80 80 80 80" CMM_Caption="목마"/>
 		<image name="ridepet_ep14fivebird" file="\icon\ridepet.tga" imgrect="160 80 80 80" CMM_Caption="전투기"/>
 		<image name="ridepet_ep14rider" file="\icon\ridepet.tga" imgrect="240 80 80 80" CMM_Caption="토스 데이비슨"/>
+		<image name="ridepet_ep14egypt" file="\icon\ridepet.tga" imgrect="320 80 80 80" CMM_Caption="태양의 배"/>
 	</imagelist>
 	<effectimagelist category="effectlist">
 		<image name="blue_orb" file="\icon\blue_orb.tga" imgrect="0 0 256 256"/>

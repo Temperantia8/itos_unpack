@@ -342,6 +342,7 @@
 	<ReadXml Name="cabinet_ark"/>
 	<ReadXml Name="cabinet_skillgem"/>
 	<ReadXml Name="cabinet_relicgem"/>
+	<ReadXml Name="cabinet_artefact"/>
 	<ReadXml Name="housingcraft_rewardgroup"/>
 	<ReadXml Name="EliteEquipDrop"/>
 	<ReadXml Name="challenge_mode_auto_map"/>

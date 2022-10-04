@@ -866,6 +866,7 @@
         <Effect Name="skl_eff_pet_ep14rider_ride_on"/>
         <Effect Name="skl_eff_pet_ep14rider_idl_2sec"/>
         <Effect Name="skl_eff_pet_ep14rider_run_2sec"/>
+        <Effect Name="artefact_ep14egypt_paddle"/>
     </Category>
     <Category ID="187">
         <Effect Name="F_bg_boil002"/>

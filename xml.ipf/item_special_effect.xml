@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by imc (imc) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by IMCGames Co., Ltd (IMCGames Co., Ltd) -->
 <List>
 	<ItemList ItemClassName="wing_redlight_balloon">
 		<Layer effect="F_light165_red_loop" TargetNode="wing_Dummy_effect" scale="1.1" offset="0;0">
@@ -3853,6 +3853,16 @@
 	</ItemList>
 	<ItemList ItemClassName="EP14_Artefact_013">
 		<Layer effect="F_breath007_fire2" TargetNode="Dummy_effect_fire" scale="0.8" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="NO" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="wing_ep14egypt">
+		<Layer effect="F_light215_orange_loop" TargetNode="Dummy_effect_wing2" scale="0.7" offset="0;0">
 			<Creation>
 				<Property PlayMoment="None">
 					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="NO" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>

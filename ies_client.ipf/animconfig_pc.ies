@@ -1578,3 +1578,7 @@ ClassID,BlendIn,BlendOut,Priority,OffsetValue,ClassName,Main,Loop,Freeze,Additiv
 1622,0,0,4,0,"SKL_RESURRECTION_SHOT_PRIEST39","YES","NO","YES","NO","YES","NO","NO","","NO","Attack"
 1623,0,0,4,0,"SKL_RESURRECTION_SHOT_PRIEST39_RIDE","YES","NO","YES","NO","YES","NO","NO","","NO","Attack"
 1624,0,0,4,0,"SKL_KAGURADANCE_ABIL","YES","YES","NO","NO","YES","NO","NO","","NO","Stand"
+1625,0,0,4,0,"RUN_EP14RIDER","YES","YES","NO","NO","YES","NO","NO","","NO","Stand"
+1626,0,0,4,0,"WLK_EP14RIDER","YES","YES","NO","NO","YES","NO","NO","","NO","Stand"
+1627,0,0,4,0,"RUN_EP14EGYPT","YES","YES","NO","NO","YES","NO","NO","","NO","Stand"
+1628,0,0,4,0,"WLK_EP14EGYPT","YES","YES","NO","NO","YES","NO","NO","","NO","Stand"
