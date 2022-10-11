@@ -729,7 +729,7 @@ function SCR_ABIL_SWORDMASTERY_ACTIVE(self, ability)
 
     local rItem  = GetEquipItem(self, 'RH');
     local rClassType = TryGetProp(rItem, "ClassType")
-    if rClassType == "Sword" or rClassType == "Spear" or rClassType == "Rapier" then
+    if rClassType == "Sword" or rClassType == "Spear" or rClassType == "Rapier" or rClassType == "Mace" then
         local lItem  = GetEquipItem(self, 'LH');
         if TryGetProp(lItem, "ClassType") == "Shield" then
             local akt = (TryGetProp(rItem, "MINATK", 0) + TryGetProp(rItem, "MAXATK", 0)) / 2
@@ -739,7 +739,7 @@ function SCR_ABIL_SWORDMASTERY_ACTIVE(self, ability)
 
     local r_subItem  = GetEquipItem(self, 'RH_SUB');
     local r_subClassType = TryGetProp(r_subItem, "ClassType")
-    if r_subClassType == "Sword" or r_subClassType == "Spear" or r_subClassType == "Rapier" then
+    if r_subClassType == "Sword" or r_subClassType == "Spear" or r_subClassType == "Rapier" or rClassType == "Mace" then
         local l_subItem  = GetEquipItem(self, 'LH_SUB');
         if TryGetProp(l_subItem, "ClassType") == "Shield" then
             local akt = (TryGetProp(r_subItem, "MINATK", 0) + TryGetProp(r_subItem, "MAXATK", 0)) / 2

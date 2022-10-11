@@ -8985,6 +8985,9 @@
 		<image name="icon_item_boss_coop_set_f" file="\icon\payment\icon_item_boss_coop_set_f.png" imgrect="0 0 256 256" CMM_Caption="보스 협동전_세트 2종"/>
 		<image name="icon_item_boss_coop_set_m" file="\icon\payment\icon_item_boss_coop_set_m.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_potion_resetSkill_Class" file="\icon\payment\icon_item_potion_resetSkill_Class.png" imgrect="0 0 256 256" CMM_Caption="클래스 스킬 초기화"/>
+		<image name="item_icon_pet_twnocelot" file="\icon\payment\item_icon_pet_twnocelot.png" imgrect="0 0 256 256" CMM_Caption="대만 5주년 오셀롯_컴패니언 알"/>
+		<image name="item_icon_wing_ocelotbag" file="\icon\payment\item_icon_wing_ocelotbag.png" imgrect="0 0 256 256" CMM_Caption="대만 5주년 오셀롯_가방"/>
+		<image name="item_icon_wing_twnocelot" file="\icon\payment\item_icon_wing_twnocelot.png" imgrect="0 0 256 256" CMM_Caption="대만 5주년 오셀롯_풍선"/>
 		<image name="icon_item_box_effect_ep13stem" file="\icon\payment\icon_item_box_effect_ep13stem.png" imgrect="0 0 256 256" CMM_Caption="2021.05테마_33종"/>
 		<image name="icon_item_box_wing_ep13stem" file="\icon\payment\icon_item_box_wing_ep13stem.png" imgrect="0 0 256 256"/>
 		<image name="icon_item_box_wing_ep13stem02" file="\icon\payment\icon_item_box_wing_ep13stem02.png" imgrect="0 0 256 256"/>

@@ -107,7 +107,7 @@
 							<Str Str="voice_archer_m_blockandshoot_cast"/>
 							<Str Str="voice_archer_f_blockandshoot_cast"/>
 						</Scp>
-						<Scp Scp="MONSKL_PAD_FRONT_MSL" Client="NO" UseSleep="YES" Time="250" LoopTime="250">
+						<Scp Scp="MONSKL_PAD_FRONT_MSL" Client="NO" UseSleep="YES" Time="260" LoopTime="260">
 							<Pos Angle="0" Dist="0"/>
 							<Str Str="QuarrelShooter_BlockAndShoot"/>
 							<Num Num="200"/>

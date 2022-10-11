@@ -1,8 +1,5 @@
 ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeeklyCount,ClassName,Category,SubCategory,ItemClassName,Job,SellStartTime,SellEndTime,WarningMsg,BonusItemName,BonusOnlySeasonServer,AccountLimitWeeklyCountProperty,ItemSocial,buyOptionFunc
-4,539,0,220901,5,0,0,"ClassName4","TP_Premium","TP_Package","GLOBAL_2208package_Entrance","","2022-04-28 09:00:00","2022-10-26 06:00:00","NO","","NO","","",""
-5,235,0,220902,5,0,0,"ClassName5","TP_Premium","TP_Package","GLOBAL_2208package_Relic","","2022-04-28 09:00:00","2022-10-26 06:00:00","NO","","NO","","",""
-6,179,0,220903,5,0,0,"ClassName6","TP_Premium","TP_Package","GLOBAL_2208package_Reinforce","","2022-04-28 09:00:00","2022-10-26 06:00:00","NO","","NO","","",""
-7,999,0,220904,3,0,0,"ClassName7","TP_Premium","TP_Package","GLOBAL_2208package_AIO","","2022-04-28 09:00:00","2022-10-26 06:00:00","NO","","NO","","",""
+1,799,0,221011,1,0,0,"ClassName1","TP_Premium","TP_Package","Premium_Ocelot","","","","NO","","NO","","",""
 51,49,0,210430,0,0,1,"ClassName51","TP_Premium","TP_Package","Dungeon_Key01_NoTrade_500ea","","","","NO","","NO","AccountLimitWeeklyCountProperty_1","",""
 52,43,0,210429,0,0,2,"ClassName52","TP_Premium","TP_Package","GoddessCard_Reinforce_package","","","","NO","","NO","AccountLimitWeeklyCountProperty_2","",""
 53,38,0,210428,0,0,2,"ClassName53","TP_Premium","TP_Package","coin_package_480","","","","NO","","NO","AccountLimitWeeklyCountProperty_3","",""
@@ -31,8 +28,6 @@ ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeekl
 122,58,0,210713,0,0,0,"ClassName122","TP_Premium","TP_Useable","EngraveSlotExtension_Ticket_90d","","","","NO","","NO","","",""
 123,33,0,210617,0,0,0,"ClassName123","TP_Premium","TP_Useable","Exchange_Weapon_Book_480","","","","NO","","NO","","",""
 124,33,0,210617,0,0,0,"ClassName124","TP_Premium","TP_Useable","ExchangeACC_Book_470","","","","NO","","NO","","",""
-203,53,0,220901,0,0,0,"ClassName203","TP_Premium","TP_Cube","GACHA_TWN_RESALE_ONE","","","","YES","","","","",""
-204,530,0,220902,0,0,0,"ClassName204","TP_Premium","TP_Cube","GACHA_TWN_RESALE_001","","","","YES","","","","",""
 301,8,0,210125,0,0,0,"ClassName301","TP_Premium","TP_Consume","Premium_Enchantchip","","","","NO","","NO","","",""
 302,128,0,210124,0,0,0,"ClassName302","TP_Premium","TP_Consume","Premium_Enchantchip_20","","","","NO","","NO","","",""
 303,3,0,210123,0,0,0,"ClassName303","TP_Premium","TP_Consume","Premium_repairPotion","","","","NO","","NO","","",""
