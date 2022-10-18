@@ -1012,6 +1012,14 @@ end
 
 
 function GIBBS_SAMPLING(list, max_number)
+    local sum = 0
+    if max_number == nil then
+        for k, v in pairs(list) do
+            sum = sum + tonumber(v)
+        end
+        max_number = sum
+    end
+
     local production_sum = 0
     local random_num = IMCRandom(1, max_number)
     for k, v in pairs(list) do

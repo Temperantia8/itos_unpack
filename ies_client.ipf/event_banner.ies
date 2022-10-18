@@ -1,7 +1,7 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202210,110000,202210,160000,202210,250000,202210,200000,0,0,"inGame_E1","Ocelot Attendance Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2647","","","",""
-999902,202210,40000,202210,90000,202211,150000,202211,100000,0,0,"inGame_E2","Goddess Glory: HELIOPOLIS","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2644","","","",""
-999903,202209,270000,202210,20000,202210,180000,202210,130000,0,0,"inGame_E3","Leticia's Secret Cube","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2637","","","",""
+999901,202210,180000,202210,130000,202211,80000,202211,30000,0,0,"inGame_E1","Bubbly Bubble Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2653","","","",""
+999902,202210,110000,202210,160000,202210,250000,202210,200000,0,0,"inGame_E2","Ocelot Attendance Package","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2647","","","",""
+999903,202210,40000,202210,90000,202211,150000,202211,100000,0,0,"inGame_E3","Goddess Glory: HELIOPOLIS","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2644","","","",""
 999904,202209,200000,202209,250000,202210,250000,202210,200000,0,0,"inGame_E4","Tree of Harmony Event","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2622","","","",""
 999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2638","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"
