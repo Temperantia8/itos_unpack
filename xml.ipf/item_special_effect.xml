@@ -3470,9 +3470,9 @@
 		</Layer>
 	</ItemList>
 	<ItemList ItemClassName="EP12_Re_Artefact_634155">
-		<Layer effect="F_hit_halloween" TargetNode="Dummy_tsp_atk_weapon" scale="1.0" offset="0;0">
+		<Layer effect="F_hit_halloween" TargetNode="Dummy_tsp_atk_weapon" scale="0.5" offset="0;0">
 			<Creation>
-				<Property PlayMoment="GiveAttackFrom">
+				<Property PlayMoment="GiveAttackSelf">
 					<Option ReinforceValue="0" UseAttach="NO" Use2DEffect="YES" IgnoreAnimEventEffect="YES" SubWeaponPistol="NO"/>
 					<Sound SoundName="None" SoundVolume="1"/>
 				</Property>

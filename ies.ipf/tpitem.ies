@@ -1,5 +1,4 @@
 ClassID,Price,JobGrade,Itemdate,AccountLimitCount,BonusItemCnt,AccountLimitWeeklyCount,ClassName,Category,SubCategory,ItemClassName,Job,SellStartTime,SellEndTime,WarningMsg,BonusItemName,BonusOnlySeasonServer,AccountLimitWeeklyCountProperty,ItemSocial,buyOptionFunc
-1,799,0,221011,1,0,0,"ClassName1","TP_Premium","TP_Package","Premium_Ocelot","","","","NO","","NO","","",""
 2,549,0,221012,5,0,0,"ClassName2","TP_Premium","TP_Package","GLOBAL_2210package_Entrance_A","","2022-04-28 09:00:00","2022-11-26 06:00:00","NO","","NO","","",""
 3,249,0,221013,5,0,0,"ClassName3","TP_Premium","TP_Package","GLOBAL_2210package_Entrance_B","","2022-04-28 09:00:00","2022-11-26 06:00:00","NO","","NO","","",""
 4,299,0,221014,5,0,0,"ClassName4","TP_Premium","TP_Package","GLOBAL_2210package_Reinforce","","2022-04-28 09:00:00","2022-11-26 06:00:00","NO","","NO","","",""
