@@ -133,7 +133,7 @@ function IS_ABLE_TO_REINFORCE_GODDESS(item)
 
 	local equip_group = TryGetProp(item, 'EquipGroup', 'None')
 	if TryGetProp(item, 'UseLv', 0) == 480 and (equip_group == 'SHIRT' or equip_group == 'PANTS' or equip_group == 'BOOTS' or equip_group == 'GLOVES') then
-		return false, 'LockReinforceState'
+		return false, 'TemporarilyUnavailable'
 	end
 
     local classType = TryGetProp(item, 'ClassType');
