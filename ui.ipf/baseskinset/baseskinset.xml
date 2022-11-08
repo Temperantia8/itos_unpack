@@ -15394,6 +15394,7 @@
 		<image name="plate_achieve_Spreader_silver" file="\skin\user_title_skin.tga" imgrect="430 1136 214 36"/>
 		<image name="plate_achieve_Spreader_bronze" file="\skin\user_title_skin.tga" imgrect="645 1136 214 36"/>
 		<image name="plate_achieve_ep14_2_raid_achivement" file="\skin\user_title_skin.tga" imgrect="860 1136 214 36"/>
+		<image name="plate_achieve_Belle" file="\skin\user_title_skin.tga" imgrect="430 1210 214 34" CMM_Caption="무도회 팬아트 보상 칭호"/>
 	</imagelist>
 	<imagelist category="skin_hair">
 		<image name="icon_skintone_01_m01" file="\skin\skinhair\icon_skintone_01_m01.png" imgrect="0 0 80 80" CMM_Caption="남성 01"/>

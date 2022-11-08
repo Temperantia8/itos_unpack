@@ -3871,6 +3871,56 @@
 			</Creation>
 		</Layer>
 	</ItemList>
+	<ItemList ItemClassName="wing_ep14tarot01">
+		<Layer effect="F_pc_item_wing_tarot_star_loop" TargetNode="Dummy_effect_wing001" scale="0.7" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="wing_ep14tarot02">
+		<Layer effect="F_pc_item_wing_tarot_moon_loop" TargetNode="Dummy_effect_wing001" scale="0.7" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP14_Artefact_017">
+		<Layer effect="F_rize029_yellow_loop1" TargetNode="Dummy_effect_weapon001" scale="0.7" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP14_Artefact_019">
+		<Layer effect="F_pc_item_ep14tarot_cannon_light_loop" TargetNode="Dummy_effect_weapon001" scale="0.7" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
+	<ItemList ItemClassName="EP14_Artefact_018">
+		<Layer effect="F_light222_loop" TargetNode="Dummy_effect_shield001" scale="0.4" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
 </List>
 <!--프로퍼티 설명
 

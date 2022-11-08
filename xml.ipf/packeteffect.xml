@@ -8634,6 +8634,7 @@
         <Effect Name="F_explosion141_violet"/>
         <Effect Name="F_smoke209"/>
         <Effect Name="F_explosion046_red2"/>
+        <Effect Name="EP15_1_ABBEY_1_3_MINI"/>
     </Category>
     <Category ID="27">
         <Effect Name="SAPPER_TRAP_Sapper_BroomTrap"/>

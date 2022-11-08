@@ -2,19 +2,19 @@
 
 -- 가이드 퀘스트 진행 조건
 function GUIDE_QUEST_PRECHECK(pc)
-    local aObj
-    if IsServerSection() == 1 then
-        aObj = GetAccountObj(pc);
-    else
-        aObj = GetMyAccountObj();
-    end
+    -- local aObj
+    -- if IsServerSection() == 1 then
+    --     aObj = GetAccountObj(pc);
+    -- else
+    --     aObj = GetMyAccountObj();
+    -- end
 
-    local isStart = TryGetProp(aObj, "GUIDE_QUEST_START", 0)
-    if isStart == 0 then
-        return false
-    end
+    -- local isStart = TryGetProp(aObj, "GUIDE_QUEST_START", 0)
+    -- if isStart == 0 then
+    --     return false
+    -- end
 
-	return true
+	return false
 end
 
 function GUIDE_QUEST_IS_ALL_CLEAR(aObj)

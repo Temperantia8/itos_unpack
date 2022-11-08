@@ -1,7 +1,5 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202210,250000,202210,300000,202211,80000,202211,30000,0,0,"inGame_E1","Leticia's Secret Cube","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2656","","","",""
+999901,202211,80000,202211,130000,202212,200000,202212,150000,0,0,"inGame_E1","Goddess Glory: Major Arcana","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2667","","","",""
 999902,202210,250000,202210,300000,202212,60000,202212,10000,0,0,"inGame_E2","Ghost Maiden's Request","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2655","","","",""
-999903,202210,180000,202210,130000,202211,80000,202211,30000,0,0,"inGame_E3","Bubbly Bubble Package","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2653","","","",""
-999904,202210,40000,202210,90000,202211,80000,202211,30000,0,0,"inGame_E4","Goddess Glory: HELIOPOLIS","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2644","","","",""
 999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2661","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"
