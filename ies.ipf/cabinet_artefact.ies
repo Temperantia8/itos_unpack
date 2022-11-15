@@ -2,3 +2,6 @@ ClassID,Upgrade,MakeCostSilver,MaxUpgrade,Basic,Category,ClassName,GetItemFunc,R
 1,0,10000,1,0,"Artefact","EP14_Artefact_014","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_014_cabinet","","헬리오폴리스 아누비스 캐논"
 2,0,10000,1,0,"Artefact","EP14_Artefact_015","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_015_cabinet","","헬리오폴리스 오시리스 대거"
 3,0,10000,1,0,"Artefact","EP14_Artefact_016","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_016_cabinet","","헬리오폴리스 호루스 스피어"
+6,0,10000,1,0,"Artefact","EP14_Artefact_017","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_017_cabinet","","메이저 아르카나 더 타워 투 핸드 소드"
+7,0,10000,1,0,"Artefact","EP14_Artefact_018","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_018_cabinet","","메이저 아르카나 더 썬"
+8,0,10000,1,0,"Artefact","EP14_Artefact_019","GET_CABINET_ITEM_NAME","TX_REGISTER_CABINET_ITEM","TX_BRIQUET_GODDESS_ITEM","EP14_Artefact_019_cabinet","","메이저 아르카나 더 스타 캐논"
