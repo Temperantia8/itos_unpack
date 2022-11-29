@@ -1,7 +1,7 @@
 ClassID,StartTimeYYYYMM,StartTimeDDHHMM,NewTimeYYYYMM,NewTimeDDHHMM,EndTimeYYYYMM,EndTimeDDHHMM,DeadlineTimeYYYYMM,DeadlineTimeDDHHMM,ExchangeTimeYYYYMM,ExchangeTimeDDHHMM,ClassName,Name,ImagePath,url,UserCommand1,UserCommand2,UserCommand3,ShowType
-999901,202211,220000,202211,270000,202212,60000,202212,10000,0,0,"inGame_E1","[Special] Early Frost Package","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2672","","","",""
-999902,202211,150000,202211,200000,202211,290000,202211,240000,0,0,"inGame_E2","Leticia's Secret Cube","inGame_E2","https://treeofsavior.com/page/news/view.php?n=2670","","","",""
-999903,202211,80000,202211,130000,202212,200000,202212,150000,0,0,"inGame_E3","Goddess Glory: Major Arcana","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2667","","","",""
-999904,202210,250000,202210,300000,202212,60000,202212,10000,0,0,"inGame_E4","Ghost Maiden's Request","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2655","","","",""
-999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2661","time_del","","",""
+999901,202211,290000,202212,40000,202212,270000,202212,220000,0,0,"inGame_E1","Fashion Museum Papa Noel's Closet","inGame_E1","https://treeofsavior.com/page/news/view.php?n=2678","","","",""
+999903,202211,220000,202211,270000,202212,60000,202212,10000,0,0,"inGame_E3","[Special] Early Frost Package","inGame_E3","https://treeofsavior.com/page/news/view.php?n=2672","","","",""
+999904,202211,80000,202211,130000,202212,200000,202212,150000,0,0,"inGame_E4","Goddess Glory: Major Arcana","inGame_E4","https://treeofsavior.com/page/news/view.php?n=2667","","","",""
+999905,202210,250000,202210,300000,202212,60000,202212,10000,0,0,"inGame_E5","Ghost Maiden's Request","inGame_E5","https://treeofsavior.com/page/news/view.php?n=2655","","","",""
+999908,202105,280000,202106,20000,203106,270000,203106,220000,0,0,"inGame_E9","Weekend Burning","inGame_E9","https://treeofsavior.com/page/news/view.php?n=2676","time_del","","",""
 999909,202101,60000,202101,110000,203012,310000,203012,260000,0,0,"inGame_E8","Item Restore Policy","inGame_E8","https://treeofsavior.com/page/news/view.php?n=2151","time_del","","","Normal"
