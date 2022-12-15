@@ -2147,12 +2147,6 @@ function SCR_Get_RHP(self)
         value = value / 2
     end
     
-    -- HealControl 레이드 체크
-    if IsHealControlMap(self) == 1 then
-        local add_rhp_bm = GET_HEAL_CTRL_RAID_RHP_BM(self, value);
-        value = value + add_rhp_bm;
-    end
-
     if value < 0 then
         value = 0;
     end
@@ -3252,7 +3246,11 @@ function SCR_Get_Sta_Runable(self)
 end
 
 function SCR_Get_Sta_Jump(self)
-    return 1000;
+    local value = 1000
+    if IsBuffApplied(self, "RIDE_PET_RIDEPET_5") == "YES" then
+        value = 0
+    end
+    return value;
 end
 
 function SCR_Get_Sta_Step(self)
@@ -5016,11 +5014,11 @@ function SCR_Get_HEAL_PWR(self)
     end
     
     -- HealControl 레이드 체크
-    if IsHealControlMap(self) == 1 then
-        local by_rate_raid = GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self);
-        byRateBuff = byRateBuff + by_rate_raid;
-        atk = atk * (1 + by_rate_raid)
-    end
+    -- if IsHealControlMap(self) == 1 then
+    --     local by_rate_raid = GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self);
+    --     byRateBuff = byRateBuff + by_rate_raid;
+    --     atk = atk * (1 + by_rate_raid)
+    -- end
 
     byRateBuff = math.floor(value * byRateBuffTemp);
     value = value + byBuff + byRateBuff;    
@@ -5097,10 +5095,10 @@ function SCR_Get_HEAL_PWR_VER2(self)
     value = value * (1 + sum_of_heal_power)
 
     -- HealControl 레이드 체크
-    if IsHealControlMap(self) == 1 then
-        local by_rate_raid = GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self);
-        value = value * (1 + by_rate_raid)
-    end
+    -- if IsHealControlMap(self) == 1 then
+    --     local by_rate_raid = GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self);
+    --     value = value * (1 + by_rate_raid)
+    -- end
 
     if value < 1 then
     	value = 1;
@@ -5357,16 +5355,10 @@ function GET_HEAL_CTRL_RAID_RHP_BM(self, value)
     if IsServerSection() == 1 then
         local cmd = GetMGameCmd(self);
         if cmd == nil then return 0; end
-        local mgame_name = cmd:GetMGameName();
-        if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil or string.find(mgame_name, "Goddess_Raid_Spreader_") ~= nil then
-            local add_rhp_bm = value * 0.9 * -1.0;
-            return add_rhp_bm;
-        end
+        local add_rhp_bm = value * 0.9 * -1.0;
+        return add_rhp_bm;
     else
-        local mgame_name = session.mgame.GetCurrentMGameName()
-        if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil or string.find(mgame_name, "Goddess_Raid_Spreader_") ~= nil then
-            return -0.9; -- 90% 감소
-        end
+        return -0.9; -- 90% 감소
     end
     return 0;
 end
@@ -5375,15 +5367,11 @@ end
 function GET_HEAL_CTRL_RAID_HEAL_PWR_RATE_BM(self)
     if self == nil then return 0; end
     if IsHealControlMap(self) == 0 then return 0; end
-    local mgame_name = "None";
     if IsServerSection() == 1 then
         local cmd = GetMGameCmd(self);
         if cmd == nil then return 0; end
-        mgame_name = cmd:GetMGameName();
+        return -0.9; -- 90% 감소
     else
-        mgame_name = session.mgame.GetCurrentMGameName()
-    end
-    if string.find(mgame_name, "Goddess_Raid_Jellyzele_") ~= nil or string.find(mgame_name, "Goddess_Raid_Spreader_") ~= nil then
         return -0.9; -- 90% 감소
     end
     return 0;
