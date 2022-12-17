@@ -16514,4 +16514,268 @@
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="GEM_Templer_MortalWave">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_MortalWave"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_MortalWave"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Templer_Retribution">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_Retribution"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_Retribution"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Templer_MoraleBanner">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_MoraleBanner"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_MoraleBanner"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Templer_RevengeBanner">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_RevengeBanner"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_RevengeBanner"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Templer_VitalityBanner">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_VitalityBanner"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Templer_VitalityBanner"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_JaguarStance">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_JaguarStance"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_JaguarStance"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_WildRush">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildRush"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildRush"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_TargetOfHunt">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_TargetOfHunt"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_TargetOfHunt"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_WildHowling">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildHowling"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildHowling"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_WildThorn">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildThorn"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildThorn"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_WildClaw">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildClaw"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_WildClaw"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="GEM_Jaguar_AdaptabilityOfWildness">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_AdaptabilityOfWildness"/>
+						<Num Num="-1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="SPCI_GEM_SKILLUP" Client="NO" UseSleep="NO">
+						<Str Str="Jaguar_AdaptabilityOfWildness"/>
+						<Num Num="1"/>
+					</ToolScp>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 </SpcItemList>

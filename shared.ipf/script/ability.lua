@@ -3913,3 +3913,67 @@ function SCR_ABIL_PlagueDoctor29_INACTIVE(self, ability)
         SendSkillProperty(self, skill)
     end
 end
+
+function SCR_ABIL_Templar20_ACTIVE(self, ability)
+    local skill = GetSkill(self, 'Templer_Retribution')
+    if skill ~= nil then
+        AddInstSkill(self, 'Templer_Retribution_Residue')
+    end
+end
+
+function SCR_ABIL_Templar20_INACTIVE(self, ability)
+end
+function SCR_ABIL_Crusader15_ACTIVE(self, ability)
+    if IsBuffApplied(self, 'GoddessPunishment_Buff') == 'YES' then
+        RemoveBuff(self,'GoddessPunishment_Buff')
+    end
+    AddBuff(self, self, 'GoddessBlessing_Buff', 1, 0, 0, 1)
+end
+
+function SCR_ABIL_Crusader15_INACTIVE(self, ability)
+    if IsBuffApplied(self, 'GoddessBlessing_Buff') == 'YES' then
+        RemoveBuff(self,'GoddessBlessing_Buff')
+    end
+    AddBuff(self, self, 'GoddessPunishment_Buff', 1, 0, 0, 1)
+end
+
+function SCR_ABIL_ReduceDamageIncome_ACTIVE(self, ability)
+    if IsPVPServer(self) == 1 then return end
+    
+    local job_history = GetJobHistoryString(self)
+    local job_name_list = StringSplit(job_history, ';')
+    if job_name_list ~= nil and #job_name_list > 0 then
+        local rate = 0
+        for i = 1, #job_name_list do
+            local dmg_reduce_cls = GetClass('job_damage_reduce', job_name_list[i])
+            if dmg_reduce_cls ~= nil then
+                local _rate = TryGetProp(dmg_reduce_cls, 'ReduceRate', 0)
+                rate = rate + _rate
+            end
+        end
+
+        if rate > 0 then
+            AddBuff(self, self, 'ReduceDmgCommonAbil_Buff', rate, 0, 0, 1)
+        end
+    end
+end
+
+function SCR_ABIL_ReduceDamageIncome_INACTIVE(self, ability)
+    RemoveBuff(self, 'ReduceDmgCommonAbil_Buff')
+end
+
+function SCR_ABIL_Jaguar4_ACTIVE(self, ability)
+    AddBuff(self, self, 'WildHowling_Hidden_Buff', 1, 0, 0, 1)
+end
+
+function SCR_ABIL_Jaguar4_INACTIVE(self, ability)
+    RemoveBuff(self, 'WildHowling_Hidden_Buff')
+end
+
+function SCR_ABIL_Jaguar22_ACTIVE(self, ability)
+    AddBuff(self, self, 'Jaguar22_Hidden_Buff', 1, 0, 0, 1)
+end
+
+function SCR_ABIL_Jaguar22_INACTIVE(self, ability)
+    RemoveBuff(self, 'Jaguar22_Hidden_Buff')
+end

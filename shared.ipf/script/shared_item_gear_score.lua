@@ -119,7 +119,7 @@ end
 function GET_BELT_GEAR_SCORE(item)
     local lv = TryGetProp(item, 'UseLv', 0)    
     score = 700
-    if lv == 470 then
+    if lv >= 470 then
         score = 900
     else
 
@@ -130,18 +130,36 @@ function GET_BELT_GEAR_SCORE(item)
         high = 100
     end
 
-    local max_count = shared_item_belt.get_max_random_option_count(item)
-    local sum = 0
-    
-    for i = 1, max_count do
-        local name = TryGetProp(item, 'RandomOption_' .. i)
-        local value = TryGetProp(item, 'RandomOptionValue_' .. i)
-        local _, max_value = shared_item_belt.get_option_value_range_equip(item, name)
-        sum = sum + (value / max_value)        
+    if TryGetProp(item, 'GroupName', 'None') == 'BELT' then
+        local max_count = shared_item_belt.get_max_random_option_count(item)
+        local sum = 0
+        
+        for i = 1, max_count do
+            local name = TryGetProp(item, 'RandomOption_' .. i)
+            local value = TryGetProp(item, 'RandomOptionValue_' .. i)
+            local _, max_value = shared_item_belt.get_option_value_range_equip(item, name)
+            sum = sum + (value / max_value)        
+        end
+
+        sum = sum / max_count
+        return math.floor((score * 0.9) + (score * 0.1 * sum)) + high
+    elseif TryGetProp(item, 'GroupName', 'None') == 'SHOULDER' then -- SHOULDER
+        return 0
+        -- local max_count = shared_item_shoulder.get_max_random_option_count(item)
+        -- local sum = 0
+        
+        -- for i = 1, max_count do
+        --     local name = TryGetProp(item, 'RandomOption_' .. i)
+        --     local value = TryGetProp(item, 'RandomOptionValue_' .. i)
+        --     local _, max_value = shared_item_shoulder.get_option_value_range_equip(item, name)
+        --     sum = sum + (value / max_value)        
+        -- end
+
+        -- sum = sum / max_count
+        -- return math.floor((score * 0.9) + (score * 0.1 * sum)) + high
     end
 
-    sum = sum / max_count
-    return math.floor((score * 0.9) + (score * 0.1 * sum)) + high
+    return 0
 end
 
 function GET_GEAR_SCORE(item, pc)     
@@ -181,6 +199,7 @@ function GET_GEAR_SCORE(item, pc)
         check_slot_list['ARK'] = 1        
         check_slot_list['EARRING'] = 1
         check_slot_list['BELT'] = 1
+        check_slot_list['SHOULDER'] = 1
     end
 
     local type = TryGetProp(item, 'DefaultEqpSlot', 'None')
@@ -255,7 +274,7 @@ function GET_GEAR_SCORE(item, pc)
         else
             return GET_EARRING_GEAR_SCORE(item)
         end
-    elseif type == 'BELT' then
+    elseif type == 'BELT' or type == 'SHOULDER' then
         return GET_BELT_GEAR_SCORE(item)
     else -- 무기/방어구/악세서리
         local icor_lv = use_lv

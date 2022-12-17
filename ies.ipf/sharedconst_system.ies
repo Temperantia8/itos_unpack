@@ -87,6 +87,7 @@ ClassID,Value,Value2,ClassName,Desc,UseInScript
 100078,100000,0,"WEEKLY_PVP_MINE_COUNT_TOKEN_BONUS","토큰 유저 용병단 증표 추가 획득량","YES"
 100079,20,0,"MAX_GUILD_MEMBER_INFO_COUNT","존서버에서 클라로 최대 보낼 수 있는 길드원 정보 리스트","NO"
 100080,2,0,"MAX_EQUIPTED_UNIQUE_VIBORA_COUNT","최대 장착 고유 바이보라 개수","YES"
+100081,0,0,"USE_SYNC_PACKET","싱크 패킷 사용 여부","NO"
 110000,21,0,"TEST_VAL_1","테스트용","NO"
 110001,0,0,"TEST_VAL_2","테스트용","NO"
 110002,1,0,"TEST_VAL_3","테스트용","NO"

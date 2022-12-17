@@ -131,11 +131,6 @@ function IS_ABLE_TO_REINFORCE_GODDESS(item)
 		return false
 	end
 
-	local equip_group = TryGetProp(item, 'EquipGroup', 'None')
-	if TryGetProp(item, 'UseLv', 0) == 480 and (equip_group == 'SHIRT' or equip_group == 'PANTS' or equip_group == 'BOOTS' or equip_group == 'GLOVES') then
-		return false, 'TemporarilyUnavailable'
-	end
-
     local classType = TryGetProp(item, 'ClassType');
 	local enableClassType = {'Sword', 'THSword', 'Staff', 'THBow', 'Bow', 'Mace', 'THMace', 'Spear', 'THSpear', 'Dagger', 'THStaff', 'Pistol', 'Rapier', 'Cannon', 'Musket', 'Shirt', 'Pants', 'Boots', 'Gloves', 'Shield', 'Trinket', 'Ring', 'Neck'};
 	for i = 1, #enableClassType do
@@ -226,7 +221,7 @@ function IS_ENABLE_APPLY_JEWELL_TOOLTIPTEXT(targetItem)
 	end
 		
     local classType = TryGetProp(targetItem, 'ClassType');
-    local classList = {'Seal', 'Ark','Ring' , 'Neck', 'Earring', 'BELT'}
+    local classList = {'Seal', 'Ark','Ring' , 'Neck', 'Earring', 'BELT', 'SHOULDER'}
     for i = 1, #classList do
         if classList[i] == classType then
 	        return false, 'Type';

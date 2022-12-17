@@ -3246,11 +3246,7 @@ function SCR_Get_Sta_Runable(self)
 end
 
 function SCR_Get_Sta_Jump(self)
-    local value = 1000
-    if IsBuffApplied(self, "RIDE_PET_RIDEPET_5") == "YES" then
-        value = 0
-    end
-    return value;
+    return 1000;
 end
 
 function SCR_Get_Sta_Step(self)

@@ -3007,4 +3007,52 @@
 		<Level Level="0" PropList_TopLeg="OptDesc/아나그라마 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/아나그라마 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
 		<Level Level="1" PropList_TopLeg="OptDesc/아나그라마 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/아나그라마 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
 	</Item>
+	<Item Name="GEM_Templer_MortalWave">
+		<Level Level="0" PropList_TopLeg="OptDesc/모탈 웨이브 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/모탈 웨이브 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/모탈 웨이브 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/모탈 웨이브 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Templer_Retribution">
+		<Level Level="0" PropList_TopLeg="OptDesc/리트리뷰션 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/리트리뷰션 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/리트리뷰션 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/리트리뷰션 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Templer_MoraleBanner">
+		<Level Level="0" PropList_TopLeg="OptDesc/사기의 깃발 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/사기의 깃발 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/사기의 깃발 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/사기의 깃발 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Templer_RevengeBanner">
+		<Level Level="0" PropList_TopLeg="OptDesc/보복의 깃발 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/보복의 깃발 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/보복의 깃발 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/보복의 깃발 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Templer_VitalityBanner">
+		<Level Level="0" PropList_TopLeg="OptDesc/활력의 깃발 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/활력의 깃발 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/활력의 깃발 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/활력의 깃발 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_JaguarStance">
+		<Level Level="0" PropList_TopLeg="OptDesc/재규어 스탠스 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/재규어 스탠스 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/재규어 스탠스 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/재규어 스탠스 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_WildRush">
+		<Level Level="0" PropList_TopLeg="OptDesc/와일드 러시 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 러시 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/와일드 러시 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 러시 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_TargetOfHunt">
+		<Level Level="0" PropList_TopLeg="OptDesc/사냥 표적 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/사냥 표적 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/사냥 표적 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/사냥 표적 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_WildHowling">
+		<Level Level="0" PropList_TopLeg="OptDesc/와일드 하울링 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 하울링 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/와일드 하울링 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 하울링 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_WildThorn">
+		<Level Level="0" PropList_TopLeg="OptDesc/와일드 쏜 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 쏜 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/와일드 쏜 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 쏜 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_WildClaw">
+		<Level Level="0" PropList_TopLeg="OptDesc/와일드 클로 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 클로 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/와일드 클로 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/와일드 클로 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
+	<Item Name="GEM_Jaguar_AdaptabilityOfWildness">
+		<Level Level="0" PropList_TopLeg="OptDesc/야생의 적응력 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/야생의 적응력 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+		<Level Level="1" PropList_TopLeg="OptDesc/야생의 적응력 스킬 레벨 + 1" PropList_TopLeg_Penalty="None" PropList_MainOrSubWeapon="None" PropList_MainOrSubWeapon_Penalty="None" PropList_HandOrFoot="OptDesc/야생의 적응력 스킬 레벨 + 1" PropList_HandOrFoot_Penalty="None"/>
+	</Item>
 </SocketProperty>

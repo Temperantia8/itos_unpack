@@ -514,7 +514,7 @@ return value"/>
                 <Scp Scp="C_EFFECT_POS" Client="YES" UseSleep="NO" Time="100">
                     <Str_Arg Str="I_stone001_mesh" Arg="0.9"/>
                     <Pos Angle="0.39269909" Dist="-20" PosType="3"/>
-                    <Num Num="0"/>
+                    <Num Num="0.6"/>
                     <Str Str="None"/>
                 </Scp>
                 <Scp Scp="C_EFFECT_POS" Client="YES" UseSleep="NO" Time="300">

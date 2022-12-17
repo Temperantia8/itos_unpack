@@ -19,7 +19,7 @@ local item_earring_option_range = nil
 item_earring_base_option_list = {'STR', 'DEX', 'CON', 'INT', 'MNA'}
 item_earring_max_stats_option_count = 3 -- 최대 3개
 
-iten_earring_base_ctrl_list = {'Warrior', 'Wizard', 'Archer', 'Cleric', 'Scout'}
+item_earring_base_ctrl_list = {'Warrior', 'Wizard', 'Archer', 'Cleric', 'Scout'}
 local item_earring_max_special_option_count = nil 
 item_earring_ctrl_tree = nil
 
@@ -31,7 +31,7 @@ local function make_item_earring_option_range()
     end
     
     item_earring_ctrl_tree = {}
-    for _, ctrl in pairs(iten_earring_base_ctrl_list) do
+    for _, ctrl in pairs(item_earring_base_ctrl_list) do
         item_earring_ctrl_tree[ctrl] = {}        
     end
 
@@ -201,7 +201,9 @@ shared_item_earring.get_fragmentation_count = function(item)
         end
 
         return grade
-    elseif TryGetProp(item, 'GroupName', 'None') == 'BELT' or shared_item_goddess_icor.get_goddess_icor_grade(item) > 0 then
+    elseif TryGetProp(item, 'GroupName', 'None') == 'BELT' or 
+        TryGetProp(item, 'GroupName', 'None') == 'SHOULDER' or
+        shared_item_goddess_icor.get_goddess_icor_grade(item) > 0 then
         return TryGetProp(item, 'NumberArg1', 1)
     elseif IS_RANDOM_OPTION_SKILL_GEM(item) then
         return 1
@@ -223,7 +225,7 @@ shared_item_earring.is_able_to_fragmetation = function(item)
         return false
     end
 
-    if TryGetProp(item, 'GroupName', 'None') ~= 'Earring' and TryGetProp(item, 'GroupName', 'None') ~= 'BELT' 
+    if TryGetProp(item, 'GroupName', 'None') ~= 'Earring' and TryGetProp(item, 'GroupName', 'None') ~= 'BELT' and TryGetProp(item, 'GroupName', 'None') ~= 'SHOULDER'
         and shared_item_goddess_icor.get_goddess_icor_grade(item) == 0
     then
         return false
@@ -234,7 +236,10 @@ end
 
 -- 지급할 아이템
 shared_item_earring.get_give_item_name = function(item)
-    if TryGetProp(item, 'GroupName', 'None') == 'Earring' or TryGetProp(item, 'GroupName', 'None') == 'BELT' or shared_item_goddess_icor.get_goddess_icor_grade(item) > 0 then
+    if TryGetProp(item, 'GroupName', 'None') == 'Earring' or 
+        TryGetProp(item, 'GroupName', 'None') == 'BELT' or 
+        TryGetProp(item, 'GroupName', 'None') == 'SHOULDER' or
+        shared_item_goddess_icor.get_goddess_icor_grade(item) > 0 then
         return TryGetProp(item, 'StringArg', 'None')
     elseif IS_RANDOM_OPTION_SKILL_GEM(item) then
         local name = 'piece_random_skill_gem_'

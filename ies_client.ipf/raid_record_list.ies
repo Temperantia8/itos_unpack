@@ -11,3 +11,6 @@ ClassID,ClassName,ButtonScp
 10,"Goddess_Raid_Spreader_Party","RAID_RECORD_OPEN"
 11,"Goddess_Raid_Spreader_Auto","RAID_RECORD_OPEN"
 12,"Goddess_Raid_Spreader_Solo","RAID_RECORD_OPEN"
+13,"Goddess_Raid_Falouros_Auto","RAID_RECORD_OPEN"
+14,"Goddess_Raid_Falouros_Solo","RAID_RECORD_OPEN"
+15,"Goddess_Raid_Falouros_Party","RAID_RECORD_OPEN"

@@ -457,12 +457,6 @@
                 <Scp Scp="SKL_RUN_SCRIPT" Client="NO" UseSleep="NO" Time="0">
                     <Str Str="LAMA_USE_SKILL_SETPROP"/>
                 </Scp>
-                <Scp Scp="MONSKL_C_PLAY_ANIM" Client="YES" UseSleep="NO" Time="0">
-                    <Str Str="SKL_KICK"/>
-                    <Num Num="2"/>
-                    <Num Num="0"/>
-                    <Num Num="0"/>
-                </Scp>
             </EtcList>
         </MainSkl>
     </Skill>
@@ -474,12 +468,6 @@
             <EtcList>
                 <Scp Scp="SKL_RUN_SCRIPT" Client="NO" UseSleep="NO" Time="0">
                     <Str Str="LAMA_USE_SKILL_SETPROP"/>
-                </Scp>
-                <Scp Scp="MONSKL_C_PLAY_ANIM" Client="YES" UseSleep="NO" Time="0">
-                    <Str Str="SKL_FIST"/>
-                    <Num Num="2"/>
-                    <Num Num="0"/>
-                    <Num Num="0"/>
                 </Scp>
             </EtcList>
         </MainSkl>

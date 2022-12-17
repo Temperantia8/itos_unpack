@@ -497,3 +497,6 @@ ClassID,DayOffset,RewardCount,RewardItemCnt_1,AppendPropertyStatus,ClassName,Gro
 1665,4,1,1,0,"OcelotPackage_05","OcelotPackage","S","Ocelot_Box_05",""
 1666,5,1,1,0,"OcelotPackage_06","OcelotPackage","S","Ocelot_Box_06",""
 1667,6,1,1,0,"OcelotPackage_07","OcelotPackage","S","Ocelot_Box_07",""
+1671,0,1,1,0,"Event2212Attendance_00","Event2212Attendance","S","Event_2212_Attendance_Box_0",""
+1672,1,1,1,0,"Event2212Attendance_01","Event2212Attendance","S","Event_2212_Attendance_Box_1",""
+1673,2,1,1,0,"Event2212Attendance_02","Event2212Attendance","S","Event_2212_Attendance_Box_2",""

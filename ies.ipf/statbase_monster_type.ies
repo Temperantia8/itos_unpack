@@ -169,3 +169,7 @@ ClassID,MHP,ATK,DEF,MDEF,AVERAGE_DEF,ReinforceWeapon,TranscendWeapon,ReinforceAr
 1605,100000,550,7000,7000,2,30,10,30,10,100,0,0,1000,600,250,250,100,100,0,2,"boss_TransmutationSpreader_Summon","","Legend","Legend"
 1606,40000,350,7000,7000,2,30,10,30,10,100,0,0,1000,600,250,250,100,100,0,2,"boss_TransmutationSpreader_Summon_Auto","","Legend","Legend"
 1607,10000,250,7000,7000,2,30,10,30,10,100,0,0,1000,600,250,250,100,100,0,2,"boss_TransmutationSpreader_Summon_Solo","","Legend","Legend"
+1701,200000,770,4015,4015,2,30,10,30,10,100,0,0,1300,400,250,400,100,450,0,2,"boss_Falouros_Party","","Legend","Legend"
+1702,200000,385,4015,4015,2,30,10,30,10,100,0,0,1000,300,150,250,100,100,0,2,"boss_Falouros_Auto","","Legend","Legend"
+1703,200000,330,4015,4015,2,30,10,30,10,100,0,0,1000,300,150,200,100,100,0,2,"boss_Falouros_Solo","","Legend","Legend"
+1801,200000,770,4015,4015,2,30,10,30,10,100,0,0,1300,400,250,400,100,450,0,2,"npc_baubas2","","Legend","Legend"

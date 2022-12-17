@@ -68,7 +68,7 @@ ClassID,BaseID,ClassName,TreeGroup,TreeGroupCaption,TreeSSetTitle,InvenTabName,M
 67,335001,"Gem_GemSkill","Gem","젬","스킬 젬","Gem","NO"
 68,340001,"Card_Summon","Card","카드","카드첩","Card","NO"
 69,345001,"Card_CardAddExp","Card","카드","강화용 카드","Card","NO"
-70,350001,"Card_CardGoddess","Card","카드","여신 카드","Card","NO"
+70,350001,"Card_CardGoddess","Card","카드","가디스 카드","Card","NO"
 71,355001,"Card_CardLeg","Card","카드","레전드 카드","Card","NO"
 72,360001,"Card_CardGreen","Card","카드","그린 카드","Card","NO"
 73,365001,"Card_CardRed","Card","카드","레드 카드","Card","NO"
@@ -157,3 +157,4 @@ ClassID,BaseID,ClassName,TreeGroup,TreeGroupCaption,TreeSSetTitle,InvenTabName,M
 156,780001,"Armor_Belt","EquipGroup","장비","방어구","Equip","Armor"
 157,785001,"OPTMisc_GoddessIcorWeapon","Material","재료","아이커","Etc","Icor"
 158,790001,"OPTMisc_GoddessIcorArmor","Material","재료","아이커","Etc","Icor"
+159,795001,"Armor_Shoulder","EquipGroup","장비","방어구","Equip","Armor"

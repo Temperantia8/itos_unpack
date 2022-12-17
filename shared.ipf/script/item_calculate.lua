@@ -864,7 +864,7 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
         return 0;
     end
     
-    if classType == 'BELT' then
+    if classType == 'BELT' or classType == 'SHOULDER' then
         equipMaterial = 'Leather'
     end
 
@@ -909,7 +909,7 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
                     -- 방패
                     basicDef = TryGetProp(cls, 'BasicAtk', 0)
                 else                  
-                    if classType == 'BELT' then-- 벨트
+                        if classType == 'BELT' or classType == 'SHOULDER' then-- 벨트
                         basicDef = TryGetProp(cls, 'BasicDef', 0) * 0.5
                         basicDef = basicDef + TryGetProp(item, 'Additional_def', 0)                        
                     else-- 상,하,장,신
@@ -1622,7 +1622,7 @@ function GET_REPAIR_PRICE(item, fillValue, taxRate)
     elseif equipGruop == 'SHIRT' or equipGruop == 'PANTS' or equipGruop == 'GLOVES' or equipGruop == 'BOOTS'then
         local stat_weapon = GetClassByType("Stat_Weapon", lv)
         value = (stat_weapon.RepairPrice_SHIRT + stat_weapon.RepairPrice_PANTS + stat_weapon.RepairPrice_GLOVES + stat_weapon.RepairPrice_BOOTS) / 4
-    elseif defEqpSlot == 'NECK' or defEqpSlot == 'RING' or defEqpSlot == 'BELT' then
+    elseif defEqpSlot == 'NECK' or defEqpSlot == 'RING' or defEqpSlot == 'BELT' or defEqpSlot == 'SHOULDER' then
         local stat_weapon = GetClassByType("Stat_Weapon", lv)
         value = stat_weapon['RepairPrice_' .. defEqpSlot]
     end

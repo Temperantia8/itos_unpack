@@ -210,7 +210,7 @@ if GetExProp(self, "ITEM_VIBORA_PLAGUEDOCTOR") > 0 then
     value = 144
 end
 return value' Num="90" UseFunc="1"/>
-                    <Num FuncTxt="return 3 + obj.Level * 2;" Num="99" UseFunc="1"/>
+                    <Num FuncTxt="return SCR_GET_Pandemic_Ratio(obj)" Num="99" UseFunc="1"/>
                     <Num Num="2"/>
                     <Num Num="0"/>
                     <Num Num="1"/>

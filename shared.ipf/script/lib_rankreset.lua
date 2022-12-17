@@ -1,5 +1,33 @@
 -- lib_rankreset.lua
-
+local multiple_src = {}
+local multiple_dest = {}
+function SET_MULTIPLE_RANKROLLBACK_TARGETS(argList)
+    if multiple_src~=nil then 
+        for i=1,#multiple_src do
+            multiple_src[i]=nil 
+        end
+       
+    end
+    if multiple_dest~=nil then 
+        for i=1,#multiple_dest do
+            multiple_dest[i]=nil 
+        end
+       
+    end
+    for i=1, #argList do 
+        if i%2 == 0 then 
+            table.insert(multiple_dest,argList[i])
+        else
+            table.insert(multiple_src,argList[i])
+        end
+    end
+end
+function GET_MULTIPLE_RANKROLLBACK_TARGETS()
+    if multiple_src==nil or multiple_dest==nil then 
+        return
+    end
+    return multiple_src,multiple_dest
+end
 function IS_RANKRESET_ITEM(itemClassName)
     if  itemClassName == 'Premium_RankReset' or itemClassName == '1706Event_RankReset' or itemClassName == 'Premium_RankReset_14d' or itemClassName == 'Premium_RankReset_60d' or itemClassName == 'Premium_RankReset_1d' or itemClassName == 'Premium_RankReset_30d' then
        return 1; 

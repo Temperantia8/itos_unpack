@@ -21,3 +21,4 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 21,21,1,40,1,60000,1,1,0,0,0,0,0,"uniqraid_startower_power_control","마력 제어 장치","","","","","","","EP14_2_DCASTLE2_MANA4","","","NO","YES","NO","Neutral","","","",""
 22,22,1,40,1,60000,1,0,0,0,0,0,0,"tunnel_ent_2","땅굴","","","","","","","EP14_2_DCASTLE2_EXIT","EP14_2_DCASTLE2_CAVEWARP","","NO","YES","NO","NPC","","","",""
 23,23,1,40,1,60000,1,0,0,0,0,0,0,"tunnel_ent_1","땅굴","","","","","","","EP14_2_DCASTLE2_EXIT2","EP14_2_DCASTLE2_CAVEWARP2","","NO","YES","NO","NPC","","","",""
+24,24,1,40,1,1,1,0,0,0,0,0,0,"id_gate_npc","UnvisibleName","","","","","","","BAUBAS_GO_GUILDMISSION","BAUBAS_GO_GUILDMISSION","","NO","YES","NO","Neutral","","","",""

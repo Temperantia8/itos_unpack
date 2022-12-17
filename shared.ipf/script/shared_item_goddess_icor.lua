@@ -120,7 +120,7 @@ function make_item_goddess_icor_range()
         item_goddess_icor_range[480]['Armor'][v]['HIGH'] = {math.floor(max), math.floor(max * 1.2)}
     end
 
-    max = 1696
+    max = 1413
     item_goddess_icor_range[480]['Armor']['Add_Damage_Atk'] = {}
     item_goddess_icor_range[480]['Armor']['Add_Damage_Atk']['LOW'] = {math.floor(max *0.8), max}
     item_goddess_icor_range[480]['Armor']['Add_Damage_Atk']['HIGH'] = {math.floor(max), math.floor(max * 1.2)}
@@ -147,7 +147,7 @@ function make_item_goddess_icor_range()
     -- end of UTIL_ARMOR
 
     -- DEF
-    max = 1696
+    max = 1413
     item_goddess_icor_range[480]['Armor']['ResAdd_Damage'] = {}
     item_goddess_icor_range[480]['Armor']['ResAdd_Damage']['LOW'] = {math.floor(max *0.8), max}
     item_goddess_icor_range[480]['Armor']['ResAdd_Damage']['HIGH'] = {math.floor(max), math.floor(max * 1.2)}
@@ -160,13 +160,22 @@ function make_item_goddess_icor_range()
         item_goddess_icor_range[480]['Armor'][v]['HIGH'] = {math.floor(max), math.floor(max * 1.2)}
     end
     
-    local min = 10
-    max = 18
-    set_list = {'stun_res', 'high_fire_res', 'high_freezing_res', 'high_lighting_res', 'high_poison_res', 'high_laceration_res', 'portion_expansion'}
+    local min = 80
+    max = 100
+    set_list = {'stun_res', 'high_fire_res', 'high_freezing_res', 'high_lighting_res', 'high_poison_res', 'high_laceration_res'}
     for k, v in pairs(set_list) do
         item_goddess_icor_range[480]['Armor'][v] = {}
         item_goddess_icor_range[480]['Armor'][v]['LOW'] = {min, max}
-        item_goddess_icor_range[480]['Armor'][v]['HIGH'] = {math.floor(max), math.floor(max * 1.4)}
+        item_goddess_icor_range[480]['Armor'][v]['HIGH'] = {math.floor(max), math.floor(max * 1.3)}
+    end    
+
+    min = 15000
+    max = 20000
+    set_list = {'portion_expansion'}
+    for k, v in pairs(set_list) do
+        item_goddess_icor_range[480]['Armor'][v] = {}
+        item_goddess_icor_range[480]['Armor'][v]['LOW'] = {min, max}
+        item_goddess_icor_range[480]['Armor'][v]['HIGH'] = {math.floor(max), math.floor(max * 1.5)}
     end    
     -- end of DEF
 
@@ -457,47 +466,11 @@ shared_item_goddess_icor.is_valid_reroll_option = function(item, index, option_n
     return true
 end
 
-function test_goddess_cost_table(pc)
+function GET_MAX_REG_VALUE(lv)
+    local pivot = 480
+    local diff = lv - pivot
+    diff = math.max(0, diff)
     
-    local grade = '11'
-    for count = 0, 20 do        
-        local cost_list = {}
-        if grade == 'LOW' then
-            local cost_count = 1 + math.floor(count / 5)
-            cost_list['misc_BlessedStone'] = math.floor(cost_count)
-    
-            cost_count = 2000 * math.pow(1.04, count)
-            cost_list['VakarineCertificate'] = math.floor(cost_count)
-    
-            cost_count = 100 * math.pow(1.04, count)
-            cost_list['misc_ore22'] = math.floor(cost_count)
-    
-            cost_count = 25 * math.pow(1.04, count)
-            cost_list['misc_ore23'] = math.floor(cost_count)        
-            
-        else    
-            local cost_count = 1 + math.floor(count / 3)
-            cost_count = cost_count * 1.5
-            cost_list['misc_BlessedStone'] = math.floor(cost_count)
-    
-            cost_count = 5000 * math.pow(1.04, count)
-            cost_count = cost_count * 1.3
-            cost_list['VakarineCertificate'] = math.floor(cost_count)
-    
-            cost_count = 500 * math.pow(1.04, count)
-            cost_count = cost_count * 1.5
-            cost_list['misc_ore22'] = math.floor(cost_count)
-    
-            cost_count = 125 * math.pow(1.04, count)
-            cost_count = cost_count * 1.5
-            cost_list['misc_ore23'] = math.floor(cost_count)
-        end
-
-        for k, v in pairs(cost_list) do
-            print(count, k, v)
-        end
-        print()
-    end
-
-    
+    local max = pivot / math.pow(0.75, diff * 0.1)
+    return math.floor(max)
 end

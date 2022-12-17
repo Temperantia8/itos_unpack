@@ -110,7 +110,7 @@ function make_skill_gem_random_option()
     local list, cnt = GetClassList('Item')
     for i = 0, cnt - 1 do
         local cls = GetClassByIndexFromList(list, i);
-        if TryGetProp(cls, 'StringArg', 'None') == 'SkillGem' then
+        if TryGetProp(cls, 'StringArg', 'None') == 'SkillGem' and TryGetProp(cls, 'StringArg2', 'None')=='None' then
             local class_name = TryGetProp(cls, 'ClassName', 'None')
             if class_name ~= 'None' then
                 local skill_name = TryGetProp(cls, 'SkillName', 'None')
@@ -120,7 +120,6 @@ function make_skill_gem_random_option()
                         local job = TryGetProp(skl_cls, 'Job', 'None')
                         local _list, _cnt = GetClassListByProp('Job', 'JobName', job)
                         if _cnt > 0 then
-                            -- print(_cnt)
                             local job_cls = _list[1]                
                             local ctrl_type = TryGetProp(job_cls, 'CtrlType', 'None')
                             skill_gem_list_with_ctrl_type[class_name] = ctrl_type
@@ -223,4 +222,62 @@ function IS_RANDOM_OPTION_SKILL_GEM(item)
     end
 
     return false
+end
+
+function IS_CONVERTABLE_RANDOM_OPTION_SKILL_GEM(gem, scroll)
+    if TryGetProp(gem, 'MarketCategory', 'None') ~= 'Gem_GemSkill' then
+        return false
+    end
+
+    local gem_arg = TryGetProp(gem, 'StringArg2', 'None')
+    local scroll_arg = TryGetProp(scroll, 'StringArg', 'None')
+    if gem_arg == nil or gem_arg == 'None' then
+        return false
+    end
+
+    if gem_arg ~= scroll_arg then
+        return false
+    end
+
+    local job_cls = GetClassByStrProp('Job', 'JobName', gem_arg)
+    if job_cls == nil then
+        return false
+    end
+
+    for i = 1, 4 do
+        local option_prop_name = 'RandomOption_' .. i
+        local option_prop_value = 'RandomOptionValue_' .. i
+        if TryGetProp(gem, option_prop_name, 'None') ~= 'None' and TryGetProp(gem, option_prop_value, 0) > 0 then
+            return true
+        end
+    end
+
+    return false
+end
+
+function GET_CONVERTABLE_SKILLGEM_LIST(gem)
+    local gem_arg = TryGetProp(gem, 'StringArg2', 'None')
+    if gem_arg == nil or gem_arg == 'None' then return end
+
+    local job_cls = GetClassByStrProp('Job', 'JobName', gem_arg)
+	if job_cls == nil then return end
+
+	local available_list = {}
+	for i = 1, 99 do
+		local skltree_cls = GetClass('SkillTree', TryGetProp(job_cls, 'ClassName', 'None') .. '_' .. i)
+		if skltree_cls == nil then
+			break
+		end
+
+		local skl_name = TryGetProp(skltree_cls, 'SkillName', 'None')
+		local available_cls = GetClass('Item', 'GEM_' .. skl_name)
+		if available_cls == nil then
+			available_cls = GetClass('Item', 'Gem_' .. skl_name)
+		end
+		if available_cls ~= nil then
+			table.insert(available_list, TryGetProp(available_cls, 'ClassName', 'None'))
+		end
+    end
+    
+    return available_list
 end

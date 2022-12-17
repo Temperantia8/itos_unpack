@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by imc (imc) -->
 <packeteffects>
+	<Category ID="181">
+		<Effect Name="Baubas_Guild_Raid"/>
+		<Effect Name="master_Jaguar"/>
+	</Category>
     <Category ID="128">
         <Effect Name="F_archer_DetonateTraps_explosion2"/>
         <Effect Name="F_explosion122"/>
@@ -863,10 +867,25 @@
         <Effect Name="F_pose_squardon_smoke_red"/>
         <Effect Name="F_pose_squadron_smoke_red"/>
         <Effect Name="I_force018_trail_rize_white2"/>
+        <Effect Name="Templer_MoraleBanner"/>
+        <Effect Name="Templer_VitalityBanner"/>
+        <Effect Name="Templer_RevengeBanner"/>
+        <Effect Name="F_warrior_AdvancedOrders_ground_loop"/>
+        <Effect Name="F_warrior_BattleOrders_ground_loop"/>
         <Effect Name="skl_eff_pet_ep14rider_ride_on"/>
         <Effect Name="skl_eff_pet_ep14rider_idl_2sec"/>
         <Effect Name="skl_eff_pet_ep14rider_run_2sec"/>
+        <Effect Name="Templer_Retribution_Residue"/>
+        <Effect Name="Templer_AdvancedOrders_Debuff"/>
+        <Effect Name="F_warrior_MoralBanner_buff"/>
+        <Effect Name="F_warrior_RetributionBanner_buff"/>
+        <Effect Name="F_warrior_Vitalitybanner_buff"/>
         <Effect Name="artefact_ep14egypt_paddle"/>
+        <Effect Name="Shootpad_WildThorn"/>
+        <Effect Name="Sapper_LegHoldTrap_Mine"/>
+        <Effect Name="Sapper_LegHoldTrap_Pad"/>
+        <Effect Name="Sapper_Vibora_Pad"/>
+        <Effect Name="F_scout_JaguarStance2_1_loop"/>
     </Category>
     <Category ID="187">
         <Effect Name="F_bg_boil002"/>
@@ -882,6 +901,10 @@
         <Effect Name="F_spread_out059_yellow"/>
         <Effect Name="EARRING_RAID_Hard"/>
         <Effect Name="EARRING_RAID_Normal"/>
+        <Effect Name="F_line023_red"/>
+        <Effect Name="F_archer_FocusFire_spin_light3"/>
+        <Effect Name="I_pc_effectitem_gabia_cylinder_mesh_for_emitter"/>
+        <Effect Name="F_pc_effectitem_gabia_for_emitter"/>
     </Category>
     <Category ID="14">
         <Effect Name="GUILD_COLONY_F_REMAINS_37_1"/>
@@ -3873,6 +3896,7 @@
         <Effect Name="MYTHIC_CASTLE_MINI_AUTO_SOLO"/>
         <Effect Name="MYTHIC_FIRETOWER_MINI_AUTO_SOLO"/>
         <Effect Name="skl_eff_troopercharge_art_shot"/>
+        <Effect Name="Baubas_Guild_Raid"/>
     </Category>
     <Category ID="171">
         <Effect Name="MISSION_UPHILL_DEFFENSE_EVENT2"/>
@@ -8634,6 +8658,10 @@
         <Effect Name="F_explosion141_violet"/>
         <Effect Name="F_smoke209"/>
         <Effect Name="F_explosion046_red2"/>
+        <Effect Name="F_ground190_circle_crack2_1"/>
+        <Effect Name="I_breath021_dark2"/>
+        <Effect Name="F_burstup063"/>
+        <Effect Name="Baubas_Guild_Raid"/>
         <Effect Name="EP15_1_ABBEY_1_3_MINI"/>
     </Category>
     <Category ID="27">
@@ -11128,6 +11156,29 @@
         <Effect Name="raid_tubulentcore"/>
         <Effect Name="raid_turbulentcore"/>
         <Effect Name="boss_spreader"/>
+        <Effect Name="Falouros_BlackWhiteThunderstroke_BlackPad"/>
+        <Effect Name="Falouros_BlackWhiteThunderstroke_DamagePad"/>
+        <Effect Name="Falouros_BlackWhiteThunderstroke_WhitePad"/>
+        <Effect Name="F_rize015_11_drop_white"/>
+        <Effect Name="Falouros_Sphere_Driving_Electric_Pad"/>
+        <Effect Name="Falouros_Sphere_Driving_TargetPoint_Pad"/>
+        <Effect Name="Falouros_Hoop_Pad"/>
+        <Effect Name="Falouros_Hoop_Near_Pad"/>
+        <Effect Name="Falouros"/>
+        <Effect Name="Incarceration"/>
+        <Effect Name="WhiteBlackThunderstroke"/>
+        <Effect Name="DamageLink"/>
+        <Effect Name="Hoop"/>
+        <Effect Name="SKL_HEADBUTT"/>
+        <Effect Name="F_ground236_line_dark_loop"/>
+        <Effect Name="F_rize030_ground_dark_loop"/>
+        <Effect Name="F_rize030_ground_white"/>
+        <Effect Name="F_rize030_ground_white_loop"/>
+        <Effect Name="Falouros_ThunderCloud_Damage_Pad"/>
+        <Effect Name="Baubas_Guild_Raid"/>
+        <Effect Name="StageManager"/>
+        <Effect Name="raid_baubas"/>
+        <Effect Name="I_breath002_fire_blue"/>
     </Category>
     <Category ID="19">
         <Effect Name="I_fallen_statue_atk002_mash"/>
@@ -41590,7 +41641,36 @@
         	<Effect Name="F_light214_green"/>
         	<Effect Name="F_spread_in057_yello_loop"/>
         	<Effect Name="F_light214_yellow"/>
-	</Category>
+        <Effect Name="E_buff_Attacker"/>
+        <Effect Name="F_ground190_circle_crack2_1"/>
+        <Effect Name="F_ground190_circle_crack2_1"/>
+        <Effect Name="I_breath021_dark2"/>
+        <Effect Name="I_breath021_dark2"/>
+        <Effect Name="F_warrior_wedge_formation_active_ground2"/>
+        <Effect Name="F_burstup007_smoke_dark"/>
+        <Effect Name="F_smoke167_scatter"/>
+        <Effect Name="F_burstup007_smoke_dark"/>
+        <Effect Name="F_smoke167_scatter"/>
+	<Effect Name="boss_falouros"/>
+        <Effect Name="F_ground190_circle_crack3_2"/>
+        <Effect Name="I_stone005_explosion_mash_force_dark##0.7"/>
+        <Effect Name="F_burstup003_5"/>
+        <Effect Name="Falouros"/>
+        <Effect Name="Incarceration"/>
+        <Effect Name="WhiteBlackThunderstroke"/>
+        <Effect Name="DamageLink"/>
+        <Effect Name="F_rize004_dark_red"/>
+        <Effect Name="I_skillrange_270##1"/>
+        <Effect Name="F_skillrange_donut002##0.7"/>
+        <Effect Name="F_skillrange_circle001"/>
+        <Effect Name="Hoop"/>
+        <Effect Name="F_skillrange_circle001"/>
+        <Effect Name="F_ground226_lightning_dark"/>
+        <Effect Name="F_rize004_dark_redorange2"/>
+        <Effect Name="F_ground190_circle_crack3_3"/>
+		<Effect Name="F_rize004_dark_redorange"/>
+		<Effect Name="raid_baubas"/>
+    </Category>
     <Category ID="170">
         <Effect Name="Linker_blue3"/>
         <Effect Name="Linker_cable_blue"/>

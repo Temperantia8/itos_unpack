@@ -55,3 +55,4 @@ ClassID,RideMSPD,MaxVehicle,OffsetY,RidingOffsetY,AddSpeed,JobID,LifeMin,Balloon
 54,4,1,0,3,50,0,0,0,"pet_twn6th_TI","","0","NO","YES","NO","NO","","YES","YES","pet_twn6th_TI_buff"
 55,4,1,1.300000,5.500000,50,0,0,0,"pet_twnocelot_black","","0","NO","YES","NO","NO","","YES","YES","pet_twnocelot_black_buff"
 56,4,1,1.300000,5.500000,50,0,0,0,"pet_twnocelot_white","","0","NO","YES","NO","NO","","YES","YES","pet_twnocelot_white_buff"
+57,6,1,0,2.300000,50,0,0,0,"Pet_Sled_skyblue","","","NO","YES","YES","NO","","YES","NO",""

@@ -359,7 +359,7 @@
                     <Num Num="0"/>
                     <Num Num="100"/>
                     <Num Num="40"/>
-                    <Num Num="5"/>
+                    <Num Num="5" UseFunc="1" FuncTxt="return SCR_GET_Ngadhundi_Ratio2(obj)"/>
                     <Num Num="2"/>
                     <Num Num="0"/>
                     <Num Num="0"/>
@@ -683,7 +683,7 @@
                 <Scp Scp="SKL_SET_TARGET_CIRCLE" Client="NO" UseSleep="NO" Time="0">
                     <Pos Angle="0" Dist="70" PosType="5"/>
                     <Num Num="70"/>
-                    <Num Num="3"/>
+                    <Num Num="3" UseFunc="1" FuncTxt="return SCR_GET_Kundela_Ratio2(obj)"/>
                     <Num Num="2"/>
                     <Num Num="0"/>
                     <Num Num="0"/>
@@ -901,7 +901,7 @@
                 <Scp Scp="SKL_SET_TARGET_CIRCLE" Client="NO" UseSleep="NO" Time="0">
                     <Pos Angle="0" Dist="70"/>
                     <Num Num="70"/>
-                    <Num Num="10"/>
+                    <Num Num="10" UseFunc="1" FuncTxt="return SCR_GET_Plague_Ratio2(obj)"/>
                     <Num Num="2"/>
                     <Num Num="0"/>
                     <Num Num="0"/>

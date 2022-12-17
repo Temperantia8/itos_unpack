@@ -18,7 +18,7 @@ end
 
 -- CalcProperty_Skill.cpp, float get_hp_recovery_ratio(imcIES::IObject* pc, float value)
 -- done , 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
-function get_hp_recovery_ratio(pc, value)
+function get_hp_recovery_ratio(pc, value, ignore_healcontrol)
     if pc == nil then
         pc = GetMyPCObject()
     end
@@ -34,7 +34,11 @@ function get_hp_recovery_ratio(pc, value)
     else
         rhp = value
     end
-   
+    
+    if ignore_healcontrol == nil then
+        ignore_healcontrol = false
+    end
+
     local ratio = rhp / (ITEM_POINT_MULTIPLE * pc.Lv)
     ratio = ratio * max_hp_recovery_ratio    
     ratio = math.min(max_hp_recovery_ratio, ratio)
@@ -49,7 +53,12 @@ function get_hp_recovery_ratio(pc, value)
             ratio = ratio * 0.5
         end
     end
-
+    
+    -- HealControl 레이드 체크
+    if IsHealControlMap(pc) == 1 and ignore_healcontrol == false then        
+        ratio = ratio * 0.1
+    end
+    
     return math.floor(ratio)
 end
 

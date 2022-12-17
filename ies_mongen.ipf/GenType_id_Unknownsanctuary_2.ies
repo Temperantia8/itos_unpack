@@ -11,5 +11,5 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 10,10,1,40,1,15000,1,1,0,0,0,0,0,"FD_boss_Glacier","","","","","","","","","","","NO","YES","NO","Monster","","","","Attack"
 11,11,1,40,1,15000,1,1,0,0,0,0,0,"FD_boss_Velcoffer","","","","","","","","","","","NO","YES","NO","Monster","","","","Attack"
 12,12,1,40,1,60000,1,2,0,0,1,0,0,"dungeon_tower_1","미지의 성역 관문","","","","","","","UNKNOWN_SANTUARY_GATE_DUNGEON","","","NO","YES","NO","Neutral","","","",""
-13,13,1,40,1,60000,1,1,0,0,0,0,0,"FD_boss_Skiaclipse","","","","","","","","","","","NO","YES","NO","Monster","","","",""
-14,14,1,40,1,60000,1,1,0,0,0,0,0,"FD_boss_Skiaclipse","","","","","","","","","","","NO","YES","NO","Monster","","","",""
+13,13,1,40,1,15000,1,1,0,0,0,0,0,"FD_boss_Skiaclipse","","","","","","","","","","","NO","YES","NO","Monster","","","","Attack"
+14,14,1,40,1,15000,1,1,0,0,0,0,0,"FD_boss_Skiaclipse","","","","","","","","","","","NO","YES","NO","Monster","","","","Attack"

@@ -3871,6 +3871,24 @@
 			</Creation>
 		</Layer>
 	</ItemList>
+	<ItemList ItemClassName="wing_baubas">
+		<Layer effect="I_smoke013_dark_glow2_red_dark1_loop" TargetNode="Dummy_root" scale="2" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+		<Layer effect="I_feather001_dark_red" TargetNode="Dummy_root" scale="1.5" offset="0;0">
+			<Creation>
+				<Property PlayMoment="None">
+					<Option ReinforceValue="0" UseAttach="YES" Use2DEffect="YES" IgnoreAnimEventEffect="NO" SubWeaponPistol="NO"/>
+					<Sound SoundName="None" SoundVolume="1"/>
+				</Property>
+			</Creation>
+		</Layer>
+	</ItemList>
 	<ItemList ItemClassName="wing_ep14tarot01">
 		<Layer effect="F_pc_item_wing_tarot_star_loop" TargetNode="Dummy_effect_wing001" scale="0.7" offset="0;0">
 			<Creation>

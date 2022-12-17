@@ -12,3 +12,7 @@ ClassID,ClassName,Category,Icon,Spot_Name,Desc,MsgType
 1011,"1011","Goddess_Raid_Spreader_Auto","","회복 제어","치유 스킬의 효과가 감소하고 회복 포션의 재사용 대기시간이 증가합니다.",""
 1012,"1012","Goddess_Raid_Spreader_Party","","회복 제어","치유 스킬의 효과가 감소하고 회복 포션의 재사용 대기시간이 증가합니다.",""
 1013,"1013","Goddess_Raid_Spreader_Party","","사망 제어","DeathCountLimit{count}","DeathCount"
+1014,"1014","Goddess_Raid_Falouros_Solo","","회복 제어","치유 스킬의 효과가 감소하고 회복 포션의 재사용 대기시간이 증가합니다.",""
+1015,"1015","Goddess_Raid_Falouros_Auto","","회복 제어","치유 스킬의 효과가 감소하고 회복 포션의 재사용 대기시간이 증가합니다.",""
+1016,"1016","Goddess_Raid_Falouros_Party","","사망 제어","DeathCountLimit{count}","DeathCount"
+1017,"1017","Goddess_Raid_Falouros_Party","","회복 제어","치유 스킬의 효과가 감소하고 회복 포션의 재사용 대기시간이 증가합니다.",""

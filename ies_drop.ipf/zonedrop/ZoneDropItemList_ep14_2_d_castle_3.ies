@@ -10,3 +10,7 @@ ClassID,BaseRatio,DropRatio,Money_Min,Money_Max,Zone,Type,GroupName,ItemClassNam
 10,1000000,150,0,0,"","Item","Item","ticket_bountyhunt_pedimian_ep14_hard","",""
 11,1000000,150,0,0,"","Item","Item","ticket_bountyhunt_orsha_ep14_hard","",""
 12,1000000,708000,652,783,"","Money_Mid","Money","Moneybag1","",""
+13,1000000,5000,0,0,"","Item","Item","piece_EP14_GoddessIcor_Armor","",""
+14,1000000,20,0,0,"","Item","Item","common_skill_scroll_480","",""
+15,1000000,10000,0,0,"","Item","Item","piece_fierce_shoulder","",""
+16,1000000,50,0,0,"","Item","Item","misc_collect_ep14_2_4","",""

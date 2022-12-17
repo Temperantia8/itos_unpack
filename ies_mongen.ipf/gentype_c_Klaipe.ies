@@ -86,7 +86,5 @@ ClassID,GenType,Lv,Range,GenRange,RespawnTime,MaxPop,Minimap,Hide,UseAIOufOfPC,A
 5289,10122,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER4_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5290,10123,1,40,1,1,1,1,0,0,0,0,0,"HiddenTrigger6","","","","","","","TEST_SERVER2_SHOP_NPC_AI","","","","NO","YES","NO","Neutral","","","",""
 5292,10125,1,60,1,60000,1,2,0,0,0,0,0,"gacha_machine","여신의 축복","","","","","","","BLESSED_CUBE","","","NO","YES","NO","Neutral","","","",""
-5293,10126,1,40,1,1,1,2,0,0,0,0,0,"Event_2110_Npc","[이벤트]{nl}유령 소녀","","","","","","KLAPEDA_EVENT_2110_GHOST","CITY_EVENT_2110_NPC","","","NO","YES","NO","Neutral","","","",""
-5294,10127,1,40,1,1,1,2,0,0,0,0,0,"Event_2110_npc_cauldron_stew","[이벤트]{nl}호박 스튜 솥","","","","","","KLAPEDA_EVENT_2110_NPC","EVENT_2110_POT_NPC","","","NO","YES","NO","Neutral","","","",""
-5295,10128,1,40,1,1,1,2,0,0,0,0,0,"Event_2110_Npc2","[이벤트]{nl}폐도 피난민","","","","","","KLAPEDA_EVENT_2110_NPC","CITY_EVENT_2110_NPC2","","","NO","YES","NO","Neutral","","","",""
+5293,5293,1,60,1,60000,1,2,0,0,0,0,0,"Ev_Npc_barrack_snowman","[겨울축제] 야크맘보 눈사람","","","","","","","EVENT_2212_LAST_CHRISTMAS_NPC","","","NO","YES","NO","Neutral","","","",""
 10001,50001,1,40,1,60000,1,2,0,0,0,0,0,"Board3_Event","이벤트 알림판","","","","","","","STEAM_TREASURE_EVENT","","","NO","YES","NO","Neutral","","","",""

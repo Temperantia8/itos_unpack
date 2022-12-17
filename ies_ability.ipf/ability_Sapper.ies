@@ -1,6 +1,5 @@
 ClassID,UnlockArgNum,MaxLevel,Price1,Time1,Price2,Time2,Price3,Time3,Price4,Time4,Price5,Time5,Price6,Time6,Price7,Time7,Price8,Time8,Price9,Time9,Price10,Time10,ClassName,UnlockScr,UnlockArgStr,UnlockDesc,ScrCalcPrice
 1,1,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"MaxWeightAbil","UNLOCK_BASE_LEVEL","","캐릭터 1레벨 이상","ABIL_COMMON_PRICE_1LV"
-101,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper29","UNLOCK_ABIL_SKILL","Sapper_StakeStockades","방책 1레벨 이상","ABIL_REINFORCE_PRICE"
 201,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper12","UNLOCK_ABIL_SKILL","Sapper_Claymore","크레모어 1레벨 이상","ABIL_REINFORCE_PRICE"
 301,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper13","UNLOCK_ABIL_SKILL","Sapper_PunjiStake","푼지 스테이크 1레벨 이상","ABIL_REINFORCE_PRICE"
 401,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper38","UNLOCK_ABIL_SKILL","Sapper_SpringTrap","스프링 트랩 1레벨 이상","ABIL_REINFORCE_PRICE"
@@ -12,7 +11,6 @@ ClassID,UnlockArgNum,MaxLevel,Price1,Time1,Price2,Time2,Price3,Time3,Price4,Time
 801,1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper26","UNLOCK_ABIL_SKILL","Sapper_SpikeShooter","스파이크 슈터 1레벨 이상","ABIL_REINFORCE_PRICE"
 901,45,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper42","UNLOCK_ABIL_JOB_LEVEL","Char3_5","새퍼 클래스 45레벨 달성","HIDDENABIL_PRICE_COND_JOBLEVEL"
 902,45,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper51","UNLOCK_ABIL_JOB_LEVEL","Char3_5","새퍼 클래스 45레벨 달성","HIDDENABIL_PRICE_COND_JOBLEVEL"
-1001,65,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper43","UNLOCK_ABIL_OTHERABILITY","Sapper29","[방책: 강화] 특성 65 레벨 달성","HIDDENABIL_PRICE_COND_REINFORCE"
 1002,65,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper44","UNLOCK_ABIL_OTHERABILITY","Sapper12","[크레모어: 강화] 특성 65 레벨 달성","HIDDENABIL_PRICE_COND_REINFORCE"
 1003,65,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper45","UNLOCK_ABIL_OTHERABILITY","Sapper13","[푼지 스테이크: 강화] 특성 65 레벨 달성","HIDDENABIL_PRICE_COND_REINFORCE"
 1004,65,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sapper46","UNLOCK_ABIL_OTHERABILITY","Sapper14","[데토네이트 트랩: 강화] 특성 65 레벨 달성","HIDDENABIL_PRICE_COND_REINFORCE"

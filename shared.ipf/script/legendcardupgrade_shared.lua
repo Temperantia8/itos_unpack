@@ -308,6 +308,23 @@ function GET_CARD_REINFORCE_NEED_ITEM_STRARG(cls,cardObj)
 	return cardObj.StringArg
 end
 
+function GET_LEGEND_CARD_NEED_EXP(from_lv, to_lv)
+	if from_lv == nil or to_lv == nil then
+		return nil
+	end
+
+	local need_exp = 0
+	for i = from_lv, to_lv - 1 do
+		local cls = GetClassByType('legendCardReinforce', i)
+		if cls ~= nil then
+			local need_point = TryGetProp(cls, 'NeedPoint', 0)
+			need_exp = need_exp + need_point
+		end
+	end
+
+	return need_exp
+end
+
 -- 여신카드 경험치 복사
 function IS_GODDESS_LEGEND_CARD(item)
 	if item == nil then

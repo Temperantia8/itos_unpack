@@ -18349,6 +18349,29 @@ end"/>
 			</Trigger>
 		</TriggerList>
 	</SpcItem>
+	<SpcItem Name="SWD04_126_9">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
 	<SpcItem Name="Effect_ep14fivebird">
 		<TriggerList Act="Equip">
 			<Trigger>
@@ -18451,6 +18474,52 @@ end"/>
 						<Str Str="ITEM_EFFECT_Effect_twn6th_bubble_PRE"/>
 					</ToolScp>
 				</ExecList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="DAG04_123_11">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
+			</Trigger>
+		</TriggerList>
+	</SpcItem>
+	<SpcItem Name="BOW04_126_2">
+		<TriggerList Act="UnEquip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="unequip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="Equip">
+			<Trigger>
+				<ExecList>
+					<ToolScp Scp="equip_vibora" Client="NO" UseSleep="NO"/>
+				</ExecList>
+			</Trigger>
+		</TriggerList>
+		<TriggerList Act="SkillUsed">
+			<Trigger>
+				<CondList>
+					<ToolScp Scp="skillused_vibora" Client="NO" UseSleep="NO"/>
+				</CondList>
 			</Trigger>
 		</TriggerList>
 	</SpcItem>

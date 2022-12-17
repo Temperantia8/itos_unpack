@@ -27,7 +27,10 @@ function GET_RELICQUEST_MAP_LIST_RESULT(pc, group)
         'ep14_1_f_castle_2',
         'ep14_1_f_castle_3',
         'ep14_1_f_castle_4',
-        'ep14_1_f_castle_5'}
+        'ep14_1_f_castle_5',
+        'ep14_2_d_castle_1',
+        'ep14_2_d_castle_2',
+        'ep14_2_d_castle_3'}
 
     local indunTypeTB13 = {"MythicDungeon_Auto", "MythicDungeon_Auto_Hard", "Challenge_Auto",
                             "Raid", "UniqueRaid", "FieldBossRaid", "MissionIndun", "DefenceMission"

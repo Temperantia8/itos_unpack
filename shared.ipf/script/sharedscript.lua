@@ -566,7 +566,7 @@ function make_skill_gem_list()
         for idx = 0, count - 1 do
             local cls = GetClassByIndexFromList(clsList, idx)            
             if cls ~= nil then                
-                if TryGetProp(cls, 'StringArg', 'None') == 'SkillGem' and TryGetProp(cls, 'SkillName', 'None') ~= 'None' then                   
+                if TryGetProp(cls, 'StringArg', 'None') == 'SkillGem' and TryGetProp(cls, 'SkillName', 'None') ~= 'None' and TryGetProp(cls, 'StringArg2', 'None')=='None' then                   
 
                     local gem_job = TryGetProp(GetClass('Skill', TryGetProp(cls, 'SkillName', 'None')), 'Job', 'None')
                     local gem_ctrlType = TryGetProp(GetClassByStrProp('Job', 'JobName', gem_job), 'CtrlType', "None")
@@ -595,9 +595,9 @@ make_skill_gem_list()
          for idx = 0, count - 1 do
              local cls = GetClassByIndexFromList(clsList, idx)            
              if cls ~= nil then                
-                 if TryGetProp(cls, 'StringArg', 'None') == 'SkillGem' and TryGetProp(cls, 'SkillName', 'None') ~= 'None' then                 
+                 if TryGetProp(cls, 'StringArg', 'None') == 'SkillGem' and TryGetProp(cls, 'SkillName', 'None') ~= 'None' and TryGetProp(cls, 'StringArg2', 'None')=='None' then                 
                     table.insert(skill_gem_list_cube, TryGetProp(cls, 'ClassName', 'None'))
-                 end
+                end
              end
          end
      end
@@ -3274,7 +3274,28 @@ function JOB_LAMA_PRE_CHECK(pc, jobCount)
     return 'NO'
 end
 
+function JOB_JAGUAR_PRE_CHECK(pc, jobCount)
+    if jobCount == nil then
+        jobCount = GetTotalJobCount(pc);
+    end
+    if jobCount >= 2 then
+        local aObj
+        if IsServerSection() == 0 then
+            aObj = GetMyAccountObj();
+        else
+            aObj = GetAccountObj(pc);
+        end
+        
+        if aObj ~= nil then
+            local value = TryGetProp(aObj, 'UnlockQuest_Char5_18', 0)
+            if value == 1 or IS_KOR_TEST_SERVER() == true then
+                return 'YES'
+            end
+        end 
+    end
 
+    return 'YES'
+end
 
 function JOB_RUNECASTER_PRE_CHECK(pc, jobCount)
     if jobCount == nil then
@@ -3853,6 +3874,10 @@ function GET_EQUIP_GROUP_NAME(item)
 
     if name == 'BELT' then
         return 'BELT'
+    end
+
+    if name == 'SHOULDER' then
+        return 'SHOULDER'
     end
 
     name = TryGetProp(item, 'DefaultEqpSlot', 'None')

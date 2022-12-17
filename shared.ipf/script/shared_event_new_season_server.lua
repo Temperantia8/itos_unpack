@@ -144,3 +144,22 @@ function SEASON_SERVER_MAX_LEVEL_UP_REWARD(self, tx, level)
         end
     end
 end
+
+function costume_boss_map_check(map_name)
+    local cls = GetClass('Map', map_name)
+    if TryGetProp(cls, 'MapType', 'None') == "Field" and TryGetProp(cls, 'RewardEXPBM', 0)  > 0.1 then
+        if TryGetProp(cls, 'QuestLevel', 0) >= 150 then            
+            return true
+        end
+    end
+    
+    return false
+end
+
+function ep14_field_boss_map_check(map_name)
+    if map_name == 'ep14_2_d_castle_3' then        
+        return true
+    else
+        return false
+    end
+end

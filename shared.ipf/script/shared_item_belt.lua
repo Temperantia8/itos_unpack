@@ -191,7 +191,7 @@ end
 
 -- 아이템 생성시 옵션 최대, 최소
 shared_item_belt.get_option_value_range = function(item, option_name)    
-    if TryGetProp(item, 'StringArg', 'None') ~= 'piece_penetration_belt' then        
+    if TryGetProp(item, 'GroupName', 'None') ~= 'BELT' then        
         return 0, 0
     end
     
@@ -324,7 +324,7 @@ shared_item_belt.is_valid_reroll_option = function(item, index, option_name, max
 end
 
 shared_item_belt.is_able_to_reroll = function(item, index)    
-    if TryGetProp(item, 'StringArg', 'None') ~= 'piece_penetration_belt' then
+    if TryGetProp(item, 'GroupName', 'None') ~= 'BELT' then
         return false, 'CantRerollEquipment'
     end
 
@@ -442,4 +442,20 @@ shared_item_belt.is_valid_unlock_item = function(scrollObj, itemObj)
     end
     
     return true, 'None'
+end
+
+function IS_ABLT_TO_REROLL(item_obj)
+    if shared_item_goddess_icor.get_goddess_icor_grade(item_obj) > 0 then
+        return true
+    end
+
+    if TryGetProp(item_obj, 'GroupName', 'None') == 'BELT' then
+        return true
+    end
+        
+    if TryGetProp(item_obj, 'GroupName', 'None') == 'SHOULDER' then
+        return true
+    end
+
+    return false
 end

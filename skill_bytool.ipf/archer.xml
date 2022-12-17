@@ -47,7 +47,7 @@
 				</Scp>
 				<Scp Scp="SKL_MOVE_JUMP" Client="NO" UseSleep="YES" Time="0">
 					<Num Num="20"/>
-					<Num Num="50" UseFunc="1" FuncTxt="return 120 + obj.Level * 10;"/>
+					<Num Num="50" UseFunc="1" FuncTxt="return SCR_GET_Jump_Ratio(obj)"/>
 					<Num Num="180"/>
 					<Num Num="0.1"/>
 					<Num Num="0.1"/>

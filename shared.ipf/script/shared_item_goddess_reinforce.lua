@@ -418,10 +418,10 @@ function setting_lv_material_armor(mat_list_by_lv, lv)
 	-- 여기서 레벨별 재료를 세팅한다.
 
 	if lv == 480 then
-		seasonCoin = "VakarineCertificate" -- 다음 세대
-		misc_reinforce_1 = "misc_transmutationSpreader_NoTrade" -- 다음 세대 
+		seasonCoin = "VakarineCertificate" 
+		misc_reinforce_1 = "misc_leatherFalouros_NoTrade" 
 		misc_BlessedStone = 'misc_BlessedStone'
-		misc_reinforce_2 = 'misc_high_transmutationSpreader_NoTrade'
+		misc_reinforce_2 = 'misc_hornFalouros_NoTrade'
 	end
 
 	mat_list_by_lv[lv]['armor'][1][seasonCoin] = 263
@@ -501,51 +501,51 @@ function setting_lv_material_armor(mat_list_by_lv, lv)
 
 	mat_list_by_lv[lv]['armor'][21][seasonCoin] = 2586
 	mat_list_by_lv[lv]['armor'][21][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][21][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][21][misc_reinforce_1] = 10	
 
 	mat_list_by_lv[lv]['armor'][22][seasonCoin] = 2948
 	mat_list_by_lv[lv]['armor'][22][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][22][misc_reinforce_1] = 10
-	mat_list_by_lv[lv]['armor'][22][misc_reinforce_2] = 10	
+	mat_list_by_lv[lv]['armor'][22][misc_reinforce_1] = 15
+	mat_list_by_lv[lv]['armor'][22][misc_reinforce_2] = 10
 
 	mat_list_by_lv[lv]['armor'][23][seasonCoin] = 3311
 	mat_list_by_lv[lv]['armor'][23][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][23][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][23][misc_reinforce_1] = 17
 	mat_list_by_lv[lv]['armor'][23][misc_reinforce_2] = 11
 
 	mat_list_by_lv[lv]['armor'][24][seasonCoin] = 3673
 	mat_list_by_lv[lv]['armor'][24][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][24][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][24][misc_reinforce_1] = 19
 	mat_list_by_lv[lv]['armor'][24][misc_reinforce_2] = 11
 
 	mat_list_by_lv[lv]['armor'][25][seasonCoin] = 4036
 	mat_list_by_lv[lv]['armor'][25][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][25][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][25][misc_reinforce_1] = 20
 	mat_list_by_lv[lv]['armor'][25][misc_reinforce_2] = 12
 
 	mat_list_by_lv[lv]['armor'][26][seasonCoin] = 4398
 	mat_list_by_lv[lv]['armor'][26][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][26][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][26][misc_reinforce_1] = 20
 	mat_list_by_lv[lv]['armor'][26][misc_reinforce_2] = 12
 
 	mat_list_by_lv[lv]['armor'][27][seasonCoin] = 4760
 	mat_list_by_lv[lv]['armor'][27][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][27][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][27][misc_reinforce_1] = 20
 	mat_list_by_lv[lv]['armor'][27][misc_reinforce_2] = 13
 
 	mat_list_by_lv[lv]['armor'][28][seasonCoin] = 5123
 	mat_list_by_lv[lv]['armor'][28][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][28][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][28][misc_reinforce_1] = 20
 	mat_list_by_lv[lv]['armor'][28][misc_reinforce_2] = 13
 
 	mat_list_by_lv[lv]['armor'][29][seasonCoin] = 5485
 	mat_list_by_lv[lv]['armor'][29][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][29][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][29][misc_reinforce_1] = 20
 	mat_list_by_lv[lv]['armor'][29][misc_reinforce_2] = 14
 
 	mat_list_by_lv[lv]['armor'][30][seasonCoin] = 5848
 	mat_list_by_lv[lv]['armor'][30][misc_BlessedStone] = 4
-	mat_list_by_lv[lv]['armor'][30][misc_reinforce_1] = 10
+	mat_list_by_lv[lv]['armor'][30][misc_reinforce_1] = 20
 	mat_list_by_lv[lv]['armor'][30][misc_reinforce_2] = 14
 
 	setting_lv_misc_material(mat_list_by_lv, lv, 'armor')
@@ -1028,10 +1028,10 @@ function make_item_goddess_reinforce_material_list()
 		end
 
 		local func_name = 'setting_lv_material_armor'
-		-- local func = _G[func_name]
-		-- if func ~= nil then
-		-- 	func(mat_list_by_lv, start)		
-		-- end
+		local func = _G[func_name]
+		if func ~= nil then
+			func(mat_list_by_lv, start)		
+		end
 
 		func_name = 'setting_lv_material_weapon'
 		local func = _G[func_name]
