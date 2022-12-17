@@ -1,4 +1,5 @@
 ClassID,ClassName,LoadingType,FileName,FAQ_Hide,Tooltip_Hide
+9,"img9","LoadingFirst","37.jpg","NO","YES"
 10,"img10","LoadingFirst","38.jpg","NO","YES"
 11,"img11","LoadingFirst","39.jpg","NO","YES"
 12,"img12","LoadingFirst","40.jpg","NO","YES"
@@ -18,6 +19,7 @@ ClassID,ClassName,LoadingType,FileName,FAQ_Hide,Tooltip_Hide
 50,"img50","LoadingFirst","57.jpg","NO","YES"
 51,"img51","LoadingFirst","58.jpg","NO","YES"
 52,"img52","LoadingFirst","59.jpg","NO","YES"
+118,"img118","LoadingCity","37.jpg","NO","YES"
 119,"img119","LoadingCity","38.jpg","NO","YES"
 120,"img120","LoadingCity","39.jpg","NO","YES"
 121,"img121","LoadingCity","40.jpg","NO","YES"
@@ -48,6 +50,7 @@ ClassID,ClassName,LoadingType,FileName,FAQ_Hide,Tooltip_Hide
 209,"img209","LoadingDefault","9.jpg","YES","YES"
 210,"img210","LoadingDefault","10.jpg","YES","YES"
 211,"img211","LoadingDefault","11.jpg","YES","YES"
+229,"img229","LoadingDefault","37.jpg","NO","YES"
 230,"img230","LoadingDefault","38.jpg","NO","YES"
 231,"img231","LoadingDefault","39.jpg","NO","YES"
 232,"img232","LoadingDefault","40.jpg","NO","YES"

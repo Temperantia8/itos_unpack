@@ -26,4 +26,4 @@ ClassID,TotalNumberDays,ClassName,Name,AttendancePass,StartTime,EndTime
 126,5,"202203ArborDay","식목일 접속 이벤트","NO","2022-05-11 06:00:00","2022-05-17 06:00:00"
 131,7,"Event2209GmAttendance","GM 깜짝 선물 상자 이벤트","NO","2022-09-13 00:00:00","2022-09-20 00:00:00"
 133,14,"OcelotPackage","오셀롯 패키지","NO","",""
-134,3,"Event2212Attendance","크리스마스 기념 특별 출석부","NO","2022-12-23 06:00:00","2022-12-27 00:00:00"
+134,3,"Event2212Attendance","크리스마스 기념 특별 출석부","NO","2022-12-23 06:00:00","2022-12-27 06:00:00"
