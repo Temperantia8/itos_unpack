@@ -3294,7 +3294,7 @@ function JOB_JAGUAR_PRE_CHECK(pc, jobCount)
         end 
     end
 
-    return 'YES'
+    return 'NO'
 end
 
 function JOB_RUNECASTER_PRE_CHECK(pc, jobCount)
